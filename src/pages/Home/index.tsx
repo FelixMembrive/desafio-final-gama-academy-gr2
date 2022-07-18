@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/Button";
-import ModalBS from "../../componentes/ModalBS/ModalBS";
+import ModalBS from "../../componentes/index";
 import AlertBS from "../../componentes/TesteBS/AlertBS";
 
 export default function Home() {
