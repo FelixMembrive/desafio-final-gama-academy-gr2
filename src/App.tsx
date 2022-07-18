@@ -1,8 +1,7 @@
-import React from 'react';
-import RoutesComponent from "./Routes";
+import React from 'react'
+import RoutesComponent from './Routes'
 
 export default function App() {
-  return (
-    <RoutesComponent />
-  )
+  return <RoutesComponent />
 }
+//teste
