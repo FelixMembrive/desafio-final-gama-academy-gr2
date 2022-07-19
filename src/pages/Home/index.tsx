@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
-import ModalBS from "../../componentes/ModalBS/ModalBS";
-import AlertBS from "../../componentes/TesteBS/AlertBS";
+import ModalBS from "../../componentes/ModalBS";
+import AlertBS from "../../componentes/AlertBS";
 import { Link } from "react-router-dom";
 
 export default function Home() {
