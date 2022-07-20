@@ -4,11 +4,13 @@
     border: none;
     width: 550px;
     margin: 130px auto 80px;
+    cursor: all-scroll;
     
 }
 
 .card-conteudo-exclusivo img {
     margin-right: 15px;
+    cursor: pointer;
     
 }
 
