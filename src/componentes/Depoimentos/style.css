@@ -1,0 +1,16 @@
+.depo-section {
+    background-color: #efefef;
+    padding: 6.375rem 0 8.9375rem 0;
+}
+
+h2 {
+    margin: 0 5.25rem;
+}
+
+.scroll-container {
+    padding: 2.75rem 5.25rem 0 5.25rem;
+}
+
+.row {
+    gap: 4rem;
+}
