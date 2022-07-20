@@ -1,0 +1,16 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    width: 550px;
+    margin-top: 130px;
+}
+
+.card img {
+    margin-right: 15px;
+}
+
+.card-content p {
+    text-align: left;
+    padding-right: 10px;
+}
