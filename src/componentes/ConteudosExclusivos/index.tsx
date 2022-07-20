@@ -1,8 +1,8 @@
 import ScrollContainer from 'react-indiana-drag-scroll'
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import MiniCard from '../MiniCard';
-import { StyledContainer } from "./styles"
-import DefaultMiniCardImage from "../../assets/imagens/DefaultMiniCardImage.png"
+import DefaultMiniCardImage from "../../assets/imagens/DefaultMiniCardImage.png";
+import './styles.css'
 
 interface IConteudosExclusivos {
     title: string,
@@ -11,7 +11,6 @@ interface IConteudosExclusivos {
 
 export default function ConteudosExclusivos(props:IConteudosExclusivos) {
   return (
-    <StyledContainer>
       <Container fluid>
         <div className="content">
           <h2>{props.title}</h2>
@@ -29,6 +28,5 @@ export default function ConteudosExclusivos(props:IConteudosExclusivos) {
         </ScrollContainer>
         </div>
       </Container>
-    </StyledContainer>
   );
 }
