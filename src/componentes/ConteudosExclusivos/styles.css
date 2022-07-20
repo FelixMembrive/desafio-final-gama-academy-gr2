@@ -14,3 +14,9 @@ h2 {
 p {
     text-align: center;
 }
+
+@media (max-width: 425px) {
+    .content h2 {
+        margin-bottom: 50px;
+    }
+}
