@@ -1,8 +1,8 @@
 import CardVideo from "../CardVideo";
 import ScrollContainer from 'react-indiana-drag-scroll'
-import { Row } from "react-bootstrap";
+import { Button, Row } from "react-bootstrap";
 
-import './style.css'
+import './style.scss'
 
 export default function Depoimentos() {
     const dados = [
@@ -57,7 +57,8 @@ export default function Depoimentos() {
         },
     ]
   return (
-    <div className="depo-section">
+    <div className="depo-section bg-primary">
+        <Button variant="danger">Teste</Button>
         <h2>O que as pessoas dizem</h2>
         <ScrollContainer className="scroll-container d-grid">
         <Row className="flex-nowrap row">
