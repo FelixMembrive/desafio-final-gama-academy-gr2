@@ -60,10 +60,10 @@ export default function Depoimentos() {
     <div className="depo-section">
         <h2>O que as pessoas dizem</h2>
         <ScrollContainer className="mt-7 scroll-container d-grid">
-        <Row className="flex-nowrap row">
-        {dados.map((cardInfo) => {
+        <Row className="flex-nowrap row gap-6">
+        {dados.map((cardInfo, index) => {
             return (
-                <CardVideo videoTitle="video placeholder" src={cardInfo.src} cardTitle={cardInfo.nome} cardSubtitle={`${cardInfo.profissao}, ${cardInfo.empresa}`} cardText={cardInfo.texto}/>
+                <CardVideo videoTitle="video placeholder" src={cardInfo.src} cardTitle={cardInfo.nome} cardSubtitle={`${cardInfo.profissao}, ${cardInfo.empresa}`} cardText={cardInfo.texto} key={index}/>
             )
         })}
         </Row>
