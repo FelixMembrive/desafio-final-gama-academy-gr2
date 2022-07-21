@@ -59,7 +59,7 @@ export default function Depoimentos() {
   return (
     <div className="depo-section">
         <h2 className="text-start ms-lg-7">O que as pessoas dizem</h2>
-        <ScrollContainer className="ms-7 scroll-container d-grid">
+        <ScrollContainer className="ms-8 scroll-container d-grid">
         <Row className="flex-nowrap row gap-6">
         {dados.map((cardInfo, index) => {
             return (
