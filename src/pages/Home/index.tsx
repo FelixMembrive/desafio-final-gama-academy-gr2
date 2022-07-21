@@ -3,6 +3,7 @@ import ModalBS from "../../componentes/ModalBS";
 import AlertBS from "../../componentes/AlertBS";
 import LinkButton from "../../componentes/LinkButton";
 import ConteudosExclusivos from "../../componentes/ConteudosExclusivos";
+import Footer from "../../componentes/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <AlertBS />
       <ModalBS />
       <ConteudosExclusivos title="Conteúdos exclusivos" substitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. "/>
+      <Footer/>
     </>
   );
 }
