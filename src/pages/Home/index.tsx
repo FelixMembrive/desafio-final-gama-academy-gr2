@@ -5,6 +5,7 @@ import LinkButton from "../../componentes/LinkButton";
 import ConteudosExclusivos from "../../componentes/ConteudosExclusivos";
 import Depoimentos from "../../componentes/Depoimentos";
 
+
 export default function Home() {
   return (
     <>
