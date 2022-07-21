@@ -7,53 +7,53 @@ import './style.scss'
 export default function Depoimentos() {
     const dados = [
         {
-            src: "https://www.youtube.com/embed/NpEaa2P7qZI",
+            src: "https://www.youtube.com/embed/ScMzIvxBSi4",
             nome: "Mariana Benício Porto",
             profissao: "Product Designer",
             empresa: "Nome da Empresa",
-            texto: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec"
         },
         {
-            src: "https://www.youtube.com/embed/NpEaa2P7qZI",
-            nome: "Cauane Maria Nogueira",
+            src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            nome: "Cauane Nogueira",
             profissao: "Product Designer",
             empresa: "Nome da Empresa",
-            texto: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec"
         },
         {
-            src: "https://www.youtube.com/embed/NpEaa2P7qZI",
-            nome: "Liz Maitê Aparecida dos Santos",
+            src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            nome: "Liz Maitê dos Santos",
             profissao: "Product Designer",
             empresa: "Nome da Empresa",
-            texto: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec"
         },
         {
-            src: "https://www.youtube.com/embed/NpEaa2P7qZI",
-            nome: "Silvana Helena da Silva",
+            src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            nome: "Helena da Silva",
             profissao: "Product Designer",
             empresa: "Nome da Empresa",
-            texto: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec"
         },
         {
-            src: "https://www.youtube.com/embed/NpEaa2P7qZI",
-            nome: "Vitoria Paula Santos Jesus",
+            src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            nome: "Ana Vitoria dos Santos",
             profissao: "Product Designer",
             empresa: "Nome da Empresa",
-            texto: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec"
         },
         {
-            src: "https://www.youtube.com/embed/NpEaa2P7qZI",
-            nome: "Hadassa Isabella Cavalcanti",
+            src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            nome: "Isabella Cavalcanti",
             profissao: "Product Designer",
             empresa: "Nome da Empresa",
-            texto: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec"
         },
         {
-            src: "https://www.youtube.com/embed/NpEaa2P7qZI",
+            src: "https://www.youtube.com/embed/ScMzIvxBSi4",
             nome: "Lara Maria Aragão",
             profissao: "Product Designer",
             empresa: "Nome da Empresa",
-            texto: "Some quick example text to build on the card title and make up the bulk of the card's content."
+            texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec"
         },
     ]
   return (
