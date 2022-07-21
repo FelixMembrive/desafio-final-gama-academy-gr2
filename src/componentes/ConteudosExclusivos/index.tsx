@@ -17,13 +17,13 @@ export default function ConteudosExclusivos(props:IConteudosExclusivos) {
           <p>{props.substitle}</p>
           <ScrollContainer className="scroll-container">
           <Row className="flex-nowrap">
-          <MiniCard imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
-          <MiniCard imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
-          <MiniCard imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
-          <MiniCard imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
-          <MiniCard imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
-          <MiniCard imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
-          <MiniCard imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
+          <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
+          <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
+          <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
+          <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
+          <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
+          <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
+          <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna."/>
           </Row>
         </ScrollContainer>
         </div>
