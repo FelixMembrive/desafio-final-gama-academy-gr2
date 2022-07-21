@@ -22,7 +22,7 @@ export default function CardVideo(props: ICardVideoProps) {
   return (
     <Col className="card-col">
       <div className="img rounded d-flex flex-column justify-content-end" onClick={handleClick}>
-        <VideoModal />
+        <VideoModal src={props.src}/>
         <h3 className="fs-5 bg-transparent">{props.cardTitle}</h3>
         <p className="text-start bg-transparent ">{props.cardSubtitle}</p>
         <p className="fs-6 bg-transparent">{props.cardText}</p>

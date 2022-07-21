@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { Play } from 'react-ionicons';
-import './style.scss'
+import { Play, CloseOutline } from 'react-ionicons';
+import './style.scss';
 
-export default function VideoModal() {
+interface IModalProps {
+  src: string;
+}
+
+export default function VideoModal(props: IModalProps) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,20 +18,24 @@ export default function VideoModal() {
     <>
       <Button variant="link" className="btn-link bg-transparent" onClick={handleShow}>
         <Play
-        style={{'background-color':'transparent'}}
+          style={{ 'background-color': 'transparent' }}
           color={'#ffffff'}
           height="50px"
           width="50px"
         />
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-        </Modal.Header>
-        <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Placeholder Video" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-      </Modal>
+      <div className={show? 'modal-background': 'modal-hide'}>
+        <Button variant="link" className="btn-link bg-transparent close" onClick={handleClose}>
+          <CloseOutline
+          style={{ 'background-color': 'transparent' }}
+            color={'#d9d9d9'}
+            height="50px"
+            width="50px"
+          />
+        </Button>
+        <iframe src={show? props.src : ''} title="Placeholder Video" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className='img-fluid' />
+      </div>
     </>
   );
 }
-
-// render (<ModalBS />);
