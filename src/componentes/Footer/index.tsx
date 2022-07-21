@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons";
+import { Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons/svgIcons";
 import LinkIcon from "../LinkIcons";
 import LinkText from "../LinkText";
 
