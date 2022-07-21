@@ -2,10 +2,12 @@ import Button from "react-bootstrap/Button";
 import ModalBS from "../../componentes/ModalBS";
 import AlertBS from "../../componentes/AlertBS";
 import LinkButton from "../../componentes/LinkButton";
+import Header from "../../componentes/Header"
 
 export default function Home() {
   return (
     <>
+      <Header />
       <h1>DESAFIO FINAL</h1>
       <div>
         <LinkButton to="/sobre" text="sobre" variant="primary" className="m-1"/>
