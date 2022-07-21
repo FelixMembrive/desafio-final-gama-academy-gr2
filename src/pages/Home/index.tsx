@@ -18,10 +18,9 @@ export default function Home() {
         <LinkButton to="/perfil" text="perfil" variant="info" className="m-1"/>
       </div>
       <Button>Botão BS TESTE</Button>
-      <AlertBS />
       <ModalBS />
-      <ConteudosExclusivos title="Conteúdos exclusivos" substitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. "/>
       <Depoimentos />
+      <ConteudosExclusivos title="Conteúdos exclusivos" substitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. "/>
     </>
   );
 }
