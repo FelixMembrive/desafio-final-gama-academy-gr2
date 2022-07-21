@@ -57,10 +57,9 @@ export default function Depoimentos() {
         },
     ]
   return (
-    <div className="depo-section bg-primary">
-        <Button variant="danger">Teste</Button>
+    <div className="depo-section">
         <h2>O que as pessoas dizem</h2>
-        <ScrollContainer className="scroll-container d-grid">
+        <ScrollContainer className="mt-7 scroll-container d-grid">
         <Row className="flex-nowrap row">
         {dados.map((cardInfo) => {
             return (
