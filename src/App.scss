@@ -1,0 +1,19 @@
+$grid-breakpoints: (xxs:0,
+  xs: 320px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px);
+
+$spacers: (0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0,
+  4: 1.5rem,
+  5: 3rem,
+  6: 4rem,
+  7: 5rem);
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';

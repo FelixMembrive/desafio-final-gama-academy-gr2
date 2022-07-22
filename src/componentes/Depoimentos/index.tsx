@@ -1,8 +1,8 @@
 import CardVideo from "../CardVideo";
 import ScrollContainer from 'react-indiana-drag-scroll'
-import { Row } from "react-bootstrap";
+import { Button, Row } from "react-bootstrap";
 
-import './style.css'
+import './style.scss'
 
 export default function Depoimentos() {
     const dados = [
@@ -59,11 +59,11 @@ export default function Depoimentos() {
   return (
     <div className="depo-section">
         <h2>O que as pessoas dizem</h2>
-        <ScrollContainer className="scroll-container d-grid">
-        <Row className="flex-nowrap row">
-        {dados.map((cardInfo) => {
+        <ScrollContainer className="mt-7 scroll-container d-grid">
+        <Row className="flex-nowrap row gap-6">
+        {dados.map((cardInfo, index) => {
             return (
-                <CardVideo videoTitle="video placeholder" src={cardInfo.src} cardTitle={cardInfo.nome} cardSubtitle={`${cardInfo.profissao}, ${cardInfo.empresa}`} cardText={cardInfo.texto}/>
+                <CardVideo videoTitle="video placeholder" src={cardInfo.src} cardTitle={cardInfo.nome} cardSubtitle={`${cardInfo.profissao}, ${cardInfo.empresa}`} cardText={cardInfo.texto} key={index}/>
             )
         })}
         </Row>

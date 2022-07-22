@@ -1,0 +1,22 @@
+* {
+    background-color: #EFEFEF;
+}
+
+.content {
+    padding: 120px 60px;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    .content h2 {
+        margin-bottom: 50px;
+    }
+}

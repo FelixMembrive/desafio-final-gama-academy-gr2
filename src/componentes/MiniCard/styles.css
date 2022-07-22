@@ -1,0 +1,40 @@
+.card-conteudo-exclusivo {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    width: 550px;
+    margin: 130px auto 80px;
+    cursor: all-scroll;
+    
+}
+
+.card-conteudo-exclusivo img {
+    margin-right: 15px;
+    cursor: pointer;
+    
+}
+
+.card-conteudo-exclusivo p {
+    text-align: left;
+    padding-right: 10px;
+}
+
+@media (max-width: 425px) {
+    .card-conteudo-exclusivo {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+     
+    }
+
+    .card-conteudo-exclusivo h5 {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .card-conteudo-exclusivo p {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
