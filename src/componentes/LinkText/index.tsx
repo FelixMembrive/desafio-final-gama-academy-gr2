@@ -9,7 +9,7 @@ interface ILinkTextProps {
 
 export default function LinkText(props: ILinkTextProps) {
     return (
-            <LinkContainer className="row" to={props.to}>
+            <LinkContainer className="gy-2 justify-content-center" to={props.to}>
                 <a className={"" + props.className}>{props.text}</a>
             </LinkContainer>
     );
