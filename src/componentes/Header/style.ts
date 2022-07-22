@@ -1,16 +1,14 @@
-.navbar{
+import styled from "styled-components";
+
+export const StyleHeader = styled.main`
     background-color: #D9D9D9;
-    display: flex;
     padding:0px;
     margin:0px;
-    align-items: flex-end;
     height: 100%;
     width: 100%;
-}
 .links{
     font-family: 'poppins';
 
-    width: 206px;
     height: 28px;
 
     font-family: 'Poppins';
@@ -19,19 +17,11 @@
     font-size: 20.3524px;
     line-height: 31px;
     color: #000000;
-    padding-left: 617px;
 
 }
-.navbar>.container{
-    padding-left:32px;
-    padding-right:32px;
-    margin: 0px;
-}
 .navbar-nav{
-    padding-left: 617px;
     padding-right: 17.5px;
     justify-content: flex-end;
-    flex-direction: row-reverse;
 }
 .botoesContainer{
     font-family: Poppins;
@@ -39,6 +29,7 @@
     font-weight: bold;
     line-height: 21px;
     display: contents;
+    justify-content: flex-end;
     list-style: none;
     padding-left: 0px;
     margin: 0;
@@ -79,4 +70,4 @@ li{
 a{
     align-items:center;
 }
-
+`

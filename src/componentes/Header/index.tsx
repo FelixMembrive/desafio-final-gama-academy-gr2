@@ -1,17 +1,16 @@
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button'
 import Logo from '../../assets/Logo.png'
-
-import './style.css'
+import { StyleHeader } from './style';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Header() {
   return (
-    <>
+    <StyleHeader>
       <Navbar className='navbar'>
-        <Container className="container1" xxl={2}>
+        <Container className="container1">
           <Navbar.Brand href="#">
             <img
               src= { Logo }
@@ -21,7 +20,7 @@ export default function Header() {
               alt="Logo"
             />
           </Navbar.Brand>
-          <Container className="links" xxl={7}>
+          <Container className="links">
             <ul className="navbar-nav">
                 <li className="nav-item">
                 <a className="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,7 +36,7 @@ export default function Header() {
                 </a></li>
             </ul>
           </Container>
-          <Container className="botoesContainer" xxl={3}>
+          <Container className="botoesContainer">
             <li className="liButton">
               <Button id="registre" href="#" size="lg">
                   Registre-se
@@ -51,6 +50,6 @@ export default function Header() {
           </Container>
         </Container>
       </Navbar>
-    </>
+    </StyleHeader>
   );
 }
