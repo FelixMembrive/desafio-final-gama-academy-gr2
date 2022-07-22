@@ -1,0 +1,50 @@
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media only screen and (min-width: 768px) {
+        flex-direction: row
+    }
+}
+
+// links de texto
+.links-footer-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media only screen and (min-width: 426px) {
+        flex-wrap: nowrap;
+        background-color: black;
+        flex-direction: row;
+    }
+}
+
+.links-footer-item-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    a {
+        margin: 1rem;
+    }
+}
+
+// icones
+.icons-footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (min-width: 426px) {
+        flex-direction: row
+    }
+}
+
+.icons-footer-item-group {
+    display: flex;
+    a {
+        margin: 1rem;
+    }
+}
