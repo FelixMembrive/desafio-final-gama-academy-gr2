@@ -1,6 +1,6 @@
 import CardVideo from "../CardVideo";
 import ScrollContainer from 'react-indiana-drag-scroll'
-import { Button, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import './style.scss'
 
