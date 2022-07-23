@@ -18,17 +18,17 @@ export default function VideoModal(props: IModalProps) {
     <>
       <Button variant="link" className="play btn-link bg-transparent p-0 m-0" onClick={handleShow}>
         <Play
-          style={{ 'background-color': 'transparent' }}
+          cssClasses='playIcon'
           color={'#ffffff'}
-          height="40px"
-          width="40px"
+          height="100%"
+          width="100%"
         />
       </Button>
 
       <div className={show? 'modal-background': 'modal-hide'} onClick={handleClose}>
         <Button variant="link" className="btn-link bg-transparent close" onClick={handleClose}>
           <CloseOutline
-          style={{ 'background-color': 'transparent' }}
+            style={{ 'background-color': 'transparent' }}
             color={'#d9d9d9'}
             height="50px"
             width="50px"

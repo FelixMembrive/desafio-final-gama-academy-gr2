@@ -1,6 +1,10 @@
-#containerStyle{
+#containerStyle {
     @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
+        max-width: 5000px;
+=======
         max-width: 100%;
+>>>>>>> Header
         margin: 0;
         padding: 0;
         display: flex;
@@ -10,21 +14,29 @@
     }
 }
 
+<<<<<<< HEAD
+#navStyle {
+=======
 #navStyle{
+>>>>>>> Header
     background: #D9D9D9;
     display: flex;
     flex-direction: row;
-
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     align-items: center;
 }
-#navImg{
+
+#navImg {
     align-items: center;
     margin-left: 32px;
 }
-#botaoToggle{
+
+#botaoToggle {
     @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
+        display: none;
+=======
         display:none;
     }
 }
@@ -44,9 +56,11 @@
         margin-left: 10px;
         display: flex;
         flex-direction: row;
+>>>>>>> Header
     }
 }
-#basic-navbar-nav{
+
+#basic-navbar-nav {
     text-align: center;
     z-index: 2;
     font-weight: 400;
@@ -61,8 +75,14 @@
         line-height: 31px;
     }
 }
+<<<<<<< HEAD
+
+.botoesContainer {
+    font-family: Poppins;
+=======
 .botoesContainer{
     font-family: 'Poppins';
+>>>>>>> Header
     font-size: 14px;
     line-height: 21px;
     display: contents;
@@ -72,6 +92,27 @@
     padding: 0;
     column-gap: 30px;
 }
+<<<<<<< HEAD
+
+.espacamento {
+    margin: 26px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.bd-toc-item {
+    padding: 5px;
+}
+
+Button {
+    flex-direction: row-reverse;
+}
+
+#registre {
+    padding: 10.5px;
+=======
 .bd-toc-item{
     flex-direction: row-reverse;
     @media only screen and (min-width: 768px) {
@@ -95,6 +136,7 @@
 
 #registre{
     padding:10.5px;
+>>>>>>> Header
     width: 145px;
     border: none;
     background-color: #3C3C3C;
@@ -104,8 +146,9 @@
         margin-left: 21px;
     }
 }
-#login{
-    padding:10.5px;
+
+#login {
+    padding: 10.5px;
     width: 106px;
     color: #000;
     border: 1px solid #000000;
@@ -114,6 +157,12 @@
         margin-left: 16px;
     }
 }
+<<<<<<< HEAD
+
+#basic-navbar-nav {
+    margin-top: 10px;
+}
+=======
 #basic-navbar-nav{
     margin: 34px;
     @media only screen and (min-width: 768px) {
@@ -127,3 +176,4 @@
     // @media only screen and (min-width: 992px) {
     //     padding: 10px;
     // }
+>>>>>>> Header
