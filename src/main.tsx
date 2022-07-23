@@ -8,7 +8,7 @@ import Footer from './componentes/Footer';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 )

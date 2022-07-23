@@ -9,7 +9,7 @@ interface ILinkTextProps {
 
 export default function LinkText(props: ILinkTextProps) {
     return (
-            <LinkContainer className="row" to={props.to}>
+            <LinkContainer to={props.to}>
                 <a className={"" + props.className}>{props.text}</a>
             </LinkContainer>
     );
