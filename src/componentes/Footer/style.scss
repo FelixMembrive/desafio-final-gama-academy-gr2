@@ -24,7 +24,6 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    // responsividade
     @media only screen and (min-width: 426px) {
         flex-wrap: nowrap;
         flex-direction: row;
@@ -39,13 +38,16 @@
         text-decoration: none;
         color: black;
         margin-bottom: 24px;
-        margin-inline: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     // responsividade
     @media only screen and (min-width: 1440px) {
         a {
             margin-top: 17px;
             margin-bottom: 17px;
+            margin-left: 0px;
+            margin-right: 80px;
         }
     }
 }
@@ -58,6 +60,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media only screen and (min-width: 426px) {
+        // flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    @media only screen and (min-width: 768px) {
+        max-width: 40%;
+    }
     @media only screen and (min-width: 1440px) {
         margin: 0 0 0 0;
     }
