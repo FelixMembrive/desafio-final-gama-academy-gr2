@@ -5,7 +5,7 @@ import LinkButton from "../../componentes/LinkButton";
 
 // import "./styles.css"
 
-export default function PaginaAmir() {
+export default function Hero() {
     return (
         <Container className="ps-5">
             <div className="d-flex">

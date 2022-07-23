@@ -1,29 +1,33 @@
-#containerStyle{
+#containerStyle {
     @media only screen and (min-width: 768px) {
+        max-width: 5000px;
         margin: 0;
         padding: 0;
     }
 }
-#navStyle{
+
+#navStyle {
     background: #D9D9D9;
     display: flex;
     flex-direction: row;
-
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     align-items: center;
 }
-#navImg{
+
+#navImg {
     align-items: center;
     margin-top: 12px;
     margin-left: 32px;
 }
-#botaoToggle{
+
+#botaoToggle {
     @media only screen and (min-width: 768px) {
-    display:none;
+        display: none;
     }
 }
-#basic-navbar-nav{
+
+#basic-navbar-nav {
     text-align: center;
     column-gap: 30px;
     z-index: 2;
@@ -32,7 +36,8 @@
         flex-direction: column-reverse;
     }
 }
-.botoesContainer{
+
+.botoesContainer {
     font-family: Poppins;
     font-size: 14px;
     font-weight: bold;
@@ -44,33 +49,40 @@
     padding: 0;
     column-gap: 30px;
 }
-.espacamento{
+
+.espacamento {
     margin: 26px;
 }
-.navbar-nav{
+
+.navbar-nav {
     align-items: center;
 }
-.bd-toc-item{
+
+.bd-toc-item {
     padding: 5px;
 }
-Button{
+
+Button {
     flex-direction: row-reverse;
 }
-#registre{
-    padding:10.5px;
+
+#registre {
+    padding: 10.5px;
     width: 145px;
     border: none;
     background-color: #3C3C3C;
     color: #FFFFFF;
     border-radius: 66px;
 }
-#login{
-    padding:10.5px;
+
+#login {
+    padding: 10.5px;
     width: 106px;
     color: #000;
     border: 1px solid #000000;
     border-radius: 66px;
 }
-#basic-navbar-nav{
+
+#basic-navbar-nav {
     margin-top: 10px;
 }
