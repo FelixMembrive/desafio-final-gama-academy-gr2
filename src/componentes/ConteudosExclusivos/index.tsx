@@ -11,7 +11,7 @@ interface IConteudosExclusivos {
 
 export default function ConteudosExclusivos(props:IConteudosExclusivos) {
   return (
-      <Container fluid>
+      <Container fluid className="container-conteudos">
         <div className="content">
           <h2>{props.title}</h2>
           <p>{props.substitle}</p>
