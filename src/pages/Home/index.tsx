@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <h1>DESAFIO FINAL</h1>
+
       <div>
         <LinkButton to="/sobre" text="sobre" variant="primary" className="m-1"/>
         <LinkButton to="/parceiros" text="parceiros" variant="secondary" className="m-1"/>
