@@ -1,12 +1,24 @@
 #containerStyle {
     @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
         max-width: 5000px;
+=======
+        max-width: 100%;
+>>>>>>> Header
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-weight: 400;
     }
 }
 
+<<<<<<< HEAD
 #navStyle {
+=======
+#navStyle{
+>>>>>>> Header
     background: #D9D9D9;
     display: flex;
     flex-direction: row;
@@ -17,30 +29,61 @@
 
 #navImg {
     align-items: center;
-    margin-top: 12px;
     margin-left: 32px;
 }
 
 #botaoToggle {
     @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
         display: none;
+=======
+        display:none;
+    }
+}
+.botaoStyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px 0 10px;
+    }
+    @media only screen and (min-width: 992px) {
+        margin-right: 10px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+>>>>>>> Header
     }
 }
 
 #basic-navbar-nav {
     text-align: center;
-    column-gap: 30px;
+    padding-bottom: 47px;
     z-index: 2;
+    font-weight: 400;
     @media only screen and (min-width: 768px) {
-        display: contents;
-        flex-direction: column-reverse;
+        display: inline-flex;
+        flex-direction: row-reverse
+    } 
+    @media only screen and (min-width: 992px) {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20.3524px;
+        line-height: 31px;
     }
 }
+<<<<<<< HEAD
 
 .botoesContainer {
     font-family: Poppins;
+=======
+.botoesContainer{
+    font-family: 'Poppins';
+>>>>>>> Header
     font-size: 14px;
-    font-weight: bold;
     line-height: 21px;
     display: contents;
     list-style: none;
@@ -49,6 +92,7 @@
     padding: 0;
     column-gap: 30px;
 }
+<<<<<<< HEAD
 
 .espacamento {
     margin: 26px;
@@ -68,11 +112,40 @@ Button {
 
 #registre {
     padding: 10.5px;
+=======
+.bd-toc-item{
+    flex-direction: row-reverse;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px 0 10px;
+    }
+}
+.espacamento{
+    margin: 26px;
+}
+.links{
+    font-family: 'Poppins';
+    margin: 26px;
+    @media only screen and (min-width: 768px) {
+        margin: 10px;
+    }
+    @media only screen and (min-width: 992px) {
+        padding: 8px;
+    }
+}
+
+#registre{
+    padding:10.5px;
+>>>>>>> Header
     width: 145px;
     border: none;
     background-color: #3C3C3C;
     color: #FFFFFF;
     border-radius: 66px;
+    @media only screen and (min-width: 768px) {
+        margin-left: 21px;
+    }
 }
 
 #login {
@@ -81,8 +154,23 @@ Button {
     color: #000;
     border: 1px solid #000000;
     border-radius: 66px;
+    @media only screen and (min-width: 992px) {
+        margin-left: 16px;
+    }
 }
+<<<<<<< HEAD
 
 #basic-navbar-nav {
     margin-top: 10px;
 }
+=======
+#basic-navbar-nav{
+    margin-top: 40px;
+    @media only screen and (min-width: 992px) {
+        margin: 29px;
+    }
+}
+    // @media only screen and (min-width: 992px) {
+    //     padding: 10px;
+    // }
+>>>>>>> Header
