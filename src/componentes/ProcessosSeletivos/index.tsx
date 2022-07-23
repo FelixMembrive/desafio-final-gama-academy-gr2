@@ -11,7 +11,7 @@ export default function ProcessosSeletivos() {
                 <div className='process-text bg-transparent d-flex flex-column align-center'>
                     <h2 className="bg-transparent">Processos Seletivos</h2>
                     <p className="bg-transparent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo.</p>
-                    <LinkButton to='' text='Registre seu portfolio' className='btn btn-light bg-transparent'/>
+                    <LinkButton to='' text='Registre seu portfolio' className='btn-processos btn btn-light bg-transparent'/>
                 </div>
         </div>
     );
