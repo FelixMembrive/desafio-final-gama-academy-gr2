@@ -11,7 +11,7 @@ export default function PaginaAmir() {
             <div className="d-flex">
                 <div>
                     <div>
-                        <h2 className="tx1 fs-2 fw-bolder text-start mt-5 pt-5 mb-3">Frase de impacto sobre hello word <br></br> o principal diferencial da empresa</h2>
+                        <h2 className="tx1 fs-2 fw-bolder text-start mt-5 pt-5 mb-3">Frase de impacto sobre <br></br> o principal diferencial da empresa</h2>
                         <p className="tx2 fw-semibold text-start mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec vel<br></br> risus a nibh placerat volutpat eget vitae leo.</p>
                     </div>
                     <div className="mt-4">
