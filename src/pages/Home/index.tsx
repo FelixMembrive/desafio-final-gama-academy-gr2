@@ -6,6 +6,7 @@ import Header from "../../componentes/Header"
 import ConteudosExclusivos from "../../componentes/ConteudosExclusivos";
 import Depoimentos from "../../componentes/Depoimentos";
 import Footer from "../../componentes/Footer";
+import ProcessosSeletivos from '../../componentes/ProcessosSeletivos'
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Button>Botão BS TESTE</Button>
       <ModalBS />
       <Depoimentos />
+      <ProcessosSeletivos />
       <ConteudosExclusivos title="Conteúdos exclusivos" substitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. "/>
       <Footer />
     </>

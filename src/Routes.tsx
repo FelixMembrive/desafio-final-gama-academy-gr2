@@ -9,6 +9,7 @@ import Profissionais from './pages/Profissionais'
 import Perfil from './pages/Perfil'
 import PaginaFelix from "./pages/PaginaFelix";
 import PaginaMayume from "./pages/PaginaMayume";
+import PaginaAmir from "./pages/PaginaAmir";
 
 
 
@@ -19,6 +20,8 @@ export default function RoutesComponent() {
         <Route path="HomeDev" element={<HomeDev />} />
         <Route path="Felix" element={<PaginaFelix />} />
         <Route path="Mayume" element={<PaginaMayume />} />
+        <Route path="Amir" element={<PaginaAmir />} />
+
 
       {/* Aplicação */}
         <Route path="" element={<Home />} />

@@ -6,6 +6,12 @@ span {
     position: absolute;
     top: 30%;
     left: 42%;
+    height:42px;
+    width:42px;
+}
+
+.playIcon {
+    background-color: transparent;
 }
 
 .close {
@@ -67,5 +73,13 @@ iframe {
     iframe {
         width: 750px;
         min-height: 425px;
+    }
+}
+
+@media (min-width:1024px) {
+    .play {
+        background-color: transparent;
+        height:62px;
+        width:62px;
     }
 }
