@@ -8,29 +8,30 @@ import Button from "react-bootstrap/Button";
 
 export default function Header() {
   return (
-    <Navbar id="navStyle" bg="light" expand="lg">
+    <Navbar id="navStyle" expand="lg">
       <Container id="containerStyle">
         <Navbar.Brand id="navImg" href="#home">
-          <img src={Logo} className="d-inline-block align-top" alt="Logo" />
+          <img src={Logo} 
+          className="d-inline-block align-top" 
+          alt="Logo" 
+          width="60px"
+          height="60px"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" id="botaoToggle" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <div className="bd-toc-item">
-            <Nav.Link href="#home">Processos seletivos</Nav.Link>
-          </div>
-          <div className="bd-toc-item">
-            <Nav.Link href="#link">Cursos</Nav.Link>
-          </div>
-          <Nav.Link href="#link">Mentorias</Nav.Link>
-          <div className="bd-toc-item">
+          <div className="botaoStyle">
             <Button id="registre" href="#" size="lg">
               Registre-se
             </Button>
-          </div>
-          <div className="bd-toc-item">
             <Button id="login" href="#" variant="outline" size="lg">
               Login
             </Button>
+          </div>
+          <div className="bd-toc-item">
+            <Nav.Link href="#home" className="links">Processos seletivos</Nav.Link>
+            <Nav.Link href="#link" className="links">Cursos</Nav.Link>
+            <Nav.Link href="#link" className="links">Mentorias</Nav.Link>
           </div>
         </Navbar.Collapse>
       </Container>
