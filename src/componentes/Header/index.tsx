@@ -1,4 +1,4 @@
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/icons/Logo.png";
 import "./style.scss";
 
 import Container from "react-bootstrap/Container";

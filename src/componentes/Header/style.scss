@@ -36,7 +36,8 @@
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
-        margin: 0 10px 0 10px;
+        padding-right: 10px;
+        gap: 20px;
     }
     @media only screen and (min-width: 992px) {
         margin-right: 10px;
@@ -47,7 +48,6 @@
 }
 #basic-navbar-nav{
     text-align: center;
-    padding-bottom: 47px;
     z-index: 2;
     font-weight: 400;
     @media only screen and (min-width: 768px) {
@@ -77,7 +77,6 @@
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
-        margin: 0 10px 0 10px;
     }
 }
 .espacamento{
@@ -116,7 +115,11 @@
     }
 }
 #basic-navbar-nav{
-    margin-top: 40px;
+    margin: 34px;
+    @media only screen and (min-width: 768px) {
+        margin-left: 0px;
+        margin-right: 0;
+    }
     @media only screen and (min-width: 992px) {
         margin: 29px;
     }
