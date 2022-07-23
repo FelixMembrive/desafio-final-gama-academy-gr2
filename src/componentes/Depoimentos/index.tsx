@@ -58,9 +58,9 @@ export default function Depoimentos() {
     ]
   return (
     <div className="depo-section mb-8">
-        <h2 className="text-start ms-8 mb-3 mt-3 ms-lg-7">O que as pessoas dizem</h2>
-        <ScrollContainer className="ms-8 scroll-container d-grid">
-        <Row className="flex-nowrap row gap-3">
+        <h2 className="text-start ms-8 ms-lg-20 mb-xs-3 mb-lg-11 mt-xs-4 mt-lg-26">O que as pessoas dizem</h2>
+        <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
+        <Row className="flex-nowrap row gap-xs-3 gap-lg-16">
         {dados.map((cardInfo, index) => {
             return (
                 <CardVideo videoTitle="video placeholder" src={cardInfo.src} cardTitle={cardInfo.nome} cardSubtitle={`${cardInfo.profissao}, ${cardInfo.empresa}`} cardText={cardInfo.texto} key={index}/>

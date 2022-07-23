@@ -15,3 +15,10 @@
 .card-col {
     position: relative;
 }
+
+@media (min-width:1024px) {
+    .img {
+        width: 373px;
+        height: 496px;
+    }
+}
