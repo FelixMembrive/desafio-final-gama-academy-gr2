@@ -28,9 +28,6 @@ export default function Footer() {
                     <LinkText to="ajuda" text="Ajuda" />
                 </div>
 
-
-
-
                 {/* <LinkText to="contato" text="Contato " /> */}
 
             </div>

@@ -8,7 +8,7 @@ interface ILinkIconProps {
 
 export default function LinkIcon(props: ILinkIconProps) {
     return (
-        <LinkContainer className="justify-content-center" to={props.to}>
+        <LinkContainer to={props.to}>
             <a>
                 {props.children}
             </a>
