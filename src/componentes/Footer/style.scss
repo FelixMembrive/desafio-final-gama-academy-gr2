@@ -1,4 +1,5 @@
 .footer-flex {
+    font-family: 'Poppins';
     min-height: 300px;
     max-width: 1440px;
     margin: auto;
@@ -18,7 +19,6 @@
     }
 }
 
-// links de texto
 .links-footer-flex {
     display: flex;
     justify-content: center;
@@ -36,10 +36,12 @@
     align-items: center;
     a {
         text-decoration: none;
-        color: black;
         margin-bottom: 24px;
         margin-left: 40px;
         margin-right: 40px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #3B3B3B;
     }
     // responsividade
     @media only screen and (min-width: 1440px) {
@@ -53,6 +55,15 @@
 }
 
 // icones
+.footer-flex-right-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: 1440px) {
+        align-items: flex-end;
+    }
+}
+
 .icons-footer-flex {
     width: 80%;
     margin: auto;
@@ -64,11 +75,12 @@
         // flex-wrap: nowrap;
         flex-direction: row;
     }
-    @media only screen and (min-width: 768px) {
-        max-width: 40%;
-    }
+    // @media only screen and (min-width: 768px) {
+    //     max-width: 40%;
+    // }
     @media only screen and (min-width: 1440px) {
-        margin: 0 0 0 0;
+        margin: 0 -20px 0 0;
+        justify-content: flex-end;
     }
 }
 
@@ -84,4 +96,10 @@
     @media only screen and (min-width: 1440px) {
         margin-top: 0px;
     }
+}
+
+.link-termos {
+    font-weight: 400;
+    font-size: 12px;
+    color: #3B3B3B;
 }
