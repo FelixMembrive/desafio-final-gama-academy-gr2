@@ -8,11 +8,13 @@ import Depoimentos from "../../componentes/Depoimentos";
 import Footer from "../../componentes/Footer";
 import ProcessosSeletivos from "../../componentes/ProcessosSeletivos";
 import ExplicacaoFeatures from "../../componentes/ExplicacaoFeatures";
+import Hero from "../../componentes/Hero";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Hero />
       <Depoimentos />
       <ExplicacaoFeatures />
       <ProcessosSeletivos />

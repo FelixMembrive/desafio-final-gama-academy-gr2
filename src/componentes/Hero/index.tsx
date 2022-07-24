@@ -12,7 +12,6 @@ export default function Hero() {
     return (
 
         <Container fluid="sm">
-            <div className="fundo">
                 <Row className="d-flex flex-column-reverse flex-md-row">
                     <Col sm={6}> 
                         <div >
@@ -49,7 +48,6 @@ export default function Hero() {
                         </div>
                     </Col>
                 </Row>
-            </div>
         </Container>
 
          );
