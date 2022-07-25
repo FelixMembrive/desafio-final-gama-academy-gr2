@@ -1,3 +1,4 @@
+import LinkButton from '../LinkButton';
 import './style.scss';
 import Imagem from '../../assets/imagens/placeholder_triangulos.svg';
 
