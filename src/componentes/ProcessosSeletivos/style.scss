@@ -1,6 +1,39 @@
 .btn-processos {
     border:4px solid #2D2D2D !important;
     color: #2D2D2D !important;
-    width: 288px;
-    margin: auto;
+    font-size: 16px !important;
+    @media (min-width:350px){
+        width: 288px;
+    }
+    @media (min-width:500px){
+        font-size: 24px !important;
+        width: 372px;
+    }
+}
+
+.texto-processos {
+    max-width: 559px;
+}
+
+h2 {
+    font-size: 24px !important;
+    @media (min-width:400px){
+        font-size: 32px !important;
+    }
+}
+
+p {
+    font-size: 16px !important;
+    @media (min-width:400px){
+        font-size: 20px !important;
+    }
+}
+
+img {
+    @media (min-width:1200px){
+        min-width: 400px !important;
+    }
+    @media (min-width:1400px){
+        min-width: 500px !important;
+    }
 }
