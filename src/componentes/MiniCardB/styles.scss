@@ -1,8 +1,22 @@
 .card-cursos-publicacoes {
+    display: flex;
+    align-items: center;
+    margin: 0.75rem auto;
+    max-width: 415px;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: column;
+        max-width: 19rem;
+    }
+
     img {
         width: 120px;
         height: 120px;
         margin-right: 15px;
+
+        @media only screen and (min-width: 768px) {
+            width: auto;
+        }
     }
 
     h5 {
@@ -13,11 +27,14 @@
     p {
         font-size: 16px;
         font-weight: 400;
+
+        @media only screen and (min-width: 768px) {
+            font-weight: 600;
+            margin-top: 30px;
+        }
+
     }
 
-    @media only screen and (min-width: 768px) {
-        
-    }
 
 }
 

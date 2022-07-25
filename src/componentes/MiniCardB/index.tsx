@@ -12,11 +12,11 @@ interface IMiniCardB {
 export default function MiniCardB(props: IMiniCardB) {
   return (
     <Col>
-      <div className="card-cursos-publicacoes d-flex align-items-center my-3">
+      <div className="card-cursos-publicacoes">
           <LinkContainer to={props.to}>
           <img src={props.imgsrc}/>
           </LinkContainer>
-        <div>
+        <div className="mt-3">
           <h5>{props.title}</h5>
           <p>{props.text}</p>
         </div>
