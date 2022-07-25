@@ -13,19 +13,16 @@
 
 .texto-processos {
     max-width: 559px;
-}
-
-h2 {
-    font-size: 24px !important;
-    @media (min-width:400px){
-        font-size: 32px !important;
-    }
-}
-
-p {
     font-size: 16px !important;
     @media (min-width:400px){
         font-size: 20px !important;
+    }
+}
+
+.h2-processos {
+    font-size: 24px !important;
+    @media (min-width:400px){
+        font-size: 32px !important;
     }
 }
 
