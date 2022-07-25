@@ -1,0 +1,67 @@
+.containerMentoria img{
+    position: absolute;
+    width: 288.19px;
+    height: 219.83px;
+    left: 55px;
+    top: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.4;
+    align-items: center;
+    background-attachment:fixed;
+}
+.containerMentoria{
+    width: 100%;
+    padding: 41px 16px 54px 16px;
+    @media only screen and (min-width: 992px) {
+        padding-top: 132px;
+        padding-bottom: 132px;
+        align-items: center;
+    }
+}
+
+.mentoria{
+    position: absolute;
+    align-items: center;
+
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    align-content: center;
+}
+#botao{
+    align-items: center;
+    padding: 16px 60px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 300px;
+    height: 56px;
+    left: 43px;
+    top: 249px;
+    
+    background: #3C3C3C;
+    border-radius: 66px;
+}
+.textoMentoria{
+    position: relative;
+    text-align: center;
+    padding: 16px;
+    width: 326px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    @media only screen and (min-width: 992px) {
+        display: grid;
+        justify-content: center;
+        h2{
+            width: 610px;
+        }
+        p{
+            width: 559px;
+        }
+    }
+}
