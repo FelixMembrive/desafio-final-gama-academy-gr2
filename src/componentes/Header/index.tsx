@@ -14,8 +14,6 @@ export default function Header() {
           <img src={Logo} 
           className="d-inline-block align-top" 
           alt="Logo" 
-          width="60px"
-          height="60px"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" id="botaoToggle" />
