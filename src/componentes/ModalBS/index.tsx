@@ -10,7 +10,7 @@ export default function ModalBS() {
 
     return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="m-1" variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
 
