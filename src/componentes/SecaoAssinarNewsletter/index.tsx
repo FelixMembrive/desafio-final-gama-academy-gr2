@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import LinkButton from '../LinkButton';
-import './style.scss';
 import ImagemTriangulos from '../../assets/imagens/placeholder_triangulos.svg';
 import SelectBox from '../SelectBox';
+import './style.scss';
 
 export default function SecaoAssinarNewsletter() {
 
@@ -11,10 +11,10 @@ export default function SecaoAssinarNewsletter() {
             <div className="title">
                 <h3>Assine nossa newsletter</h3>
             </div>
-            <div className="fields">
-                <input placeholder="Digite seu e-mail" type="text" />
+            <div className="conteudo-assinar-newsletter">
+                <input placeholder="Digite seu e-mail" type="text" className="item-assinar-newsletter"/>
                 <SelectBox
-                    className=""
+                    className="item-assinar-newsletter"
                     placeholder="Sua área"
                     // inputId="sua-area-select"
                     optionValues={[1, 2, 3, 4, 5, 6, 7]}
@@ -28,7 +28,7 @@ export default function SecaoAssinarNewsletter() {
                         "Psicologia",
                     ]}
                 />
-                <LinkButton to={''} text={'Inscreva-se'} />
+                <LinkButton to={''} text={'Inscreva-se'} className="item-assinar-newsletter"/>
             </div>
         </section>
     );

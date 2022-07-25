@@ -1,7 +1,6 @@
 interface ISelectBoxProps {
   className?: string;
   labelText?: string;
-  selectClassName?: string;
   placeholder?: string;
   optionValues: string[] | number[];
   optionTexts: string[];
@@ -13,7 +12,7 @@ interface ISelectBoxProps {
 export default function SelectBox(props: ISelectBoxProps) {
   return (
       <select
-        className={" " + props.selectClassName}
+        className={"" + props.className}
         // id={props.inputId}
         placeholder={props.placeholder}
         required={props.required}

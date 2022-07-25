@@ -1,13 +1,24 @@
 .assinar-newsletter {
     display: flex;
+    margin-left: 13%;
+    margin-right: 13%;
     flex-direction: column;
     color: blue;
+    a {
+        max-width: 150px;
+        margin-inline: auto;
+    }
 }
 
-.fields {
+.conteudo-assinar-newsletter {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
     @media only screen and (min-width: 768px) {
         flex-direction: row;
     }
+}
+
+.item-assinar-newsletter {
+    margin-top: 10px;
 }
