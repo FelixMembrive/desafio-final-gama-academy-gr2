@@ -13,6 +13,7 @@ export default function HomeDev() {
         <LinkButton to="/areacandidata" text="Área da Candidata" variant="info" className="m-1" />
         <LinkButton to="/pesquisa" text="Peqsuisa de Vagas" variant="danger" className="m-1" />
         <ModalBS />
+        <LinkButton to="/listamentoras" text="Lista de Mentoras" variant="danger" className="m-1" />
       </div>
 
     </>

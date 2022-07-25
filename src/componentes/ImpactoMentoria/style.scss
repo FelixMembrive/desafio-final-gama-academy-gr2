@@ -8,6 +8,9 @@
     opacity: 0.4;
     align-items: center;
     background-attachment:fixed;
+    @media only screen and (min-width: 992px) {
+        height: 840px;
+    }
 }
 .containerMentoria{
     width: 100%;
