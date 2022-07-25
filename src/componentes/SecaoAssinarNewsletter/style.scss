@@ -3,10 +3,14 @@
     margin-left: 13%;
     margin-right: 13%;
     flex-direction: column;
-    color: blue;
-    a {
-        max-width: 150px;
-        margin-inline: auto;
+    @media only screen and (min-width: 768px) {
+        max-width: 1296px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    @media only screen and (min-width: 1440px) {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -14,11 +18,50 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
     @media only screen and (min-width: 768px) {
         flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 .item-assinar-newsletter {
+    box-sizing: border-box;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    height: 48px;
     margin-top: 10px;
+}
+
+.button-assinar-newsletter {
+    @media only screen and (min-width: 768px) {
+        width: 21%;
+    }
+}
+
+.select-assinar-newsletter {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 95% center;
+    @media only screen and (min-width: 768px) {
+        width: 32%;
+    }
+}
+
+.input-assinar-newsletter {
+    @media only screen and (min-width: 768px) {
+        width: 40%;
+    }
+}
+
+.selectpicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    // background: transparent url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 100% center;
 }
