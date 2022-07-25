@@ -8,6 +8,7 @@ import Depoimentos from "../../componentes/Depoimentos";
 import Footer from "../../componentes/Footer";
 import ProcessosSeletivos from "../../componentes/ProcessosSeletivos";
 import ExplicacaoFeatures from "../../componentes/ExplicacaoFeatures";
+import ImpactoMentoria from "../../componentes/ImpactoMentoria";
 import Hero from "../../componentes/Hero";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Depoimentos />
       <ExplicacaoFeatures />
+      <ImpactoMentoria />
       <ProcessosSeletivos />
       <ConteudosExclusivos
         title="Conteúdos exclusivos"

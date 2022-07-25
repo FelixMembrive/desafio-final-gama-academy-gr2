@@ -3,18 +3,19 @@ import LinkButton from '../LinkButton';
 import ImagemTriangulos from '../../assets/imagens/placeholder_triangulos.svg';
 import SelectBox from '../SelectBox';
 import './style.scss';
+import { Title } from '../FeatureCard/styles';
 
 export default function SecaoAssinarNewsletter() {
 
     return (
         <section className="assinar-newsletter">
-            <div className="title">
-                <h3>Assine nossa newsletter</h3>
-            </div>
+
+            <Title>Assine nossa newsletter</Title>
+
             <div className="conteudo-assinar-newsletter">
-                <input placeholder="Digite seu e-mail" type="text" className="item-assinar-newsletter"/>
+                <input placeholder="Digite seu e-mail" type="text" className="item-assinar-newsletter input-assinar-newsletter" />
                 <SelectBox
-                    className="item-assinar-newsletter"
+                    className="item-assinar-newsletter select-assinar-newsletter"
                     placeholder="Sua área"
                     // inputId="sua-area-select"
                     optionValues={[1, 2, 3, 4, 5, 6, 7]}
@@ -28,7 +29,8 @@ export default function SecaoAssinarNewsletter() {
                         "Psicologia",
                     ]}
                 />
-                <LinkButton to={''} text={'Inscreva-se'} className="item-assinar-newsletter"/>
+                <LinkButton to={''} text={'Inscreva-se'} className="item-assinar-newsletter button-assinar-newsletter" />
+
             </div>
         </section>
     );
