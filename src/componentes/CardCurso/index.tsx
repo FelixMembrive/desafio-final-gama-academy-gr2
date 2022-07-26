@@ -29,11 +29,14 @@ export default function CardCurso() {
       <div className="cards">
         {cursos.slice(0, 3).map((curso, index) => {
           return (
+
             <Card style={{ width: '18rem' }}>
+              <div className="card-curso">
               <Card.Body>
                 <Card.Title>{curso.nome}</Card.Title>
                 <Card.Text>{curso.descricao}</Card.Text>
               </Card.Body>
+              </div>
             </Card>
           );
         })}
