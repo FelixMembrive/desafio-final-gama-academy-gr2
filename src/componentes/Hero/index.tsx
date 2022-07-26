@@ -32,17 +32,17 @@ export default function Hero() {
 
                 <Row>
                     <Col>
-                        <p className="fw-bolder mt-5 mt-md-3 pt-3 pt-md-0 me-5 pe-5 ps text-center ">Empresas parceiras</p>
+                        <p className="fw-bolder mt-5 mt-md-3 pt-3 pt-md-0 me-0 pe-5 ps text-center ">Empresas parceiras</p>
                     </Col>
                 </Row>
 
                 <Row>
                     <Col className="text-center">
-                       <div className="">
-                            <img className="me-4 mt-0 mt-md-4" src={Emplog} width={140}/>
-                            <img className="me-4 mt-0 mt-md-4" src={Emplog} width={140}/>
-                            <img className="me-4 mt-4" src={Emplog} width={140}/>
-                            <img className="me-4 mt-4" src={Emplog} width={140}/>
+                       <div className=" ">
+                            <img className="me-4 mt-0 mt-md-4 mb-0 mb-md-5" src={Emplog} width={140}/>
+                            <img className="me-4 mt-0 mt-md-4 mb-0 mb-md-5" src={Emplog} width={140}/>
+                            <img className="me-4 pt-4 mb-4 mb-md-4 mb-md-5" src={Emplog} width={140}/>
+                            <img className="me-4 mt-4 mb-4 mb-md-5" src={Emplog} width={140}/>
                             
                            
                         </div>

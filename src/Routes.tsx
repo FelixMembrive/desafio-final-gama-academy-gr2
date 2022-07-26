@@ -4,7 +4,7 @@ import Home from "./pages/Home"
 import AreaCandidata from "./pages/AreaCandidata";
 import Pesquisa from "./pages/Pesquisa";
 import Amir_AreaCandidata from "./pages/Amir_AreaCandidata";
-
+import ListaMentoras from "./pages/ListaMentoras";
 
 
 export default function RoutesComponent() {
@@ -15,6 +15,7 @@ export default function RoutesComponent() {
         <Route path="/pesquisa" element={<Pesquisa />} />
         <Route path="/areacandidata" element={<AreaCandidata />} />
         <Route path="/amir_areacandidata" element={<Amir_AreaCandidata />} />
+        <Route path="/listamentoras" element={<ListaMentoras />} />
       </Routes>
   );
 }
