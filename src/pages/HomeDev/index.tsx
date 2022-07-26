@@ -11,7 +11,7 @@ export default function HomeDev() {
       <div className="m-3 bg-secondary">
         <LinkButton to="/home" text="Home" variant="primary" className="m-1" />
         <LinkButton to="/areacandidata" text="Área da Candidata" variant="info" className="m-1" />
-        <LinkButton to="/pesquisa" text="Peqsuisa de Vagas" variant="danger" className="m-1" />
+        <LinkButton to="/buscarvagas" text="Buscar Vagas" variant="danger" className="m-1" />
         <LinkButton to="/candidaturas-salvas" text="Candidaturas Salvas" variant="success" className="m-1" />
         <LinkButton to="/candidaturas-finalizadas" text="Candidaturas Finalizadas" variant="warning" className="m-1" />
         <LinkButton to="/candidaturas-andamento" text="Candidaturas em Andamento" variant="dark" className="m-1" />

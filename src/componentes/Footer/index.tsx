@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons/svgIcons";
+import { BackArrow, Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons/SVGicons";
 import LinkIcon from "../LinkIcons";
 import LinkText from "../LinkText";
 import MarcaRegistrada from "../MarcaRegistrada";

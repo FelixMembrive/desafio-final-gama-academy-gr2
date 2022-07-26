@@ -2,8 +2,10 @@
     display: flex;
     margin-left: 13%;
     margin-right: 13%;
+    margin-bottom: 31px;
     flex-direction: column;
     @media only screen and (min-width: 768px) {
+        margin-bottom: 100px;
         max-width: 1296px;
         margin-left: 5%;
         margin-right: 5%;
@@ -27,6 +29,10 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    div {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
 
 .item-assinar-newsletter {
@@ -44,10 +50,7 @@
 }
 
 .select-assinar-newsletter {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: transparent url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 95% center;
+    // appearance: none;
     @media only screen and (min-width: 768px) {
         width: 32%;
     }
@@ -57,11 +60,4 @@
     @media only screen and (min-width: 768px) {
         width: 40%;
     }
-}
-
-.selectpicker {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    // background: transparent url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 100% center;
 }

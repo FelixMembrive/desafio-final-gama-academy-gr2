@@ -34,22 +34,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    a {
-        text-decoration: none;
+    div {
         margin-bottom: 24px;
         margin-left: 40px;
         margin-right: 40px;
-        font-weight: 400;
-        font-size: 16px;
-        color: #3B3B3B;
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            color: #3B3B3B;
+        }
     }
     // responsividade
     @media only screen and (min-width: 1440px) {
-        a {
-            margin-top: 17px;
-            margin-bottom: 17px;
-            margin-left: 0px;
-            margin-right: 80px;
+        div {
+            a {
+                margin-top: 17px;
+                margin-bottom: 17px;
+                margin-left: -40px;
+                margin-right: 60px;
+            }
         }
     }
 }
