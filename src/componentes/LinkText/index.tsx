@@ -12,14 +12,11 @@ interface ILinkTextProps {
 
 export default function LinkText(props: ILinkTextProps) {
     return (
-        <>
-
             <LinkContainer to={props.to}>
-                <div>
-                    {props.backArrow && <BackArrow/>}
-                    <a className={"" + props.className}>{props.text}</a>
-                </div>
+                    <a className={"" + props.className}>
+                        {props.backArrow && <BackArrow />}
+                        {props.text}
+                    </a>
             </LinkContainer>
-        </>
     );
 }
