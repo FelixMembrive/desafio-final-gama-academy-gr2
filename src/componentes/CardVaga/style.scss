@@ -1,7 +1,6 @@
 @import '../../App.scss';
 
 .card-vagas {
-    background-color: #efefef !important;
     min-width:320px !important;
     @media (min-width:360px){
         min-width:338px!important;
@@ -14,6 +13,9 @@
     }
     @media (min-width:1400px){
         min-width:906px!important;
+    }
+    .card-body {
+        background-color: transparent;
     }
 }
 
