@@ -1,0 +1,36 @@
+.titulo-vagas-candidata {
+    font-size: 16px;
+    font-weight: 600;
+    @media (min-width:1024px){
+        font-size: 18.5348px !important;
+    }
+}
+
+.card-vagas {
+    background-color: #efefef !important;
+    width:273px !important;
+    @media (min-width:1024px){
+        width:372px!important;
+    }
+}
+
+.img-vagas-candidata {
+    min-width:40px !important;
+    @media (min-width:1024px){
+        min-width:54px !important;
+    }
+}
+
+.card-vagas-text{
+    p{
+        font-size: 13.5683px;
+        font-weight: 600;
+        @media (min-width:1024px){
+            font-size: 18.5348px !important;
+        }
+    }
+}
+
+.icone-salvo {
+    width: 50px;
+}
