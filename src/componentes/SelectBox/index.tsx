@@ -1,3 +1,6 @@
+import { SelectArrow } from "../../assets/icons/SVGicons";
+import './style.scss';
+
 interface ISelectBoxProps {
   className?: string;
   labelText?: string;
@@ -19,7 +22,6 @@ export default function SelectBox(props: ISelectBoxProps) {
         onChange={props.onChange}
         disabled={props.disabled}
       >
-
         {props.placeholder ?
           <option value="" disabled selected>{props.placeholder}</option> :
           null
