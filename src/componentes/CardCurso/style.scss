@@ -1,0 +1,28 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto 100px;
+    
+    @media (min-width:992px) {
+        flex-direction: row;
+    }
+}
+
+.card-body {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 13.31px;
+}
+
+.card-text {
+    font-weight: 400;
+    font-size: 13.31px;
+}

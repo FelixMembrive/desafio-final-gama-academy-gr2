@@ -8,6 +8,7 @@ import MinhasCandidaturasAndamento from "./pages/MinhasCandidaturasAndamento";
 import MinhasCandidaturasSalvas from "./pages/MinhasCandidaturasSalvas";
 import MinhasCandidaturasFinalizadas from "./pages/MinhasCandidaturasFinalizadas";
 import BuscarVagas from "./pages/BuscarVagas";
+import Mentora from "./pages/Mentora";
 
 
 export default function RoutesComponent() {
@@ -22,6 +23,7 @@ export default function RoutesComponent() {
         <Route path="/candidaturas-andamento" element={<MinhasCandidaturasAndamento/>} />
         <Route path="/candidaturas-finalizadas" element={<MinhasCandidaturasFinalizadas/>} />
         <Route path="/listamentoras" element={<ListaMentoras />} />
+        <Route path="/mentora" element={<Mentora />} />
       </Routes>
   );
 }
