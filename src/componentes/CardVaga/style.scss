@@ -1,20 +1,23 @@
-.titulo-vagas-candidata {
-    font-size: 16px;
-    font-weight: 600;
-    @media (min-width:1024px){
-        font-size: 18.5348px !important;
-    }
-}
+@import '../../App.scss';
 
 .card-vagas {
     background-color: #efefef !important;
-    width:273px !important;
+    min-width:320px !important;
+    @media (min-width:360px){
+        min-width:338px!important;
+    }
+    @media (min-width:700px){
+        min-width:450px!important;
+    }
     @media (min-width:1024px){
-        width:372px!important;
+        min-width:600px!important;
+    }
+    @media (min-width:1400px){
+        min-width:906px!important;
     }
 }
 
-.img-vagas-candidata {
+.img-card-vagas {
     min-width:40px !important;
     @media (min-width:1024px){
         min-width:54px !important;
@@ -23,14 +26,25 @@
 
 .card-vagas-text{
     p{
-        font-size: 13.5683px;
+        font-size: 14px;
         font-weight: 600;
-        @media (min-width:1024px){
-            font-size: 18.5348px !important;
+        @media (min-width: 750px){
+            font-size: 20.35px !important;
         }
     }
 }
 
-.icone-salvo {
-    width: 50px;
+.icone-vagas-salvar {
+    width: max-content;
+    height: max-content;
+    justify-self: end;
+    svg {
+        width: max-content;
+        height: max-content;
+    }
+    span {
+        width: 32px;
+        height: 32px;
+    }
+   
 }
