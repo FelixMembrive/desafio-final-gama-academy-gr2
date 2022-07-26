@@ -1,32 +1,52 @@
 .titulo-mentoria-candidata {
-    font-size: 16px;
+    font-size: 14.46px;
     font-weight: 600;
-    @media (min-width:1024px){
-        font-size: 18.5348px !important;
+
+    @media (min-width:1024px) {
+        font-size: 20.35px !important;
     }
 }
 
 .card-mentoria {
     background-color: #efefef !important;
-    width:273px !important;
-    @media (min-width:1024px){
-        width:372px!important;
+    width: 152px !important;
+    height: 244.5px !important;
+
+    @media (min-width:1024px) {
+        width: 259px !important;
+        height: 415px !important;
     }
 }
 
 .img-mentoria-candidata {
-    min-width:40px !important;
-    @media (min-width:1024px){
-        min-width:54px !important;
+    width: 46px !important;
+
+    @media (min-width:1024px) {
+        width: 78px !important;
     }
 }
 
-.card-mentoria-text{
-    p{
-        font-size: 13.5683px;
-        font-weight: 600;
-        @media (min-width:1024px){
-            font-size: 18.5348px !important;
+.card-mentoria-text {
+    p {
+        font-size: 12.54px;
+
+        @media (min-width:1024px) {
+            font-size: 21.29px !important;
+        }
+    }
+}
+
+.card-mentoria-body {
+    .btn {
+        font-size: 12.54px;
+        font-weight: 400;
+        width: 101px;
+        height: 32.5px;
+
+        @media (min-width:1024px) {
+            font-size: 21.29px !important;
+            width: 172px;
+            height: 55px;
         }
     }
 }

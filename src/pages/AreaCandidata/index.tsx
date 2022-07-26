@@ -11,8 +11,8 @@ export default function AreaCandidata() {
         <Header />
         <VagasRecomendadas />
         <CursosPublicacoes title="Cursos que irão te capacitar ainda mais" />
-        <CursosPublicacoes title="Publicações no blog que podem ajudar" />
         <MentoriaCandidata />
+        <CursosPublicacoes title="Publicações no blog que podem ajudar" />
         <SecaoAssinarNewsletter />
         <Footer />
       </>
