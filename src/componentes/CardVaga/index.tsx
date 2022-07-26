@@ -13,6 +13,7 @@ interface ICardVagasProps {
     local_empresa: string,
     salvo: Boolean | null,
     img?: string,
+    className?: string,
 }
 
 export default function CardVaga(props: ICardVagasProps) {
@@ -33,28 +34,30 @@ export default function CardVaga(props: ICardVagasProps) {
                     color={'#00000'}
                     height="100%"
                     width="100%"
-                />;
+                />
             </div>;
         } else {
             icon = <div className="icone-vagas-salvar m-0 p-0 d-flex">
                 <BookmarkOutline
-                    onClick={handleNaoSalvar}
+                    onClick={handleSalvar}
                     color={'#00000'}
                     height="100%"
                     width="100%"
-                />;
+                />
             </div>;
         }
     }
 
     return (
-        <Card className="card-vagas border-0 p-xs-4 p-lg-7">
-            <Card.Body className="card-vagas-body d-flex m-0 p-0">
-                <img src={props.img ? props.img : logo} alt={`logo da empresa ${props.nome_empresa}`} className="img-vagas-candidata me-8 me-10 img-fluid" />
-                <div className="card-vagas-text">
-                    <p className="m-0">{props.nome_vaga}</p>
-                    <p className="m-0">{props.nome_empresa}</p>
-                    <p className="m-0">{props.local_empresa}</p>
+        <Card className={`card-vagas border-0 p-xs-5 p-lg-7 ${props.className}`}>
+            <Card.Body className="card-vagas-body d-flex justify-content-between align-items-center m-0 p-0">
+                <div className='d-flex justify-content-start '>
+                    <img src={props.img ? props.img : logo} alt={`logo da empresa ${props.nome_empresa}`} className="img-card-vagas me-8 me-10 img-fluid" />
+                    <div className="card-vagas-text">
+                        <p className="m-0">{props.nome_vaga}</p>
+                        <p className="m-0">{props.nome_empresa}</p>
+                        <p className="m-0">{props.local_empresa}</p>
+                    </div>
                 </div>
                 {icon}
             </Card.Body>
