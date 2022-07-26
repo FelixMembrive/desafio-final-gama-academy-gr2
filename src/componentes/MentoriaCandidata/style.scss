@@ -1,0 +1,32 @@
+.titulo-mentoria-candidata {
+    font-size: 16px;
+    font-weight: 600;
+    @media (min-width:1024px){
+        font-size: 18.5348px !important;
+    }
+}
+
+.card-mentoria {
+    background-color: #efefef !important;
+    width:273px !important;
+    @media (min-width:1024px){
+        width:372px!important;
+    }
+}
+
+.img-mentoria-candidata {
+    min-width:40px !important;
+    @media (min-width:1024px){
+        min-width:54px !important;
+    }
+}
+
+.card-mentoria-text{
+    p{
+        font-size: 13.5683px;
+        font-weight: 600;
+        @media (min-width:1024px){
+            font-size: 18.5348px !important;
+        }
+    }
+}

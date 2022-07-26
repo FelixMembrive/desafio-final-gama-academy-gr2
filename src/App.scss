@@ -2,6 +2,107 @@
   font-family: 'Poppins', sans-serif;
 }
 
+//primary
+$primary: #601C4F; //main
+$primary-custom: #601C4F; //main
+$primary-darker: #3F1234;
+$primary-lighter: #9E2E82;
+$primary-subtle:#F1D0E9;
+//secondary
+$secondary: #FAA916;
+$secondary-custom: #FAA916;
+$secondary-darker: #B47604;
+$secondary-lighter: #FCC55F;
+$secondary-subtle:#FDE2AF;
+//success
+$success: #06C270;
+$success-custom:  #06C270;
+$success-darker:  #05A660;
+$success-lighter:  #39D98A;
+$success-subtle:  #57EBA1;
+//info
+$info: #176087;
+$info-custom: #176087;
+$info-darker: #004FC4;
+$info-lighter: #5B8DEF;
+$info-subtle: #9DBFF9;
+//warning
+$warning: #F9C846;
+$warning-custom: #F9C846;
+$warning-darker: #E6B800;
+$warning-lighter: #FDDD48;
+$warning-subtle: #FDED72;
+//danger
+$danger: #F03A47;
+$danger-custom: #F03A47;
+$danger-darker: #E63535;
+$danger-lighter: #FF5C5C;
+$danger-subtle: #FF8080;
+
+$light: #DDE5E9;
+$light-1: #DDE5E9;
+$light-2: #EBEBF0;
+$light-3: #F2F2F5;
+$light-4: #FAFAFC;
+
+$dark: #3A3A3C;
+$dark-1: #3A3A3C;
+$dark-2: #6B7588;
+$dark-3: #8F90A6;
+$dark-4: #C7C9D9;
+
+// ******************************  Temas ***********************************
+$theme-colors: (
+  "primary":   $primary,
+  "primary-custom": $primary-custom,
+  "primary-darker": $primary-darker,
+  "primary-lighter": $primary-lighter,
+  "primary-subtle": $primary-subtle,
+
+  "secondary":  $secondary,
+  "secondary-custom":  $secondary-custom,
+  "secondary-darker": $secondary-darker,
+  "secondary-lighter": $secondary-lighter,
+  "secondary-subtle": $secondary-subtle,
+
+  "success":    $success,
+  "success-custom":    $success-custom,
+  "success-darker":    $success-darker,
+  "success-lighter":    $success-lighter,
+  "success-subtle":    $success-subtle,
+
+  "info":       $info,
+  "info-custom":       $info-custom,
+  "info-darker":       $info-darker,
+  "info-lighter":       $info-lighter,
+  "info-subtle":       $info-subtle,
+
+  "warning":    $warning,
+  "warning-custom":    $warning-custom,
+  "warning-darker":    $warning-darker,
+  "warning-lighter":    $warning-lighter,
+  "warning-subtle":    $warning-subtle,
+
+  "danger":     $danger,
+  "danger-custom":     $danger-custom,
+  "danger-darker":     $danger-darker,
+  "danger-lighter":     $danger-lighter,
+  "danger-subtle":     $danger-subtle,
+
+  "light":      $light,
+  "light-1":      $light-1,
+  "light-2":      $light-2,
+  "light-3":      $light-3,
+  "light-4":      $light-4,
+
+  "dark":       $dark,
+  "dark-1":       $dark-1,
+  "dark-2":       $dark-2,
+  "dark-3":       $dark-3,
+  "dark-4":       $dark-4,
+
+);
+
 $grid-breakpoints: (xxs:0,
   xs: 320px,
   sm: 576px,
@@ -77,4 +178,11 @@ $spacers: (
 );
 
 
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap-utilities';
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/utilities/_api.scss";
