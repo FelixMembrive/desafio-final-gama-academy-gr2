@@ -27,7 +27,7 @@ export default function Header() {
             </Button>
           </div>
           <div className="bd-toc-item">
-            <Nav.Link href="#home" className="links">Processos seletivos</Nav.Link>
+            <Nav.Link href="#home" className="links">Vagas</Nav.Link>
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
             <Nav.Link href="#link" className="links">Mentorias</Nav.Link>
           </div>
