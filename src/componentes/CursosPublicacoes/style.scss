@@ -1,9 +1,12 @@
 .section-content {
-    background-color: #FFF;
-
     h1 {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 600;
-        padding-left: 4.5rem;
+        @media (min-width:1024px){
+            font-size: 20px;
+        }
+        @media (max-width:375px){
+            font-size: 14px;
+        }
     }
 }

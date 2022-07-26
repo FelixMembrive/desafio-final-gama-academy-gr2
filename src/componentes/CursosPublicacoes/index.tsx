@@ -10,7 +10,7 @@ interface ICursosPublicacoes {
 export default function CursosPublicacoes(props:ICursosPublicacoes) {
   return (
     <Container fluid className="section-content">
-    <h1>{props.title}</h1>
+    <h1 className="ms-md-3 ms-lg-2 ms-xl-5">{props.title}</h1>
     <Row>
         <MiniCardB to="/" imgsrc={MiniCardBImage} title="Lorem ipsum dolor" text="texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto" />
         <MiniCardB to="/" imgsrc={MiniCardBImage} title="Lorem ipsum dolor" text="texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto" />
