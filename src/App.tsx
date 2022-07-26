@@ -1,7 +1,9 @@
 import React from 'react';
 import RoutesComponent from './Routes';
-import './App.scss';
 import ThemeProvider from 'react-bootstrap/ThemeProvider';
+//deixar os imports do bootstrap e scss sempre por último:
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.scss';
 
 export default function App() {
   return (

@@ -1,3 +1,4 @@
+import MentoriaCandidata from "../../componentes/MentoriaCandidata";
 import SecaoAssinarNewsletter from "../../componentes/SecaoAssinarNewsletter";
 import VagasRecomendadas from "../../componentes/VagasRecomendadas";
 
@@ -6,6 +7,7 @@ export default function AreaCandidata() {
       <>
         <h1>PERFIL</h1>
         <VagasRecomendadas />
+        <MentoriaCandidata />
         <SecaoAssinarNewsletter />
       </>
     );
