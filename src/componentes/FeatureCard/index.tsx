@@ -10,8 +10,9 @@ interface Props {
 const FeatureCard = (props: Props) => {
   return (
     <Wrapper>
-      <VideoModal src={props.link} />
-      <Placeholder />
+      <Placeholder>
+        <VideoModal src={props.link} />
+      </Placeholder>
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
     </Wrapper>

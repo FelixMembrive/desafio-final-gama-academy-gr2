@@ -29,7 +29,7 @@ const ExplicacaoFeatures = () => {
     <Wrapper>
       <Title>Explicação das features da plataforma</Title>
       <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
-        <Row className="flex-nowrap row gap-xs-3 gap-lg-16">
+        <Row className="flex-nowrap row gap-xs-4 gap-lg-16">
           {dados.map((item) => {
             return <FeatureCard title={item.title} description={item.description} link={item.link} />;
           })}
