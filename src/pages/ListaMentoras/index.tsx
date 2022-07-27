@@ -43,7 +43,7 @@ export default function ListaMentoras() {
       descricao_mentora: "Jornalista por formação, Product Designer na..."
     },
 
-  ]
+  ];
   return (
     <>
       <Header />
