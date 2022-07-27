@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-.card-vagas {
+.acordion-vagas {
     min-width:320px !important;
     @media (min-width:360px){
         min-width:338px!important;
@@ -14,19 +14,31 @@
     @media (min-width:1400px){
         min-width:906px!important;
     }
-    .card-body {
-        background-color: transparent;
+    .accordion-button {
+        background-color: $primary !important; //cor da parte de dentro
+
+        &:focus { //tiar sombra no foco
+            box-shadow: none;
+            border: none;
+        }
+        &:not(.collapsed) { //cor da letra ao abrir
+            color: dodgerblue;
+        }
     }
 }
 
-.img-card-vagas {
+.acordion-vagas-body { //cor da parte de dentro
+    background-color: $secondary;
+}
+
+.img-acordion-vagas {
     min-width:40px !important;
     @media (min-width:1024px){
         min-width:54px !important;
     }
 }
 
-.card-vagas-text{
+.acordion-vagas-text{
     p{
         font-size: 14px;
         font-weight: 600;
@@ -34,19 +46,4 @@
             font-size: 20.35px !important;
         }
     }
-}
-
-.icone-vagas-salvar {
-    width: max-content;
-    height: max-content;
-    justify-self: end;
-    svg {
-        width: max-content;
-        height: max-content;
-    }
-    span {
-        width: 32px;
-        height: 32px;
-    }
-   
 }
