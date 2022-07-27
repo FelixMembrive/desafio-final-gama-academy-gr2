@@ -1,0 +1,64 @@
+//primary
+$primary-custom: #601C4F; //main
+$primary-darker: #3F1234;
+$primary-lighter: #9E2E82;
+$primary-subtle:#F1D0E9;
+//secondary
+$secondary-custom: #FAA916;
+$secondary-darker: #B47604;
+$secondary-lighter: #FCC55F;
+$secondary-subtle:#FDE2AF;
+//success
+$success-custom: #06C270;
+$success-darker: #05A660;
+$success-lighter: #39D98A;
+$success-subtle: #57EBA1;
+//info
+$info-custom: #176087;
+$info-darker: #004FC4;
+$info-lighter: #5B8DEF;
+$info-subtle: #9DBFF9;
+//warning
+$warning-custom: #F9C846;
+$warning-darker: #E6B800;
+$warning-lighter: #FDDD48;
+$warning-subtle: #FDED72;
+//danger
+$danger-custom: #F03A47;
+$danger-darker: #E63535;
+$danger-lighter: #FF5C5C;
+$danger-subtle: #FF8080;
+$light-1: #DDE5E9;
+$light-2: #EBEBF0;
+$light-3: #F2F2F5;
+$light-4: #FAFAFC;
+$dark-1: #3A3A3C;
+$dark-2: #6B7588;
+$dark-3: #8F90A6;
+$dark-4: #C7C9D9;
+// ******************************  Temas ***********************************
+// $theme-colors: ( "primary" : $primary, "primary-custom": $primary-custom, "primary-darker": $primary-darker, "primary-lighter": $primary-lighter, "primary-subtle": $primary-subtle, "secondary" : $secondary, "secondary-custom" : $secondary-custom, "secondary-darker": $secondary-darker, "secondary-lighter": $secondary-lighter, "secondary-subtle": $secondary-subtle, "success" : $success, "success-custom" : $success-custom, "success-darker" : $success-darker, "success-lighter" : $success-lighter, "success-subtle" : $success-subtle, "info" : $info, "info-custom" : $info-custom, "info-darker" : $info-darker, "info-lighter" : $info-lighter, "info-subtle" : $info-subtle, "warning" : $warning, "warning-custom" : $warning-custom, "warning-darker" : $warning-darker, "warning-lighter" : $warning-lighter, "warning-subtle" : $warning-subtle, "danger" : $danger, "danger-custom" : $danger-custom, "danger-darker" : $danger-darker, "danger-lighter" : $danger-lighter, "danger-subtle" : $danger-subtle, "light" : $light, "light-1" : $light-1, "light-2" : $light-2, "light-3" : $light-3, "light-4" : $light-4, "dark" : $dark, "dark-1" : $dark-1, "dark-2" : $dark-2, "dark-3" : $dark-3, "dark-4" : $dark-4, );
+// $grid-breakpoints: (xxs:0, xs: 320px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
+// $spacers: ( 0: 0, 1: 0.25rem, 2: 0.5rem, 3: 0.75rem, 4: 1rem, 5: 1.25rem, 6: 1.5rem, 7: 1.75rem, 8: 2rem, 9: 2.25rem, //40px
+// 10: 2.5rem, 11: 2.75rem, 12: 3rem, 13: 3.25rem, 14: 3.5rem, 15: 3.75rem, 16: 4rem, 17: 4.25rem, 18: 4.5rem, 19: 4.75rem, 20: 5rem, //80px
+// 22: 5.5rem, 24: 6rem, 26: 6.5rem, 28: 7rem, 30: 7.5rem, //120px
+// 32: 8rem, 34: 8.5rem, 36: 9rem, 38: 9.5rem, 40: 10rem, //160px
+// 42: 10.5rem, 44: 11rem, 46: 11.5rem, 48: 12rem, 50: 12.5rem, //200px
+// 52: 13rem, 56:14rem, 60:15rem, //240px
+// 64:16rem, 68:17rem, 72:18rem, 76:19rem, 80:20rem, //320px
+// 84:21rem, 88:22rem, 92:23rem, 96:24rem, );
+// $font-sizes: ( 1: 2.5rem, 2: 2rem, //32px
+// 3: 1.75rem, 4: 1.5rem, 5: 1.25rem, 6: 1rem, //16px
+// 7: 0.875rem, //14px
+// 8: 0.75rem, //12px
+// 9: 0.625rem, //10px
+// 10: 0.5rem, //8px
+// );
+// @import '../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../node_modules/bootstrap/scss/bootstrap-utilities';
+// @import "../node_modules/bootstrap/scss/mixins";
+// @import "../node_modules/bootstrap/scss/root";
+// @import "../node_modules/bootstrap/scss/reboot";
+// @import "../node_modules/bootstrap/scss/type";
+// @import "../node_modules/bootstrap/scss/images";
+// @import "../node_modules/bootstrap/scss/utilities/_api.scss";

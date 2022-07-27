@@ -5,7 +5,6 @@ import logo from '../../assets/icons/icone_vaga.svg';
 
 import './style.scss';
 import { ReactElement, useState } from "react";
-import { BookmarkOutline, Bookmark } from 'react-ionicons';
 import AccordionBody from "react-bootstrap/esm/AccordionBody";
 
 interface IAcordionVagasProps {
