@@ -64,7 +64,7 @@ export default function ListaMentoras() {
             <CardMentora key={index} nome_mentora={item.nome_mentora} area_mentora={item.area_mentora} descricao_mentora={item.descricao_mentora}/>
             )
           })}
-          <div className='spinnerStyle' size="md">
+          <div className='spinnerStyle'>
             <Spinner animation="border" role="status">
               <span className="visually-hidden">Loading...</span>
             </Spinner>
