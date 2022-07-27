@@ -4,11 +4,12 @@ import MentoriaCandidata from "../../componentes/MentoriaCandidata";
 import SecaoAssinarNewsletter from "../../componentes/SecaoAssinarNewsletter";
 import VagasRecomendadas from "../../componentes/VagasRecomendadas";
 import CursosPublicacoes from "../../componentes/CursosPublicacoes";
+import HeaderLogado from "../../componentes/HeaderLogado";
 
 export default function AreaCandidata() {
     return (
       <>
-        <Header />
+        <HeaderLogado />
         <VagasRecomendadas />
         <CursosPublicacoes title="Cursos que irão te capacitar ainda mais" />
         <MentoriaCandidata />
