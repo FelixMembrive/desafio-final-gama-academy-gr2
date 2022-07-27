@@ -8,8 +8,8 @@ export default function Mentoras() {
     return (
         <div className="containerMentorias" style={{backgroundColor:'white'}}>
             <div className='Mentorias'>
-                <h2 className="textoMentorias">Mentoras</h2>
-                <p className="textoMentorias">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna. Sed mattis commodo libero, sit amet tempus eros molestie eget. Praesent elementum nisi id massa mattis, at interdum neque vulputate. In vulputate velit consectetur tortor tempus mollis.</p>
+                <h2>Mentoras</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna. Sed mattis commodo libero, sit amet tempus eros molestie eget. Praesent elementum nisi id massa mattis, at interdum neque vulputate. In vulputate velit consectetur tortor tempus mollis.</p>
             </div>
             <div className="botao">
                 <DropdownButton id="dropdown" title="Escolha a área de atuação profissional" >

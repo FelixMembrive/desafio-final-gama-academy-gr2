@@ -69,11 +69,13 @@
 #dropdown{
     display: flex;
     justify-content: flex-start;
+    position: relative;
     background: #D9D9D9;
     border-radius: 5px;
     width: 336px;
     height: 36px;
     padding-left: 13px;
+    border-style: none;
 
     font-family: "Poppins";
     font-style: normal;
@@ -100,9 +102,7 @@
     }
 }
 .botao{
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 22px;
+    padding: 0px 30px 22px 38px;
     @media only screen and (min-width: 768px) {
         padding: 74px 32px 50px 80px;
     }
