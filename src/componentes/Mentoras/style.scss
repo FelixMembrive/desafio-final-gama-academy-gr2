@@ -3,12 +3,18 @@
 }
 .Mentorias{
     font-family: 'poppins';
-    padding: 74px 32px 0 38px;
+    padding: 74px 32px 0 20px;
     color: #000000;
+    @media only screen and (min-width: 374px) {
+        padding: 74px 32px 0 38px;
+    }
     @media only screen and (min-width: 768px) {
         padding: 74px 32px 0 80px;
     }
     @media only screen and (min-width: 992px) {
+        padding: 74px 32px 0 80px;
+    }
+    @media only screen and (min-width: 1500px) {
         padding: 275px 230px 38px 202px;
     }
 }
@@ -31,10 +37,14 @@
         font-size: 19px;
         line-height: 29px;
     }
-
     @media only screen and (min-width: 992px) {
+        width: 500px;
+        font-size: 19px;
+        line-height: 29px;
+    }
+    @media only screen and (min-width: 1500px) {
         position: absolute;
-        width: 288px;
+        width: 1080px;
         height: 28px;
 
         font-size: 22px;
@@ -55,10 +65,17 @@
 
         font-size: 15px;
         line-height: 20px;
-
     }
     @media only screen and (min-width: 992px) {
         width: 800px;
+        padding-top: 40px;
+        padding-right: 30px;
+
+        font-size: 15px;
+        line-height: 20px;
+    }
+    @media only screen and (min-width: 1500px) {
+        width: 1080px;
         padding-top: 48px;
 
         font-size: 16.9989px;
@@ -94,6 +111,13 @@
         padding-right: 30px;
     }
     @media only screen and (min-width: 992px) {
+        width: 800px;
+        height: 82px;
+        padding-left: 29px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @media only screen and (min-width: 1500px) {
         width: 1080px;
         height: 82px;
         padding-left: 29px;
@@ -102,11 +126,17 @@
     }
 }
 .botao{
-    padding: 0px 30px 22px 38px;
+    padding: 0px 30px 22px 20px;
+    @media only screen and (min-width: 374px) {
+        padding: 0px 30px 22px 38px;
+    }
     @media only screen and (min-width: 768px) {
         padding: 74px 32px 50px 80px;
     }
     @media only screen and (min-width: 992px) {
+        padding: 74px 32px 50px 80px;
+    }
+    @media only screen and (min-width: 1500px) {
         padding: 0 0 65px 202px;
     }
 }
