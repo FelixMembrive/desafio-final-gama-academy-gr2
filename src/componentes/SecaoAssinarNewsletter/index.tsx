@@ -4,6 +4,7 @@ import ImagemTriangulos from '../../assets/imagens/placeholder_triangulos.svg';
 import SelectBox from '../SelectBox';
 import './style.scss';
 import { Title } from '../FeatureCard/styles';
+import SelectReact from '../SelectReact';
 
 export default function SecaoAssinarNewsletter() {
 
@@ -13,7 +14,7 @@ export default function SecaoAssinarNewsletter() {
             <Title>Assine nossa newsletter</Title>
 
             <div className="conteudo-assinar-newsletter">
-                <input placeholder="Digite seu e-mail" type="text" className="item-assinar-newsletter input-assinar-newsletter" />
+                <input placeholder="Digite seu e-mail" type="email" className="item-assinar-newsletter input-assinar-newsletter" />
                 <SelectBox
                     className="item-assinar-newsletter select-assinar-newsletter"
                     placeholder="Sua área"
@@ -29,9 +30,11 @@ export default function SecaoAssinarNewsletter() {
                         "Psicologia",
                     ]}
                 />
+                <SelectReact />
                 <LinkButton to={''} text={'Inscreva-se'} className="item-assinar-newsletter button-assinar-newsletter" />
 
             </div>
+                
         </section>
     );
 }
