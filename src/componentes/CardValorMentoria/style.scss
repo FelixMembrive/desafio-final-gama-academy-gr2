@@ -1,12 +1,12 @@
 .card-valormentoria {
     background-color: #efefef !important;
-    width: 190px !important;
+    width: 263px !important;
     height: 208px !important;
     margin-top: 5px;
 
     @media (min-width:992px) {
-        width: 230px !important;
-        height: 270px !important;
+        width: 363px !important;
+        height: 287px !important;
     }
 }
 
@@ -17,7 +17,9 @@
         font-size: 12.54px;
 
         @media (min-width:992px) {
+            
             font-size: 15.29px !important;
+
         }
     }
 }
@@ -26,15 +28,16 @@
     .btn {
         font-size: 10.7px;
         font-weight: 400;
-        width: 150px;
+        width: 197px;
         height: 41px;
         margin-top: 15px;
-        margin-left: 8px;
+        margin-left: 20px;
 
         @media (min-width:992px) {
-            font-size: 15.29px !important;
-            width: 175px;
+            font-size: 14.8px !important;
+            width: 272.57px;
             height: 50px;
+            margin-left: 20px;
         }
     }
 }

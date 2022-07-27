@@ -14,25 +14,49 @@
 //     height: 54px;
 //     margin-bottom: 46px;
 // }
-// .nome_monitora{
-//     font-size: 13.31px;
+.nome_monitora{
+    font-size: 13.31px;
+    font-weight: 600;
 
-//     @media only screen and (min-width:576px) and (max-width:1512px) {
+    @media (min-width:768px){
 
-//         font-size: 100,73px;
-//     }
+        font-size:24.73px;
+    }
 
-// }
-// .area_monitora{
-//     font-size: 13.31px;
-// }
+}
+ .area_monitora{    
+    font-size: 13.31px;
+    font-weight: 600;
+
+    @media (min-width:768px){
+
+        font-size:24.73px;
+    }
+
+ }
 // .dados_monitora{
 //     // width: 220px;
 // }
-// .lorem1{
-//     font-size: 9.35px;
-// }
-// .lorem2{
-//     font-size: 9.35px;
-//     // width: 220px;
+.lorem1{
+    font-size: 9.35px;
+    font-weight: 400;
+
+    @media (min-width:768px){
+
+        font-size:17.38px;
+    }
+}
+
+.lorem2{
+    font-size: 9.35px;
+    font-weight: 400;
+
+    @media (min-width:768px){
+
+        font-size:17.38px;
+    }
+}
+
+// .cardsvalormentoria{
+//     width: 263px;
 // }

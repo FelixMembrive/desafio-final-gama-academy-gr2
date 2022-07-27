@@ -16,10 +16,10 @@ export default function CardValorMentoria(props: ICardValorMentoriaProps) {
                 <Card className="card-valormentoria border-0 p-xs-4 p-lg-7">
                     <Card.Body className="card-valormentoria-body d-flex flex-column m-0 p-0">
                     <div className="card-valormentoria-text">
-                        <p className="fw-semibold m-0 mb-1">{props.tipo_mentoria}</p>
-                        <p className="fw-semibold m-0 mb-1">{props.area_da_mentoria}</p>
-                        <p className="fw-semibold m-0 mb-2">{props.tempo}</p>
-                        <p className="fw-semibold m-0 mb-0">{props.valor}</p>
+                        <p className="fw-semibold m-0 mb-3">{props.tipo_mentoria}</p>
+                        <p className="fw-semibold m-0 mb-3">{props.area_da_mentoria}</p>
+                        <p className="fw-semibold m-0 mb-3">{props.tempo}</p>
+                        <p className="fw-semibold m-0 mb-3">{props.valor}</p>
                     </div>
                     <LinkButton className='rounded-pill text-center d-flex justify-content-center align-items-center' to='#' text='Agendar mentoria'/>
                     </Card.Body>
