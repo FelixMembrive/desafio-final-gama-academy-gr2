@@ -1,34 +1,44 @@
 @import '../../App.scss';
 
 .acordion-vagas {
-    min-width:320px !important;
-    @media (min-width:360px){
-        min-width:338px!important;
+    border-radius:12px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    width:320px !important;
+    @media (min-width:390px){
+        width:342px!important;
     }
     @media (min-width:700px){
-        min-width:450px!important;
+        width:450px!important;
     }
     @media (min-width:1024px){
-        min-width:600px!important;
+        width:600px!important;
     }
     @media (min-width:1400px){
-        min-width:906px!important;
+        width:906px!important;
+    }
+    .accordion-header{
+        border-radius: 12px;
     }
     .accordion-button {
+        border-radius: 12px;
         background-color: #D9D9D9 !important; //cor da parte de dentro
-
-        &:focus { //tiar sombra no foco
+        &:focus { //tirar sombra no foco
             box-shadow: none;
             border: none;
         }
         &:not(.collapsed) { //cor da letra ao abrir
             color: #000;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
         }
     }
 }
 
 .acordion-vagas-body { //cor da parte de dentro
     background-color: #D9D9D9;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .img-acordion-vagas {
