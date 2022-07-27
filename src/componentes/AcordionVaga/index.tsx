@@ -14,6 +14,7 @@ interface IAcordionVagasProps {
     local_empresa: string,
     img?: string,
     className?: string,
+    children?: React.ReactNode,
 }
 
 export default function AcordionVaga(props: IAcordionVagasProps) {
@@ -32,7 +33,7 @@ export default function AcordionVaga(props: IAcordionVagasProps) {
                 </div>
             </Accordion.Header>
             <AccordionBody className="acordion-vagas-body">
-                <p>HI</p>
+                {props.children}
             </AccordionBody>
             </Accordion.Item>
         </Accordion>

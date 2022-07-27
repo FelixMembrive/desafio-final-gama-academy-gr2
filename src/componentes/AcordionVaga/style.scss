@@ -15,20 +15,20 @@
         min-width:906px!important;
     }
     .accordion-button {
-        background-color: $primary !important; //cor da parte de dentro
+        background-color: #D9D9D9 !important; //cor da parte de dentro
 
         &:focus { //tiar sombra no foco
             box-shadow: none;
             border: none;
         }
         &:not(.collapsed) { //cor da letra ao abrir
-            color: dodgerblue;
+            color: #000;
         }
     }
 }
 
 .acordion-vagas-body { //cor da parte de dentro
-    background-color: $secondary;
+    background-color: #D9D9D9;
 }
 
 .img-acordion-vagas {
