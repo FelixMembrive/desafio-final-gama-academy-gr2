@@ -2,7 +2,7 @@ import ScrollContainer from 'react-indiana-drag-scroll'
 import { Row, Container } from "react-bootstrap";
 import MiniCard from '../MiniCard';
 import DefaultMiniCardImage from "../../assets/imagens/DefaultMiniCardImage.png";
-import './styles.css'
+import './styles.scss'
 
 interface IConteudosExclusivos {
     title: string,

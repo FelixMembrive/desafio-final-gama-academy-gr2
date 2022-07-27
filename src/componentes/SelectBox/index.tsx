@@ -29,9 +29,10 @@ export default function SelectBox(props: ISelectBoxProps) {
 
         {props.optionValues.map((valueItem, index) => {
           return (
-            <option value={valueItem}>{props.optionTexts[index]}</option>
+            <option className="option-line" value={valueItem}>{props.optionTexts[index]}</option>
           )
         })}
       </select>
+      
   );
 }
