@@ -69,6 +69,12 @@
     button {
         height: 56px;
     }
+    button::after {
+        position: absolute;
+        right: 6px;
+        top: 12px;
+        content: url(../../assets/icons/select-arrow-down.svg);
+    }
 }
 
 //     // appearance: none;
@@ -90,13 +96,12 @@ button:hover {
     border-radius: 4px;
 }
 
-button::after {
-    position: absolute;
-    right: 6px;
-    top: 12px;
-    content: url(../../assets/icons/select-arrow-down.svg);
-}
-
+// button::after {
+//     position: absolute;
+//     right: 6px;
+//     top: 12px;
+//     content: url(../../assets/icons/select-arrow-down.svg);
+// }
 button.expanded::after {
     content: url(../../assets/icons/select-arrow-up.svg);
 }
