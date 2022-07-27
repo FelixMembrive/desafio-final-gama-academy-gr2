@@ -1,6 +1,6 @@
 import { LinkContainer } from "react-router-bootstrap";
 import { Col } from "react-bootstrap";
-import './styles.css'
+import './styles.scss'
 
 interface IMiniCard {
   to: string,

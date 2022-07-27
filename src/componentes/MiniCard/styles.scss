@@ -5,26 +5,22 @@
     width: 550px;
     margin: 130px auto 80px;
     cursor: all-scroll;
-    
-}
 
-.card-conteudo-exclusivo img {
-    margin-right: 15px;
-    cursor: pointer;
-    
-}
-
-.card-conteudo-exclusivo p {
-    text-align: left;
-    padding-right: 10px;
-}
-
-@media (max-width: 768px) {
-    .card-conteudo-exclusivo p {
-        width: 30vw;
+    img {
+        margin-right: 15px;
+        cursor: pointer;
     }
-}
 
+    p {
+        text-align: left;
+        padding-right: 10px;
+
+        @media (max-width: 768px) {
+                width: 30vw;
+        }
+    }
+    
+}
 @media (max-width: 425px) {
     .col {
         margin: 0 auto;
