@@ -1,0 +1,43 @@
+#loginPage{
+  width: calc(100vw - 4rem);
+  margin: 3rem 2rem;
+  h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .loginButton{
+    background: #3C3C3C;
+    border-radius: 66px;
+    margin-top: 2.6875rem;
+    margin-bottom: 1rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .forgotPassword{
+    margin-bottom: 3.375rem;
+  }
+  #socialLinkLogInButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  p{
+    margin-top: 2.6875rem;
+  }
+  .register{
+    display: inline-block;
+  }
+  span{
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
