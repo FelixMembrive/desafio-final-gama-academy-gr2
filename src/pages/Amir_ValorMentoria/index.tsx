@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import LinkText from "../../componentes/LinkText";
 import logo1 from "../../assets/imagens/logo1.png";
+import Footer from "../../componentes/Footer";
 
 import "./style.scss"
 
@@ -11,12 +12,13 @@ import "./style.scss"
 
 export default function Amir_ValorMentoria() {
     return (
-        <Container className=" pt-5">
-            <Row className=" textolink mt-5 mb-5 pb-5 pt-5 fs-6">
+        <>
+        <Container className="">
+            <Row className=" textolink">
                 <LinkText backArrow to="" text=" Voltar para perfil da Mentora"></LinkText>
             </Row>
    
-            <img className="logofoto position-static mb-5 pb-5" src={logo1}/>
+            <img className="logofoto position-static" src={logo1}/>
             
             
             <Row className=" dados_monitora d-flex flex-column flex-md-row ">
@@ -45,9 +47,10 @@ export default function Amir_ValorMentoria() {
                 <CardValorMentoria className="" tipo_mentoria="Valor normal" area_da_mentoria="Mentoria de x área" tempo="30 min" valor="R$ 50,00"></CardValorMentoria>
                 <CardValorMentoria className="" tipo_mentoria="Primeira vez" area_da_mentoria="Mentoria de x área" tempo="30 min" valor="Gratuito"></CardValorMentoria>
             </Row>
-            
-            
                           
-        </Container>
+        </Container><br /><br />
+        <Footer/>
+        </>
+        
     );
   }
