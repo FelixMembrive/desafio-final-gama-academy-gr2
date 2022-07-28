@@ -12,9 +12,7 @@ export default function HomeDev() {
         <LinkButton to="/home" text="Home" variant="primary" className="m-1" />
         <LinkButton to="/areacandidata" text="Área da Candidata" variant="info" className="m-1" />
         <LinkButton to="/buscarvagas" text="Buscar Vagas" variant="danger" className="m-1" />
-        <LinkButton to="/candidaturas-salvas" text="Candidaturas Salvas" variant="success" className="m-1" />
-        <LinkButton to="/candidaturas-finalizadas" text="Candidaturas Finalizadas" variant="warning" className="m-1" />
-        <LinkButton to="/candidaturas-andamento" text="Candidaturas em Andamento" variant="dark" className="m-1" />
+        <LinkButton to="/candidaturas" text="Minhas Candidaturas" variant="success" className="m-1" />
         <LinkButton to="/listamentoras" text="Lista de Mentoras" variant="light" className="m-1" />
         <LinkButton to="/mentora" text="Mentora" variant="info-lighter" className="m-1" />
       </div>
@@ -61,6 +59,6 @@ export default function HomeDev() {
       <LinkButton to="#" text="light-3" variant="light-3" className="m-1" />
       <LinkButton to="#" text="light-4" variant="light-4" className="m-1" />
     */}
-</>
+    </>
   );
 }
