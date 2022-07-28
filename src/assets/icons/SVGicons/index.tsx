@@ -110,19 +110,19 @@ function Youtube() {
   );
 }
 
-// function SelectArrow(props: IiconProps) {
-//   return (
-//     <svg
-//     width={10}
-//     height={5}
-//     fill="none"
-//     xmlns="http://www.w3.org/2000/svg"
-//     className={props.className}
-//   >
-//     <path d="m0 5 5-5 5 5H0Z" fill="#601C4F" />
-//   </svg>
-//   );
-// }
+function SelectArrow(props: IiconProps) {
+  return (
+    <svg
+    width={10}
+    height={5}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
+  >
+    <path d="m0 5 5-5 5 5H0Z" fill="#601C4F" />
+  </svg>
+  );
+}
 
 function BackArrow(props: IiconProps) {
   return (
@@ -146,6 +146,6 @@ export { Facebook,
   Twitter,
   Whatsapp,
   Youtube,
-  // SelectArrow,
+  SelectArrow,
   BackArrow,
  };
