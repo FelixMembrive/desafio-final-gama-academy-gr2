@@ -10,7 +10,7 @@ interface ILinkTextProps {
 export default function LinkText(props: ILinkTextProps) {
     return (
             <LinkContainer to={props.to}>
-                    <a className={"" + props.className}>
+                    <a className={props.className}>
                         {props.text}
                     </a>
             </LinkContainer>

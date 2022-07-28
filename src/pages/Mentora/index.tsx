@@ -5,13 +5,13 @@ import DescricaoMentora from "../../componentes/DescricaoMentora";
 import CardCurso from "../../componentes/CardCurso";
 import LinkButton from "../../componentes/LinkButton";
 import './style.scss';
-import LinkText from "../../componentes/LinkText";
+import LinkBack from "../../componentes/LinkBack";
 
 export default function Mentora() {
   return (
     <>
       <Header />
-      <LinkText to="#" backArrow text="Voltar para Mentoras"/>
+      <LinkBack text="Voltar para Mentoras"/>
       <DescricaoMentora /> 
       <div id="btn-agendamento">
       <LinkButton className="d-flex justify-content-center rounded-pill my-8 mx-xs-6 mx-md-15 px-xs-5 py-4" to="" text="Ver valores para agendamento"></LinkButton>
