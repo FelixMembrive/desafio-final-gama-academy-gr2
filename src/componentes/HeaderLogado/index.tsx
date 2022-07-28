@@ -1,4 +1,5 @@
 import Logo from "../../assets/icons/Logo.png";
+import Perfil from "../../assets/imagens/foto_perfil.png"
 import "./style.scss";
 
 import Container from "react-bootstrap/Container";
@@ -9,13 +10,15 @@ export default function HeaderLogado() {
   return (
     <Navbar id="navStyle" expand="lg">
       <Container id="containerStyle">
-        <Navbar.Brand id="navImg" href="#home">
+      <Navbar.Brand id="navImg" href="#home">
           <img src={Logo} 
           className="d-inline-block align-top" 
           alt="Logo" 
+          id="logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" id="botaoToggle" />
+        <Navbar.Toggle  id="botaoToggle"/>
+        <img src={Perfil}  alt="PFC" id="imagem"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <div className="bd-toc-item">
             <Nav.Link href="/buscarvagas" className="links">Área da candidata</Nav.Link>

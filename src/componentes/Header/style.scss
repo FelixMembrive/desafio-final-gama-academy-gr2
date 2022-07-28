@@ -1,5 +1,5 @@
 #containerStyle {
-    background-color: #D9D9D9;
+    background-color: #601C4F;
     @media only screen and (min-width: 768px) {
         max-width: 100%;
         margin: 0;
@@ -8,11 +8,14 @@
         flex-direction: row;
         flex-wrap: nowrap;
         font-weight: 400;
+        #imagem{
+            visibility: hidden;
+        }
     }
 }
 
 #navStyle{
-    background: #D9D9D9;
+    background-color: #601C4F;
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -21,20 +24,21 @@
 }
 
 #navImg {
-    background-color: #D9D9D9;
+    background-color: #601C4F;
     align-items: center;
     margin-left: 32px;
 }
 .d-inline-block{
-    background-color: #D9D9D9;
+    background-color: #601C4F;
 }
 #botaoToggle {
+    background-color: #601C4F;
     @media only screen and (min-width: 768px) {
         display:none;
     }
 }
 .botaoStyle{
-    background-color: #D9D9D9;
+    background-color: #601C4F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +84,7 @@
     column-gap: 30px;
 }
 .bd-toc-item{
-    background-color: #D9D9D9;
+    background-color: #601C4F;
     flex-direction: row-reverse;
     @media only screen and (min-width: 768px) {
         display: flex;
@@ -91,7 +95,7 @@
     margin: 26px;
 }
 .links{
-    background-color: #D9D9D9;
+    background-color: #601C4F;
     font-family: 'Poppins';
     margin: 26px;
     @media only screen and (min-width: 768px) {
@@ -106,8 +110,8 @@
     padding:10.5px;
     width: 145px;
     border: none;
-    background-color: #3C3C3C;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #601C4F;
     border-radius: 66px;
     @media only screen and (min-width: 768px) {
         margin-left: 21px;
@@ -117,16 +121,16 @@
 #login {
     padding: 10.5px;
     width: 106px;
-    color: #000;
-    border: 1px solid #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
     border-radius: 66px;
     @media only screen and (min-width: 992px) {
         margin-left: 16px;
     }
 }
 #basic-navbar-nav{
-    background-color: #D9D9D9;
-    margin: 34px;
+    background-color: #601C4F;
+    margin: 0;
     @media only screen and (min-width: 768px) {
         margin-left: 0px;
         margin-right: 0;
@@ -135,6 +139,36 @@
         margin: 29px;
     }
 }
-    // @media only screen and (min-width: 992px) {
-    //     padding: 10px;
-    // }
+.navbar-toggler-icon{
+    display: contents;
+    background-color: #601C4F;
+    opacity: 0;
+    width: 0;
+    border: none;
+    border-radius: 56;
+}
+#imagemSandwich{
+    border-radius: 0%;
+    width: 24px;
+    margin-right: 11px;
+}
+#logo{
+    width: 56px;
+    height: 56px;
+}
+#botaoToggle{
+    display: contents;
+    &:focus{
+        box-shadow: none;
+        background-color: #601C4F;
+        color: transparent;
+        opacity: 0;
+    }
+  }
+  button::after {
+    width: 100px;
+    height: 50px;
+    opacity: 0;
+    right: 50px;
+    top: 40px;
+  }

@@ -1,5 +1,6 @@
 interface IiconProps {
   className?: string
+  colorFill?: string
 }
 
 
@@ -109,19 +110,19 @@ function Youtube() {
   );
 }
 
-// function SelectArrow(props: IiconProps) {
-//   return (
-//     <svg
-//     width={10}
-//     height={5}
-//     fill="none"
-//     xmlns="http://www.w3.org/2000/svg"
-//     className={props.className}
-//   >
-//     <path d="m0 5 5-5 5 5H0Z" fill="#601C4F" />
-//   </svg>
-//   );
-// }
+function SelectArrow(props: IiconProps) {
+  return (
+    <svg
+    width={10}
+    height={5}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
+  >
+    <path d="m0 5 5-5 5 5H0Z" fill="#601C4F" />
+  </svg>
+  );
+}
 
 function BackArrow(props: IiconProps) {
   return (
@@ -133,7 +134,7 @@ function BackArrow(props: IiconProps) {
   >
     <path
       d="M16 7H3.83l5.59-5.59L8 0 0 8l8 8 1.41-1.41L3.83 9H16V7Z"
-      fill="#1F1F1F"
+      fill="none"
     />
   </svg>
   );
@@ -145,6 +146,6 @@ export { Facebook,
   Twitter,
   Whatsapp,
   Youtube,
-  // SelectArrow,
+  SelectArrow,
   BackArrow,
  };

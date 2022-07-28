@@ -1,18 +1,17 @@
-@import '../../App.scss';
-
+@import '../../colors.scss';
 .card-vagas {
-    min-width:320px !important;
-    @media (min-width:360px){
-        min-width:338px!important;
+    min-width: 320px !important;
+    @media (min-width: 360px) {
+        min-width: 338px!important;
     }
-    @media (min-width:700px){
-        min-width:450px!important;
+    @media (min-width:700px) {
+        min-width: 450px!important;
     }
-    @media (min-width:1024px){
-        min-width:600px!important;
+    @media (min-width:1024px) {
+        min-width: 600px!important;
     }
-    @media (min-width:1400px){
-        min-width:906px!important;
+    @media (min-width:1400px) {
+        min-width: 906px!important;
     }
     .card-body {
         background-color: transparent;
@@ -20,17 +19,17 @@
 }
 
 .img-card-vagas {
-    min-width:40px !important;
-    @media (min-width:1024px){
-        min-width:54px !important;
+    min-width: 40px !important;
+    @media (min-width: 1024px) {
+        min-width: 54px !important;
     }
 }
 
-.card-vagas-text{
-    p{
+.card-vagas-text {
+    p {
         font-size: 14px;
         font-weight: 600;
-        @media (min-width: 750px){
+        @media (min-width: 750px) {
             font-size: 20.35px !important;
         }
     }
@@ -48,5 +47,4 @@
         width: 32px;
         height: 32px;
     }
-   
 }

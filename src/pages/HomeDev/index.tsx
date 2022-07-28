@@ -18,7 +18,7 @@ export default function HomeDev() {
         <LinkButton to="/listamentoras" text="Lista de Mentoras" variant="light" className="m-1" />
         <LinkButton to="/mentora" text="Mentora" variant="info-lighter" className="m-1" />
       </div>
-      <LinkButton to="#" text="primary" variant="primary" className="m-1" />
+      {/* <LinkButton to="#" text="primary" variant="primary" className="m-1" />
       <LinkButton to="#" text="primary-darker" variant="primary-darker" className="m-1" />
       <LinkButton to="#" text="primary-lighter" variant="primary-lighter" className="m-1" />
       <LinkButton to="#" text="primary-subtle" variant="primary-subtle" className="m-1" />
@@ -60,7 +60,7 @@ export default function HomeDev() {
       <LinkButton to="#" text="light-2" variant="light-2" className="m-1" />
       <LinkButton to="#" text="light-3" variant="light-3" className="m-1" />
       <LinkButton to="#" text="light-4" variant="light-4" className="m-1" />
-    </>
-
+    */}
+</>
   );
 }

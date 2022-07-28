@@ -5,7 +5,7 @@ import logo from '../../assets/icons/icone_vaga.svg';
 
 import './style.scss';
 import { ReactElement, useState } from "react";
-import { BookmarkOutline, Bookmark } from 'react-ionicons';
+// import { BookmarkOutline, Bookmark } from 'react-ionicons';
 
 interface ICardVagasProps {
     nome_vaga: string,
@@ -26,27 +26,27 @@ export default function CardVaga(props: ICardVagasProps) {
     };
     let icon: ReactElement | null = null;
 
-    if (props.salvo !== null) {
-        if (salvar) {
-            icon = <div className="icone-vagas-salvar m-0 p-0 d-flex">
-                <Bookmark
-                    onClick={handleNaoSalvar}
-                    color={'#00000'}
-                    height="100%"
-                    width="100%"
-                />
-            </div>;
-        } else {
-            icon = <div className="icone-vagas-salvar m-0 p-0 d-flex">
-                <BookmarkOutline
-                    onClick={handleNaoSalvar}
-                    color={'#00000'}
-                    height="100%"
-                    width="100%"
-                />
-            </div>;
-        }
-    }
+    // if (props.salvo !== null) {
+    //     if (salvar) {
+    //         icon = <div className="icone-vagas-salvar m-0 p-0 d-flex">
+    //             <Bookmark
+    //                 onClick={handleNaoSalvar}
+    //                 color={'#00000'}
+    //                 height="100%"
+    //                 width="100%"
+    //             />
+    //         </div>;
+    //     } else {
+    //         icon = <div className="icone-vagas-salvar m-0 p-0 d-flex">
+    //             <BookmarkOutline
+    //                 onClick={handleNaoSalvar}
+    //                 color={'#00000'}
+    //                 height="100%"
+    //                 width="100%"
+    //             />
+    //         </div>;
+    //     }
+    // }
 
     return (
         <Card className={`card-vagas border-0 p-xs-5 p-lg-7 ${props.className}`}>
