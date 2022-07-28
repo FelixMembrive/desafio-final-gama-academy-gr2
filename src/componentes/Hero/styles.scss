@@ -1,0 +1,129 @@
+.colimgtopo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.imgtopo{
+    width: 310px;
+    height: 264px;
+    margin-top: 38px;
+
+
+    @media (min-width:1200px) {
+        width: 400px;
+        height: 390px;
+        margin-top: 159px;
+        margin-right: 155px;
+        margin-bottom: 150px;
+        margin-left: 50px;
+    }    
+}
+
+.grupotexto{
+        margin-top:150px;
+
+    @media (min-width:1400px) {
+        margin-left: 100px;
+        margin-top:204px ;
+    }    
+}
+
+.tx1{
+    margin-top: 15px;
+    
+    @media (min-width:1400px) {
+        font-size: 40px;
+        margin-top: 204px;
+        margin-left: 40px;     
+    }    
+
+    @media(min-width:1200px){
+        margin-top: 180px;
+        margin-left: 40px;
+    }
+    
+}
+
+.tx2{
+    
+    
+    @media (min-width:1200px) {
+       font-size: 20px ;
+        margin-top: 0px;
+        margin-left: 40px;
+       
+    }    
+    
+}
+
+.btn_reco{
+    
+    
+    @media (min-width:1200px) {
+       
+        margin-top: 5px;
+        margin-left: 40px;
+       
+    }    
+    
+}
+
+.btn1{
+    
+    
+   
+    @media (min-width:1400px) {
+       
+      width: 278px;
+       
+    }    
+    
+}
+
+.btn2{
+    
+    
+    @media (min-width:1400px) {
+       
+      width: 278px;
+       
+    }    
+    
+}
+
+
+.grupologoemp{
+   height: 96px;
+
+   margin-bottom: 30px;
+
+   @media (min-width:1200px) {
+    margin-bottom: 96.44px;
+    
+    }
+}
+
+.textoemppar{
+    padding-top: -20px;
+    
+}
+
+
+.logo1{
+
+    @media (min-width:1200px) {
+
+    height: 84.56px;
+    width:250px;
+    margin-bottom: 96px;
+    }
+}
+
+.textcenter{
+
+    @media (min-width:1200px) {
+        padding-bottom: 200px;
+        
+        }
+    }
