@@ -3,8 +3,27 @@
         {
             "nome_vaga": "Product Designer",
             "nome_empresa": "Nubank",
-            "logo_empresa": "",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/nubank.png",
+            "salvo": false
+        },
+        {
+            "nome_vaga": "UI Designer",
+            "nome_empresa": "Will Bank",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/willbank.png",
+            "salvo": false
+        },
+        {
+            "nome_vaga": "UX Writing",
+            "nome_empresa": "iFood",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/ifood.png",
+            "salvo": false
+        },
+        {
+            "nome_vaga": "UX Researcher",
+            "nome_empresa": "Hurb",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/hurb.png",
             "salvo": false
         }
     ]
 }
+

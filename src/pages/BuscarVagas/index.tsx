@@ -5,8 +5,10 @@ import Header from "../../componentes/Header";
 import LinkButton from "../../componentes/LinkButton";
 import LinkBack from "../../componentes/LinkBack";
 import LinkText from "../../componentes/LinkText";
-import SelectBox from "../../componentes/SelectBox";
+import SelectBox from "../../componentes/SelectBox"; 
+import vagas from '../../assets/mockups/vagas-mockup.json';
 
+const vagasRecomendadas = vagas.recomendadas;
 
 export default function BuscarVagas() {
   return (
@@ -33,9 +35,9 @@ export default function BuscarVagas() {
       </Row>
       <Row className="mt-5 mx-auto col-10 sm-col-3">
         <h3>Recomendamos para você</h3>
-        <CardVaga nome_empresa="Empresa" local_empresa="Local" nome_vaga="Nome da Vaga" salvo={true} />
-        <CardVaga nome_empresa="Empresa" local_empresa="Local" nome_vaga="Nome da Vaga" salvo={false} />
-        <CardVaga nome_empresa="Empresa" local_empresa="Local" nome_vaga="Nome da Vaga" salvo={null} />
+        {vagasRecomendadas.map((vaga, index)=> {
+          return <CardVaga key={index} nome_empresa={vaga.nome_empresa} nome_vaga={vaga.nome_vaga} salvo={vaga.salvo} img={vaga.logo_empresa} />
+        })}
       </Row>
       <Footer />
     </>
