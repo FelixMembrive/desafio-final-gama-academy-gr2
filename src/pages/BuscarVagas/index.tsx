@@ -3,6 +3,7 @@ import CardVaga from "../../componentes/CardVaga";
 import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import LinkButton from "../../componentes/LinkButton";
+import LinkBack from "../../componentes/LinkBack";
 import LinkText from "../../componentes/LinkText";
 import SelectBox from "../../componentes/SelectBox";
 
@@ -12,7 +13,7 @@ export default function BuscarVagas() {
     <>
       <Header />
       <section className="buscar-secao-buscar mt-5">
-        <LinkText backArrow to="/areacandidata" text="Voltar para área da candidata"></LinkText>
+        <LinkBack text="Voltar para área da candidata"></LinkBack>
         <Row className="mt-5 mx-auto col-10 sm-col-3">
           <input placeholder="Buscar vagas" type="text" />
         </Row>
