@@ -24,6 +24,836 @@
             "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/hurb.png",
             "salvo": false
         }
+    ],
+    "salvas": [
+        {
+            "nome_vaga": "UX/UI Designer",
+            "nome_empresa": "Banrisul",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/banrisul.png",
+            "salvo": true
+        },
+        {
+            "nome_vaga": "UI Designer",
+            "nome_empresa": "Meiuca",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/meiuca.png",
+            "salvo": true
+        },
+        {
+            "nome_vaga": "Product Designer",
+            "nome_empresa": "PicPay",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/picpay.png",
+            "salvo": true
+        },
+        {
+            "nome_vaga": "UX Designer",
+            "nome_empresa": "OLX",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/olx.png",
+            "salvo": true
+        },
+        {
+            "nome_vaga": "UI Designer",
+            "nome_empresa": "Cora",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/cora.png",
+            "salvo": true
+        },
+        {
+            "nome_vaga": "UX Researcher",
+            "nome_empresa": "Sympla",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/sympla.png",
+            "salvo": true
+        }
+
+    ],
+    "em_andamento": [
+        {
+            "nome_vaga": "UX Designer",
+            "nome_empresa": "Decolar",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/decolar.png",
+            "salvo": true,
+            "candidaturas": 266,
+            "visualizada": true,
+            "baixada": true,
+            "etapas": [
+                {
+                    "nome": "Currículo",
+                    "candidatos": 266,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Triagem",
+                    "candidatos": 40,
+                    "fase": "em_andamento"
+                },
+                {
+                    "nome": "Bate-papo com o RH",
+                    "candidatos": 15,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Desafio Técnico",
+                    "candidatos": 10,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Carta-oferta",
+                    "candidatos": 10,
+                    "fase": "futura"
+                }
+
+            ]
+        },
+        {
+            "nome_vaga": "Product Designer",
+            "nome_empresa": "Americanas S.A.",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/americanas.png",
+            "salvo": true,
+            "candidaturas": 266,
+            "visualizada": true,
+            "baixada": true,
+            "etapas": [
+                {
+                    "nome": "Currículo",
+                    "candidatos": 266,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Triagem",
+                    "candidatos": 40,
+                    "fase": "em_andamento"
+                },
+                {
+                    "nome": "Bate-papo com o RH",
+                    "candidatos": 15,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Desafio Técnico",
+                    "candidatos": 10,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Carta-oferta",
+                    "candidatos": 10,
+                    "fase": "futura"
+                }
+
+            ]
+        },
+        {
+            "nome_vaga": "UX Writing",
+            "nome_empresa": "Next",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/next.png",
+            "salvo": true,
+            "candidaturas": 266,
+            "visualizada": true,
+            "baixada": true,
+            "etapas": [
+                {
+                    "nome": "Currículo",
+                    "candidatos": 266,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Triagem",
+                    "candidatos": 40,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Bate-papo com o RH",
+                    "candidatos": 15,
+                    "fase": "em_andamento"
+                },
+                {
+                    "nome": "Desafio Técnico",
+                    "candidatos": 10,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Carta-oferta",
+                    "candidatos": 10,
+                    "fase": "futura"
+                }
+
+            ]
+        },
+        {
+            "nome_vaga": "UX/UI Designer",
+            "nome_empresa": "Bradesco",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/bradesco.png",
+            "salvo": true,
+            "candidaturas": 266,
+            "visualizada": true,
+            "baixada": true,
+            "etapas": [
+                {
+                    "nome": "Currículo",
+                    "candidatos": 266,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Triagem",
+                    "candidatos": 40,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Bate-papo com o RH",
+                    "candidatos": 15,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Desafio Técnico",
+                    "candidatos": 10,
+                    "fase": "em_andamento"
+                },
+                {
+                    "nome": "Carta-oferta",
+                    "candidatos": 10,
+                    "fase": "futura"
+                }
+
+            ]
+        },
+        {
+            "nome_vaga": "UI Designer",
+            "nome_empresa": "Inter",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/inter.png",
+            "salvo": true,
+            "candidaturas": 266,
+            "visualizada": true,
+            "baixada": true,
+            "etapas": [
+                {
+                    "nome": "Currículo",
+                    "candidatos": 266,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Triagem",
+                    "candidatos": 40,
+                    "fase": "em_andamento"
+                },
+                {
+                    "nome": "Bate-papo com o RH",
+                    "candidatos": 15,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Desafio Técnico",
+                    "candidatos": 10,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Carta-oferta",
+                    "candidatos": 10,
+                    "fase": "futura"
+                }
+
+            ]
+        },
+        {
+            "nome_vaga": "UX Researcher",
+            "nome_empresa": "Ambev Tech",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/ambevtech.png",
+            "salvo": true,
+            "candidaturas": 266,
+            "visualizada": true,
+            "baixada": true,
+            "etapas": [
+                {
+                    "nome": "Currículo",
+                    "candidatos": 266,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Triagem",
+                    "candidatos": 40,
+                    "fase": "em_andamento"
+                },
+                {
+                    "nome": "Bate-papo com o RH",
+                    "candidatos": 15,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Desafio Técnico",
+                    "candidatos": 10,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Carta-oferta",
+                    "candidatos": 10,
+                    "fase": "futura"
+                }
+
+            ]
+        },
+        {
+            "nome_vaga": "Product Designer",
+            "nome_empresa": "CI&T",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/ciet.png",
+            "salvo": true,
+            "candidaturas": 266,
+            "visualizada": true,
+            "baixada": true,
+            "etapas": [
+                {
+                    "nome": "Currículo",
+                    "candidatos": 266,
+                    "fase": "em_andamento"
+                },
+                {
+                    "nome": "Triagem",
+                    "candidatos": 40,
+                    "fase": "concluida"
+                },
+                {
+                    "nome": "Bate-papo com o RH",
+                    "candidatos": 15,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Desafio Técnico",
+                    "candidatos": 10,
+                    "fase": "futura"
+                },
+                {
+                    "nome": "Carta-oferta",
+                    "candidatos": 10,
+                    "fase": "futura"
+                }
+
+            ]
+        }
+    ],
+    "finalizadas": [
+        {
+            "nome_vaga": "Product Designer",
+            "nome_empresa": "Caju Benefícios",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/cajubeneficios.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga Product Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "UX Researcher",
+            "nome_empresa": "Meliuz",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/meliuz.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga UX Researcher. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "Product Designer",
+            "nome_empresa": "C6",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/c6.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga Product Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "UX Writing",
+            "nome_empresa": "Stone",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/stone.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga UX Writing. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "Product Designer",
+            "nome_empresa": "Digio",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/digio.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga Product Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "UX/UI Designer",
+            "nome_empresa": "Pagar.me",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/pagarme.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga UX/UI Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "UX Researcher",
+            "nome_empresa": "Santander",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/santander.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga UX Researcher . Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "UX Designer",
+            "nome_empresa": "Ame Digital",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/amedigital.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga UX Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "UI Designer",
+            "nome_empresa": "Loggi",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/loggi.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga UI Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "Product Designer",
+            "nome_empresa": "Zé Delivery",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/zedelivery.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga Product Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "nome_vaga": "UX Designer",
+            "nome_empresa": "Luby",
+            "logo_empresa": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_vagas/luby.png",
+            "salvo": false,
+            "retorno":"Oi Lorena, primeiramente gostaríamos de agradecer seu interesse em fazer parte do nosso time e o tempo dedicado na candidatura da vaga UX Designer. Avaliamos seu perfil cuidadosamente de acordo com o que estamos buscando e, infelizmente, decidimos não prosseguir com sua participação em nosso processo seletivo. Por outro lado, através dessa candidatura, percebemos sua iniciativa e vontade de trabalhar conosco; por isso, incentivamos você a se candidatar em futuras posições que considere que o seu perfil esteja alinhado. Abaixo, há alguns materiais que acreditamos que poderá ajudar e te capacitar para as nossas futuras vagas de UX Researcher.",
+            "melhorias": [
+                {
+                    "area": "Métricas",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "area": "Metodologias de UX",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Curso Product Design (Gama Academy)",
+                            "link": "https://www.gama.academy/gama-experience/product-design"
+                        },
+                        {
+                            "nome": "Mentoria com Ana Cristina",
+                            "link": "/mentorias"
+                        }
+                    ]
+                },
+                {
+                    "area": "Portfólio",
+                    "meios": [
+                        {
+                            "nome": "Publicação no blog",
+                            "link": "#"
+                        },
+                        {
+                            "nome": "Mentoria com Marcela Castro",
+                            "link": "/mentorias"
+                        }
+                    ]
+                }
+            ]
+        }
     ]
 }
 
