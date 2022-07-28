@@ -23,7 +23,7 @@ export default function AcordionVaga(props: IAcordionVagasProps) {
             <Accordion.Item className='item-vagas border-0 p-0 m-0' eventKey="0">
             <Accordion.Header className="acordion-vagas-header d-flex justify-content-between align-items-center m-0 p-0">
                 <div className='d-flex justify-content-start'>
-                    <img src={props.img ? props.img : logo} alt={`logo da empresa ${props.nome_empresa}`} className="img-acordion-vagas me-8 me-10 img-fluid" />
+                    <img src={props.img ? props.img : logo} alt={`logo da empresa ${props.nome_empresa}`} className="img-acordion-vagas me-3 img-fluid " />
                     <div className="acordion-vagas-text">
                         <p className="m-0">{props.nome_vaga}</p>
                         <p className="m-0">{props.nome_empresa}</p>

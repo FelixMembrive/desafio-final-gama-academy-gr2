@@ -15,29 +15,37 @@
     @media (min-width:1400px){
         width:906px!important;
     }
-    .accordion-header{
-        border-radius: 12px;
-    }
     .accordion-button {
-        border-radius: 12px;
-        background-color: #D9D9D9 !important; //cor da parte de dentro
+        border: none;
+        box-shadow: none !important;
+        background-color: #FFFBFE !important; //cor da parte de dentro
+        color: #1C1B1F;
         &:focus { //tirar sombra no foco
             box-shadow: none;
             border: none;
         }
         &:not(.collapsed) { //cor da letra ao abrir
-            color: #000;
+            color: #1C1B1F;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
         }
     }
+    .accordion-button.collapsed::after{
+        color: #1C1B1F;
+        opacity: 1;
+    }
+    .accordion-button::after{
+        color: #1C1B1F;
+        opacity: 1;
+    }
 }
 
 .acordion-vagas-body { //cor da parte de dentro
-    background-color: #D9D9D9;
+    background-color: #FFFBFE;
     margin: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 6px;
+    border: none;
 }
 
 .img-acordion-vagas {
