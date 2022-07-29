@@ -1,15 +1,12 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
 .container-flex {
-    // font-family: 'Poppins';
     display: flex;
     align-items: center;
     margin-top: 25px;
-    font-weight: 400;
-    color: #3B3B3B;
+    color: #FFFFFF;
     p {
-        font-size: 20px;
-    }
-    span {
-        margin-left: 5px;
-        font-size: 40px;
+        @extend .tp-body-large;
     }
 }

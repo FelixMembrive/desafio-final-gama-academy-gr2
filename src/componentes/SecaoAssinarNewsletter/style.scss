@@ -4,16 +4,16 @@
     margin-right: 13%;
     margin-bottom: 31px;
     flex-direction: column;
-    @media only screen and (min-width: 768px) {
-        margin-bottom: 100px;
-        max-width: 1296px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    @media only screen and (min-width: 1440px) {
-        margin-left: auto;
-        margin-right: auto;
-    }
+    // @media only screen and (min-width: 768px) {
+    //     margin-bottom: 100px;
+    //     max-width: 1296px;
+    //     margin-left: 5%;
+    //     margin-right: 5%;
+    // }
+    // @media only screen and (min-width: 1440px) {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
 }
 
 .conteudo-assinar-newsletter {
@@ -25,39 +25,109 @@
         align-items: center;
         justify-content: center
     }
-    @media only screen and (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    div {
-        display: flex;
-        flex-wrap: nowrap;
-    }
+    // @media only screen and (min-width: 768px) {
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    // }
 }
 
 .item-assinar-newsletter {
     box-sizing: border-box;
     padding-left: 1.5%;
     padding-right: 1.5%;
-    height: 48px;
+    height: 56px;
     margin-top: 10px;
+    // z-index: -1;
 }
 
 .button-assinar-newsletter {
-    @media only screen and (min-width: 768px) {
-        width: 21%;
+    z-index: -1;
+    // @media only screen and (min-width: 768px) {
+    //     width: 21%;
+    // }
+}
+
+.assinar-newletter-select-button {
+    border: 2px solid;
+    // border-color: $dark;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+    padding: 6px 8px;
+    position: relative;
+    text-align: left;
+     ::after {
+        position: absolute;
+        right: 6px;
+        top: 4px;
+        content: url(../../assets/icons/select-arrow-down.svg);
     }
 }
 
 .select-assinar-newsletter {
-    // appearance: none;
-    @media only screen and (min-width: 768px) {
-        width: 32%;
+    padding: 0;
+    button {
+        height: 56px;
+    }
+    button::after {
+        position: absolute;
+        right: 6px;
+        top: 12px;
+        content: url(../../assets/icons/select-arrow-down.svg);
     }
 }
 
-.input-assinar-newsletter {
-    @media only screen and (min-width: 768px) {
-        width: 40%;
-    }
+//     // appearance: none;
+//     // @media only screen and (min-width: 768px) {
+//     //     width: 32%;
+//     // }
+// }
+// .input-assinar-newsletter {
+//     // @media only screen and (min-width: 768px) {
+//     //     width: 40%;
+//     // }
+// }
+button:hover {
+    cursor: pointer;
+}
+
+.expanded {
+    border: 2px solid #601C4F;
+    border-radius: 4px;
+}
+
+// button::after {
+//     position: absolute;
+//     right: 6px;
+//     top: 12px;
+//     content: url(../../assets/icons/select-arrow-down.svg);
+// }
+button.expanded::after {
+    content: url(../../assets/icons/select-arrow-up.svg);
+}
+
+ul.options {
+    display: none;
+    list-style: none;
+    padding: 4px 0;
+    margin-top: -4px;
+    background: #FFFBFE;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+ul.show {
+    display: block;
+}
+
+ul.options li {
+    padding: 6px 10px;
+}
+
+ul.options li:active,
+ul.options li:focus,
+ul.options li:hover,
+ul.options li[aria-selected="true"] {
+    background: #ECDDE8;
+    cursor: pointer;
 }

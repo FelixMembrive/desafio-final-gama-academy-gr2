@@ -1,0 +1,23 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+.link-back {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary-custom;
+    @extend .tp-heading-6;
+    &:hover {
+        color: $primary-lighter;
+        path {
+            fill: $primary-lighter;
+        }
+    }
+    svg {
+        margin-left: $sp-tc3;
+        margin-right: $sp-tc1;
+    }
+    path {
+        fill: $primary-custom;
+    }
+}

@@ -1,0 +1,136 @@
+#containerStyle {
+    color: #FFFFFF;
+    background-color: #601C4F;
+    @media only screen and (min-width: 768px) {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-weight: 400;
+    }
+}
+
+#navStyle{
+    background: #601C4F;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+#navImg {
+    background-color: #601C4F;
+    align-items: center;
+    margin-left: 32px;
+}
+.d-inline-block{
+    background-color: #601C4F;
+}
+#basic-navbar-nav {
+    text-align: center;
+    z-index: 2;
+    font-weight: 400;
+    @media only screen and (min-width: 768px) {
+        display: inline-flex;
+        flex-direction: row-reverse
+    } 
+    @media only screen and (min-width: 992px) {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20.3524px;
+        line-height: 31px;
+    }
+}
+.bd-toc-item{
+    background-color: #601C4F;
+    flex-direction: row-reverse;
+    font-weight: 400;
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+.espacamento{
+    margin: 26px;
+}
+.links{
+    background-color: #601C4F;
+    font-family: 'Poppins';
+    margin: 26px;
+    @media only screen and (min-width: 768px) {
+        margin: 10px;
+    }
+    @media only screen and (min-width: 992px) {
+        padding: 8px;
+    }
+}
+
+#registre{
+    padding:10.5px;
+    width: 343px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #601C4F;
+    border-radius: 66px;
+    @media only screen and (min-width: 768px) {
+        margin-left: 21px;
+    }
+}
+
+#login {
+    padding: 10.5px;
+    width: 343px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 66px;
+    @media only screen and (min-width: 992px) {
+        margin-left: 16px;
+    }
+}
+#basic-navbar-nav{
+    background-color: #601C4F;
+    margin: 34px;
+    @media only screen and (min-width: 768px) {
+        margin-left: 0px;
+        margin-right: 0;
+    }
+    @media only screen and (min-width: 992px) {
+        margin: 29px;
+    }
+}
+.navbar-toggler-icon{
+    display: contents;
+    background-color: #601C4F;
+    opacity: 0;
+    width: 0;
+    border: none;
+    border-radius: 56;
+}
+#imagem{
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 11px;
+}
+#logo{
+    width: 56px;
+    height: 56px;
+}
+#botaoToggle{
+    display: contents;
+    &:focus{
+        box-shadow: none;
+        background-color: #601C4F;
+        color: transparent;
+        opacity: 0;
+    }
+  }
+  button::after {
+    width: 100px;
+    height: 50px;
+    opacity: 0;
+    right: 50px;
+    top: 40px;
+  }

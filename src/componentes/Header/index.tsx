@@ -1,4 +1,5 @@
 import Logo from "../../assets/icons/Logo.png";
+import Perfil from "../../assets/imagens/menu.png"
 import "./style.scss";
 
 import Container from "react-bootstrap/Container";
@@ -14,9 +15,11 @@ export default function Header() {
           <img src={Logo} 
           className="d-inline-block align-top" 
           alt="Logo" 
+          id="logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" id="botaoToggle" />
+        <Navbar.Toggle  id="botaoToggle"/>
+        <img src={Perfil}  alt="PFC" id="imagemSandwich"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <div className="botaoStyle">
             <Button id="registre" href="#" size="lg">
@@ -27,7 +30,7 @@ export default function Header() {
             </Button>
           </div>
           <div className="bd-toc-item">
-            <Nav.Link href="#home" className="links">Vagas</Nav.Link>
+            <Nav.Link href="/buscarvagas" className="links">Vagas</Nav.Link>
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
             <Nav.Link href="#link" className="links">Mentorias</Nav.Link>
           </div>
