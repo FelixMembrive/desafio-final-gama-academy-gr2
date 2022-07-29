@@ -10,7 +10,6 @@ import AccordionBody from "react-bootstrap/esm/AccordionBody";
 interface IAcordionVagasProps {
     nome_vaga: string,
     nome_empresa: string,
-    local_empresa: string,
     img?: string,
     className?: string,
     children?: React.ReactNode,
@@ -27,7 +26,6 @@ export default function AcordionVaga(props: IAcordionVagasProps) {
                     <div className="acordion-vagas-text">
                         <p className="m-0">{props.nome_vaga}</p>
                         <p className="m-0">{props.nome_empresa}</p>
-                        <p className="m-0">{props.local_empresa}</p>
                     </div>
                 </div>
             </Accordion.Header>

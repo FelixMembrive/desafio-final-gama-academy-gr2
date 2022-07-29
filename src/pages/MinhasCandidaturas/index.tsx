@@ -4,10 +4,13 @@ import Footer from "../../componentes/Footer";
 import Header from "../../componentes/Header";
 import { ButtonWrapper, Goback, Label, ListWrapper, MockItem, Toggle, Wrapper } from "./styles";
 import ArrowBack from "../../assets/icons/arrow_back.png";
+import mockData from '../../assets/mockups/vagas-mockup.json';
+import CardVaga from "../../componentes/CardVaga";
+import AcordionVaga from "../../componentes/AcordionVaga";
 
 enum ApplicationFilter {
   Salvas = "salvas",
-  EmAndamento = "emAndamento",
+  EmAndamento = "em_andamento",
   Finalizadas = "finalizadas",
 }
 
@@ -16,33 +19,29 @@ export default function MinhasCandidaturas() {
 
   // TODO: Remover o mock e utilizar mudanca de selected
   // para alterar resultado baseado na api
-  const mockList = {
-    [ApplicationFilter.Salvas]: [
-      {
-        title: "Product Design",
-        subtitle: "Americanas",
-      },
-      {
-        title: "UX Design",
-        subtitle: "Decolar",
-      },
-    ],
-    [ApplicationFilter.EmAndamento]: [
-      {
-        title: "UX Design",
-        subtitle: "Decolar",
-      },
-    ],
-    [ApplicationFilter.Finalizadas]: [
-      {
-        title: "UX Writing",
-        subtitle: "next",
-      },
-      {
-        title: "UX Design",
-        subtitle: "Decolar",
-      },
-    ],
+
+  const renderList = () => {
+    if (selected == "salvas") {
+      return mockData[selected].map((item, index) => (
+        <CardVaga nome_vaga={item.nome_vaga} nome_empresa={item.nome_empresa} salvo={item.salvo} img={item.logo_empresa} />
+      ));
+    } else if (selected == "em_andamento") {
+      return mockData[selected].map((item, index) => (
+        <div className="mb-3">
+          <AcordionVaga nome_vaga={item.nome_vaga} nome_empresa={item.nome_empresa} img={item.logo_empresa}>
+            <p>Dados da empresa</p>
+          </AcordionVaga>
+        </div>
+      ));
+    } else if (selected == "finalizadas") {
+      return mockData[selected].map((item, index) => (
+        <div className="mb-3">
+          <AcordionVaga nome_vaga={item.nome_vaga} nome_empresa={item.nome_empresa} img={item.logo_empresa}>
+            <p>Dados da empresa</p>
+          </AcordionVaga>
+        </div>
+      ));
+    }
   };
 
   return (
@@ -58,7 +57,7 @@ export default function MinhasCandidaturas() {
           <Toggle onClick={() => setSelected(ApplicationFilter.Salvas)} active={selected === "salvas"}>
             Salvas
           </Toggle>
-          <Toggle onClick={() => setSelected(ApplicationFilter.EmAndamento)} active={selected === "emAndamento"}>
+          <Toggle onClick={() => setSelected(ApplicationFilter.EmAndamento)} active={selected === "em_andamento"}>
             Em andamento
           </Toggle>
           <Toggle onClick={() => setSelected(ApplicationFilter.Finalizadas)} active={selected === "finalizadas"}>
@@ -66,12 +65,7 @@ export default function MinhasCandidaturas() {
           </Toggle>
         </ButtonWrapper>
         <ListWrapper>
-          {mockList[selected].map((item) => (
-            <MockItem>
-              <Label>{item.title}</Label>
-              <Label>{item.subtitle}</Label>
-            </MockItem>
-          ))}
+          {renderList()}
         </ListWrapper>
       </Wrapper>
       <Footer />
