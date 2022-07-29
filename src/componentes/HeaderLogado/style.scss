@@ -65,6 +65,24 @@
         display: flex;
         justify-content: center;
     }
+    @media only screen and (min-width: 992px) {
+        height: 20px;
+        margin-top: 60px;
+        margin: 29px;
+        justify-content: flex-start;
+    }
+    @media only screen and (min-width: 1024px) {
+        justify-content: flex-start;
+    }
+    @media only screen and (min-width: 1280px) {
+        margin-right: 50px;
+    }
+    @media only screen and (min-width: 1440px) {
+        margin-right: 200px;
+    }
+    @media only screen and (min-width: 1500px) {
+        margin-right: 200px;
+    }
 }
 .bd-toc-item-logado{
     background-color: #601C4F;
