@@ -43,10 +43,10 @@ export default function Hero() {
                 <Row>
                     <Col className="text-center">
                        <div className="grupologoemp ">
-                            <img className=" logo1 me-4 mt-0 mt-md-4 mb-0 mb-md-5" src={Emplog} width={140}/>
-                            <img className=" logo1 me-4 mt-0 mt-md-4 mb-0 mb-md-5" src={Emplog} width={140}/>
-                            <img className=" logo1 me-4 mt-4 mb-4 mb-md-4 mb-md-5" src={Emplog} width={140}/>
-                            <img className=" logo1 me-4 mt-4 mb-4 mb-md-5" src={Emplog} width={140}/>
+                            <img className=" logo1 me-4 mt-0 mt-md-4 mb-0 mb-md-2" src={Emplog} width={140}/>
+                            <img className=" logo1 me-4 mt-0 mt-md-4 mb-0 mb-md-2" src={Emplog} width={140}/>
+                            <img className=" logo1 me-4 mt-4 mb-4 mb-md-2" src={Emplog} width={140}/>
+                            <img className=" logo1 me-4 mt-4 mb-4 mb-md-2" src={Emplog} width={140}/>
                             
                            
                         </div>
