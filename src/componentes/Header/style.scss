@@ -1,4 +1,6 @@
 #containerStyle {
+    padding: 0;
+    color: #FFFFFF;
     background-color: #601C4F;
     @media only screen and (min-width: 768px) {
         max-width: 100%;
@@ -15,6 +17,7 @@
 }
 
 #navStyle{
+    height: 72px;
     background-color: #601C4F;
     display: flex;
     flex-direction: row;
@@ -26,16 +29,10 @@
 #navImg {
     background-color: #601C4F;
     align-items: center;
-    margin-left: 32px;
+    margin-left: 24px;
 }
 .d-inline-block{
     background-color: #601C4F;
-}
-#botaoToggle {
-    background-color: #601C4F;
-    @media only screen and (min-width: 768px) {
-        display:none;
-    }
 }
 .botaoStyle{
     background-color: #601C4F;
@@ -44,12 +41,17 @@
     align-items: center;
     gap: 30px;
     @media only screen and (min-width: 768px) {
+        width: 330px;
         display: flex;
         flex-direction: row;
-        padding-right: 10px;
+        padding-right: 75px;
         gap: 20px;
     }
+    @media only screen and (min-width: 900px){
+        padding-right: 0;
+    }
     @media only screen and (min-width: 992px) {
+        padding-right: 0;
         margin-right: 10px;
         margin-left: 10px;
         display: flex;
@@ -63,7 +65,7 @@
     font-weight: 400;
     @media only screen and (min-width: 768px) {
         display: inline-flex;
-        flex-direction: row-reverse
+        flex-direction: row-reverse;
     } 
     @media only screen and (min-width: 992px) {
         padding: 10px;
@@ -76,7 +78,6 @@
     font-family: 'Poppins';
     font-size: 14px;
     line-height: 21px;
-    display: contents;
     list-style: none;
     padding-left: 0px;
     margin: 30px;
@@ -86,9 +87,15 @@
 .bd-toc-item{
     background-color: #601C4F;
     flex-direction: row-reverse;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 0%;
     }
 }
 .espacamento{
@@ -105,8 +112,11 @@
         padding: 8px;
     }
 }
+.botoesHeader{
+    font-size: 14px;
+}
 
-#registre{
+#cadastre{
     padding:10.5px;
     width: 145px;
     border: none;
@@ -114,7 +124,8 @@
     color: #601C4F;
     border-radius: 66px;
     @media only screen and (min-width: 768px) {
-        margin-left: 21px;
+        width: 400px;
+        width: 550px;
     }
 }
 
@@ -131,44 +142,53 @@
 #basic-navbar-nav{
     background-color: #601C4F;
     margin: 0;
+    margin-top: 40px;
+    @media only screen and (max-width: 280px) {
+        width: 100px;
+        line-height: 0;
+        font-weight: 100;
+    }
     @media only screen and (min-width: 768px) {
+        margin-top: 0;
         margin-left: 0px;
         margin-right: 0;
+        justify-content: flex-end;
     }
     @media only screen and (min-width: 992px) {
+        margin-top: 60px;
         margin: 29px;
+        display: flex;
+        justify-content: center;
     }
 }
 .navbar-toggler-icon{
-    display: contents;
     background-color: #601C4F;
-    opacity: 0;
     width: 0;
     border: none;
-    border-radius: 56;
 }
-#imagemSandwich{
-    border-radius: 0%;
-    width: 24px;
-    margin-right: 11px;
-}
+
 #logo{
-    width: 56px;
-    height: 56px;
+    width: 171px;
+    height: 40px;
 }
 #botaoToggle{
-    display: contents;
+    border-radius: 0;
+    margin-right: 24px;
+    width: 10px;
+    height: 14px;
+    display: block;
     &:focus{
         box-shadow: none;
         background-color: #601C4F;
-        color: transparent;
-        opacity: 0;
     }
-  }
-  button::after {
-    width: 100px;
-    height: 50px;
-    opacity: 0;
-    right: 50px;
-    top: 40px;
-  }
+    &::before{
+        background-image: url("../../assets/icons/close.png");
+        background-repeat: no-repeat;
+    }
+}
+#botaoToggle{
+    background-image: url("../../assets/imagens/menu.png");
+    @media only screen and (min-width: 768px) {
+        display:none;
+    }
+}

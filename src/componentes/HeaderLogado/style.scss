@@ -1,4 +1,4 @@
-#containerStyle {
+#containerStyle-logado {
     color: #FFFFFF;
     background-color: #601C4F;
     @media only screen and (min-width: 768px) {
@@ -10,9 +10,12 @@
         flex-wrap: nowrap;
         font-weight: 400;
     }
+    @media only screen and (min-width: 992px) {
+        align-items: baseline;
+    }
 }
 
-#navStyle{
+#navStyle-logado{
     background: #601C4F;
     display: flex;
     flex-direction: row;
@@ -21,30 +24,49 @@
     align-items: center;
 }
 
-#navImg {
+#navImg-logado {
     background-color: #601C4F;
     align-items: center;
-    margin-left: 32px;
+    margin-left: 24px;
 }
 .d-inline-block{
     background-color: #601C4F;
 }
-#basic-navbar-nav {
+#basic-navbar-nav-logado {
     text-align: center;
     z-index: 2;
     font-weight: 400;
+    @media only screen and (min-width: 280px) {
+        background-image: none;
+        margin-top: 0;
+    }
     @media only screen and (min-width: 768px) {
+        font-size: 13px;
         display: inline-flex;
-        flex-direction: row-reverse
+        flex-direction: row-reverse;
+        justify-content: flex-start;
     } 
+    @media only screen and (min-width: 800px) {
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    @media only screen and (min-width: 912px) {
+        padding: 20px;
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
     @media only screen and (min-width: 992px) {
         padding: 10px;
         font-weight: 500;
         font-size: 20.3524px;
         line-height: 31px;
+        display: flex;
+        justify-content: center;
     }
 }
-.bd-toc-item{
+.bd-toc-item-logado{
     background-color: #601C4F;
     flex-direction: row-reverse;
     font-weight: 400;
@@ -68,7 +90,7 @@
     }
 }
 
-#registre{
+#cadastre{
     padding:10.5px;
     width: 343px;
     border: none;
@@ -77,6 +99,7 @@
     border-radius: 66px;
     @media only screen and (min-width: 768px) {
         margin-left: 21px;
+        width: 550px;
     }
 }
 
@@ -86,19 +109,37 @@
     color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 66px;
+    @media screen and (min-width: 768px){
+    }
     @media only screen and (min-width: 992px) {
         margin-left: 16px;
     }
 }
-#basic-navbar-nav{
+#basic-navbar-nav-logado{
     background-color: #601C4F;
-    margin: 34px;
+    margin-top: 48px;
+    @media only screen and (min-width: 280px) {
+        margin-top: 0;
+    }
     @media only screen and (min-width: 768px) {
         margin-left: 0px;
+        margin-top: 0;
         margin-right: 0;
     }
     @media only screen and (min-width: 992px) {
-        margin: 29px;
+        margin-top: 29px;
+        margin-left: 29px;
+        margin-bottom: 29px;
+        margin-right: 29px;
+    }
+    @media only screen and (min-width: 1024px) {
+        margin-top: 29px;
+        margin-left: 29px;
+        margin-bottom: 29px;
+        margin-right: 0;
+    }
+    @media only screen and (min-width: 1024px) {
+
     }
 }
 .navbar-toggler-icon{
@@ -109,28 +150,35 @@
     border: none;
     border-radius: 56;
 }
-#imagem{
-    border-radius: 50%;
-    width: 50px;
-    margin-right: 11px;
-}
 #logo{
-    width: 56px;
-    height: 56px;
+    width: 171px;
+    height: 40px;
 }
-#botaoToggle{
-    display: contents;
+#botaoToggleHeaderLogado{
+    border-radius: 50%;
+    margin-right: 24px;
+    width: 50px;
+    height: 50px;
+    display: block;
     &:focus{
         box-shadow: none;
         background-color: #601C4F;
-        color: transparent;
-        opacity: 0;
+    }
+    @media only screen and (min-width: 280px) {
+        margin-right: 0;
     }
   }
-  button::after {
-    width: 100px;
-    height: 50px;
-    opacity: 0;
-    right: 50px;
-    top: 40px;
-  }
+#botaoToggleHeaderLogado{
+    margin-right: 34px;
+    background-image: url("../../assets/imagens/foto_perfil.png");
+    @media only screen and (max-width: 280px) {
+        background-image: url("../../assets/imagens/menu.png");
+        width: 10px;
+        height: 14px;
+        border-radius: 0%;
+        margin-right: 10px;
+    }
+    @media only screen and (min-width: 768px) {
+        display:none;
+    }
+}

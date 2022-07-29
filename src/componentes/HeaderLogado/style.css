@@ -1,0 +1,293 @@
+#containerStyle-logado {
+  color: #FFFFFF;
+  background-color: #601C4F;
+}
+
+@media only screen and (min-width: 768px) {
+  #containerStyle-logado {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #containerStyle-logado {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+#navStyle-logado {
+  background: #601C4F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navImg-logado {
+  background-color: #601C4F;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 24px;
+}
+
+.d-inline-block {
+  background-color: #601C4F;
+}
+
+#basic-navbar-nav-logado {
+  text-align: center;
+  z-index: 2;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 280px) {
+  #basic-navbar-nav-logado {
+    background-image: none;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #basic-navbar-nav-logado {
+    font-size: 13px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #basic-navbar-nav-logado {
+    font-size: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 912px) {
+  #basic-navbar-nav-logado {
+    padding: 20px;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #basic-navbar-nav-logado {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20.3524px;
+    line-height: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.bd-toc-item-logado {
+  background-color: #601C4F;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  .bd-toc-item-logado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.espacamento {
+  margin: 26px;
+}
+
+.links {
+  background-color: #601C4F;
+  font-family: 'Poppins';
+  margin: 26px;
+}
+
+@media only screen and (min-width: 768px) {
+  .links {
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .links {
+    padding: 8px;
+  }
+}
+
+#cadastre {
+  padding: 10.5px;
+  width: 343px;
+  border: none;
+  background-color: #FFFFFF;
+  color: #601C4F;
+  border-radius: 66px;
+}
+
+@media only screen and (min-width: 768px) {
+  #cadastre {
+    margin-left: 21px;
+    width: 550px;
+  }
+}
+
+#login {
+  padding: 10.5px;
+  width: 343px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 66px;
+}
+
+@media only screen and (min-width: 992px) {
+  #login {
+    margin-left: 16px;
+  }
+}
+
+#basic-navbar-nav-logado {
+  background-color: #601C4F;
+  margin-top: 48px;
+}
+
+@media only screen and (min-width: 280px) {
+  #basic-navbar-nav-logado {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #basic-navbar-nav-logado {
+    margin-left: 0px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #basic-navbar-nav-logado {
+    margin-top: 29px;
+    margin-left: 29px;
+    margin-bottom: 29px;
+    margin-right: 29px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #basic-navbar-nav-logado {
+    margin-top: 29px;
+    margin-left: 29px;
+    margin-bottom: 29px;
+    margin-right: 0;
+  }
+}
+
+.navbar-toggler-icon {
+  display: contents;
+  background-color: #601C4F;
+  opacity: 0;
+  width: 0;
+  border: none;
+  border-radius: 56;
+}
+
+#logo {
+  width: 171px;
+  height: 40px;
+}
+
+#botaoToggleHeaderLogado {
+  border-radius: 50%;
+  margin-right: 24px;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+#botaoToggleHeaderLogado:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #601C4F;
+}
+
+@media only screen and (min-width: 280px) {
+  #botaoToggleHeaderLogado {
+    margin-right: 0;
+  }
+}
+
+#botaoToggleHeaderLogado {
+  margin-right: 34px;
+  background-image: url("../../assets/imagens/foto_perfil.png");
+}
+
+@media only screen and (max-width: 280px) {
+  #botaoToggleHeaderLogado {
+    background-image: url("../../assets/imagens/menu.png");
+    width: 10px;
+    height: 14px;
+    border-radius: 0%;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #botaoToggleHeaderLogado {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
