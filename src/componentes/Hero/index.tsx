@@ -11,13 +11,13 @@ import "./styles.scss"
 export default function Hero() {
     return (
 
-        <Container className="mt-0 mb-5">
+        <Container className=" cont00 mt-0">
                 <Row className="d-flex flex-column-reverse flex-md-row mb-5 mb-lg-0">
 
                     <Col md={7} className="grupotexto ms-2 ms-md-0"> 
                         <div >
-                            <h2 className="tx1 lh-base  fw-bold text-start  pt-md-5 mb-4  me-md-0">Frase de impacto sobre <br></br> o principal diferencial da empresa</h2>
-                            <p className="tx2 fw-bolder text-start  me-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec vel<br></br> risus a nibh placerat volutpat eget vitae leo.</p>
+                            <h2 className="tx1 lh-base  fw-bold text-start  mb-4  me-md-0">Frase de impacto sobre <br></br> o principal diferencial da empresa</h2>
+                            <p className="tx2 fw-semibold text-start  me-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec vel<br></br> risus a nibh placerat volutpat eget vitae leo.</p>
                         </div>
 
                        <div className="btn_reco  ">     
@@ -36,7 +36,7 @@ export default function Hero() {
 
                 <Row>
                     <Col className="textoemppar">
-                        <p className="fw-bolder mt-5 mt-md-5 pt-3 pt-md-0 me-0 pe-5 ps text-center ">Empresas parceiras</p>
+                        <p className="textoemppar2 fw-bolder  me-0 pe-5 ps text-center ">Empresas parceiras</p>
                     </Col>
                 </Row>
 
