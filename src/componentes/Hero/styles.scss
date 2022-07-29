@@ -3,21 +3,46 @@
     align-items: center;
     justify-content: center;
     
+    
 }
 .imgtopo{
-    width: 310px;
-    height: 264px;
-    margin-top: 38px;
+    width: 326px;
+    height: 274px;
+    margin-top: 48px;
 
+    @media (min-width:768px) {
+        width: 310;
+        height: 264px;
+        margin-top: 0px;
+        margin-left: 62px;
+        margin-bottom: -50px;
+    
+    } 
+
+     @media (min-width:992px) {
+        margin-top: 62px;
+        margin-left: 66px;
+    
+    } 
 
     @media (min-width:1200px) {
-        width: 400px;
-        height: 390px;
+        width: 380px;
+        height: 370px;
         margin-top: 159px;
         margin-right: 155px;
-        margin-bottom: 150px;
-        margin-left: 50px;
+        margin-bottom: 120px;
+        margin-left: 200px;
+      
     }    
+
+    @media (min-width:1400px) {
+        width: 400px;
+        height: 390px;
+        margin-top: 169px;
+        margin-right: 155px;
+        margin-bottom: 150px;
+        margin-left: 100px;
+    }   
 }
 
 .grupotexto{
@@ -52,27 +77,51 @@
        font-size: 20px ;
         margin-top: 0px;
         margin-left: 40px;
+    
        
     }    
     
 }
 
 .btn_reco{
+        justify-content: center;
+        text-align: center;
     
-    
+    @media (min-width:768px) {
+       
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+
     @media (min-width:1200px) {
        
         margin-top: 5px;
         margin-left: 40px;
+        justify-content:start;
+        
        
     }    
     
 }
 
-.btn1{
-    
-    
+.btn001{
+    width: 300px;
+
+    @media (min-width:768px) {
+       
+        width: 278px;
+        height: 58px;
+         
+      }   
    
+    @media (min-width:1200px) {
+       
+        width: 278px;
+        height: 68px;
+         
+      }    
     @media (min-width:1400px) {
        
       width: 278px;
@@ -81,9 +130,22 @@
     
 }
 
-.btn2{
+.btn002{
     
+    width: 300px;
     
+    @media (min-width:768px) {
+       
+        width: 278px;
+        height: 58px;
+         
+      }
+    @media (min-width:1200px) {
+       
+        width: 278px;
+        height: 68px;
+         
+      }    
     @media (min-width:1400px) {
        
       width: 278px;
@@ -95,7 +157,6 @@
 
 .grupologoemp{
    height: 96px;
-
    margin-bottom: 30px;
 
    @media (min-width:1200px) {

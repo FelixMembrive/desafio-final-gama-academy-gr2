@@ -14,17 +14,17 @@ export default function Hero() {
         <Container className="mt-0 mb-5">
                 <Row className="d-flex flex-column-reverse flex-md-row mb-5 mb-lg-0">
 
-                    <Col md={7} className="grupotexto text-center justify-content-center align-items-center ms-2 ms-md-0"> 
+                    <Col md={7} className="grupotexto ms-2 ms-md-0"> 
                         <div >
-                            <h2 className="tx1 lh-base  fw-bolder text-start  pt-md-5 mb-4  me-md-0">Frase de impacto sobre <br></br> o principal diferencial da empresa</h2>
-                            <p className="tx2 fw-normal text-start  me-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec vel<br></br> risus a nibh placerat volutpat eget vitae leo.</p>
+                            <h2 className="tx1 lh-base  fw-bold text-start  pt-md-5 mb-4  me-md-0">Frase de impacto sobre <br></br> o principal diferencial da empresa</h2>
+                            <p className="tx2 fw-bolder text-start  me-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Donec vel<br></br> risus a nibh placerat volutpat eget vitae leo.</p>
                         </div>
 
-                       <div className="btn_reco">     
-                        <div className="d-flex flex-column flex-md-row mt-4 me-5 me-md-0">
-                            <LinkButton className="btn1 btn-secondary rounded-pill me-3 mt-4 mt-md-3" to="" text="Registre-se"></LinkButton>
-                            <LinkButton className="btn2 btn-light border border-dark border-2 rounded-pill me-3 ms-0 ms-md-4 mt-3" to="" text="Conheça mais"></LinkButton>
-                        </div>
+                       <div className="btn_reco  ">     
+                        
+                            <LinkButton className="btn001 btn-secondary rounded-pill fs-4 me-3 mt-4 mt-md-3" to="" text="Registre-se"></LinkButton>
+                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill fs-4 me-3 ms-0 ms-md-3 mt-3" to="" text="Conheça mais"></LinkButton>
+                        
                        </div> 
                     </Col>
 
