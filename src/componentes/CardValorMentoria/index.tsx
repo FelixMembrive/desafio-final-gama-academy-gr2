@@ -13,16 +13,22 @@ interface ICardValorMentoriaProps{
 
 export default function CardValorMentoria(props: ICardValorMentoriaProps) {
   return (
-                <Card className="card-valormentoria border-0 p-xs-4 p-lg-7">
+            <div className="card-valormentoria_div">
+                <Card className="card-valormentoria border-0">
                     <Card.Body className="card-valormentoria-body d-flex flex-column m-0 p-0">
                     <div className="card-valormentoria-text">
-                        <p className="fw-semibold m-0 mb-3">{props.tipo_mentoria}</p>
-                        <p className="fw-semibold m-0 mb-3">{props.area_da_mentoria}</p>
-                        <p className="fw-semibold m-0 mb-3">{props.tempo}</p>
-                        <p className="fw-semibold m-0 mb-3">{props.valor}</p>
+                        <p className=" cabecario fw-semibold">{props.tipo_mentoria}</p>
+                        <div className="text_div">
+                            <p className=" text01 fw-semibold">{props.area_da_mentoria}</p>
+                            <p className=" text02 fw-semibold">{props.tempo}</p>
+                            <p className=" text03 fw-semibold">{props.valor}</p>
+                        </div>
                     </div>
-                    <LinkButton className='rounded-pill text-center d-flex justify-content-center align-items-center' to='#' text='Agendar mentoria'/>
+                        <div className="btn_001_div d-flex justify-content-end">
+                    <LinkButton className='btn_0001 rounded-pill text-center d-flex justify-content-center align-items-center' to='#' text='Agendar mentoria'/>
+                        </div>
                     </Card.Body>
                 </Card>
+            </div> 
   );
 }

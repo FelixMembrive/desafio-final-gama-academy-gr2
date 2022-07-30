@@ -1,43 +1,119 @@
+// .card-valormentoria_div{ 
+//     padding-right: 16px;
+
+// }
+
 .card-valormentoria {
-    background-color: #efefef !important;
+    background-color: #FFFBFE !important;
     width: 263px !important;
     height: 208px !important;
     margin-top: 5px;
+    padding-left: 16px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
 
-    @media (min-width:992px) {
-        width: 363px !important;
-        height: 287px !important;
-    }
+
+    // @media (min-width:992px) {
+    //     width: 363px !important;
+    //     height: 287px !important;
+    // }
 }
+
 
 
 
 .card-valormentoria-text {
-    p {
-        font-size: 12.54px;
-
-        @media (min-width:992px) {
-            
-            font-size: 15.29px !important;
-
-        }
+    .cabecario{
+        font-size:24px ;
+        font-family: 'Roboto', sans-serif;
+        line-height: 32px;
+        color: #1c1b1f;
+        width: 310px;
+        height: 32px;
+        padding-top:16px;
     }
+    .text01{
+        // padding-top: 16px;
+        margin-bottom: 6px;
+    }
+    .text02{
+        margin-bottom: 6px;
+    }
+    .text_div{
+        padding-top: 12px;
+    }
+
+        p {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            line-height: 20px;
+            color: #49454f;
+            width: 294px;
+            height: 20px;
+            padding-bottom: 0px;
+
+            // @media (min-width:992px) {
+            
+            // font-size: 15.29px !important;
+
+            // }
+        }
 }
 
 .card-valormentoria-body {
-    .btn {
+    .btn_0001 {
         font-size: 10.7px;
         font-weight: 400;
-        width: 197px;
-        height: 41px;
-        margin-top: 15px;
-        margin-left: 20px;
+        width: 154.6px;
+        height: 38px;
+        padding: 10px,23px,10px,23px;
+        background-color:#601C4F;
+        border: none;
+    
 
-        @media (min-width:992px) {
-            font-size: 14.8px !important;
-            width: 272.57px;
-            height: 50px;
-            margin-left: 20px;
-        }
+    //     @media (min-width:992px) {
+    //         font-size: 14.8px !important;
+    //         width: 272.57px;
+    //         height: 50px;
+    //         margin-left: 20px;
+    //     }
     }
 }
+
+.btn_001_div{
+    display: inline;
+    align-items: flex-end;
+    padding-right: 16px;
+}
+
+
+// .card-valormentoria2 {
+   
+
+    // /* Primárias/Sutil 3 */
+    // background: #FFFBFE;
+    // /* M3/Elevation Light/2 */
+    // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    // border-radius: 12px;
+    
+
+//     @media (min-width: 360px) {
+//         width: 342px !important;
+//     }
+
+//     @media (min-width:700px) {
+//         min-width: 450px !important;
+//     }
+
+//     @media (min-width:1024px) {
+//         min-width: 600px !important;
+//     }
+
+//     @media (min-width:1400px) {
+//         min-width: 906px !important;
+//     }
+
+//     .card-valormentoria-body2 {
+//         background-color: transparent;
+//     }
+// }

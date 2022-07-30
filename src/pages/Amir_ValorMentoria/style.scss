@@ -1,73 +1,103 @@
 .textolink{
-    font-size: 13.31px;
-    // margin-top: 77px;
-    padding-top: 77px;
-    margin-bottom: 58px;
+    color: #601c4f ;
+    // width:254px ;
+    // height: 31px;
+    font-size: 16px;
+    padding-top: 57px;
+    margin-bottom: 42px;
+    margin-left: 56px;
+    margin-right: 80px;
+    padding-left: 0px;
 
-    @media (min-width:768px) {
-        font-size:24.73px;
-        padding-top: 102px;
-        margin-bottom: 102px;
+    // @media (min-width:768px) {
+    //     font-size:24.73px;
+    //     padding-top: 102px;
+    //     margin-bottom: 102px;
       
-    }
+    // }
 
 }
-.logofoto{
-    width: 54px;
-    height: 54px;
-    margin-bottom: 46px;
+.textolink2{
+    color: #601c4f ;
+    margin-left: 44px;
+    margin-right: 80px;
+    font-family: 'Poppins', sans-serif;
+    width:254px ;
+    height: 31px;
+   
 
-    @media (min-width:768px) {
+    // @media (min-width:768px) {
+    //     font-size:24.73px;
+    //     padding-top: 102px;
+    //     margin-bottom: 102px;
       
-        margin-bottom: 122.54px;
-        width: 93.46px;
-        height: 93.46px;
+    // }
+
+}
+
+.logofoto{
+    width: 90px;
+    height: 90px;
+    margin-left: 24px;
+    margin-bottom: 0px;
+
+//     @media (min-width:768px) {
       
-    }
+//         margin-bottom: 122.54px;
+//         width: 93.46px;
+//         height: 93.46px;
+      
+//     }
+ }
+.dados_monitora{
+    padding-top: 16px;
+    padding-left: 24px;
 }
 
 .nome_monitora{
-    font-size: 13.31px;
-    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    // font-weight: 600px;
 
-    @media (min-width:768px){
+//     @media (min-width:768px){
 
-        font-size:24.73px;
-    }
+//         font-size:24.73px;
+//     }
 
-}
+ }
  .area_monitora{    
-    font-size: 13.31px;
-    font-weight: 600;
+    font-size: 14px;
+    // font-weight: 400;
+    width: 171px;
+    height: 25px;
+    font-family: 'Mulish', sans-serif;
 
-    @media (min-width:768px){
+    // @media (min-width:768px){
 
-        font-size:24.73px;
-    }
+    //     font-size:24.73px;
+    // }
 
  }
 // .dados_monitora{
 //     // width: 220px;
 // }
 .lorem1{
-    font-size: 9.35px;
-    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    color: #1C1B1F;
+    line-height: 170%;
+    align-items:flex-start;
+    width: 342px;
+    height: 111px;
+    padding-top: 12px;
 
-    @media (min-width:768px){
+    // @media (min-width:768px){
 
-        font-size:17.38px;
-    }
+    //     font-size:17.38px;
+    // }
 }
 
-.lorem2{
-    font-size: 9.35px;
-    font-weight: 400;
 
-    @media (min-width:768px){
-
-        font-size:17.38px;
-    }
-}
 
 
 .cardsvalormentoria{
