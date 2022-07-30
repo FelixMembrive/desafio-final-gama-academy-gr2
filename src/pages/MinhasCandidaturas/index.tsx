@@ -7,7 +7,7 @@ import ArrowBack from "../../assets/icons/arrow_back.png";
 import mockData from '../../assets/mockups/vagas-mockup.json';
 import CardVaga from "../../componentes/CardVaga";
 import AcordionVaga from "../../componentes/AcordionVaga";
-import VagasAndamento from "../../componentes/VagaAndamento/Index";
+import VagasAndamento from "../../componentes/VagaAndamento";
 
 enum ApplicationFilter {
   Salvas = "salvas",
