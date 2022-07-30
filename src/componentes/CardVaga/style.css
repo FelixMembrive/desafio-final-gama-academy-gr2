@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.card-vagas {
+  width: 320px !important;
+  height: 80px;
+  /* Primárias/Sutil 3 */
+  background: #FFFBFE;
+  /* M3/Elevation Light/2 */
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 360px) {
+  .card-vagas {
+    width: 342px !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .card-vagas {
+    min-width: 450px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-vagas {
+    min-width: 600px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .card-vagas {
+    min-width: 906px !important;
+  }
+}
+
+.card-vagas .card-body {
+  background-color: transparent;
+}
+
+.img-card-vagas {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+@media (min-width: 1024px) {
+  .img-card-vagas {
+    width: 54px !important;
+    height: 54px !important;
+  }
+}
+
+.card-vagas-text p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 750px) {
+  .card-vagas-text p {
+    font-size: 20.35px !important;
+  }
+}
+
+.icone-vagas-salvar {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.icone-vagas-salvar svg {
+  width: 32px;
+  height: 32px;
+}
+/*# sourceMappingURL=style.css.map */

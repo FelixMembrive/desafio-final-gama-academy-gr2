@@ -1,0 +1,52 @@
+.btn-processos {
+  border: 4px solid #2D2D2D !important;
+  color: #2D2D2D !important;
+  font-size: 16px !important;
+}
+
+@media (min-width: 350px) {
+  .btn-processos {
+    width: 288px;
+  }
+}
+
+@media (min-width: 500px) {
+  .btn-processos {
+    font-size: 24px !important;
+    width: 372px;
+  }
+}
+
+.texto-processos {
+  max-width: 559px;
+  font-size: 16px !important;
+}
+
+@media (min-width: 400px) {
+  .texto-processos {
+    font-size: 20px !important;
+  }
+}
+
+.h2-processos {
+  font-size: 24px !important;
+}
+
+@media (min-width: 400px) {
+  .h2-processos {
+    font-size: 32px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-processos {
+    min-width: 400px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .img-processos {
+    min-width: 500px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

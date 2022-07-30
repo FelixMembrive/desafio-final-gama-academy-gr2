@@ -1,0 +1,121 @@
+.assinar-newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-bottom: 31px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo-assinar-newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.conteudo-assinar-newsletter a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-assinar-newsletter {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  height: 56px;
+  margin-top: 10px;
+}
+
+.button-assinar-newsletter {
+  z-index: -1;
+}
+
+.assinar-newletter-select-button {
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;
+  padding: 6px 8px;
+  position: relative;
+  text-align: left;
+}
+
+.assinar-newletter-select-button ::after {
+  position: absolute;
+  right: 6px;
+  top: 4px;
+  content: url(../../assets/icons/select-arrow-down.svg);
+}
+
+.select-assinar-newsletter {
+  padding: 0;
+}
+
+.select-assinar-newsletter button {
+  height: 56px;
+}
+
+.select-assinar-newsletter button::after {
+  position: absolute;
+  right: 6px;
+  top: 12px;
+  content: url(../../assets/icons/select-arrow-down.svg);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.expanded {
+  border: 2px solid #601C4F;
+  border-radius: 4px;
+}
+
+button.expanded::after {
+  content: url(../../assets/icons/select-arrow-up.svg);
+}
+
+ul.options {
+  display: none;
+  list-style: none;
+  padding: 4px 0;
+  margin-top: -4px;
+  background: #FFFBFE;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+ul.show {
+  display: block;
+}
+
+ul.options li {
+  padding: 6px 10px;
+}
+
+ul.options li:active,
+ul.options li:focus,
+ul.options li:hover,
+ul.options li[aria-selected="true"] {
+  background: #ECDDE8;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
