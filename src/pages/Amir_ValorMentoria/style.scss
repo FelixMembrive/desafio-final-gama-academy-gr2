@@ -1,0 +1,75 @@
+.textolink{
+    font-size: 13.31px;
+    // margin-top: 77px;
+    padding-top: 77px;
+    margin-bottom: 58px;
+
+    @media (min-width:768px) {
+        font-size:24.73px;
+        padding-top: 102px;
+        margin-bottom: 102px;
+      
+    }
+
+}
+.logofoto{
+    width: 54px;
+    height: 54px;
+    margin-bottom: 46px;
+
+    @media (min-width:768px) {
+      
+        margin-bottom: 122.54px;
+        width: 93.46px;
+        height: 93.46px;
+      
+    }
+}
+
+.nome_monitora{
+    font-size: 13.31px;
+    font-weight: 600;
+
+    @media (min-width:768px){
+
+        font-size:24.73px;
+    }
+
+}
+ .area_monitora{    
+    font-size: 13.31px;
+    font-weight: 600;
+
+    @media (min-width:768px){
+
+        font-size:24.73px;
+    }
+
+ }
+// .dados_monitora{
+//     // width: 220px;
+// }
+.lorem1{
+    font-size: 9.35px;
+    font-weight: 400;
+
+    @media (min-width:768px){
+
+        font-size:17.38px;
+    }
+}
+
+.lorem2{
+    font-size: 9.35px;
+    font-weight: 400;
+
+    @media (min-width:768px){
+
+        font-size:17.38px;
+    }
+}
+
+
+.cardsvalormentoria{
+    margin-bottom: 121px;
+}
