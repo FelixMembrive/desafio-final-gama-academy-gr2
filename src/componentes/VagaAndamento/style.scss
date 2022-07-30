@@ -1,3 +1,5 @@
+@import '../../colors.scss';
+
 .vaga-etapa-concluida {
     list-style-image: url('../../assets/icons/ellipse_lilac.svg');
 }
@@ -7,3 +9,43 @@
 .vaga-etapa-futura {
     list-style-image: url('../../assets/icons/ellipse_grey.svg');
 }
+
+.icon-vagas-andamento {
+    width: 15px;
+    margin-right: 12.6px;
+    &.rosto{
+        height: 15px;
+    }
+    &.olho{
+        height: 10px;
+    }
+    &.download{
+        height: 15px;
+    }
+}
+
+.card-rosto, .card-olho, .card-download {
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+} 
+
+div.vagas-etapas-container {
+    *{
+        font-size: 14px;
+    }
+    position: relative;
+    div.div-colorida {
+        background-color: $primary-subtle;
+        height: 400px;
+        width: 1px;
+        position: absolute;
+        top: 25px;
+        left: 18px;
+      }
+      ul {
+        position: relative;
+      }
+}
+  
