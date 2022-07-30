@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
 import CardValorMentoria from "../../componentes/CardValorMentoria";
+import CardValorMentoria2 from "../../componentes/CardValorMentoria2";
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import LinkText from "../../componentes/LinkText";
 import logo1 from "../../assets/imagens/foto_logada_mariaisabel.png";
 import HeaderLogado from "../../componentes/HeaderLogado";
+import LinkBack from "../../componentes/LinkBack";
 import Footer from "../../componentes/Footer";
 
 
@@ -20,8 +20,9 @@ export default function Amir_ValorMentoria() {
         <>
         <HeaderLogado/>
         <Container className="">
+            
             <Row className=" textolink ">
-                <LinkText  to="" className=" textolink2 text-decoration-none" text=" Voltar para perfil da Mentora"></LinkText>
+                <LinkBack className="textolink2" text="Voltar para perfil da Mentora"/>
             </Row>
    
             <img className="logofoto position-static" src={logo1}/>
@@ -38,15 +39,13 @@ export default function Amir_ValorMentoria() {
                 </p>
             </Row>
        
-            <Row className=" cardsvalormentoria d-flex justify-content-around flex-sm-row me-4 g-5 ms-0 mt-2 ">
-                <CardValorMentoria className="" tipo_mentoria="Primeira vez" area_da_mentoria="Mentoria de x área" tempo="30 min" valor="Gratuito" ></CardValorMentoria>
-                <CardValorMentoria className="" tipo_mentoria="Valor normal" area_da_mentoria="Mentoria de x área" tempo="30 min" valor="R$ 50,00"></CardValorMentoria>
-                <CardValorMentoria className="" tipo_mentoria="Primeira vez" area_da_mentoria="Mentoria de x área" tempo="30 min" valor="Gratuito"></CardValorMentoria>
-
-               
-                <CardVaga></CardVaga>
-
-            </Row>
+            <div className="cardsvm_div">
+                <Row className=" cardsvalormentoria me-4 g-5 ms-0 ">
+                    <CardValorMentoria className="" tipo_mentoria="Primeira mentoria" area_da_mentoria=". Mentoria de UX/UI design" tempo=". 30 minutos" valor=". Primeira mentoria é de graça! " ></CardValorMentoria>
+                    <CardValorMentoria className="" tipo_mentoria="Valor mentoria completa" area_da_mentoria=". Mentoria de UX/UI design" tempo=". 60 minutos" valor=". R$ 80,00"></CardValorMentoria>
+                    <CardValorMentoria2 className="" tipo_mentoria="Valor apoie outra mulher" area_da_mentoria=". Mentoria de UX/UI design" tempo=". 60 minutos para uma mulher que precisa da sua aduda, 60 minutos pra você" valor=". R$ 150,00"></CardValorMentoria2>
+                </Row>
+            </div>
                           
         </Container>
         <Footer/>

@@ -3,7 +3,7 @@
     // width:254px ;
     // height: 31px;
     font-size: 16px;
-    padding-top: 57px;
+    padding-top: 56px;
     margin-bottom: 42px;
     margin-left: 56px;
     margin-right: 80px;
@@ -86,7 +86,8 @@
     font-family: 'Mulish', sans-serif;
     color: #1C1B1F;
     line-height: 170%;
-    align-items:flex-start;
+    text-align: justify;
+    // align-items:flex-start;
     width: 342px;
     height: 111px;
     padding-top: 12px;
@@ -97,9 +98,52 @@
     // }
 }
 
+.cardvm3_div{
+    // height: 226px;
+}
+.cardvm3{
+    height:500px ;
+}
 
 
 
+.cardsvm_div{
+    margin-top: 0px;
+    display: flex;
+
+        @media (min-width:400px){
+
+            margin-top: -30px;
+ }
+
+        @media (min-width:768px){
+
+            margin-top: -60px;
+     }
+//         @media (min-width:1200px){
+
+//         margin-top: -90px;
+//  }
+
+
+ }
 .cardsvalormentoria{
-    margin-bottom: 121px;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    
+
+    
+    
+
+    @media (min-width:439px){
+
+        padding-top: 20px;
+    @media (min-width:400px){
+
+        padding-top: 50px;
+ }
+   
+}
+
+   
 }
