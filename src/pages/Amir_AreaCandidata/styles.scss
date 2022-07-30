@@ -1,4 +1,99 @@
-.btn_user{
-    --bs-btn-bg: #D9D9D9;
-    background-color: #D9D9D9;
+.col1_ac{
+    margin-left: 0px ;
+    padding-left: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.logo_boyzin{
+    margin-top: 59.3px;
+
+    @media(min-width:1400px){
+       
+        margin-top: 134.5px;
+   }
+}
+.nome_usuario{
+    margin-bottom: 81px;
+} 
+
+.btn_ac_sair{
+    margin-bottom: 40px;
+    
+ 
+};
+.btn_ac_sair_div{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 18px;
+};
+
+.btns_ac_div{
+    margin-top: 20px;
+
+}
+
+
+.btn_ac_perfil{
+    margin-top: 0px;
+}
+.btn_ac_curr{
+    margin-top: 20px;
+}
+.btn_ac_cand{
+    margin-top: 20px;
+}
+.btn_ac_alertas{
+    margin-top: 20px;
+}
+
+.img_ac_div{
+    display: flex;
+    align-items:flex-end;
+
+    // @media(min-width:576px){
+        
+    //     width: 464px;
+
+    // }
+
+}
+.img_ac{
+    // width:304px ;
+    // height:308px;
+    // @media(min-width:576px){
+    //     margin-left: -12px;
+    //     margin-right: 0px;
+        margin-bottom: 45px;
+    //     width: 464px;
+    //     height: 274.25px;
+    // }
+
+//    @media(min-width:768px){
+//         margin-left: -12px;
+//         margin-right: 0px;
+//         margin-bottom: 20px;
+//         width: 644px;
+//     }
+//     @media(min-width:992px){
+//         margin-left: -12px;
+//         margin-right: 26px;
+//         margin-bottom: 20px;
+//     }
+
+    @media(min-width:1200px){
+        width: 961px;
+        height: 568px;
+        margin-left: 44px;
+        // margin-right: 87px;
+        margin-bottom: 0px;
+
+    }
+
+    @media(min-width:1400px){
+       
+                margin-top: 89px;
+                margin-left: 88px;
+           }
+   
 }

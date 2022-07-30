@@ -10,27 +10,31 @@ import "./styles.scss"
 
 export default function Amir_AreaCandidata() {
     return (
-        <Container fluid="">
+        <Container className=" " >
 
-                 <Row className="d-flex flex-column flex-md-row me-4">
+                 <Row className="d-flex flex-column flex-md-row justify-content-center align-items-center  ">
                 
-                    <Col xl={3} className="pe-0"> 
-                        <div className="text-center mt-4" >
-                            <img className=" mt-5 mb-4 " src={logo_boyzin} width={75}/>
-                            <h2 className="nome_usuario fs-5 mb-5 ">Nome da usuária</h2>
+                    <Col xl={3} className=" col1_ac justify-content-center "> 
+                        <div className="text-center" >
+                            <img className="logo_boyzin mb-4 " src={logo_boyzin} width={75}/>
+                            <h2 className="nome_usuario fs-5 ">Nome da usuária</h2>
                             
                         </div>
 
-                        <div className="d-block text-center ms-3 me-0 ">
-                            <LinkButton className="btn_user btn-secondary p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 mt-3" to="" text="Editar perfil"></LinkButton>
-                            <LinkButton className="btn-secondary p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 mt-3" to="" text="Editar currículo"></LinkButton>
-                            <LinkButton className="btn-secondary p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 mt-3" to="" text="Minhas candidaturas"></LinkButton>
-                            <LinkButton className="btn-secondary p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 mt-3" to="" text="Meus alertas"></LinkButton>
+                        <div className="btns_ac_div d-block  ">
+                            <LinkButton className="btn_ac_perfil btn-secondary text-start p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 " to="" text="Editar perfil"></LinkButton>
+                            <LinkButton className="btn_ac_curr btn-secondary text-start p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 " to="" text="Editar currículo"></LinkButton>
+                            <LinkButton className="btn_ac_cand btn-secondary text-start p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 " to="" text="Minhas candidaturas"></LinkButton>
+                            <LinkButton className="btn_ac_alertas btn-secondary text-start p-2 border border-0 text-body fw-semibold w-100 ms-0 ms-md-0 " to="" text="Meus alertas"></LinkButton>
+                        
+                        </div>
+                        <div className="btn_ac_sair_div">
+                            <LinkButton className="btn-link btn_ac_sair fs-6 text-bg-light text-decoration-none fw-semibold text-danger text-center text-opacity-50 "  to="" text="Sair da conta"></LinkButton>
                         </div>
                     </Col>
 
-                    <Col xl={9} className="">
-                            <img className=" img-fluid align-middle ms-3 ms-xl-5 ps-0 ps-xl-3 mt-4 mb-5 mb-lg-5  me-5 pe-0 pt-4 h-75 " src={areagrafica_candidaturas} width={960}/>
+                    <Col xl={9} className="img_ac_div img-fluid  ">
+                            <img className="img_ac img-fluid " src={areagrafica_candidaturas} width={960}/>
                     </Col>
                 </Row>
 

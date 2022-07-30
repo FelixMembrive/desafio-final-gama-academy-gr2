@@ -1,0 +1,237 @@
+.colimgtopo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.imgtopo{
+    width: 326px;
+    height: 274px;
+    margin-top: 48px;
+
+    @media (min-width:768px) {
+        width: 310;
+        height: 264px;
+        margin-top: 0px;
+        margin-left: 62px;
+        margin-bottom: -50px;
+    
+    } 
+
+     @media (min-width:992px) {
+        margin-top: 62px;
+        margin-left: 66px;
+    
+    } 
+
+    @media (min-width:1200px) {
+        width: 380px;
+        height: 370px;
+        margin-top: 159px;
+        margin-right: 155px;
+        margin-bottom: 120px;
+        margin-left: 200px;
+      
+    }    
+
+    @media (min-width:1400px) {
+        width: 400px;
+        height: 390px;
+        margin-top: 169px;
+        margin-right: 155px;
+        margin-bottom: 150px;
+        margin-left: 100px;
+    }   
+}
+
+.grupotexto{
+        margin-top:150px;
+
+    @media (min-width:1400px) {
+        margin-left: 100px;
+        margin-top:204px ;
+    }    
+}
+
+.tx1{
+    margin-top: 15px;
+    
+    
+    @media(min-width:768px){
+        margin-top: 100px;
+        
+    } 
+     @media(min-width:1200px){
+        margin-top: 204px;
+        margin-left: 40px;
+    }
+    
+    @media (min-width:1400px) {
+        font-size: 40px;
+        margin-top: 204px;
+        margin-left: 40px;     
+    }    
+
+  
+
+    
+    
+}
+
+.tx2{
+    
+    
+    @media (min-width:1200px) {
+       font-size: 20px ;
+        margin-top: 0px;
+        margin-left: 40px;
+    
+       
+    }    
+    
+}
+
+.btn_reco{
+        justify-content: center;
+        text-align: center;
+    
+    @media (min-width:768px) {
+       
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+    }
+
+    @media (min-width:1200px) {
+       
+        margin-top: 5px;
+        margin-left: 40px;
+        justify-content:start;
+        
+       
+    }    
+    
+}
+
+.btn001{
+    width: 300px;
+
+    @media (min-width:768px) {
+       
+        width: 278px;
+        height: 58px;
+         
+      }   
+   
+    @media (min-width:1200px) {
+       
+        width: 278px;
+        height: 68px;
+         
+      }    
+    @media (min-width:1400px) {
+       
+      width: 278px;
+       
+    }    
+    
+}
+
+.btn002{
+    
+    width: 300px;
+    
+    @media (min-width:768px) {
+       
+        width: 278px;
+        height: 58px;
+         
+      }
+    @media (min-width:1200px) {
+       
+        width: 278px;
+        height: 68px;
+         
+      }    
+    @media (min-width:1400px) {
+       
+      width: 278px;
+       
+    }    
+    
+}
+
+
+.textoemppar2{
+
+    @media(min-width:576px){
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size:20px ;
+
+    }
+    @media(min-width:768px){
+        font-size: 24px;
+              
+    } 
+
+    @media(min-width:992px){
+        margin-top: 80px;
+           
+    } 
+
+     @media(min-width:1200px){
+        margin-top: 0px;
+       
+    }
+    
+    @media (min-width:1400px) {
+           
+    }  
+    
+}
+
+
+.grupologoemp{
+   height: 96px;
+//    margin-bottom: 30px;
+
+   @media (min-width:1200px) {
+    margin-bottom: 47.44px;
+    
+    }
+}
+
+
+.logo1{
+
+    @media (min-width:1200px) {
+
+    height: 84.56px;
+    width:250px;
+    margin-bottom: 96px;
+    }
+}
+
+.textcenter{
+
+    @media (min-width:1200px) {
+        padding-bottom: 200px;
+        
+        }
+    }
+.cont00{
+    margin-bottom: 49px;
+
+    @media(min-width:516px){
+        margin-bottom: 85px;
+
+    }
+
+    @media(min-width:768px){
+        margin-bottom: 34px;
+
+    }
+}
