@@ -1,6 +1,10 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+
 #containerStyle-logado {
-    color: #FFFFFF;
-    background-color: #601C4F;
+    color: $light-5;
+    background-color: $primary-custom;
     @media only screen and (min-width: 768px) {
         max-width: 100%;
         margin: 0;
@@ -16,7 +20,7 @@
 }
 
 #navStyle-logado{
-    background: #601C4F;
+    background: $primary-custom;
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -25,12 +29,12 @@
 }
 
 #navImg-logado {
-    background-color: #601C4F;
+    background-color: $primary-custom;
     align-items: center;
     margin-left: 24px;
 }
 .d-inline-block{
-    background-color: #601C4F;
+    background-color: $primary-custom;
 }
 #basic-navbar-nav-logado {
     text-align: center;
@@ -85,7 +89,7 @@
     }
 }
 .bd-toc-item-logado{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     flex-direction: row-reverse;
     font-weight: 400;
     @media only screen and (min-width: 768px) {
@@ -93,13 +97,10 @@
         flex-direction: row;
     }
 }
-.espacamento{
-    margin: 26px;
-}
 .links{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     font-family: 'Poppins';
-    margin: 26px;
+    margin: 30px;
     @media only screen and (min-width: 768px) {
         margin: 10px;
     }
@@ -112,8 +113,8 @@
     padding:10.5px;
     width: 343px;
     border: none;
-    background-color: #FFFFFF;
-    color: #601C4F;
+    background-color: $light-5;
+    color: $primary-custom;
     border-radius: 66px;
     @media only screen and (min-width: 768px) {
         margin-left: 21px;
@@ -124,8 +125,8 @@
 #login {
     padding: 10.5px;
     width: 343px;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: $light-5;
+    border: 1px solid $light-5;
     border-radius: 66px;
     @media screen and (min-width: 768px){
     }
@@ -134,7 +135,7 @@
     }
 }
 #basic-navbar-nav-logado{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     margin-top: 48px;
     @media only screen and (min-width: 280px) {
         margin-top: 0;
@@ -162,7 +163,7 @@
 }
 .navbar-toggler-icon{
     display: contents;
-    background-color: #601C4F;
+    background-color: $primary-custom;
     opacity: 0;
     width: 0;
     border: none;
@@ -174,13 +175,13 @@
 }
 #botaoToggleHeaderLogado{
     border-radius: 50%;
-    margin-right: 24px;
+    margin-right: 14px;
     width: 50px;
     height: 50px;
     display: block;
     &:focus{
         box-shadow: none;
-        background-color: #601C4F;
+        background-color: $primary-custom;
     }
     @media only screen and (min-width: 280px) {
         margin-right: 0;
