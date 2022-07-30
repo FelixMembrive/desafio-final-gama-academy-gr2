@@ -1,0 +1,48 @@
+.card-mentoria {
+  background-color: #efefef !important;
+  width: 152px !important;
+  height: 244.5px !important;
+}
+
+@media (min-width: 1024px) {
+  .card-mentoria {
+    width: 259px !important;
+    height: 415px !important;
+  }
+}
+
+.img-mentoria-candidata {
+  width: 46px !important;
+}
+
+@media (min-width: 1024px) {
+  .img-mentoria-candidata {
+    width: 78px !important;
+  }
+}
+
+.card-mentoria-text p {
+  font-size: 12.54px;
+}
+
+@media (min-width: 1024px) {
+  .card-mentoria-text p {
+    font-size: 21.29px !important;
+  }
+}
+
+.card-mentoria-body .btn {
+  font-size: 12.54px;
+  font-weight: 400;
+  width: 101px;
+  height: 32.5px;
+}
+
+@media (min-width: 1024px) {
+  .card-mentoria-body .btn {
+    font-size: 21.29px !important;
+    width: 172px;
+    height: 55px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

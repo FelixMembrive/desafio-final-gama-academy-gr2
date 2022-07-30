@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,uBAAuB,CAAC;EACpB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,WAAW,ECHN,IAAI;CDOZ;;AAHG,MAAM,EAAE,SAAS,EAAE,MAAM;EAJ7B,AAAA,uBAAuB,CAAC;IAKhB,SAAS,EAAE,oBAAoB;GAEtC;;;AAED,AAAA,uBAAuB,CAAC;EACpB,YAAY,ECVP,IAAI;CDWZ;;AAED,AAAA,mBAAmB,CAAA;EACf,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "style.scss",
+        "../../spacing.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

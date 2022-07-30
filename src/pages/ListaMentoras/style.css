@@ -1,0 +1,39 @@
+.cardsMentora {
+  padding: 18px 24px 119px 32px;
+  grid-gap: 20px;
+}
+
+@media only screen and (min-width: 374px) {
+  .cardsMentora {
+    padding: 18px 0 119px 50px;
+    margin: 0;
+    grid-gap: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cardsMentora {
+    padding: 18px 60px 119px 90px;
+    grid-gap: 10px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .cardsMentora {
+    padding: 18px 50px 119px 220px;
+    grid-gap: 10px;
+    margin: 0;
+  }
+}
+
+.spinnerStyle {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
