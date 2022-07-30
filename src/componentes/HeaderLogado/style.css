@@ -104,7 +104,8 @@
 
 #containerStyle-logado {
   color: #FFFFFF;
-  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
   background-color: #601C4F;
 }
 
