@@ -17,11 +17,11 @@ export default function CardValorMentoria(props: ICardValorMentoriaProps) {
                 <Card className="card-valormentoria border-0">
                     <Card.Body className="card-valormentoria-body d-flex flex-column m-0 p-0">
                     <div className="card-valormentoria-text">
-                        <p className=" cabecario fw-semibold">{props.tipo_mentoria}</p>
+                        <p className=" cabecario fw-normal">{props.tipo_mentoria}</p>
                         <div className="text_div">
-                            <p className=" text01 fw-semibold">{props.area_da_mentoria}</p>
-                            <p className=" text02 fw-semibold">{props.tempo}</p>
-                            <p className=" text03 fw-semibold">{props.valor}</p>
+                            <p className=" text01">{props.area_da_mentoria}</p>
+                            <p className=" text02">{props.tempo}</p>
+                            <p className=" text03">{props.valor}</p>
                         </div>
                     </div>
                         <div className="btn_001_div d-flex justify-content-end">
