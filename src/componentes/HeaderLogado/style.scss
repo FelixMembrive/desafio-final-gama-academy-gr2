@@ -4,6 +4,7 @@
 
 #containerStyle-logado {
     color: $light-5;
+    padding: 0;
     background-color: $primary-custom;
     @media only screen and (min-width: 768px) {
         max-width: 100%;
@@ -21,6 +22,7 @@
 
 #navStyle-logado{
     background: $primary-custom;
+    height: 72px;
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -91,10 +93,16 @@
 .bd-toc-item-logado{
     background-color: $primary-custom;
     flex-direction: row-reverse;
-    font-weight: 400;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
+        font-size: 15px;
+        font-weight: 400;
     }
 }
 .links{
@@ -128,8 +136,6 @@
     color: $light-5;
     border: 1px solid $light-5;
     border-radius: 66px;
-    @media screen and (min-width: 768px){
-    }
     @media only screen and (min-width: 992px) {
         margin-left: 16px;
     }
@@ -156,9 +162,6 @@
         margin-left: 29px;
         margin-bottom: 29px;
         margin-right: 0;
-    }
-    @media only screen and (min-width: 1024px) {
-
     }
 }
 .navbar-toggler-icon{
@@ -188,8 +191,9 @@
     }
   }
 #botaoToggleHeaderLogado{
-    margin-right: 34px;
+    margin-right: 32px;
     background-image: url("../../assets/imagens/foto_perfil.png");
+    border: 3px solid $light-5;
     @media only screen and (max-width: 280px) {
         background-image: url("../../assets/imagens/menu.png");
         width: 10px;
@@ -197,6 +201,12 @@
         border-radius: 0%;
         margin-right: 10px;
     }
+    @media only screen and (min-width: 768px) {
+        display:none;
+    }
+}
+#notificacoes{
+    vertical-align: middle;
     @media only screen and (min-width: 768px) {
         display:none;
     }
