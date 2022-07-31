@@ -3,21 +3,14 @@
   color: #FFFFFF;
   background-color: #601C4F;
 }
-
 @media only screen and (min-width: 768px) {
   #containerStyle {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     font-weight: 400;
   }
   #containerStyle #imagem {
@@ -28,25 +21,16 @@
 #navStyle {
   height: 72px;
   background-color: #601C4F;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 0;
   margin: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #navImg {
   background-color: #601C4F;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 24px;
 }
 
@@ -56,52 +40,32 @@
 
 .botaoStyle {
   background-color: #601C4F;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
 }
-
 @media only screen and (min-width: 768px) {
   .botaoStyle {
     width: 330px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding-right: 75px;
     gap: 20px;
   }
 }
-
 @media only screen and (min-width: 900px) {
   .botaoStyle {
     padding-right: 0;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .botaoStyle {
     padding-right: 0;
     margin-right: 10px;
     margin-left: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 
@@ -110,19 +74,12 @@
   z-index: 2;
   font-weight: 400;
 }
-
 @media only screen and (min-width: 768px) {
   #basic-navbar-nav {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 }
-
 @media only screen and (min-width: 992px) {
   #basic-navbar-nav {
     padding: 10px;
@@ -133,37 +90,28 @@
 }
 
 .botoesContainer {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 14px;
   line-height: 21px;
   list-style: none;
   padding-left: 0px;
   margin: 30px;
   padding: 0;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .bd-toc-item {
   background-color: #601C4F;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   font-weight: 600;
   font-size: 20px;
   line-height: 130%;
 }
-
 @media only screen and (min-width: 768px) {
   .bd-toc-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     font-weight: 300;
     font-size: 18px;
     line-height: 0%;
@@ -176,16 +124,14 @@
 
 .links {
   background-color: #601C4F;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin: 26px;
 }
-
 @media only screen and (min-width: 768px) {
   .links {
     margin: 10px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .links {
     padding: 8px;
@@ -204,7 +150,6 @@
   color: #601C4F;
   border-radius: 66px;
 }
-
 @media only screen and (min-width: 768px) {
   #cadastre {
     width: 400px;
@@ -219,7 +164,6 @@
   border: 1px solid #FFFFFF;
   border-radius: 66px;
 }
-
 @media only screen and (min-width: 992px) {
   #login {
     margin-left: 16px;
@@ -231,7 +175,6 @@
   margin: 0;
   margin-top: 40px;
 }
-
 @media only screen and (max-width: 280px) {
   #basic-navbar-nav {
     width: 100px;
@@ -239,49 +182,37 @@
     font-weight: 100;
   }
 }
-
 @media only screen and (min-width: 768px) {
   #basic-navbar-nav {
     margin-top: 0;
     margin-left: 0px;
     margin-right: 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 992px) {
   #basic-navbar-nav {
     height: 0px;
     margin-top: 60px;
     margin: 29px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   #basic-navbar-nav {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   #basic-navbar-nav {
     margin-right: 50px;
   }
 }
-
 @media only screen and (min-width: 1440px) {
   #basic-navbar-nav {
     margin-right: 200px;
   }
 }
-
 @media only screen and (min-width: 1500px) {
   #basic-navbar-nav {
     margin-right: 200px;
@@ -306,13 +237,10 @@
   height: 14px;
   display: block;
 }
-
 #botaoToggle:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: #601C4F;
 }
-
 #botaoToggle::before {
   background-image: url("../../assets/icons/close.png");
   background-repeat: no-repeat;
@@ -321,10 +249,8 @@
 #botaoToggle {
   background-image: url("../../assets/imagens/menu.png");
 }
-
 @media only screen and (min-width: 768px) {
   #botaoToggle {
     display: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

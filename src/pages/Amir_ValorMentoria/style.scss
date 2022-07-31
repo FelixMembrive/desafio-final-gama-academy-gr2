@@ -1,11 +1,21 @@
+.cont_vm{
+
+    @media (min-width:1400px){
+    margin-left:176px ;
+      
+ }
+
+  
+}
+
 .textolink{
     color: #601c4f ;
     // width:254px ;
     // height: 31px;
     font-size: 16px;
     padding-top: 56px;
-    margin-bottom: 42px;
-    margin-left: 56px;
+    margin-bottom: 32px;
+    margin-left: 24px;
     margin-right: 80px;
     padding-left: 0px;
 
@@ -19,7 +29,7 @@
 }
 .textolink2{
     color: #601c4f ;
-    margin-left: 44px;
+    margin-left: 4px;
     margin-right: 80px;
     font-family: 'Poppins', sans-serif;
     width:254px ;
@@ -38,7 +48,7 @@
 .logofoto{
     width: 90px;
     height: 90px;
-    margin-left: 24px;
+    margin-left: 14px;
     margin-bottom: 0px;
 
 //     @media (min-width:768px) {
@@ -57,6 +67,7 @@
 .nome_monitora{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    padding-left: 0px;
     // font-weight: 600px;
 
 //     @media (min-width:768px){
@@ -98,52 +109,84 @@
     // }
 }
 
-.cardvm3_div{
-    // height: 226px;
-}
-.cardvm3{
-    height:500px ;
-}
-
-
-
 .cardsvm_div{
     margin-top: 0px;
-    display: flex;
+    display: flex !important;  
+    flex-wrap: wrap !important;
+    padding-top: 20px;
+    padding-bottom: 55px;
+    padding-left: 12px;
+
 
         @media (min-width:400px){
-
+            padding-top: 50px;
             margin-top: -30px;
  }
+
+     @media (min-width:439px){
+
+        padding-top: 20px;
+    }
 
         @media (min-width:768px){
 
             margin-top: -60px;
      }
-//         @media (min-width:1200px){
-
-//         margin-top: -90px;
-//  }
-
 
  }
-.cardsvalormentoria{
-    padding-top: 20px;
-    padding-bottom: 55px;
+
+
+ .cdvm1{
+    margin-bottom: 16px;
     
+    @media (min-width:768px){
 
-    
-    
-
-    @media (min-width:439px){
-
-        padding-top: 20px;
-    @media (min-width:400px){
-
-        padding-top: 50px;
+        margin-right: 8px;
+        width: 334px;
  }
-   
+        @media (min-width:1200px){
+
+            width: 342px;
+            margin-right: 16px;
+}
+//                 @media (min-width:1400px){
+
+//                 width: 342px;
+//                 margin-right: 16px;
+// }
+
+ }
+ .cdvm2{
+    margin-bottom: 16px;
+
+    @media (min-width:768px){
+
+        margin-left: 8px;
+        width: 334px;
 }
 
-   
+        @media (min-width:1200px){
+
+            width: 342px;
+            margin-left: 16px;
+            margin-right: 16px;
 }
+
+//             @media (min-width:1400px){
+//                 margin-left: 16px;
+//                 // margin-right: 16px;
+// }
+
+ }
+
+
+ .cdvm3{
+    margin-bottom: 16px;
+
+
+        @media (min-width:1200px){
+
+            width: 342px;
+            margin-left: 16px;
+     }
+ }

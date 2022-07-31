@@ -1,3 +1,8 @@
+
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+
 .cont00{ 
     
     height: 1165px;
@@ -141,9 +146,9 @@
 
 .btn001{
     width: 343px;
-    background-color: #601C4F;
-    background: #601C4F;
-    color: #601C4F;
+    background-color: $primary-custom!important;
+    // background: $primary-custom;
+    // color: $primary-custom ;
 
     @media (min-width:770px) {
         font-size: 18px;       

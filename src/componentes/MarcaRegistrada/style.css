@@ -1,6 +1,6 @@
 .tp-display-1 {
   /* Display 1 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 275;
   font-size: 48px;
   line-height: 130%;
@@ -8,7 +8,7 @@
 
 .tp-display-2 {
   /* Display 2 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 275;
   font-size: 40px;
   line-height: 130%;
@@ -16,7 +16,7 @@
 
 .tp-heading-1 {
   /* Heading 1 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 44px;
   line-height: 130%;
@@ -24,7 +24,7 @@
 
 .tp-heading-2 {
   /* Heading 2 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 36px;
   line-height: 130%;
@@ -32,7 +32,7 @@
 
 .tp-heading-3 {
   /* Heading 3 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 28px;
   line-height: 130%;
@@ -40,7 +40,7 @@
 
 .tp-heading-4 {
   /* Heading 4 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 24px;
   line-height: 130%;
@@ -48,7 +48,7 @@
 
 .tp-heading-5 {
   /* Heading 5 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 20px;
   line-height: 130%;
@@ -56,7 +56,7 @@
 
 .tp-heading-6 {
   /* Heading 6 */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -64,7 +64,7 @@
 
 .tp-lead-paragraph {
   /* Lead Paragraph */
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-weight: 400;
   font-size: 22px;
   line-height: 150%;
@@ -72,7 +72,7 @@
 
 .tp-body-large, .container-flex p {
   /* Body Large */
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-weight: 400;
   font-size: 20px;
   line-height: 170%;
@@ -80,7 +80,7 @@
 
 .tp-body-medium {
   /* Body Medium */
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-weight: 400;
   font-size: 18px;
   line-height: 170%;
@@ -88,7 +88,7 @@
 
 .tp-body-normal {
   /* Body Normal */
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
@@ -96,20 +96,15 @@
 
 .tp-body-small {
   /* Body Small */
-  font-family: 'Mulish';
+  font-family: "Mulish";
   font-weight: 400;
   font-size: 14px;
   line-height: 170%;
 }
 
 .container-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 25px;
   color: #FFFFFF;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
+
 // import Button from "react-bootstrap/Button";
 import img_hero from "../../assets/imagens/img_hero.png";
 import logo_gama_academy from "../../assets/imagens/logo_gama_academy.png";
@@ -9,8 +10,8 @@ import logo_tera from "../../assets/imagens/logo_tera.png";
 import LinkButton from "../../componentes/LinkButton";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import "./styles.scss"
+// import "../../../src/colors.scss";
+import "./styles.scss";
 
 export default function Hero() {
     return (
@@ -27,7 +28,7 @@ export default function Hero() {
 
                        <div className="btn_reco  ">     
                         
-                            <LinkButton className="btn001 btn-secondary rounded-pill fs-4 me-3 me-md-2 mt-4 mt-md-3" to="" text="Registre-se"></LinkButton>
+                            <LinkButton className=" btn btn001 rounded-pill fs-4 me-3 me-md-2 mt-4 mt-md-3"  to="" text="Registre-se"></LinkButton>
                             <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill fs-4 me-3 me-md-2 ms-0 ms-md-3 mt-3" to="" text="Conheça mais"></LinkButton>
                         
                        </div> 
