@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import styled from "styled-components";
 // import Button from "react-bootstrap/Button";
 import img_hero from "../../assets/imagens/img_hero.png";
 import logo_gama_academy from "../../assets/imagens/logo_gama_academy.png";
