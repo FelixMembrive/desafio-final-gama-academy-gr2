@@ -2,62 +2,42 @@
   width: calc(100vw - 4rem);
   margin: 3rem 2rem;
 }
-
 #loginPage h2 {
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 27px;
   text-align: center;
 }
-
 #loginPage a {
   text-decoration: none;
   display: block;
   text-align: center;
 }
-
 #loginPage .loginButton {
   background: #3C3C3C;
   border-radius: 66px;
   margin-top: 2.6875rem;
   margin-bottom: 1rem;
   height: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 #loginPage .forgotPassword {
   margin-bottom: 3.375rem;
 }
-
 #loginPage #socialLinkLogInButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
 }
-
 #loginPage p {
   margin-top: 2.6875rem;
 }
-
 #loginPage .register {
   display: inline-block;
 }
-
 #loginPage span {
   font-size: 1rem;
   font-weight: 700;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

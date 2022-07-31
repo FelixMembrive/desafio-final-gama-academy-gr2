@@ -108,55 +108,41 @@
   padding-bottom: 11px;
   background-color: #601C4F;
 }
-
 @media only screen and (min-width: 768px) {
   #containerStyle-logado {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     font-weight: 400;
   }
 }
-
 @media only screen and (min-width: 992px) {
   #containerStyle-logado {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    align-items: baseline;
   }
 }
 
 #navStyle-logado {
   background: #601C4F;
+<<<<<<< HEAD
   height: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+>>>>>>> amir_vm
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 0;
   margin: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 #navImg-logado {
   background-color: #601C4F;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 24px;
 }
 
@@ -169,101 +155,68 @@
   z-index: 2;
   font-weight: 400;
 }
-
 @media only screen and (min-width: 280px) {
   #basic-navbar-nav-logado {
     background-image: none;
     margin-top: 0;
   }
 }
-
 @media only screen and (min-width: 768px) {
   #basic-navbar-nav-logado {
     font-size: 13px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 800px) {
   #basic-navbar-nav-logado {
     font-size: 13px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 912px) {
   #basic-navbar-nav-logado {
     padding: 20px;
     font-size: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 992px) {
   #basic-navbar-nav-logado {
     padding: 10px;
     font-weight: 500;
     font-size: 20.3524px;
     line-height: 31px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
-
 @media only screen and (min-width: 992px) {
   #basic-navbar-nav-logado {
     height: 20px;
     margin-top: 60px;
     margin: 29px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   #basic-navbar-nav-logado {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   #basic-navbar-nav-logado {
     margin-right: 50px;
   }
 }
-
 @media only screen and (min-width: 1440px) {
   #basic-navbar-nav-logado {
     margin-right: 200px;
   }
 }
-
 @media only screen and (min-width: 1500px) {
   #basic-navbar-nav-logado {
     margin-right: 200px;
@@ -272,6 +225,7 @@
 
 .bd-toc-item-logado {
   background-color: #601C4F;
+<<<<<<< HEAD
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -281,34 +235,42 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 130%;
+=======
+  flex-direction: row-reverse;
+  font-weight: 400;
+>>>>>>> amir_vm
 }
-
 @media only screen and (min-width: 768px) {
   .bd-toc-item-logado {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     font-size: 15px;
     font-weight: 400;
+=======
+    flex-direction: row;
+>>>>>>> amir_vm
   }
 }
 
 .links {
   background-color: #601C4F;
+<<<<<<< HEAD
   font-family: 'Poppins';
   margin: 30px;
+=======
+  font-family: "Poppins";
+  margin: 26px;
+>>>>>>> amir_vm
 }
-
 @media only screen and (min-width: 768px) {
   .links {
     margin: 10px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .links {
     padding: 8px;
@@ -323,7 +285,6 @@
   color: #601C4F;
   border-radius: 66px;
 }
-
 @media only screen and (min-width: 768px) {
   #cadastre {
     margin-left: 21px;
@@ -338,7 +299,6 @@
   border: 1px solid #FFFFFF;
   border-radius: 66px;
 }
-
 @media only screen and (min-width: 992px) {
   #login {
     margin-left: 16px;
@@ -349,13 +309,11 @@
   background-color: #601C4F;
   margin-top: 48px;
 }
-
 @media only screen and (min-width: 280px) {
   #basic-navbar-nav-logado {
     margin-top: 0;
   }
 }
-
 @media only screen and (min-width: 768px) {
   #basic-navbar-nav-logado {
     margin-left: 0px;
@@ -363,7 +321,6 @@
     margin-right: 0;
   }
 }
-
 @media only screen and (min-width: 992px) {
   #basic-navbar-nav-logado {
     margin-top: 29px;
@@ -372,7 +329,6 @@
     margin-right: 29px;
   }
 }
-
 @media only screen and (min-width: 1024px) {
   #basic-navbar-nav-logado {
     margin-top: 29px;
@@ -381,7 +337,6 @@
     margin-right: 0;
   }
 }
-
 .navbar-toggler-icon {
   display: contents;
   background-color: #601C4F;
@@ -403,13 +358,10 @@
   height: 50px;
   display: block;
 }
-
 #botaoToggleHeaderLogado:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: #601C4F;
 }
-
 @media only screen and (min-width: 280px) {
   #botaoToggleHeaderLogado {
     margin-right: 0;
@@ -421,7 +373,6 @@
   background-image: url("../../assets/imagens/foto_perfil.png");
   border: 3px solid #FFFFFF;
 }
-
 @media only screen and (max-width: 280px) {
   #botaoToggleHeaderLogado {
     background-image: url("../../assets/imagens/menu.png");
@@ -431,11 +382,11 @@
     margin-right: 10px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   #botaoToggleHeaderLogado {
     display: none;
   }
+<<<<<<< HEAD
 }
 
 #notificacoes {
@@ -448,3 +399,6 @@
   }
 }
 /*# sourceMappingURL=style.css.map */
+=======
+}/*# sourceMappingURL=style.css.map */
+>>>>>>> amir_vm

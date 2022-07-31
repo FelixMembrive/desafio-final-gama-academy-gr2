@@ -3,29 +3,25 @@
 }
 
 .Mentorias {
-  font-family: 'poppins';
+  font-family: "poppins";
   padding: 74px 32px 0 20px;
   color: #000000;
 }
-
 @media only screen and (min-width: 374px) {
   .Mentorias {
     padding: 74px 32px 0 38px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .Mentorias {
     padding: 74px 32px 0 80px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .Mentorias {
     padding: 74px 32px 0 80px;
   }
 }
-
 @media only screen and (min-width: 1500px) {
   .Mentorias {
     padding: 275px 230px 38px 202px;
@@ -41,13 +37,12 @@
 .Mentorias h2 {
   width: 288px;
   height: 28px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
-
 @media only screen and (min-width: 768px) {
   .Mentorias h2 {
     width: 500px;
@@ -55,7 +50,6 @@
     line-height: 29px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .Mentorias h2 {
     width: 500px;
@@ -63,7 +57,6 @@
     line-height: 29px;
   }
 }
-
 @media only screen and (min-width: 1500px) {
   .Mentorias h2 {
     position: absolute;
@@ -81,7 +74,6 @@
   font-weight: 400;
   line-height: 14px;
 }
-
 @media only screen and (min-width: 768px) {
   .Mentorias p {
     width: 700px;
@@ -91,7 +83,6 @@
     line-height: 20px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .Mentorias p {
     width: 800px;
@@ -101,7 +92,6 @@
     line-height: 20px;
   }
 }
-
 @media only screen and (min-width: 1500px) {
   .Mentorias p {
     width: 1080px;
@@ -112,12 +102,8 @@
 }
 
 #dropdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   position: relative;
   background: #D9D9D9;
   border-radius: 5px;
@@ -131,11 +117,8 @@
   font-size: 8.76923px;
   line-height: 13px;
   color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 @media only screen and (min-width: 768px) {
   #dropdown {
     width: 650px;
@@ -146,7 +129,6 @@
     padding-right: 30px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   #dropdown {
     width: 800px;
@@ -156,7 +138,6 @@
     line-height: 30px;
   }
 }
-
 @media only screen and (min-width: 1500px) {
   #dropdown {
     width: 1080px;
@@ -170,28 +151,23 @@
 .botao {
   padding: 0px 30px 22px 20px;
 }
-
 @media only screen and (min-width: 374px) {
   .botao {
     padding: 0px 30px 22px 38px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .botao {
     padding: 74px 32px 50px 80px;
   }
 }
-
 @media only screen and (min-width: 992px) {
   .botao {
     padding: 74px 32px 50px 80px;
   }
 }
-
 @media only screen and (min-width: 1500px) {
   .botao {
     padding: 0 0 65px 202px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

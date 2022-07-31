@@ -3,7 +3,6 @@
   font-weight: 600;
   margin-left: 24px;
 }
-
 @media (min-width: 1024px) {
   .titulo-vagas-candidata {
     font-size: 18.5348px !important;
@@ -16,5 +15,4 @@
 
 .icone-vagas-salvar {
   width: 24px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
