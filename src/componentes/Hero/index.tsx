@@ -40,7 +40,7 @@ export default function Hero() {
 
                 <Row>
                     <Col className="textoemppar">
-                        <p className="textoemppar2 fw-bolder  ms-4 ms-lg-5 pe-5 ps mb-0 mb-lg-2 text-center ">Empresas parceiras</p>
+                        <p className="textoemppar2 fw-bolder  ms-5 pe-5 ps mb-3 text-center ">Empresas parceiras</p>
                     </Col>
                 </Row>
 
