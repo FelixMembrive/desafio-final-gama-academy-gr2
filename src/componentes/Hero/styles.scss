@@ -3,9 +3,12 @@
 @import "../../colors.scss";
 @import "../../spacing.scss";
 
+
+
 .cont00{ 
-    
+    margin-bottom: 49px;
     height: 1165px;
+
 
     @media (min-width:440px) {
         height:1130px;
@@ -13,11 +16,13 @@
     } 
     @media (min-width:516px) {
         height:1090px;
+        margin-bottom: 85px;
   
     } 
     @media (min-width:768px) {
         height:870px;
-  
+        margin-bottom: 34px;
+
     } 
     @media (min-width:992px) {
         height:680px;
@@ -33,46 +38,6 @@
     } 
 };
 
-
-.colimgtopo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-.imgtopo{
-    width: 326px;
-    height: 274px;
-    margin-top: 48px;
-
- 
-
-     @media (min-width:992px) {
-        margin-top: 62px;
-        margin-left: 66px;
-    
-    } 
-
-    @media (min-width:1200px) {
-        width: 380px;
-        height: 370px;
-        margin-top: 169px;
-        margin-right: 155px;
-        margin-bottom: 120px;
-        margin-left: 200px;
-      
-    }    
-
-    @media (min-width:1400px) {
-        width: 400px;
-        height: 390px;
-        margin-top: 169px;
-        margin-right: 155px;
-        margin-bottom: 150px;
-        margin-left: 100px;
-    }   
-}
 
 .grupotexto{
         margin-top:150px;
@@ -146,9 +111,16 @@
 
 .btn001{
     width: 343px;
+    height: 40px;
     background-color: $primary-custom!important;
-    // background: $primary-custom;
-    // color: $primary-custom ;
+    border: none!important;
+    align-items: center!important;
+    text-align: center!important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+
+
 
     @media (min-width:770px) {
         font-size: 18px;       
@@ -162,17 +134,18 @@
         width: 343px;
          
       }    
-    // @media (min-width:1400px) {
-       
-    //   width: 278px;
-       
-    // }    
-    
+
 }
 
 .btn002{
     
     width: 343px;
+    height: 40px;
+    align-items: center!important;
+    text-align: center!important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
     
     @media (min-width:770px) {
        font-size: 18px;
@@ -193,6 +166,44 @@
     
 }
 
+.colimgtopo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.imgtopo{
+    width: 326px;
+    height: 274px;
+    margin-top: 48px;
+
+ 
+
+     @media (min-width:992px) {
+        margin-top: 62px;
+        margin-left: 66px;
+    
+    } 
+
+    @media (min-width:1200px) {
+        width: 380px;
+        height: 370px;
+        margin-top: 169px;
+        margin-right: 155px;
+        margin-bottom: 120px;
+        margin-left: 200px;
+      
+    }    
+
+    @media (min-width:1400px) {
+        width: 400px;
+        height: 390px;
+        margin-top: 169px;
+        margin-right: 155px;
+        margin-bottom: 150px;
+        margin-left: 100px;
+    }   
+}
 
 .textoemppar2{
     font-size: 20px;
@@ -224,6 +235,13 @@
     
 }
 
+.textcenter{
+
+    @media (min-width:1200px) {
+        padding-bottom: 200px;
+        
+        }
+    }
 
 .grupologoemp{
    height: 96px;
@@ -234,7 +252,6 @@
     
 //     }
 }
-
 
 .logo001{
     width: 163px;
@@ -357,23 +374,5 @@
 
 
 
-.textcenter{
 
-    @media (min-width:1200px) {
-        padding-bottom: 200px;
-        
-        }
-    }
-.cont00{
-    margin-bottom: 49px;
 
-    @media(min-width:516px){
-        margin-bottom: 85px;
-
-    }
-
-    @media(min-width:768px){
-        margin-bottom: 34px;
-
-    }
-}
