@@ -14,9 +14,9 @@ export default function Mentora() {
       <LinkBack text="Voltar para Mentoras"/>
       <DescricaoMentora /> 
       <div >
-      <LinkButton className="d-flex justify-content-center rounded-pill py-2 mx-4 my-5 btn-valores-agendamento" to="" text="Ver valores para agendamento"></LinkButton>
+      <LinkButton className="d-flex justify-content-center rounded-pill py-2 ms-4 my-5 btn-valores-agendamento" to="" text="Ver valores para agendamento"></LinkButton>
       </div> 
-      <div>
+      <div className="conteudos-recomendados">
         <h5>Conteúdos recomendados</h5>
         <p>Veja materiais que a mentora indica</p>
         <CardCurso />
