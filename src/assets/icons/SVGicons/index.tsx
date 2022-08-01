@@ -251,6 +251,22 @@ function BackArrow(props: IiconProps) {
   );
 }
 
+function Bookmarks(props: IiconProps) {
+  return (
+    <svg
+    width={12}
+    height={14}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M.75 13.75v-12c0-.413.147-.766.441-1.06.293-.293.646-.44 1.059-.44h7.5c.412 0 .766.147 1.06.44.293.294.44.647.44 1.06v12L6 11.5.75 13.75Zm1.5-2.287L6 9.85l3.75 1.613V1.75h-7.5v9.713Z"
+      fill="#1C1B1F"
+    />
+  </svg>
+  );
+}
+
 export { Facebook, FacebookOutline,
   Instagram, InstagramOutline,
   Linkedin, LinkedinOutline,
@@ -259,4 +275,5 @@ export { Facebook, FacebookOutline,
   Youtube, YoutubeOutline,
   SelectArrow,
   BackArrow,
+  Bookmarks,
  };

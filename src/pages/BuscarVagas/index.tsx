@@ -7,6 +7,8 @@ import LinkBack from "../../componentes/LinkBack";
 import LinkText from "../../componentes/LinkText";
 import SelectBox from "../../componentes/SelectBox"; 
 import vagas from '../../assets/mockups/vagas-mockup.json';
+import { Bookmarks, Facebook, SelectArrow } from "../../assets/icons/SVGicons";
+import './style.scss';
 
 const vagasRecomendadas = vagas.recomendadas;
 
@@ -30,8 +32,8 @@ export default function BuscarVagas() {
       </Row>
       <Row className="buscar-secao-minhas-acoes mt-5 mx-auto col-10 sm-col-3">
         <h3>Minhas ações</h3>
-        <LinkButton className="mt-2" to="" text="Minhas Candidaturas"></LinkButton>
-        <LinkButton className="mt-2" to="" text="Meus Alertas"></LinkButton>
+        <LinkButton iconRight={<Bookmarks className="icon-left-right float-start"/>} className="button-icon mt-2" to="" text="Minhas Candidaturas"></LinkButton>
+        <LinkButton iconLeft={<SelectArrow className="icon-left-right float-end"/>} className="mt-2" to="" text="Meus Alertas"></LinkButton>
       </Row>
       <Row className="mt-5 mx-auto col-10 sm-col-3">
         <h3>Recomendamos para você</h3>

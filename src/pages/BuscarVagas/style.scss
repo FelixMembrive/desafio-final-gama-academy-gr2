@@ -1,0 +1,23 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+// .button-flex {
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// svg {
+//     margin-right: 40%;
+// }
+// }
+.button-icon {
+    background-color: $primary-custom;
+    border: none;
+}
+
+.icon-left-right {
+    margin-top: 9px;
+    fill: white;
+    path {
+        fill: white;
+    }
+}

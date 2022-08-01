@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons/SVGicons";
 
+import { Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons/SVGicons";
 import { FacebookOutline, InstagramOutline, LinkedinOutline, TwitterOutline, WhatsappOutline, YoutubeOutline } from "../../assets/icons/SVGicons";
 import { WhatsappLogo } from "phosphor-react";
 
