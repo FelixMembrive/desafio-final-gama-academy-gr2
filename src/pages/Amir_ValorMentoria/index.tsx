@@ -6,6 +6,8 @@ import Col from 'react-bootstrap/Row';
 import logo1 from "../../assets/imagens/foto_logada_mariaisabel.png";
 import HeaderLogado from "../../componentes/HeaderLogado";
 import LinkBack from "../../componentes/LinkBack";
+import LinkBack2 from "../../componentes/LinkBackportaseta";
+
 import Footer from "../../componentes/Footer";
 
 

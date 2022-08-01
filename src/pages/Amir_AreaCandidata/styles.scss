@@ -1,55 +1,99 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+
 .col1_ac{
     margin-left: 0px ;
     padding-left: 12px;
     justify-content: center;
     align-items: center;
 }
-.logo_boyzin{
-    margin-top: 59.3px;
+.logo_lorena{
+    margin-top: 40px;
+    margin-bottom: 8px !important;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
 
     @media(min-width:1400px){
        
         margin-top: 134.5px;
    }
 }
-.nome_usuario{
-    margin-bottom: 81px;
-} 
 
-.btn_ac_sair{
-    margin-bottom: 40px;
-    
- 
-};
+.nome_usuario{
+    margin-bottom: 32px;
+} 
 .btn_ac_sair_div{
     display: flex;
     justify-items: center;
     justify-content: center;
-    padding-top: 18px;
+    padding-top: 41px;
 };
 
+.btn_ac_sair{
+    margin-bottom: 55px;
+    
+ 
+};
+
+
 .btns_ac_div{
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
 
 }
 
 
-.btn_ac_perfil{
-    margin-top: 0px;
+.btn_ac_mensagens{
+    // width: 342px;
+    height: 40px;
+    font-size: 14px !important;
+    background-color:$primary-custom!important;
+
+    @media(min-width:1200px){
+       
+        width: 304px;
+        font-size: 20px !important;
+        height: 53px;
+   }
+    
 }
-.btn_ac_curr{
-    margin-top: 20px;
+.btn_ac_editar{
+    // width: 342px;
+    height: 40px;
+    font-size: 14px !important;
+    background-color:$primary-custom!important;
+    margin-top: 10px;
+
+    @media(min-width:1200px){
+       
+        width: 304px;
+        font-size: 20px !important;
+        height: 53px;
+   }
 }
-.btn_ac_cand{
-    margin-top: 20px;
-}
-.btn_ac_alertas{
-    margin-top: 20px;
+.btn_ac_curriculo{
+    // width: 342px;
+    height: 40px;
+    font-size: 14px !important;
+    background-color:$primary-custom!important;
+    margin-top: 10px;
+    
+    @media(min-width:1200px){
+       
+        width: 304px;
+        font-size: 20px !important;
+        height: 53px;
+   }
 }
 
 .img_ac_div{
     display: flex;
     align-items:flex-end;
+
 
     // @media(min-width:576px){
         
@@ -59,6 +103,8 @@
 
 }
 .img_ac{
+    margin-left: 12px;
+    margin-right: 12px;
     // width:304px ;
     // height:308px;
     // @media(min-width:576px){
@@ -82,11 +128,13 @@
 //     }
 
     @media(min-width:1200px){
-        width: 961px;
-        height: 568px;
+        width: 960;
+        height: 600px;
         margin-left: 44px;
+        margin-top: 89px;
+
         // margin-right: 87px;
-        margin-bottom: 0px;
+        margin-bottom: 45px;
 
     }
 
