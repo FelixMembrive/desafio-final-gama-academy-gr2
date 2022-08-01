@@ -24,7 +24,7 @@ export default function Header() {
               Cadastre-se
             </Button>
             <Button id="login" className="botoesHeader" href="#" variant="outline" size="lg">
-              Login
+              Entrar
             </Button>
           </div>
           <div className="bd-toc-item">

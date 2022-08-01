@@ -1,5 +1,111 @@
+.tp-display-1 {
+  /* Display 1 */
+  font-family: 'Poppins';
+  font-weight: 275;
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.tp-display-2 {
+  /* Display 2 */
+  font-family: 'Poppins';
+  font-weight: 275;
+  font-size: 40px;
+  line-height: 130%;
+}
+
+.tp-heading-1 {
+  /* Heading 1 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 130%;
+}
+
+.tp-heading-2 {
+  /* Heading 2 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+}
+
+.tp-heading-3 {
+  /* Heading 3 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+}
+
+.tp-heading-4 {
+  /* Heading 4 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.tp-heading-5 {
+  /* Heading 5 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.tp-heading-6 {
+  /* Heading 6 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tp-lead-paragraph {
+  /* Lead Paragraph */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.tp-body-large {
+  /* Body Large */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+.tp-body-medium {
+  /* Body Medium */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+}
+
+.tp-body-normal {
+  /* Body Normal */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.tp-body-small {
+  /* Body Small */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+}
+
 #containerStyle-logado {
   color: #FFFFFF;
+  padding-top: 11px;
+  padding-bottom: 11px;
   background-color: #601C4F;
 }
 @media only screen and (min-width: 768px) {
@@ -21,6 +127,12 @@
 
 #navStyle-logado {
   background: #601C4F;
+<<<<<<< HEAD
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> amir_vm
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -113,24 +225,46 @@
 
 .bd-toc-item-logado {
   background-color: #601C4F;
+<<<<<<< HEAD
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+=======
   flex-direction: row-reverse;
   font-weight: 400;
+>>>>>>> amir_vm
 }
 @media only screen and (min-width: 768px) {
   .bd-toc-item-logado {
     display: flex;
+<<<<<<< HEAD
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 15px;
+    font-weight: 400;
+=======
     flex-direction: row;
+>>>>>>> amir_vm
   }
-}
-
-.espacamento {
-  margin: 26px;
 }
 
 .links {
   background-color: #601C4F;
+<<<<<<< HEAD
+  font-family: 'Poppins';
+  margin: 30px;
+=======
   font-family: "Poppins";
   margin: 26px;
+>>>>>>> amir_vm
 }
 @media only screen and (min-width: 768px) {
   .links {
@@ -219,7 +353,7 @@
 
 #botaoToggleHeaderLogado {
   border-radius: 50%;
-  margin-right: 24px;
+  margin-right: 14px;
   width: 50px;
   height: 50px;
   display: block;
@@ -235,8 +369,9 @@
 }
 
 #botaoToggleHeaderLogado {
-  margin-right: 34px;
-  background-image: url("../../assets/imagens/foto_perfil.png");
+  margin-right: 32px;
+  background-image: url("../../assets/imagens/foto_perfil2.png");
+  border: 3px solid #FFFFFF;
 }
 @media only screen and (max-width: 280px) {
   #botaoToggleHeaderLogado {
@@ -251,4 +386,19 @@
   #botaoToggleHeaderLogado {
     display: none;
   }
+<<<<<<< HEAD
+}
+
+#notificacoes {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+  #notificacoes {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+=======
 }/*# sourceMappingURL=style.css.map */
+>>>>>>> amir_vm

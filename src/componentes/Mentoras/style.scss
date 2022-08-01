@@ -1,9 +1,16 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+
 .containerMentorias{
     max-width: 100%;
+    background-image: url("../../assets/imagens/Mask_group.png");
+    background-repeat: no-repeat;
+    background-position: 0 79px;
 }
 .Mentorias{
     font-family: 'poppins';
-    padding: 74px 32px 0 20px;
+    padding: 99px 32px 0 20px;
     color: #000000;
     @media only screen and (min-width: 374px) {
         padding: 74px 32px 0 38px;
@@ -20,18 +27,18 @@
 }
 .Mentorias p h2{
     text-align:left;
-    width: 320px;
     letter-spacing: 0em;
 }
 .Mentorias h2{
     width: 288px;
     height: 28px;
+    margin: 0;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 130%;
     @media only screen and (min-width: 768px) {
         width: 500px;
         font-size: 19px;
@@ -52,12 +59,16 @@
     }
 }
 .Mentorias p{
-    width: 320px;
-    padding-top: 34px;
+    margin:0;
+    width: 342px;
+    padding-top: 32px;
+    padding-bottom: 24px;
 
-    font-size: 9px;
+    font-family: 'Mulish';
+    font-style: normal;
     font-weight: 400;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 170%;
     @media only screen and (min-width: 768px) {
         width: 700px;
         padding-top: 40px;
@@ -87,10 +98,10 @@
     display: flex;
     justify-content: flex-start;
     position: relative;
-    background: #D9D9D9;
-    border-radius: 5px;
-    width: 336px;
-    height: 36px;
+    background: $primary-custom;
+    border-radius: 8px;
+    width: 342px;
+    height: 32px;
     padding-left: 13px;
     border-style: none;
 
@@ -99,7 +110,7 @@
     font-weight: 600;
     font-size: 8.76923px;
     line-height: 13px;
-    color: #000000;
+    color: $light-5;
     align-items: center;
 
     @media only screen and (min-width: 768px) {
@@ -139,4 +150,11 @@
     @media only screen and (min-width: 1500px) {
         padding: 0 0 65px 202px;
     }
+}
+#dropdown::after{
+    margin-left: auto;
+}
+.dropdown-menu.show{
+    padding-right: 180px;
+
 }

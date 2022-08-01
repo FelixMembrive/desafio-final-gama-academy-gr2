@@ -1,0 +1,24 @@
+{
+   "conteudos": [
+        {
+            "nome": "Curso Product Design",
+            "descricao": "Gama Academy"
+        },
+        {
+            "nome": "Curso UX Design",
+            "descricao": "Awari"
+        },
+        {
+            "nome": "Publicação no blog",
+            "descricao": "3 tipos de métricas para testes de usabilidade"
+        },
+        {
+            "nome": "Curso A",
+            "descricao": "Lorem ipsum dolor sit putus."
+        },
+        {
+            "nome": "Curso B",
+            "descricao": "Lorem ipsum dolor sit cortex."
+        }
+    ]
+}

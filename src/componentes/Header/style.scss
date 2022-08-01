@@ -1,7 +1,11 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+
 #containerStyle {
     padding: 0;
-    color: #FFFFFF;
-    background-color: #601C4F;
+    color: $light-5;
+    background-color: $primary-custom;
     @media only screen and (min-width: 768px) {
         max-width: 100%;
         margin: 0;
@@ -10,15 +14,12 @@
         flex-direction: row;
         flex-wrap: nowrap;
         font-weight: 400;
-        #imagem{
-            visibility: hidden;
-        }
     }
 }
 
 #navStyle{
     height: 72px;
-    background-color: #601C4F;
+    background-color: $primary-custom;
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -27,19 +28,19 @@
 }
 
 #navImg {
-    background-color: #601C4F;
+    background-color: $primary-custom;
     align-items: center;
     margin-left: 24px;
 }
 .d-inline-block{
-    background-color: #601C4F;
+    background-color: $primary-custom;
 }
 .botaoStyle{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
     @media only screen and (min-width: 768px) {
         width: 330px;
         display: flex;
@@ -85,7 +86,7 @@
     column-gap: 30px;
 }
 .bd-toc-item{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     flex-direction: row-reverse;
     font-weight: 600;
     font-size: 20px;
@@ -98,13 +99,10 @@
         line-height: 0%;
     }
 }
-.espacamento{
-    margin: 26px;
-}
 .links{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     font-family: 'Poppins';
-    margin: 26px;
+    margin: 30px;
     @media only screen and (min-width: 768px) {
         margin: 10px;
     }
@@ -117,12 +115,25 @@
 }
 
 #cadastre{
-    padding:10.5px;
-    width: 145px;
-    border: none;
-    background-color: #FFFFFF;
-    color: #601C4F;
-    border-radius: 66px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+    width: 343px;
+    height: 40px;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+
     @media only screen and (min-width: 768px) {
         width: 400px;
         width: 550px;
@@ -130,17 +141,33 @@
 }
 
 #login {
-    padding: 10.5px;
     width: 106px;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    border-radius: 66px;
+    color: $light-5;
+    border: 1px solid $light-5;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+    width: 343px;
+    height: 40px;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
     @media only screen and (min-width: 992px) {
         margin-left: 16px;
     }
 }
 #basic-navbar-nav{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     margin: 0;
     margin-top: 40px;
     @media only screen and (max-width: 280px) {
@@ -174,7 +201,7 @@
     }
 }
 .navbar-toggler-icon{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     width: 0;
     border: none;
 }
@@ -185,13 +212,13 @@
 }
 #botaoToggle{
     border-radius: 0;
-    margin-right: 24px;
+    margin-right: 14px;
     width: 10px;
     height: 14px;
     display: block;
     &:focus{
         box-shadow: none;
-        background-color: #601C4F;
+        background-color: $primary-custom;
     }
     &::before{
         background-image: url("../../assets/icons/close.png");

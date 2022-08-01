@@ -28,8 +28,8 @@ export default function Hero() {
 
                        <div className="btn_reco  ">     
                         
-                            <LinkButton className=" btn btn001 rounded-pill fs-4 me-3 me-md-2 mt-4 mt-md-3"  to="" text="Registre-se"></LinkButton>
-                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill fs-4 me-3 me-md-2 ms-0 ms-md-3 mt-3" to="" text="Conheça mais"></LinkButton>
+                            <LinkButton className=" btn btn001 rounded-pill"  to="" text="Registre-se"></LinkButton>
+                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill me-3 me-md-2 ms-0 ms-md-3 mt-3" to="" text="Conheça mais"></LinkButton>
                         
                        </div> 
                     </Col>

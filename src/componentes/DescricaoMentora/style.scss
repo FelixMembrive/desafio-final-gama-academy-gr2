@@ -1,10 +1,22 @@
-#mentora-nome, #mentora-area {
-    font-weight: 600;
-    font-size: 13.31px;
+@import '../../spacing.scss';
+@import '../../typography.scss';
+
+img {
+    margin: 0 $sp-tc3 $sp-tc2;
+}
+
+#mentora-nome {
+    @extend .tp-heading-5;
+    margin: $sp-tc2 auto $sp-tc1 $sp-tc3;
+}
+
+#mentora-area {
+    @extend .tp-body-normal;
+    margin: $sp-tc2 auto $sp-tc3 $sp-tc3;
 }
 
 #mentora-descricao {
-    font-weight: 400;
-    font-size: 9.35px;
+    @extend .tp-body-normal;
+    margin: $sp-tc2 $sp-tc3;
 }
 

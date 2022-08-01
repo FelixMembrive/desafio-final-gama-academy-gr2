@@ -1,4 +1,5 @@
 import Logo from "../../assets/icons/logo-techdelas.png";
+import Notificacoes from "../../assets/icons/circle_notifications.png";
 import "./style.scss";
 
 import Container from "react-bootstrap/Container";
@@ -25,7 +26,7 @@ export default function Header() {
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
             <Nav.Link href="#link" className="links">Mentoras</Nav.Link>
             <Nav.Link href="#link" className="links">Blog</Nav.Link>
-            <Nav.Link href="#link" className="links">Notificações</Nav.Link>
+            <Nav.Link href="#link" className="links">Notificações <img src={Notificacoes} id="notificacoes" /></Nav.Link>
           </div>
         </Navbar.Collapse>
       </Container>

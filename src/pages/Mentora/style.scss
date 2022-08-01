@@ -1,3 +1,21 @@
-#btn-agendamento {
-    max-width: 424px;
+@import '../../spacing.scss';
+@import '../../typography.scss';
+@import '../../colors.scss';
+
+.btn-valores-agendamento {
+    max-width: 400px;
+    border: none!important;
+    background-color: $primary-custom!important;
+    margin-right: 6rem;
+    
+}
+
+.conteudos-recomendados{
+    h5 {
+        margin: $sp-tc3 auto 0 $sp-tc3!important;
+    }
+    
+    p {
+        margin: 0 auto $sp-tc2 $sp-tc3;
+    }
 }

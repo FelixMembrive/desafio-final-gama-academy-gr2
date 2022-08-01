@@ -1,6 +1,12 @@
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+
 #containerStyle-logado {
-    color: #FFFFFF;
-    background-color: #601C4F;
+    color: $light-5;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: $primary-custom;
     @media only screen and (min-width: 768px) {
         max-width: 100%;
         margin: 0;
@@ -16,7 +22,8 @@
 }
 
 #navStyle-logado{
-    background: #601C4F;
+    background: $primary-custom;
+    height: 72px;
     display: flex;
     flex-direction: row;
     padding: 0;
@@ -25,12 +32,12 @@
 }
 
 #navImg-logado {
-    background-color: #601C4F;
+    background-color: $primary-custom;
     align-items: center;
     margin-left: 24px;
 }
 .d-inline-block{
-    background-color: #601C4F;
+    background-color: $primary-custom;
 }
 #basic-navbar-nav-logado {
     text-align: center;
@@ -85,21 +92,24 @@
     }
 }
 .bd-toc-item-logado{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     flex-direction: row-reverse;
-    font-weight: 400;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
     @media only screen and (min-width: 768px) {
         display: flex;
         flex-direction: row;
+        font-size: 15px;
+        font-weight: 400;
     }
 }
-.espacamento{
-    margin: 26px;
-}
 .links{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     font-family: 'Poppins';
-    margin: 26px;
+    margin: 30px;
     @media only screen and (min-width: 768px) {
         margin: 10px;
     }
@@ -112,8 +122,8 @@
     padding:10.5px;
     width: 343px;
     border: none;
-    background-color: #FFFFFF;
-    color: #601C4F;
+    background-color: $light-5;
+    color: $primary-custom;
     border-radius: 66px;
     @media only screen and (min-width: 768px) {
         margin-left: 21px;
@@ -124,17 +134,15 @@
 #login {
     padding: 10.5px;
     width: 343px;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    color: $light-5;
+    border: 1px solid $light-5;
     border-radius: 66px;
-    @media screen and (min-width: 768px){
-    }
     @media only screen and (min-width: 992px) {
         margin-left: 16px;
     }
 }
 #basic-navbar-nav-logado{
-    background-color: #601C4F;
+    background-color: $primary-custom;
     margin-top: 48px;
     @media only screen and (min-width: 280px) {
         margin-top: 0;
@@ -156,13 +164,10 @@
         margin-bottom: 29px;
         margin-right: 0;
     }
-    @media only screen and (min-width: 1024px) {
-
-    }
 }
 .navbar-toggler-icon{
     display: contents;
-    background-color: #601C4F;
+    background-color: $primary-custom;
     opacity: 0;
     width: 0;
     border: none;
@@ -174,21 +179,22 @@
 }
 #botaoToggleHeaderLogado{
     border-radius: 50%;
-    margin-right: 24px;
-    width: 50px;
-    height: 50px;
+    margin-right: 14px;
+    width: 51px;
+    height: 51px;
     display: block;
     &:focus{
         box-shadow: none;
-        background-color: #601C4F;
+        background-color: $primary-custom;
     }
     @media only screen and (min-width: 280px) {
         margin-right: 0;
     }
   }
 #botaoToggleHeaderLogado{
-    margin-right: 34px;
-    background-image: url("../../assets/imagens/foto_perfil.png");
+    margin-right: 32px;
+    background-image: url("../../assets/imagens/foto_perfil2.png");
+    border: 3px solid $light-5;
     @media only screen and (max-width: 280px) {
         background-image: url("../../assets/imagens/menu.png");
         width: 10px;
@@ -196,6 +202,12 @@
         border-radius: 0%;
         margin-right: 10px;
     }
+    @media only screen and (min-width: 768px) {
+        display:none;
+    }
+}
+#notificacoes{
+    vertical-align: middle;
     @media only screen and (min-width: 768px) {
         display:none;
     }

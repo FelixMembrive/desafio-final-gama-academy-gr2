@@ -1,3 +1,107 @@
+.tp-display-1 {
+  /* Display 1 */
+  font-family: 'Poppins';
+  font-weight: 275;
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.tp-display-2 {
+  /* Display 2 */
+  font-family: 'Poppins';
+  font-weight: 275;
+  font-size: 40px;
+  line-height: 130%;
+}
+
+.tp-heading-1 {
+  /* Heading 1 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 130%;
+}
+
+.tp-heading-2 {
+  /* Heading 2 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 130%;
+}
+
+.tp-heading-3 {
+  /* Heading 3 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+}
+
+.tp-heading-4 {
+  /* Heading 4 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.tp-heading-5 {
+  /* Heading 5 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.tp-heading-6 {
+  /* Heading 6 */
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tp-lead-paragraph {
+  /* Lead Paragraph */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.tp-body-large {
+  /* Body Large */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+.tp-body-medium {
+  /* Body Medium */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+}
+
+.tp-body-normal {
+  /* Body Normal */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.tp-body-small {
+  /* Body Small */
+  font-family: 'Mulish';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+}
+
 #containerStyle {
   padding: 0;
   color: #FFFFFF;
@@ -12,9 +116,6 @@
     flex-direction: row;
     flex-wrap: nowrap;
     font-weight: 400;
-  }
-  #containerStyle #imagem {
-    visibility: hidden;
   }
 }
 
@@ -41,9 +142,20 @@
 .botaoStyle {
   background-color: #601C4F;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+=======
   flex-direction: column;
   align-items: center;
   gap: 30px;
+>>>>>>> amir_vm
 }
 @media only screen and (min-width: 768px) {
   .botaoStyle {
@@ -118,14 +230,15 @@
   }
 }
 
-.espacamento {
-  margin: 26px;
-}
-
 .links {
   background-color: #601C4F;
+<<<<<<< HEAD
+  font-family: 'Poppins';
+  margin: 30px;
+=======
   font-family: "Poppins";
   margin: 26px;
+>>>>>>> amir_vm
 }
 @media only screen and (min-width: 768px) {
   .links {
@@ -143,12 +256,36 @@
 }
 
 #cadastre {
-  padding: 10.5px;
-  width: 145px;
-  border: none;
-  background-color: #FFFFFF;
-  color: #601C4F;
-  border-radius: 66px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+  width: 343px;
+  height: 40px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
 }
 @media only screen and (min-width: 768px) {
   #cadastre {
@@ -158,11 +295,39 @@
 }
 
 #login {
-  padding: 10.5px;
   width: 106px;
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
-  border-radius: 66px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 24px;
+  gap: 10px;
+  width: 343px;
+  height: 40px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
 }
 @media only screen and (min-width: 992px) {
   #login {
@@ -232,7 +397,7 @@
 
 #botaoToggle {
   border-radius: 0;
-  margin-right: 24px;
+  margin-right: 14px;
   width: 10px;
   height: 14px;
   display: block;
