@@ -1,0 +1,31 @@
+@import '../../colors.scss';
+
+div.vagas-areas-container {
+    *{
+        font-size: 14px;
+    }
+}
+
+div.container-acordion-body-vagas-finalizadas{
+    *{
+        font-size: 14px;
+    }
+}
+ 
+ol.lista-areas-vagas-finalizadas{
+    list-style-position: inside;
+    & > li {
+        margin-bottom: 24px;
+    }
+}
+
+ul.lista-meios-vagas-finalizadas{
+    list-style-type: disc;
+    li {
+        margin-top: 8px;
+    }
+}
+
+.titulo-item-meios-vagas-finalizadas {
+    display: inline;
+}

@@ -20,7 +20,7 @@ interface IVagasAndamentoProps {
 }
 
 export default function VagasAndamento(props: IVagasAndamentoProps) {
-    const lineLength = (props.etapas.length -1) *100;
+    const lineLength = (props.etapas.length -1) *76;
     console.log(lineLength)
     const ref = useRef<HTMLHeadingElement>(null);
     useLayoutEffect(() => {
@@ -49,17 +49,17 @@ export default function VagasAndamento(props: IVagasAndamentoProps) {
                         <p>A empresa {props.baixada ? "baixou" : "ainda não baixou"} seu currículo</p>
                     </Card.Body>
                 </Card>
-                <h6>Etapas do processo</h6>
+                <h6 className="my-4">Etapas do processo</h6>
                 <div className="vagas-etapas-container">
                     <div className="div-colorida" ref={ref}> </div>
                     <ul>
                         {props.etapas.map((etapa, index) => {
                             return (
                                 <li key={index} className={`vaga-etapa-${etapa.fase}`}>
-                                    <Card>
-                                        <Card.Body>
+                                    <Card className="mt-3">
+                                        <Card.Body className="p-2">
                                             <h6>{etapa.nome}</h6>
-                                            <p>{etapa.candidatos} pessoas nesta etapa</p>
+                                            <p className="m-0" >{etapa.candidatos} pessoas nesta etapa</p>
                                         </Card.Body>
                                     </Card>
                                 </li>
