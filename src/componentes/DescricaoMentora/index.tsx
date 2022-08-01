@@ -15,9 +15,9 @@ export default function DescricaoMentora() {
         <div className="foto-mentora">
           <img src={mentora.foto} alt="Foto da Mentora" className="px-xs-10 px-sm-60 px-md-20 px-lg-16 pt-5 pb-10"/>
         </div>
-        <h5 id="mentora-nome" className="px-xs-10 px-sm-60 px-md-20 px-lg-16">{mentora.nome}</h5>
-        <h6 id="mentora-area" className="px-xs-10 px-sm-60 px-md-20 px-lg-16">{mentora.area}</h6>
-        <p id="mentora-descricao" className="px-xs-10 px-sm-60 px-md-20 px-lg-16">{mentora.descricao}</p>
+        <h5 id="mentora-nome">{mentora.nome}</h5>
+        <h6 id="mentora-area">{mentora.area}</h6>
+        <p id="mentora-descricao">{mentora.descricao}</p>
         </>
 
         );
