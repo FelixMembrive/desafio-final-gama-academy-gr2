@@ -6,16 +6,16 @@
     min-height: 300px;
     max-width: 1440px;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 80px;
+    padding-top: $sp-tc4;
+    padding-bottom: $sp-tc7;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    path {
-        fill: white;
-    }
+    // path {
+    //     fill: white;
+    // }
     // responsividade
     @media only screen and (min-width: 1440px) {
         flex-direction: row;
@@ -39,13 +39,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
     margin-left: 40px;
     margin-right: 40px;
     a {
         @extend .tp-body-medium;
         text-decoration: none;
         color: white;
+        margin-top: $sp-tc3;
+        &:Hover {
+            color: $primary-subtle
+        }
     }
     // responsividade
     @media only screen and (min-width: 1440px) {
@@ -111,4 +115,7 @@
     font-size: 12px;
     line-height: 16px;
     color: white;
+    &:Hover {
+        color: $primary-subtle
+    }
 }

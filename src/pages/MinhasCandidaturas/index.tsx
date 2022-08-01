@@ -7,7 +7,8 @@ import ArrowBack from "../../assets/icons/arrow_back.png";
 import mockData from '../../assets/mockups/vagas-mockup.json';
 import CardVaga from "../../componentes/CardVaga";
 import AcordionVaga from "../../componentes/AcordionVaga";
-import VagasAndamento from "../../componentes/VagaAndamento/index";
+import LinkBack from "../../componentes/LinkBack";
+import VagasAndamento from "../../componentes/VagaAndamento";
 
 enum ApplicationFilter {
   Salvas = "salvas",
@@ -61,10 +62,11 @@ export default function MinhasCandidaturas() {
     <>
       <Header />
       <Wrapper>
-        <div>
+        {/* <div>
           <img src={ArrowBack} alt="arrow_back" />
           <Goback>Voltar para buscar vagas</Goback>
-        </div>
+        </div> */}
+        <LinkBack className="mt-4" text="Voltar para buscar vagas"></LinkBack>
         <Title>Minhas candidaturas</Title>
         <ButtonWrapper>
           <Toggle onClick={() => setSelected(ApplicationFilter.Salvas)} active={selected === "salvas"}>

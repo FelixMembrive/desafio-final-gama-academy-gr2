@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
-import { BackArrow, Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons/SVGicons";
+import { Facebook, Instagram, Linkedin, Twitter, Whatsapp, Youtube } from "../../assets/icons/SVGicons";
+
+import { FacebookOutline, InstagramOutline, LinkedinOutline, TwitterOutline, WhatsappOutline, YoutubeOutline } from "../../assets/icons/SVGicons";
+import { WhatsappLogo } from "phosphor-react";
+
 import LinkIcon from "../LinkIcons";
 import LinkText from "../LinkText";
 import MarcaRegistrada from "../MarcaRegistrada";
@@ -33,29 +37,30 @@ export default function Footer() {
                 <div className="icons-footer-flex">
                     <div className="icons-footer-item-group">
                         <LinkIcon to="/facebook">
-                            <Facebook />
+                            <FacebookOutline />
                         </LinkIcon>
 
                         <LinkIcon to="/instagram">
-                            <Instagram />
+                            <InstagramOutline />
                         </LinkIcon>
 
                         <LinkIcon to="/linkedin">
-                            <Linkedin />
+                            <LinkedinOutline />
                         </LinkIcon>
                     </div>
 
                     <div className="icons-footer-item-group">
                         <LinkIcon to="/whatsapp">
-                            <Whatsapp />
+                            {/* <WhatsappOutline /> */}
+                            <WhatsappLogo size={30} color="#ffffff" />
                         </LinkIcon>
 
                         <LinkIcon to="/youtube">
-                            <Youtube />
+                            <YoutubeOutline />
                         </LinkIcon>
 
                         <LinkIcon to="/twitter">
-                            <Twitter />
+                            <TwitterOutline />
                         </LinkIcon>
                     </div>
                     </div>
