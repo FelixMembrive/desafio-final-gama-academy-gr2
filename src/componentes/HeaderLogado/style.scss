@@ -180,8 +180,8 @@
 #botaoToggleHeaderLogado{
     border-radius: 50%;
     margin-right: 14px;
-    width: 50px;
-    height: 50px;
+    width: 51px;
+    height: 51px;
     display: block;
     &:focus{
         box-shadow: none;
@@ -193,7 +193,7 @@
   }
 #botaoToggleHeaderLogado{
     margin-right: 32px;
-    background-image: url("../../assets/imagens/foto_perfil.png");
+    background-image: url("../../assets/imagens/foto_perfil2.png");
     border: 3px solid $light-5;
     @media only screen and (max-width: 280px) {
         background-image: url("../../assets/imagens/menu.png");
