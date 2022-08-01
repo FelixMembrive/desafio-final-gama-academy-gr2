@@ -7,8 +7,8 @@ import ArrowBack from "../../assets/icons/arrow_back.png";
 import mockData from '../../assets/mockups/vagas-mockup.json';
 import CardVaga from "../../componentes/CardVaga";
 import AcordionVaga from "../../componentes/AcordionVaga";
-import LinkBack from "../../componentes/LinkBack";
-import VagasAndamento from "../../componentes/VagaAndamento";
+import VagasAndamento from "../../componentes/VagaAndamento/Index";
+import VagasFinalizadas from "../../componentes/VagaFinalizada";
 
 enum ApplicationFilter {
   Salvas = "salvas",
@@ -50,9 +50,14 @@ export default function MinhasCandidaturas() {
     } else if (selected == "finalizadas") {
       return mockData[selected].map((item, index) => (
         <div className="mb-3" key={index}>
-          <AcordionVaga key={index} nome_vaga={item.nome_vaga} nome_empresa={item.nome_empresa} img={item.logo_empresa}>
-            <p>Dados da empresa</p>
-          </AcordionVaga>
+         <VagasFinalizadas 
+            key={index}
+            nome_vaga={item.nome_vaga} 
+            nome_empresa={item.nome_empresa} 
+            logo_empresa={item.logo_empresa} 
+            feedback={item.retorno}
+            areas={item.melhorias}
+            />
         </div>
       ));
     }
@@ -62,11 +67,11 @@ export default function MinhasCandidaturas() {
     <>
       <Header />
       <Wrapper>
-        {/* <div>
+        <div>
           <img src={ArrowBack} alt="arrow_back" />
           <Goback>Voltar para buscar vagas</Goback>
-        </div> */}
-        <LinkBack className="mt-4" text="Voltar para buscar vagas"></LinkBack>
+        </div>
+        {/* <LinkBack className="mt-4" text="Voltar para buscar vagas"></LinkBack> */}
         <Title>Minhas candidaturas</Title>
         <ButtonWrapper>
           <Toggle onClick={() => setSelected(ApplicationFilter.Salvas)} active={selected === "salvas"}>
