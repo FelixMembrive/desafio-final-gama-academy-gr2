@@ -2,36 +2,36 @@ import { Row } from "react-bootstrap";
 import ScrollContainer from "react-indiana-drag-scroll";
 import FeatureCard from "../FeatureCard";
 import { Wrapper, Title } from "./styles";
+import Image_1 from "../../assets/imagens/servicosTechDelas/img1.png";
+import Image_2 from "../../assets/imagens/servicosTechDelas/img2.png";
+import Image_3 from "../../assets/imagens/servicosTechDelas/img3.png";
 
 const ExplicacaoFeatures = () => {
   let dados = [
     {
-      title: "Lorem ipsum dolor ",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna. Sed mattis commodo libero, sit amet tempus eros molestie eget. Praesent elementum nisi id massa mattis, at interdum neque vulputate. In vulputate velit consectetur tortor tempus mollis",
-      link: "https://www.youtube.com/embed/ScMzIvxBSi4",
+      title: "Parcerias ",
+      description: "Temos parcerias exclusivas e descontos especiais com as maiores escolas de technologia do Brasil",
+      img: Image_1,
     },
     {
-      title: "Lorem ipsum dolor ",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna. Sed mattis commodo libero, sit amet tempus eros molestie eget. Praesent elementum nisi id massa mattis, at interdum neque vulputate. In vulputate velit consectetur tortor tempus mollis",
-      link: "https://www.youtube.com/embed/ScMzIvxBSi4",
+      title: "Mentoras",
+      description: "Juntamos as melhores profisisonais do mercado para te ajudar na construção de uma carreira impecável",
+      img: Image_2,
     },
     {
-      title: "Lorem ipsum dolor ",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. Curabitur sapien purus, laoreet vel sollicitudin id, rutrum a urna. Sed mattis commodo libero, sit amet tempus eros molestie eget. Praesent elementum nisi id massa mattis, at interdum neque vulputate. In vulputate velit consectetur tortor tempus mollis",
-      link: "https://www.youtube.com/embed/ScMzIvxBSi4",
+      title: "Curadoria de conteúdo ",
+      description: "Acesse nosso blog para ter acesso aos melhores conteúdos sobre tecnologia, soft skills, entrevistas e muito mais",
+      img: Image_3,
     },
   ];
 
   return (
     <Wrapper>
-      <Title>Explicação das features da plataforma</Title>
+      <Title>Serviços da Tech Delas</Title>
       <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
         <Row className="flex-nowrap row gap-xs-4 gap-lg-16">
           {dados.map((item) => {
-            return <FeatureCard title={item.title} description={item.description} link={item.link} />;
+            return <FeatureCard title={item.title} description={item.description} img={item.img} />;
           })}
         </Row>
       </ScrollContainer>

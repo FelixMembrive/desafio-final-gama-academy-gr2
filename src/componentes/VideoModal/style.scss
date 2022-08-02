@@ -4,10 +4,14 @@ span {
 
 .play {
     position: absolute;
-    top: 30%;
-    left: 42%;
-    height:42px;
-    width:42px;
+    top: 22%;
+    left: 41%;
+    height:56px;
+    width:56px;
+    background-image: url('../../assets/icons/play_button.png');
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .playIcon {
