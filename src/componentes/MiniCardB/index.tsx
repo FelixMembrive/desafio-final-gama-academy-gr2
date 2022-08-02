@@ -4,9 +4,9 @@ import './styles.scss'
 
 interface IMiniCardB {
   to: string,
-  imgsrc: string,
+  imgsrc?: string,
   title: any,
-  text: string
+  text: string,
 }
 
 export default function MiniCardB(props: IMiniCardB) {

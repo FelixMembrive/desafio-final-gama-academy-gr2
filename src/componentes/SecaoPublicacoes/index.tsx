@@ -1,7 +1,6 @@
 import { Row, Container } from "react-bootstrap";
 import MiniCardB from "../MiniCardB";
 import './style.scss';
-import MiniCardBImage from '../../assets/imagens/MiniCardBImage.png';
 import dados from "../../assets/mockups/publicacoes-mockup.json";
 
 interface ISecaoPublicacoes {
@@ -18,7 +17,7 @@ export default function SecaoPublicacoes(props:ISecaoPublicacoes) {
         return (
       <Container fluid className="section-content">
       <Row>
-          <MiniCardB to="/" imgsrc={MiniCardBImage} title={publicacao.nome} text={publicacao.descricao.length > publicacao.descricao.substring(0,70).length? `${publicacao.descricao.substring(0,70)}...` : `${publicacao.descricao}`} />
+          <MiniCardB to="/" imgsrc={publicacao.imagem} title={publicacao.nome} text={publicacao.descricao.length > publicacao.descricao.substring(0,70).length? `${publicacao.descricao.substring(0,70)}...` : `${publicacao.descricao}`} />
       </Row>
       </Container>
       )
