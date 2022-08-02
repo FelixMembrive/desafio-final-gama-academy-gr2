@@ -1,27 +1,31 @@
+@import '../../typography.scss';
+
 .card-cursos-publicacoes {
     display: flex;
     align-items: center;
-    margin: 0.75rem auto;
+    margin: 0 auto ;
     max-width: 415px;
 
     @media only screen and (min-width: 768px) {
         flex-direction: column;
-        max-width: 19rem;
+        align-items: stretch;
+        max-width: 18rem;
     }
 
     img {
         width: 120px;
         height: 120px;
-        margin-right: 15px;
+        margin: 0 18px 0 5px;
 
         @media only screen and (min-width: 768px) {
             width: auto;
+            margin: 0 auto;
         }
     }
 
-    h5 {
-        font-size: 20px;
-        font-weight: 600;
+    h6 {
+    @extend .tp-heading-6;
+    line-height: 20px;
     }
 
     p {
@@ -29,8 +33,8 @@
         font-weight: 400;
 
         @media only screen and (min-width: 768px) {
-            font-weight: 600;
             margin-top: 30px;
+            height: 5rem;
         }
 
     }

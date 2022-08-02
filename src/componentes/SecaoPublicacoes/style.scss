@@ -1,0 +1,11 @@
+@import '../../typography.scss';
+@import '../../spacing.scss';
+
+
+.header-publicacoes {
+    margin: $sp-tc3 $sp-tc3;
+
+    @extend .tp-heading-5
+}
+
+

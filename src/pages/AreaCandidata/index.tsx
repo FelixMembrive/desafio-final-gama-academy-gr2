@@ -3,7 +3,8 @@ import Header from "../../componentes/Header";
 import MentoriaCandidata from "../../componentes/MentoriaCandidata";
 import SecaoAssinarNewsletter from "../../componentes/SecaoAssinarNewsletter";
 import VagasRecomendadas from "../../componentes/VagasRecomendadas";
-import CursosPublicacoes from "../../componentes/CursosPublicacoes";
+import SecaoCursos from "../../componentes/SecaoCursos";
+import SecaoPublicacoes from "../../componentes/SecaoPublicacoes";
 import HeaderLogado from "../../componentes/HeaderLogado";
 
 export default function AreaCandidata() {
@@ -11,9 +12,9 @@ export default function AreaCandidata() {
       <>
         <HeaderLogado />
         <VagasRecomendadas />
-        <CursosPublicacoes title="Cursos que irão te capacitar ainda mais" />
+        <SecaoCursos title="Cursos que irão te capacitar ainda mais" />
         <MentoriaCandidata />
-        <CursosPublicacoes title="Publicações no blog que podem ajudar" />
+        <SecaoPublicacoes title="Publicações no blog que podem ajudar" />
         <SecaoAssinarNewsletter />
         <Footer />
       </>
