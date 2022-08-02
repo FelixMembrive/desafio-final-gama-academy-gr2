@@ -1,23 +1,102 @@
 @import "../../typography.scss";
 @import "../../colors.scss";
 @import "../../spacing.scss";
-// .button-flex {
-// display: flex;
-// align-items: center;
-// justify-content: center;
-// svg {
-//     margin-right: 40%;
-// }
-// }
-.button-icon {
-    background-color: $primary-custom;
-    border: none;
+.button-icon-filtro {
+    width: auto !important;
+    background-color: $primary-custom !important;
+    border: 1.5px solid $primary-custom !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-family: 'Roboto' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.1px !important;
+    &:hover {
+        background-color: $primary-darker !important;
+    }
+    a {
+        padding-right: 50px !important;
+        width: 133px;
+    }
 }
 
-.icon-left-right {
-    margin-top: 9px;
-    fill: white;
+.button-icon-acoes {
+    width: auto !important;
+    background-color: transparent !important;
+    color: $primary-custom !important;
+    border: 1.5px solid $primary-darker !important;
+    margin-top: 10px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    padding-right: 12px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-family: 'Roboto';
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.1px !important;
+    &:hover {
+        background-color: $primary-subtle !important;
+    }
+    a {
+        padding-left: 50px !important;
+    }
+}
+
+.icon-left-right-filtro {
+    margin-top: 6px;
+    margin-bottom: auto;
+    margin-left: $sp-tc2;
+    vertical-align: baseline;
     path {
         fill: white;
+    }
+}
+
+.icon-left-right-acoes {
+    margin-top: 3px;
+    margin-bottom: auto;
+    margin-right: $sp-tc1;
+    path {
+        fill: $primary-custom;
+    }
+}
+
+.rotate-svg-180dg {
+    transform: rotate(180deg);
+    margin-top: 8px;
+}
+
+.title-sections {
+    @extend .tp-heading-6;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: $sp-tc3 !important;
+}
+
+.search-label {
+    width: 90% !important;
+    height: 56px;
+    background-image: url(../../assets/icons/search.png);
+    background-repeat: no-repeat;
+    background-position: 17px;
+    border: 1px solid $primary-custom;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #49454F;
+    padding-left: 54px !important;
+    &:focus-visible {
+        outline: 2px solid $primary-darker !important;
     }
 }

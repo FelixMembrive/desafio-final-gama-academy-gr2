@@ -258,9 +258,27 @@ function Bookmarks(props: IiconProps) {
     height={14}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
   >
     <path
       d="M.75 13.75v-12c0-.413.147-.766.441-1.06.293-.293.646-.44 1.059-.44h7.5c.412 0 .766.147 1.06.44.293.294.44.647.44 1.06v12L6 11.5.75 13.75Zm1.5-2.287L6 9.85l3.75 1.613V1.75h-7.5v9.713Z"
+      fill="#1C1B1F"
+    />
+  </svg>
+  );
+}
+
+function Notification(props: IiconProps) {
+  return (
+    <svg
+    width={12}
+    height={16}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M0 13.25v-1.5h1.5V6.5c0-1.037.313-1.96.938-2.766A4.326 4.326 0 0 1 4.874 2.15v-.525c0-.313.11-.578.329-.796C5.421.609 5.688.5 6 .5c.313 0 .578.11.796.329.22.218.329.484.329.796v.525c1 .25 1.813.778 2.438 1.584.624.806.937 1.729.937 2.766v5.25H12v1.5H0Zm6 2.25c-.412 0-.766-.147-1.059-.44A1.445 1.445 0 0 1 4.5 14h3c0 .412-.147.766-.44 1.06-.294.293-.647.44-1.06.44Zm-3-3.75h6V6.5c0-.825-.294-1.531-.881-2.119A2.889 2.889 0 0 0 6 3.5c-.825 0-1.531.294-2.119.881A2.889 2.889 0 0 0 3 6.5v5.25Z"
       fill="#1C1B1F"
     />
   </svg>
@@ -276,4 +294,6 @@ export { Facebook, FacebookOutline,
   SelectArrow,
   BackArrow,
   Bookmarks,
+  Notification
+
  };
