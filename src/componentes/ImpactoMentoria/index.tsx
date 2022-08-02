@@ -1,17 +1,19 @@
 import LinkButton from '../LinkButton';
 import './style.scss';
-import Imagem from '../../assets/imagens/placeholder_triangulos.svg';
+import Imagem from '../../assets/imagens/depoimentos.png';
 
 export default function ImpactoMentoria() {
 
     return (
-        <div className="containerMentoria" style={{backgroundColor:'#EFEFEF'}}>
-            <div className='Mentoria textoMentoria'>
-                <img src={Imagem} alt="" className="img-fluid bg-transparent align-center" id="imagem"/>
-                    <h2 className="textoMentoria">Frase de impacto sobre mentoria</h2>
-                    <p className="textoMentoria">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo.</p>
-                    <LinkButton className="btn-secondary rounded-pill mt-4 mt-md-3 textoMentoria botao" to="" text="Conheça as mentorias" />
+        <>
+        <img src={Imagem} alt="" className="img-fluid bg-transparent align-center" id="imagem"/>
+        <div className="containerMentoria">
+            <h2>Seja mentorada pelas melhores do mercado</h2>
+            <div className='Mentoria'>
+                    <p >Tire todas as suas dúvidas e tenha uma especialista para te ajudar a se destacar na sua carreira.</p>
+                    <button className="botaoImpactoMentoria">Conheça as mentorias</button>
                 </div>
             </div>
+    </>
     );
 }

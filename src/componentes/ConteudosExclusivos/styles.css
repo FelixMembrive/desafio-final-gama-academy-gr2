@@ -26,24 +26,33 @@
     margin-bottom: 50px;
   }
   .carousel-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 1000px;
   }
   /* ------------------------ */
-  /* ------------------------ */
 }
+
 @media (min-width: 768px) and (min-width: 992px) {
   .carousel-section {
     margin-right: 750px;
   }
 }
+
+@media (min-width: 768px) {
+  /* ------------------------ */
+}
+
 @media (min-width: 768px) and (min-width: 1200px) {
   .carousel-section {
     margin-right: 350px;
   }
 }
+
 @media (min-width: 768px) and (min-width: 1441px) {
   .carousel-section {
     margin-right: 0;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

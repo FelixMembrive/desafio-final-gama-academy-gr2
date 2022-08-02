@@ -3,6 +3,7 @@
   width: 254px;
   height: 352px;
 }
+
 @media (min-width: 1024px) {
   .img {
     width: 373px;
@@ -11,6 +12,7 @@
 }
 
 .depo-info {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(193, 193, 193, 0)), to(rgba(0, 0, 0, 0.51)));
   background: linear-gradient(180deg, rgba(193, 193, 193, 0) 0%, rgba(0, 0, 0, 0.51) 100%);
 }
 
@@ -20,4 +22,5 @@
 
 .card-col {
   position: relative;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
