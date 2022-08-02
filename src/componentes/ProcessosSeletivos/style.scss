@@ -1,43 +1,46 @@
-.process-section{
+@import '../../colors.scss';
+
+.process-section {
     background-image: url('../../assets/imagens/fundo-processos.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height:500px;
-  }
-  
+    background-size: 390px 658px;
+    background-repeat: repeat;
+    height: 658px;
+    background-position: center;
+}
+
 .btn-processos {
-    border:4px solid #2D2D2D !important;
-    color: #2D2D2D !important;
-    font-size: 16px !important;
-    @media (min-width:350px){
-        width: 288px;
+    border: none !important;
+    color: white !important;
+    height: 38px;
+    width: 288px;
+    background-color: $primary-custom !important;
+    font-family: 'Roboto' !important;
+    font-weight: 500 !important;
+    font-size: 13.3px !important;
+    line-height: 19px !important;
+
+    @media (min-width:350px) {
+        width: 342px;
     }
-    @media (min-width:500px){
+
+    @media (min-width:500px) {
         font-size: 24px !important;
         width: 372px;
+        height: 50px;
     }
 }
 
 .texto-processos {
     max-width: 559px;
-    font-size: 16px !important;
-    @media (min-width:400px){
+
+    @media (min-width:500px) {
         font-size: 20px !important;
     }
 }
 
 .h2-processos {
-    font-size: 24px !important;
-    @media (min-width:400px){
-        font-size: 32px !important;
-    }
-}
 
-.img-processos {
-    @media (min-width:1200px){
-        min-width: 400px !important;
-    }
-    @media (min-width:1400px){
-        min-width: 500px !important;
+    @media (min-width:400px) {
+        font-size: 32px !important;
     }
 }
