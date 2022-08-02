@@ -3,17 +3,20 @@
         {
             "curso": "Curso Product Design",
             "nome": "Gama Academy",
-            "descricao": "Aprenda de forma prática com mentores experts do mercado a realizar atividades de User Experience (UX) e User Interface (UI), sendo responsável pela descoberta de um novo produto"
+            "descricao": "Aprenda de forma prática com mentores experts do mercado a realizar atividades de User Experience (UX) e User Interface (UI), sendo responsável pela descoberta de um novo produto",
+            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/gama.png"
         },
         {
             "curso": "Curso UX Design",
             "nome": "Awari",
-            "descricao": "Aprenda a executar pesquisas de UX Design, fazer testes de usabilidade e elaborar análises, além de utilizar frameworks e métodos para a criação de designs de qualidade e que ofereçam uma boa experiência ao usuário."
+            "descricao": "Aprenda a executar pesquisas de UX Design, fazer testes de usabilidade e elaborar análises, além de utilizar frameworks e métodos para a criação de designs de qualidade e que ofereçam uma boa experiência ao usuário.",
+            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/awari.png"
         },
         {
             "curso": "Design UX/UI",
             "nome": "Driven",
-            "descricao": "Aprenda como criar interfaces mais intuitivas, inovadoras e eficientes! O nosso curso de UX/UI é focado nas práticas mais atuais do mercado de trabalho, com professores e professoras que vivem o dia a dia da profissão e podem te guiar nesse seu início de carreira em uma das áreas mais promissoras da atualidade."
+            "descricao": "Aprenda como criar interfaces mais intuitivas, inovadoras e eficientes! O nosso curso de UX/UI é focado nas práticas mais atuais do mercado de trabalho, com professores e professoras que vivem o dia a dia da profissão e podem te guiar nesse seu início de carreira em uma das áreas mais promissoras da atualidade.",
+            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/driven.png"
         },
         {
             "curso": "Programação Fullstack",

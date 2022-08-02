@@ -2,19 +2,23 @@
    "conteudos": [
         {
             "nome": "Curso Product Design",
-            "descricao": "Gama Academy"
+            "descricao": "Gama Academy",
+            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/wireframes.png"
         },
         {
             "nome": "Curso UX Design",
-            "descricao": "Awari"
+            "descricao": "Awari",
+            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/linguagem.png"
         },
         {
             "nome": "Publicação no blog",
-            "descricao": "3 tipos de métricas para testes de usabilidade"
+            "descricao": "3 tipos de métricas para testes de usabilidade",
+            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/comunicacao.png"
         },
         {
             "nome": "Curso A",
-            "descricao": "Lorem ipsum dolor sit putus."
+            "descricao": "Lorem ipsum dolor sit putus.",
+            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/emprego.png"
         },
         {
             "nome": "Curso B",
