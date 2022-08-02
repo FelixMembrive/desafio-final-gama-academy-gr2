@@ -1,3 +1,4 @@
+import React from 'react';
 import CardVideo from "../CardVideo";
 import ScrollContainer from 'react-indiana-drag-scroll';
 import { Accordion, Row } from "react-bootstrap";

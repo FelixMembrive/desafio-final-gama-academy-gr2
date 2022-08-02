@@ -1,3 +1,4 @@
+import React from 'react';
 import { Card } from "react-bootstrap";
 import { useRef, useLayoutEffect } from "react";
 import AcordionVaga from "../AcordionVaga";
