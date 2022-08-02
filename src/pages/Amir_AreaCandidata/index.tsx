@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import "./styles.scss"
+import { PortaVoltar } from "../../assets/icons/SVGicons";
 
 
 export default function Amir_AreaCandidata() {
@@ -32,7 +33,11 @@ export default function Amir_AreaCandidata() {
                         
                         </div>
                         <div className="btn_ac_sair_div">
+                            <div className="porta_sair mt-1">
+                            <PortaVoltar/>
+                            </div>
                             <LinkButton className="btn-link btn_ac_sair fs-6 text-bg-light text-decoration-none fw-semibold text-danger text-center"  to="" text="Sair da conta"></LinkButton>
+                            
                         </div>
                     </Col>
 

@@ -267,6 +267,23 @@ function Bookmarks(props: IiconProps) {
   );
 }
 
+function PortaVoltar(props: IiconProps) {
+  return (
+    <svg
+    width={14}
+    height={15}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    
+  >
+    <path
+      d="M1.75 14.774a1.4 1.4 0 0 1-1.06-.471 1.603 1.603 0 0 1-.44-1.134V1.935c0-.441.147-.82.44-1.134a1.4 1.4 0 0 1 1.06-.47H7v1.604H1.75v11.234H7v1.605H1.75Zm8.25-3.21-1.031-1.163 1.912-2.047H4.75V6.75h6.131L8.97 4.703 10 3.54l3.75 4.012L10 11.564Z"
+      fill="#3F1234"
+    />
+  </svg>
+  );
+}
+
 export { Facebook, FacebookOutline,
   Instagram, InstagramOutline,
   Linkedin, LinkedinOutline,
@@ -276,4 +293,5 @@ export { Facebook, FacebookOutline,
   SelectArrow,
   BackArrow,
   Bookmarks,
+  PortaVoltar,
  };

@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Row';
 import logo1 from "../../assets/imagens/foto_logada_mariaisabel.png";
 import HeaderLogado from "../../componentes/HeaderLogado";
 import LinkBack from "../../componentes/LinkBack";
-import LinkBack2 from "../../componentes/LinkBackportaseta";
+
 
 import Footer from "../../componentes/Footer";
 
@@ -45,7 +45,7 @@ export default function Amir_ValorMentoria() {
        
             <div className="cardsvm_div">
                     <div className="cdvm1">
-                    <CardValorMentoria className="" tipo_mentoria="Primeira mentoria" area_da_mentoria=". Mentoria de UX/UI design" tempo=". 30 minutos" valor=". Primeira mentoria é de graça! " ></CardValorMentoria>
+                    <CardValorMentoria className="" tipo_mentoria="Primeira mentoria" area_da_mentoria=". Mentoria de UX/UI design" tempo=". 30 minutos" valor=". Primeira mentoria é de graça!"></CardValorMentoria>
                     </div>
                     <div className="cdvm2">
                     <CardValorMentoria className="" tipo_mentoria="Valor mentoria completa" area_da_mentoria=". Mentoria de UX/UI design" tempo=". 60 minutos" valor=". R$ 80,00"></CardValorMentoria>
