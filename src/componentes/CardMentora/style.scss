@@ -1,23 +1,32 @@
+@import "../../colors.scss";
+
 .card-mentoria {
-    background-color: #efefef !important;
-    width: 152px !important;
-    height: 244.5px !important;
+    background-color: $light-5 !important;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    width: 342px !important;
+    height: 466px!important;
 
     @media (min-width:1024px) {
-        width: 259px !important;
-        height: 415px !important;
+        width: 410px !important;
+        height: 630px !important;
     }
 }
 
-.img-mentoria-candidata {
-    width: 46px !important;
+#imgMentora {
+    width: 342px;
+    height: 187px;
 
     @media (min-width:1024px) {
-        width: 78px !important;
+        width: 400px !important;
+        height: 230px;
     }
 }
 
 .card-mentoria-text {
+    padding: 16px;
     p {
         font-size: 12.54px;
 
@@ -28,16 +37,85 @@
 }
 
 .card-mentoria-body {
-    .btn {
+    .botoes {
+        display: flex;
         font-size: 12.54px;
         font-weight: 400;
         width: 101px;
         height: 32.5px;
-
+        
         @media (min-width:1024px) {
             font-size: 21.29px !important;
             width: 172px;
             height: 55px;
         }
     }
+}
+.botoesCardMentora{
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+    padding-top: 0;
+    gap: 16px;
+    text-align: center;
+}
+#verPerfil{
+    color: $primary-custom;
+    background-color: $light-5;
+    border: 1px solid $primary-custom;
+
+    padding: 9.5px 22.8px;
+
+    width: 100.6px;
+    height: 38px;
+    border-radius: 95px;
+    @media (min-width:1024px) {
+        width: 152px !important;
+        height: 52px !important;
+    }
+}
+#agendarMentoria{
+    color: $light-5;
+    background-color: $primary-custom;
+    border: none;
+
+    width: 154.6px;
+    height: 38px;
+    padding: 9.5px 22.8px;
+    border-radius: 95px;
+    @media (min-width:1024px) {
+        width: 223px;
+        height: 52px;
+    }
+}
+.cargoMentora{
+    display: flex;
+    margin:16px;
+}
+.img-empresa-candidata{
+    padding-right: 16px;
+}
+#iconeMentoras{
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#empresa{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+#cargo{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.1px;
+}
+#logo_empresa{
+    height: 40px;
 }
