@@ -1,10 +1,13 @@
 @import "../../colors.scss";
 
+.divImpactoMentoria{
+    display: flex;
+}
 #imagem {
     position: absolute;
     width: 390px;
     height: 560px;
-    margin: 0;
+    left:0;
     padding: 0;
     align-items: center;
     @media only screen and (min-width: 992px) {
@@ -13,14 +16,10 @@
 }
 h2{
     position: relative;
-    width: 342px;
-    height: 72px;
+    padding-left: 24px;
     padding-top: 24px;
-    padding-bottom: 287px;
-    margin: 0;
-    padding-left: 0;
-    left: calc(50% - 342px/2);
-    top: 24px;
+    padding-bottom: 263px;
+    margin-left: 24px;
 
     font-family: 'Poppins';
     font-style: normal;
@@ -33,8 +32,11 @@ h2{
 .containerMentoria {
     height: 560px;
     width: 390px;
-    width: 100%;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
     background-position: 0;
     @media only screen and (min-width: 992px) {
         padding-top: 132px;
@@ -47,6 +49,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 24px;
     padding: 0;
     gap: 8px;
 
@@ -73,6 +76,7 @@ h2{
     }
 p {
     position: relative;
+    margin-left: 24px;
     width: 342px;
     height: 81px;
     left: calc(50% - 342px/2);
@@ -83,6 +87,7 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 170%;
+    color: $light-5;
 
     text-align: center;
     @media only screen and (min-width: 992px) {
@@ -95,4 +100,11 @@ p {
             width: 559px;
         }
     }
+}
+#backgroundMentoria{
+    position: absolute;
+    margin-left: 12px;
+    width: 390px;
+    height: 205px;
+    opacity: 50%;
 }
