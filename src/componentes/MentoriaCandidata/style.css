@@ -2,6 +2,7 @@
   font-size: 14.46px;
   font-weight: 600;
 }
+
 @media (min-width: 1024px) {
   .titulo-mentoria-candidata {
     font-size: 20.35px !important;
@@ -13,6 +14,7 @@
   width: 152px !important;
   height: 244.5px !important;
 }
+
 @media (min-width: 1024px) {
   .card-mentoria {
     width: 259px !important;
@@ -23,6 +25,7 @@
 .img-mentoria-candidata {
   width: 46px !important;
 }
+
 @media (min-width: 1024px) {
   .img-mentoria-candidata {
     width: 78px !important;
@@ -32,6 +35,7 @@
 .card-mentoria-text p {
   font-size: 12.54px;
 }
+
 @media (min-width: 1024px) {
   .card-mentoria-text p {
     font-size: 21.29px !important;
@@ -44,10 +48,12 @@
   width: 101px;
   height: 32.5px;
 }
+
 @media (min-width: 1024px) {
   .card-mentoria-body .btn {
     font-size: 21.29px !important;
     width: 172px;
     height: 55px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

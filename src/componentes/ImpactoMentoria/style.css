@@ -1,61 +1,119 @@
-.containerMentoria img {
+#imagem {
   position: absolute;
-  width: 288.19px;
-  height: 219.83px;
-  left: 55px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.4;
-  align-items: center;
-  background-attachment: fixed;
+  width: 390px;
+  height: 560px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media only screen and (min-width: 992px) {
-  .containerMentoria img {
+  #imagem {
     height: 840px;
   }
 }
 
-.containerMentoria {
-  width: 100%;
-  padding: 41px 16px 54px 16px;
+h2 {
+  position: relative;
+  width: 342px;
+  height: 72px;
+  padding-top: 24px;
+  padding-bottom: 287px;
+  margin: 0;
+  padding-left: 0;
+  left: calc(50% - 342px/2);
+  top: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
 }
+
+.containerMentoria {
+  height: 560px;
+  width: 390px;
+  width: 100%;
+  padding: 0;
+  background-position: 0;
+}
+
 @media only screen and (min-width: 992px) {
   .containerMentoria {
     padding-top: 132px;
     padding-bottom: 132px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.mentoria {
-  position: absolute;
-  align-items: center;
-  font-family: "Poppins";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  align-content: center;
-}
-
-.textoMentoria {
-  position: relative;
-  text-align: center;
-  padding: 16px;
-  width: 326px;
+.botaoImpactoMentoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  gap: 8px;
+  position: absolute;
+  width: 341px;
+  height: 40px;
+  left: 24px;
+  margin-top: 16px;
+  color: #601C4F;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
   align-items: center;
-  margin: auto;
+  text-align: center;
+  letter-spacing: 0.1px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(103, 80, 164, 0.05)), to(rgba(103, 80, 164, 0.05))), #FFFBFE;
+  background: linear-gradient(0deg, rgba(103, 80, 164, 0.05), rgba(103, 80, 164, 0.05)), #FFFBFE;
+  border: 1px solid #79747E;
+  border-radius: 100px;
 }
+
+p {
+  position: relative;
+  width: 342px;
+  height: 81px;
+  left: calc(50% - 342px/2);
+  top: 24px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-align: center;
+}
+
 @media only screen and (min-width: 992px) {
-  .textoMentoria {
+  p {
+    display: -ms-grid;
     display: grid;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .textoMentoria h2 {
+  p h2 {
     width: 610px;
   }
-  .textoMentoria p {
+  p p {
     width: 559px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

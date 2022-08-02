@@ -1,47 +1,59 @@
 .acordion-vagas {
   border-radius: 12px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
   width: 320px !important;
 }
+
 @media (min-width: 390px) {
   .acordion-vagas {
     width: 342px !important;
   }
 }
+
 @media (min-width: 700px) {
   .acordion-vagas {
     width: 450px !important;
   }
 }
+
 @media (min-width: 1024px) {
   .acordion-vagas {
     width: 600px !important;
   }
 }
+
 @media (min-width: 1400px) {
   .acordion-vagas {
     width: 906px !important;
   }
 }
+
 .acordion-vagas .accordion-button {
   border: none;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   background-color: #FFFBFE !important;
   color: #1C1B1F;
 }
+
 .acordion-vagas .accordion-button:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none;
 }
+
 .acordion-vagas .accordion-button:not(.collapsed) {
   color: #1C1B1F;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .acordion-vagas .accordion-button.collapsed::after {
   color: #1C1B1F;
   opacity: 1;
 }
+
 .acordion-vagas .accordion-button::after {
   color: #1C1B1F;
   opacity: 1;
@@ -57,10 +69,13 @@
 
 .img-acordion-vagas {
   width: 40px !important;
+  height: 40px !important;
 }
+
 @media (min-width: 1024px) {
   .img-acordion-vagas {
     width: 54px !important;
+    height: 54px !important;
   }
 }
 
@@ -68,8 +83,10 @@
   font-size: 14px;
   font-weight: 600;
 }
+
 @media (min-width: 750px) {
   .acordion-vagas-text p {
     font-size: 20.35px !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

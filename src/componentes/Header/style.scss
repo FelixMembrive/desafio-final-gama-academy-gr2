@@ -3,7 +3,8 @@
 @import "../../spacing.scss";
 
 #containerStyle {
-    padding: 0;
+    padding-top: 11px;
+    padding-bottom: 11px;
     color: $light-5;
     background-color: $primary-custom;
     @media only screen and (min-width: 768px) {

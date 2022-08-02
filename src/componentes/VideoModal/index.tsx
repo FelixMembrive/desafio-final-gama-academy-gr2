@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Play, X } from 'phosphor-react';
 import './style.scss';
+import PlayIcon from '../../assets/icons/play_button.png'
 
 interface IModalProps {
   src: string;
@@ -17,7 +18,6 @@ export default function VideoModal(props: IModalProps) {
   return (
     <>
       <Button variant="link" className="play btn-link bg-transparent p-0 m-0" onClick={handleShow}>
-      <Play size={'100%'} weight="fill" color='#e9e9e9'/>
       </Button>
 
       <div className={show? 'modal-background': 'modal-hide'} onClick={handleClose}>

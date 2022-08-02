@@ -1,13 +1,18 @@
 .col1_ac {
   margin-left: 0px;
   padding-left: 12px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo_boyzin {
   margin-top: 59.3px;
 }
+
 @media (min-width: 1400px) {
   .logo_boyzin {
     margin-top: 134.5px;
@@ -23,9 +28,13 @@
 }
 
 .btn_ac_sair_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 18px;
 }
 
@@ -50,13 +59,18 @@
 }
 
 .img_ac_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .img_ac {
   margin-bottom: 45px;
 }
+
 @media (min-width: 1200px) {
   .img_ac {
     width: 961px;
@@ -65,9 +79,11 @@
     margin-bottom: 0px;
   }
 }
+
 @media (min-width: 1400px) {
   .img_ac {
     margin-top: 89px;
     margin-left: 88px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */
