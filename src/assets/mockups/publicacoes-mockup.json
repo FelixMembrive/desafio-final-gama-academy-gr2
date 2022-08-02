@@ -3,17 +3,17 @@
         {
             "nome": "Como fazer uma desk research",
             "descricao": "A desk reserach é uma pesquisa secundária que permite reunir informações",
-            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/desk_research.png"
+            "imagem": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_cards/desk_research.png"
         },
         {
             "nome": "3 tipos de métricas para testes de usabilidade",
             "descricao": "As métricas são medições que contribuem para avaliar os resultados obtidos durante um teste",
-            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/metricas.png"
+            "imagem": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_cards/metricas.png"
         },
         {
             "nome": "Ferramentas para criar paletas de cores",
             "descricao": "As cores têm um papel importante em uma interface. Isso porque as cores primárias do círculo cromático não refletem, cientificamente falando, o verdadeiro range do espectro de cores.",
-            "imagem": "https://github.com/FelixMembrive/desafio-final-gama-academy-gr2/blob/main/src/assets/icons/logos_cards/cores.png"
+            "imagem": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_cards/cores.png"
         },
         {
             "nome": "Publicação X",

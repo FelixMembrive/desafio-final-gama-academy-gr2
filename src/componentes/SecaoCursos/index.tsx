@@ -1,7 +1,6 @@
 import { Row, Container } from "react-bootstrap";
 import MiniCardB from "../MiniCardB";
 import './style.scss';
-import MiniCardBImage from '../../assets/imagens/MiniCardBImage.png';
 import dados from "../../assets/mockups/cursos-mockup.json";
 
 interface ISecaoCursos {
@@ -18,7 +17,7 @@ export default function SecaoCursos(props:ISecaoCursos) {
           return (
         <Container fluid className="section-content">
         <Row>
-            <MiniCardB to="/" imgsrc={MiniCardBImage} title={curso.curso} text={curso.descricao.length > curso.descricao.substring(0,70).length? `${curso.descricao.substring(0,70)}...` : `${curso.descricao}`} />
+            <MiniCardB to="/" imgsrc={curso.imagem} title={curso.curso} text={curso.descricao.length > curso.descricao.substring(0,70).length? `${curso.descricao.substring(0,70)}...` : `${curso.descricao}`} />
         </Row>
         </Container>
           )
