@@ -1,43 +1,153 @@
 .card-mentoria {
-  background-color: #efefef !important;
-  width: 152px !important;
-  height: 244.5px !important;
+  background-color: #FFFFFF !important;
+  border-radius: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 342px !important;
+  height: 466px !important;
 }
+
 @media (min-width: 1024px) {
   .card-mentoria {
-    width: 259px !important;
-    height: 415px !important;
+    width: 410px !important;
+    height: 630px !important;
   }
 }
 
-.img-mentoria-candidata {
-  width: 46px !important;
+#imgMentora {
+  width: 342px;
+  height: 187px;
 }
+
 @media (min-width: 1024px) {
-  .img-mentoria-candidata {
-    width: 78px !important;
+  #imgMentora {
+    width: 400px !important;
+    height: 230px;
   }
+}
+
+.card-mentoria-text {
+  padding: 16px;
 }
 
 .card-mentoria-text p {
   font-size: 12.54px;
 }
+
 @media (min-width: 1024px) {
   .card-mentoria-text p {
     font-size: 21.29px !important;
   }
 }
 
-.card-mentoria-body .btn {
+.card-mentoria-body .botoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 12.54px;
   font-weight: 400;
   width: 101px;
   height: 32.5px;
 }
+
 @media (min-width: 1024px) {
-  .card-mentoria-body .btn {
+  .card-mentoria-body .botoes {
     font-size: 21.29px !important;
     width: 172px;
     height: 55px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.botoesCardMentora {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 16px;
+  padding-top: 0;
+  gap: 16px;
+  text-align: center;
+}
+
+#verPerfil {
+  color: #601C4F;
+  background-color: #FFFFFF;
+  border: 1px solid #601C4F;
+  padding: 9.5px 22.8px;
+  width: 100.6px;
+  height: 38px;
+  border-radius: 95px;
+}
+
+@media (min-width: 1024px) {
+  #verPerfil {
+    width: 152px !important;
+    height: 52px !important;
+  }
+}
+
+#agendarMentoria {
+  color: #FFFFFF;
+  background-color: #601C4F;
+  border: none;
+  width: 154.6px;
+  height: 38px;
+  padding: 9.5px 22.8px;
+  border-radius: 95px;
+}
+
+@media (min-width: 1024px) {
+  #agendarMentoria {
+    width: 223px;
+    height: 52px;
+  }
+}
+
+.cargoMentora {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 16px;
+}
+
+.img-empresa-candidata {
+  padding-right: 16px;
+}
+
+#iconeMentoras {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#empresa {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+#cargo {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  letter-spacing: 0.1px;
+}
+
+#logo_empresa {
+  height: 40px;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

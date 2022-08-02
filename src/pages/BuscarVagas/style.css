@@ -70,7 +70,7 @@
   line-height: 150%;
 }
 
-.tp-body-large, .container-flex p {
+.tp-body-large {
   /* Body Large */
   font-family: 'Mulish';
   font-weight: 400;
@@ -102,14 +102,17 @@
   line-height: 170%;
 }
 
-.container-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 25px;
-  color: #FFFFFF;
+.button-icon {
+  background-color: #601C4F;
+  border: none;
+}
+
+.icon-left-right {
+  margin-top: 9px;
+  fill: white;
+}
+
+.icon-left-right path {
+  fill: white;
 }
 /*# sourceMappingURL=style.css.map */
