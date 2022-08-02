@@ -6,13 +6,13 @@ import './style.scss'
 import LinkButton from "../LinkButton";
 
 interface ICardMentoraProps{
-    logo_empresa?: String,
-    empresa: String,
-    cargo: String,
+    logo_empresa?: string,
+    empresa: string,
+    cargo: string,
     foto_mentora?: string,
-    nome_mentora: String,
-    area_mentora: String,
-    descricao_mentora: String,
+    nome_mentora: string,
+    area_mentora: string,
+    descricao_mentora: string,
     className?: string,
 }
 
@@ -34,8 +34,9 @@ export default function CardMentora(props: ICardMentoraProps) {
                         <p>{props.descricao_mentora}</p>
                     </div>
                     <div className="botoesCardMentora">
-                        <Button className='verPerfil' to='#' id="verPerfil" text='Ver perfil'>Ver perfil</Button>
-                        <Button className='agendarMentoria' to='#' id="agendarMentoria" text='Agendar mentoria'>Agendar mentoria</Button>
+                        {/* removido para testar o deploy */}
+                        {/* <Button className='verPerfil' to='#' id="verPerfil" text='Ver perfil'>Ver perfil</Button>
+                        <Button className='agendarMentoria' to='#' id="agendarMentoria" text='Agendar mentoria'>Agendar mentoria</Button> */}
                     </div>
                     </Card.Body>
                 </Card>
