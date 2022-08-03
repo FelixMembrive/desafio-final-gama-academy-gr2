@@ -7,7 +7,20 @@
     padding-left: 12px;
     justify-content: center;
     align-items: center;
+
+    @media(min-width:1200px){
+    margin-top: 134px;    
 }
+    @media(min-width:1400px){
+    margin-top: 134px;    
+    padding-right: 0px !important;
+    
+}
+
+
+}
+
+
 .logo_lorena{
     margin-top: 40px;
     margin-bottom: 8px !important;
@@ -23,37 +36,46 @@
 
 .nome_usuario{
     margin-bottom: 32px;
+    font-family: 'Mulish', sans-serif !important;
+
 } 
 .btn_ac_sair_div{
     display: flex;
     justify-items: center;
     justify-content: center;
     padding-top: 41px;
+    color: $primary-custom!important;
 };
 
 .btn_ac_sair{
     margin-bottom: 55px;
     padding-left: 10px !important;
-    color :$primary-custom!important;
+    color : $primary-custom!important;
+
+   @media(min-width:1200px){
+        margin-bottom: 0px;
+       
+}
+
     
 };
-
-
 
 .btns_ac_div{
     display: flex;
     flex-direction: column;
     padding-left: 12px;
     padding-right: 12px;
+    align-items: center;
 
 }
 
 
 .btn_ac_mensagens{
-    // width: 342px;
+    width: 342px;
     height: 40px;
     font-size: 14px !important;
     background-color:$primary-custom!important;
+    font-family: 'Roboto', sans-serif !important;
 
     @media(min-width:1200px){
        
@@ -64,11 +86,12 @@
     
 }
 .btn_ac_editar{
-    // width: 342px;
+    width: 342px;
     height: 40px;
     font-size: 14px !important;
     background-color:$primary-custom!important;
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif !important;
 
     @media(min-width:1200px){
        
@@ -78,11 +101,12 @@
    }
 }
 .btn_ac_curriculo{
-    // width: 342px;
+    width: 342px;
     height: 40px;
     font-size: 14px !important;
     background-color:$primary-custom!important;
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif !important;
     
     @media(min-width:1200px){
        
@@ -95,48 +119,39 @@
 .img_ac_div{
     display: flex;
     align-items:flex-end;
+    
+    @media(min-width:1200px){
+        justify-content:end;
+        width: 600px !important;
 
+    }
 
-    // @media(min-width:576px){
+    @media(min-width:1400px){
         
-    //     width: 464px;
+        width: 400px;
 
-    // }
+    }
+
+
 
 }
 .img_ac{
     margin-left: 12px;
     margin-right: 12px;
-    // width:304px ;
-    // height:308px;
-    // @media(min-width:576px){
-    //     margin-left: -12px;
-    //     margin-right: 0px;
-        margin-bottom: 45px;
-    //     width: 464px;
-    //     height: 274.25px;
-    // }
+    width:343px ;
+    height:406px;
+ 
+    // margin-bottom: 45px;
 
-//    @media(min-width:768px){
-//         margin-left: -12px;
-//         margin-right: 0px;
-//         margin-bottom: 20px;
-//         width: 644px;
-//     }
-//     @media(min-width:992px){
-//         margin-left: -12px;
-//         margin-right: 26px;
-//         margin-bottom: 20px;
-//     }
 
     @media(min-width:1200px){
-        width: 960;
-        height: 600px;
-        margin-left: 44px;
-        margin-top: 89px;
+        width: 394px !important;
+        height: 468px !important;
+        margin-left: 88px;
+        margin-top: 29px;
 
         // margin-right: 87px;
-        margin-bottom: 45px;
+        // margin-bottom: 45px;
 
     }
 
