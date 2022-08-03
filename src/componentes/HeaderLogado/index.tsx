@@ -22,7 +22,7 @@ export default function Header() {
         <Navbar.Collapse id="basic-navbar-nav-logado">
           <div className="bd-toc-item-logado">
             <Nav.Link href="/buscarvagas" className="links">Área da candidata</Nav.Link>
-            <Nav.Link href="#link" className="links">Vagas</Nav.Link>
+            <Nav.Link href="/buscarvagas" className="links">Vagas</Nav.Link>
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
             <Nav.Link href="#link" className="links">Mentoras</Nav.Link>
             <Nav.Link href="#link" className="links">Blog</Nav.Link>

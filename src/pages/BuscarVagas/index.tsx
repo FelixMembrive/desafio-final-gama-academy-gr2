@@ -11,13 +11,14 @@ import vagas from '../../assets/mockups/vagas-mockup.json';
 import { Bookmarks, Facebook, SelectArrow, Notification } from "../../assets/icons/SVGicons";
 import "../../typography.scss";
 import ScrollContainer from 'react-indiana-drag-scroll';
+import HeaderLogado from '../../componentes/HeaderLogado';
 
 const vagasRecomendadas = vagas.recomendadas;
 
 export default function BuscarVagas() {
   return (
     <>
-      <Header />
+      <HeaderLogado />
       <section className="buscar-secao-buscar mt-5">
         <LinkBack text="Voltar para área da candidata"/>
         <Row className="mt-5 mx-auto ms-4">

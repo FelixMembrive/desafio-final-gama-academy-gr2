@@ -69,7 +69,7 @@ export default function MinhasCandidaturas() {
   return (
     <>
       <HeaderLogado />
-      <Row className="textolink ">
+      <Row className="mt-5">
                 <LinkBack text="Voltar para buscar vagas"/>
             </Row>
       <Wrapper>

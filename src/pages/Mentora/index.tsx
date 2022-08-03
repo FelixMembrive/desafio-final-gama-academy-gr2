@@ -6,11 +6,12 @@ import LinkButton from "../../componentes/LinkButton";
 import LinkBack from "../../componentes/LinkBack";
 import './style.scss';
 import { propTypes } from "react-bootstrap/esm/Image";
+import HeaderLogado from "../../componentes/HeaderLogado";
 
 export default function Mentora() {
   return (
     <>
-      <Header />
+      <HeaderLogado />
       <LinkBack text="Voltar para Mentoras" className="pt-5 ps-md-3"/>
       <div className="ps-md-3 ps-lg-5">
       <DescricaoMentora/> 
