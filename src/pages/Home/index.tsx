@@ -19,11 +19,11 @@ export default function Home() {
       <Depoimentos />
       <ExplicacaoFeatures />
       <ImpactoMentoria />
-      <ProcessosSeletivos />
       <ConteudosExclusivos
         title="Conteúdos exclusivos"
-        substitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh placerat volutpat eget vitae leo. "
+        substitle="Veja algumas matérias exclusivas separadas especialmente pra você"
       />
+      <ProcessosSeletivos />
       <Footer />
     </>
   );
