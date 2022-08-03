@@ -1,18 +1,15 @@
-import VideoModal from "../VideoModal";
-import { Description, Iframe, Title, Placeholder, Wrapper } from "./styles";
+import { Description, Iframe, Title, Img, Wrapper } from "./styles";
 
 interface Props {
   title: string;
   description: string;
-  link: string;
+  img: string;
 }
 
 const FeatureCard = (props: Props) => {
   return (
     <Wrapper>
-      <Placeholder>
-        <VideoModal src={props.link} />
-      </Placeholder>
+      <Img src={props.img} />
       <Title>{props.title}</Title>
       <Description>{props.description}</Description>
     </Wrapper>

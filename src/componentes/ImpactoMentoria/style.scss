@@ -21,14 +21,6 @@
     padding-top: 24px;
     padding-bottom: 263px;
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 130%;
-
-    text-align: center;
-}
 .containerMentoria {
     height: 560px;
     width: 390px;
@@ -38,6 +30,50 @@
         padding-top: 132px;
         padding-bottom: 132px;
         align-items: center;
+    }
+    p {
+        position: relative;
+        width: 342px;
+        height: 81px;
+        left: calc(50% - 342px/2);
+        top: 24px;
+    
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 170%;
+    
+        text-align: center;
+        @media only screen and (min-width: 992px) {
+            display: grid;
+            justify-content: center;
+            h2 {
+                width: 610px;
+            }
+            p {
+                width: 559px;
+            }
+        }
+    }
+    h2{
+        position: relative;
+        width: 342px;
+        height: 72px;
+        padding-top: 24px;
+        padding-bottom: 287px;
+        margin: 0;
+        padding-left: 0;
+        left: calc(50% - 342px/2);
+        top: 24px;
+    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 130%;
+    
+        text-align: center;
     }
 }
 .botaoImpactoMentoria{

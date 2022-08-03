@@ -258,10 +258,45 @@ function Bookmarks(props: IiconProps) {
     height={14}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
   >
     <path
       d="M.75 13.75v-12c0-.413.147-.766.441-1.06.293-.293.646-.44 1.059-.44h7.5c.412 0 .766.147 1.06.44.293.294.44.647.44 1.06v12L6 11.5.75 13.75Zm1.5-2.287L6 9.85l3.75 1.613V1.75h-7.5v9.713Z"
       fill="#1C1B1F"
+    />
+  </svg>
+  );
+}
+
+function PortaVoltar(props: IiconProps) {
+  return (
+    <svg
+    width={14}
+    height={15}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    
+  >
+    <path
+      d="M1.75 14.774a1.4 1.4 0 0 1-1.06-.471 1.603 1.603 0 0 1-.44-1.134V1.935c0-.441.147-.82.44-1.134a1.4 1.4 0 0 1 1.06-.47H7v1.604H1.75v11.234H7v1.605H1.75Zm8.25-3.21-1.031-1.163 1.912-2.047H4.75V6.75h6.131L8.97 4.703 10 3.54l3.75 4.012L10 11.564Z"
+      fill="#3F1234"
+    />
+  </svg>
+  );
+}
+
+function Notification(props: IiconProps) {
+  return (
+    <svg
+    width={14}
+    height={15}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    
+  >
+    <path
+      d="M1.75 14.774a1.4 1.4 0 0 1-1.06-.471 1.603 1.603 0 0 1-.44-1.134V1.935c0-.441.147-.82.44-1.134a1.4 1.4 0 0 1 1.06-.47H7v1.604H1.75v11.234H7v1.605H1.75Zm8.25-3.21-1.031-1.163 1.912-2.047H4.75V6.75h6.131L8.97 4.703 10 3.54l3.75 4.012L10 11.564Z"
+      fill="#3F1234"
     />
   </svg>
   );
@@ -276,4 +311,6 @@ export { Facebook, FacebookOutline,
   SelectArrow,
   BackArrow,
   Bookmarks,
+  PortaVoltar,
+  Notification,
  };

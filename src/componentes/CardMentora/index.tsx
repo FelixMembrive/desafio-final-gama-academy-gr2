@@ -6,13 +6,13 @@ import './style.scss'
 import LinkButton from "../LinkButton";
 
 interface ICardMentoraProps{
-    logo_empresa?: String,
-    empresa: String,
-    cargo: String,
+    logo_empresa?: string,
+    empresa?: string,
+    cargo?: string,
     foto_mentora?: string,
-    nome_mentora: String,
-    area_mentora: String,
-    descricao_mentora: String,
+    nome_mentora?: string,
+    area_mentora?: string,
+    descricao_mentora?: string,
     className?: string,
 }
 
@@ -22,9 +22,9 @@ export default function CardMentora(props: ICardMentoraProps) {
                     <Card.Body className="card-mentoria-body d-flex flex-column m-0 p-0">
                     <div className="cargoMentora">
                         <img src={props.logo_empresa} id="logo_empresa" alt={`logo da empresa ${props.empresa}`} className={`img-empresa-candidata img-fluid mb-2 mb-lg-3 ${props.className}`}/>
-                        <p id="cargo" className="fw-semibold m-0 mb-1">{props.cargo}
+                        <div id="cargo" className="fw-semibold m-0 mb-1">{props.cargo}
                             <p id="empresa" className="fw-semibold m-0 mb-2">{props.empresa}</p>
-                        </p>
+                        </div>
                         <img src={icon} alt={`foto da mentora ${props.empresa}`} id="iconeMentoras" className={`img-empresa-candidata img-fluid mb-2 mb-lg-3 ${props.className}`}/>
                     </div>
                     <img src={props.foto_mentora} alt={`foto da mentora ${props.nome_mentora}`} id="imgMentora" className={`m-auto ${props.className}`}/>
@@ -34,8 +34,8 @@ export default function CardMentora(props: ICardMentoraProps) {
                         <p>{props.descricao_mentora}</p>
                     </div>
                     <div className="botoesCardMentora">
-                        <Button className='verPerfil' to='#' id="verPerfil" text='Ver perfil'>Ver perfil</Button>
-                        <Button className='agendarMentoria' to='#' id="agendarMentoria" text='Agendar mentoria'>Agendar mentoria</Button>
+                        <LinkButton className='verPerfil' to='#' id="verPerfil" text='Ver perfil' />
+                        <LinkButton className='agendarMentoria' to='#' id="agendarMentoria" text='Agendar mentoria' />
                     </div>
                     </Card.Body>
                 </Card>
