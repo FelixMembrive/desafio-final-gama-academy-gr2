@@ -1,4 +1,4 @@
-import './style.css'
+import './style.scss'
 interface ILabelInput {
   title: string
   inputType?: string
