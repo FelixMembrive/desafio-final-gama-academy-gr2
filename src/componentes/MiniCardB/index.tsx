@@ -12,7 +12,7 @@ interface IMiniCardB {
 export default function MiniCardB(props: IMiniCardB) {
   return (
     <Col className="ps-lg-4">
-      <div className="card-cursos-publicacoes">
+      <div className="mini-card">
           <LinkContainer to={props.to} className="img-container">
           <img src={props.imgsrc}/>
           </LinkContainer>
