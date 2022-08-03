@@ -42,39 +42,44 @@
 .grupotexto{
         margin-top:150px;
 
-    @media (min-width:1400px) {
-        margin-left: 100px;
-        margin-top:204px ;
+    @media (min-width:992px) {
+        // margin-left: 100px;
+        margin-top:20px !important;
     }    
 }
 
 .tx1{
-    margin-top: 15px;
     font-size: 36px;
-
-    
-    
-    @media(min-width:768px){
-        margin-top: 100px;
+    font-weight: 600px important;
+    font-family: 'Poppins', sans-serif;
+ 
+       @media(min-width:768px){
+            margin-top: 100px;
         
     } 
-     @media(min-width:1200px){
-        margin-top: 204px;
-        margin-left: 40px;
+        @media(min-width:1200px){
+            margin-top: 204px;
+            margin-left: 40px;
     }
     
-    @media (min-width:1400px) {
-        font-size: 40px;
-        margin-top: 204px;
-        margin-left: 40px;     
+        @media (min-width:1400px) {
+            font-size: 40px;
+            margin-top: 204px;
+            margin-left: 40px;     
     }    
     
+}
+
+.texfem{
+    color:$primary-custom !important ;
+    font-size: 10px !important;
 }
 
 .tx2{
     font-size: 16px;
     padding-right: 30px;
-   
+    margin-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
     
     @media (min-width:1200px) {
        font-size: 16px ;
@@ -119,13 +124,17 @@
     font-family: 'Roboto', sans-serif !important;
     font-weight: 500 !important;
     font-size: 16px !important;
+    margin-bottom: 16px;
 
 
 
-    @media (min-width:770px) {
+    @media (min-width:768px) {
         font-size: 18px;       
-        width: 250px;
-        height: 58px;
+        width: 200px;
+        height: 40px;
+        margin-bottom: 0;
+        margin-right: 8px;
+        margin-top: 16px;
          
       }   
    
@@ -135,6 +144,12 @@
         align-items: center !important;
          
       }    
+      @media (min-width:1400px) {
+       
+        width: 278px;
+        align-items: center !important;
+         
+      }  
 
 }
 
@@ -145,13 +160,19 @@
     align-items: center!important;
     text-align: center!important;
     font-family: 'Roboto', sans-serif !important;
-    font-weight: 500 !important;
     font-size: 16px !important;
+
     
-    @media (min-width:770px) {
-       font-size: 18px;
-        width: 278px;
-        height: 58px;
+    @media (min-width:768px) {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+        margin-right: 8px;
+        margin-left: 8px;
+        margin-top: 16px;
          
       }
     @media (min-width:992px) {
@@ -159,11 +180,11 @@
         width: 343px;
          
       }    
-    // @media (min-width:1400px) {
+    @media (min-width:1400px) {
        
-    //   width: 278px;
+      width: 278px;
        
-    // }    
+    }    
     
 }
 
@@ -176,9 +197,13 @@
 .imgtopo{
     width: 326px;
     height: 274px;
-    margin-top: 48px;
+    margin-top: 90px;
+    margin-bottom: 26px;
 
- 
+    @media (min-width:768px) {
+        margin-top: 62px;
+        margin-left: 66px;   
+    } 
 
      @media (min-width:992px) {
         margin-top: 62px;
@@ -201,13 +226,14 @@
         height: 390px;
         margin-top: 169px;
         margin-right: 155px;
-        margin-bottom: 150px;
+        margin-bottom: 130px;
         margin-left: 100px;
     }   
 }
 
 .textoemppar2{
     font-size: 20px;
+    margin-bottom: 24px;
 
     @media(min-width:576px){
         margin-top: 0px;
@@ -221,7 +247,7 @@
     } 
 
     @media(min-width:992px){
-        margin-top: 80px;
+        margin-top: 60px;
            
     } 
 
@@ -245,7 +271,7 @@
     }
 
 .grupologoemp{
-   height: 96px;
+//    height: 96px;
 //    margin-bottom: 30px;
 
 //    @media (min-width:1200px) {
@@ -255,10 +281,12 @@
 }
 
 .logo001{
-    width: 163px;
-    height: 160px;
+    width: 163px !important;
+    height: 160px !important;
     border-radius: 8px;
+    margin: 0;
     margin-right: 8px;
+    margin-bottom: 16px;
 
     @media (min-width:561px) {
         width: 155px;
@@ -281,11 +309,13 @@
 }
 
 .logo002{
-    width: 163px;
-    height: 160px;
+    width: 163px !important;
+    height: 160px !important;
     border-radius: 8px;
     border: 1px solid black;
+    margin:0;
     margin-left: 8px;
+    margin-bottom:16px ;
 
     @media (min-width:561px) {
         width: 155px;
@@ -308,28 +338,19 @@
 }
 
 .logo003{
-    width: 163px;
-    height: 160px;
+    width: 163px !important;
+    height: 160px !important;
     border-radius: 8px;
+    margin: 0;
     margin-right: 8px;
-    margin-top: 16px;
-
-    @media (min-width:561px) {
-        width: 155px;
-        height: 152px;
-        border-radius: 8px;
-        margin-right: 8px;
-        margin-top: 16px;
-        margin-left: 16px;
-   
-    }
+  
     
     @media (min-width:768px) {
         width: 155px;
         height: 152px;
         border-radius: 8px;
         margin-right: 8px;
-        margin-top: 16px;
+        margin-top: 0px;
         margin-left: 8px;
    
     }
@@ -339,18 +360,18 @@
         height: 160px;
         border-radius: 8px;
         margin-right: 8px;
-        margin-top: 16px;
+        margin-top: 0px;
         margin-left: 16px;
    
     }
 }
 .logo004{
-    width: 163px;
-    height: 160px;
+    width: 163px !important;
+    height: 160px !important;
     border-radius: 8px;
     border: 1px solid black;
+    margin:0;
     margin-left: 8px;
-    margin-top: 16px;
 
     @media (min-width:561px) {
         width: 155px;
@@ -366,7 +387,7 @@
         height: 160px;
         border-radius: 8px;
         margin-right: 8px;
-        margin-top: 16px;
+        margin-top: 0px;
         margin-left: 16px;
    
     }
