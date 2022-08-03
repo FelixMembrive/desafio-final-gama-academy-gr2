@@ -4,6 +4,7 @@ import { LabelInput } from '../../componentes/LabelInput'
 import LinkButton from '../../componentes/LinkButton'
 import SocialLinkLogIn from '../../componentes/SocialLinkLogIn'
 import { Link } from 'react-router-dom'
+import rightPattern from '../../assets/icons/rightPattern.svg'
 import './style.scss'
 export default function Login() {
   return (
@@ -49,8 +50,15 @@ export default function Login() {
         />
         <LinkButton className="loginButton" text="Entrar" to="#" />
         <Link className="forgotPassword" to="#">
-          Esqueceu a senha
+          Esqueceu sua senha? <span>Recupere</span>
         </Link>
+        <p className="conditionsAndTerms">
+          Ao continuar, você reconhece que leu e concordou com os{' '}
+          <span>Termos de Serviço</span> e as <span>Regras de Privacidade</span>{' '}
+          da Tech Delas
+        </p>
+        <img className="rightPattern" src={rightPattern} alt="" />
+        <img className="leftPattern" src={rightPattern} alt="" />
       </section>
       <Footer />
     </>
