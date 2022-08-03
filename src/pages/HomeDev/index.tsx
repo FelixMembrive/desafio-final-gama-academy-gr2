@@ -9,7 +9,8 @@ export default function HomeDev() {
   return (
     <>
       <div className="m-3 bg-secondary">
-      <LinkButton to="/login" text="Login" variant="primary" className="m-1" />
+        <LinkButton to="/register" text="Register" variant="primary" className="m-1" />
+        <LinkButton to="/login" text="Login" variant="primary" className="m-1" />
         <LinkButton to="/home" text="Home" variant="primary" className="m-1" />
         <LinkButton to="/areacandidata" text="Área da Candidata" variant="primary" className="m-1" />
         <LinkButton to="/buscarvagas" text="Buscar Vagas" variant="primary" className="m-1" />
@@ -17,6 +18,7 @@ export default function HomeDev() {
         <LinkButton to="/listamentoras" text="Lista de Mentoras" variant="primary" className="m-1" />
         <LinkButton to="/mentora" text="Mentora" variant="primary" className="m-1" />
         <LinkButton to="/mentora-agendamento" text="Mentora Agendamento" variant="primary" className="m-1" />
+        <LinkButton to="/redirecionamento-calendly" text="Redirecionamento Calendly" variant="primary" className="m-1" />
       </div>
       {/* <LinkButton to="#" text="primary" variant="primary" className="m-1" />
       <LinkButton to="#" text="primary-darker" variant="primary-darker" className="m-1" />

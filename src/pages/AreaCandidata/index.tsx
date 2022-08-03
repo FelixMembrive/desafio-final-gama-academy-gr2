@@ -6,11 +6,13 @@ import VagasRecomendadas from "../../componentes/VagasRecomendadas";
 import SecaoCursos from "../../componentes/SecaoCursos";
 import SecaoPublicacoes from "../../componentes/SecaoPublicacoes";
 import HeaderLogado from "../../componentes/HeaderLogado";
+import SecaoPrincipalAreaCandidata from "../../componentes/SecaoPrincipalAreaCandidata";
 
 export default function AreaCandidata() {
     return (
       <>
         <HeaderLogado />
+        <SecaoPrincipalAreaCandidata />
         <VagasRecomendadas />
         <SecaoCursos title="Cursos que irão te capacitar ainda mais" />
         <MentoriaCandidata />

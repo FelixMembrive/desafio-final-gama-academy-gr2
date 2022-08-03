@@ -8,7 +8,7 @@ import "./style.scss"
 
 
 
-export default function Amir_Redirec_MentAge() {
+export default function RedirecionamentoCalendly() {
     return (
         <>
         <HeaderLogado/>

@@ -1,8 +1,8 @@
 import { Container } from "react-bootstrap";
 import grafico_dados from "../../assets/imagens/grafico_dados.png";
 import logo_lorena from "../../assets/imagens/img_lorena.png";
-import HeaderLogado from "../../componentes/HeaderLogado";
-import LinkButton from "../../componentes/LinkButton";
+import HeaderLogado from "../HeaderLogado";
+import LinkButton from "../LinkButton";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -10,10 +10,9 @@ import "./styles.scss"
 import { PortaVoltar } from "../../assets/icons/SVGicons";
 
 
-export default function Amir_AreaCandidata() {
+export default function SecaoPrincipalAreaCandidata() {
     return (
         <>
-        <HeaderLogado/>
         <Container className=" " >
 
                  <Row className="d-flex flex-column flex-md-row justify-content-center pb-xl-4 align-items-xl-center ">
