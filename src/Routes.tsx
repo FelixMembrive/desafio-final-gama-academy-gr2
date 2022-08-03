@@ -1,14 +1,15 @@
-import { Routes, Route, Link } from "react-router-dom";
-import HomeDev from "./pages/HomeDev";
-import Home from "./pages/Home";
-import AreaCandidata from "./pages/AreaCandidata";
-import Amir_AreaCandidata from "./pages/Amir_AreaCandidata";
-import MentoraAgendamento from "./pages/MentoraAgendamento";
-import ListaMentoras from "./pages/ListaMentoras";
-import MinhasCandidaturas from "./pages/MinhasCandidaturas";
-import BuscarVagas from "./pages/BuscarVagas";
-import Mentora from "./pages/Mentora";
-import Login from "./pages/Login";
+import { Routes, Route, Link } from 'react-router-dom'
+import HomeDev from './pages/HomeDev'
+import Home from './pages/Home'
+import AreaCandidata from './pages/AreaCandidata'
+import Amir_AreaCandidata from './pages/Amir_AreaCandidata'
+import MentoraAgendamento from './pages/MentoraAgendamento'
+import ListaMentoras from './pages/ListaMentoras'
+import MinhasCandidaturas from './pages/MinhasCandidaturas'
+import BuscarVagas from './pages/BuscarVagas'
+import Mentora from './pages/Mentora'
+import Login from './pages/Login'
+import RegisterPage from './pages/Register'
 
 export default function RoutesComponent() {
   return (
@@ -23,6 +24,7 @@ export default function RoutesComponent() {
       <Route path="/listamentoras" element={<ListaMentoras />} />
       <Route path="/mentora" element={<Mentora />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<RegisterPage />} />
     </Routes>
-  );
+  )
 }
