@@ -22,27 +22,33 @@ export default function Hero() {
 
                     <Col md={7} className="grupotexto ms-2 ms-md-0"> 
                         <div >
-                            <h2 className="tx1 lh-base  fw-bold text-start  mb-4  me-md-0">Empoderando o mercado tech feminino</h2>
-                            <p className="tx2 fw-bold text-start ">Uma plataforma exclusiva para mulheres que querem se destacar no mundo da tecnologia</p>
+
+                            <div className="tx1-div">
+                            <h2 className="tx1 lh-base fw-bold text-start  mb-4  me-md-0">Empoderando o mercado tech <span className="txfem">feminino</span></h2>
+                            </div>
+
+                            <p className="tx2 fw-bolder text-start ">Uma plataforma exclusiva para mulheres que querem se destacar no mundo da tecnologia</p>
                         </div>
 
                        <div className="btn_reco  ">     
                         
                             <LinkButton className=" btn btn001 rounded-pill"  to="" text="Registre-se"></LinkButton>
-                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill me-0 me-md-2 ms-0 ms-md-3 mt-3" to="" text="Conheça mais"></LinkButton>
+                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill" to="" text="Conheça mais"></LinkButton>
                         
                        </div> 
                     </Col>
 
 
-                    <Col md={5} className="colimgtopo">
+                    <Col md={5} className="colimgtopo mt-0">
                             <img className="imgtopo" src={img_hero} />
                     </Col>
+
+
                 </Row>
 
                 <Row>
                     <Col className="textoemppar">
-                        <p className="textoemppar2 fw-bolder  ms-5 pe-5 ps mb-3 text-center ">Empresas parceiras</p>
+                        <p className="textoemppar2 fw-bolder  ms-2 pe-5 ps mb-4 text-center ">Empresas parceiras</p>
                     </Col>
                 </Row>
 
