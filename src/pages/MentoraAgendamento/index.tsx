@@ -18,7 +18,7 @@ import "./style.scss"
 
 
 
-export default function Amir_ValorMentoria() {
+export default function MentoraAgendamento() {
     return (
         <>
         <HeaderLogado/>

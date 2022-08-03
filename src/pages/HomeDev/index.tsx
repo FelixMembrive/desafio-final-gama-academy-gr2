@@ -16,6 +16,7 @@ export default function HomeDev() {
         <LinkButton to="/candidaturas" text="Minhas Candidaturas" variant="primary" className="m-1" />
         <LinkButton to="/listamentoras" text="Lista de Mentoras" variant="primary" className="m-1" />
         <LinkButton to="/mentora" text="Mentora" variant="primary" className="m-1" />
+        <LinkButton to="/mentora-agendamento" text="Mentora Agendamento" variant="primary" className="m-1" />
       </div>
       {/* <LinkButton to="#" text="primary" variant="primary" className="m-1" />
       <LinkButton to="#" text="primary-darker" variant="primary-darker" className="m-1" />

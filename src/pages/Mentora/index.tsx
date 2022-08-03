@@ -15,7 +15,7 @@ export default function Mentora() {
       <div className="ps-md-3 ps-lg-5">
       <DescricaoMentora/> 
       <div>
-      <LinkButton className="d-flex justify-content-center rounded-pill py-2 ms-4 my-5 btn-valores-agendamento" to="" text="Ver valores para agendamento"></LinkButton>
+      <LinkButton className="d-flex justify-content-center rounded-pill py-2 ms-4 my-5 btn-valores-agendamento" to="../mentora-agendamento" text="Ver valores para agendamento"></LinkButton>
       </div> 
       <div className="conteudos-recomendados">
         <h5>Conteúdos recomendados</h5>

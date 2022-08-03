@@ -3,7 +3,7 @@ import HomeDev from "./pages/HomeDev";
 import Home from "./pages/Home";
 import AreaCandidata from "./pages/AreaCandidata";
 import Amir_AreaCandidata from "./pages/Amir_AreaCandidata";
-import Amir_ValorMentoria from "./pages/Amir_ValorMentoria";
+import MentoraAgendamento from "./pages/MentoraAgendamento";
 import ListaMentoras from "./pages/ListaMentoras";
 import MinhasCandidaturas from "./pages/MinhasCandidaturas";
 import BuscarVagas from "./pages/BuscarVagas";
@@ -18,7 +18,7 @@ export default function RoutesComponent() {
       <Route path="/buscarvagas" element={<BuscarVagas />} />
       <Route path="/areacandidata" element={<AreaCandidata />} />
       <Route path="/amir_areacandidata" element={<Amir_AreaCandidata />} />
-      <Route path="/amir_valormentoria" element={<Amir_ValorMentoria />} />
+      <Route path="/mentora-agendamento" element={<MentoraAgendamento />} />
       <Route path="/candidaturas" element={<MinhasCandidaturas />} />
       <Route path="/listamentoras" element={<ListaMentoras />} />
       <Route path="/mentora" element={<Mentora />} />
