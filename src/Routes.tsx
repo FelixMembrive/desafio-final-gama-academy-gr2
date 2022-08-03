@@ -10,6 +10,7 @@ import BuscarVagas from './pages/BuscarVagas'
 import Mentora from './pages/Mentora'
 import Login from './pages/Login'
 import RegisterPage from './pages/Register'
+import Amir_Redirec_MentAge from './pages/Amir_Redirec_MentAge'
 
 export default function RoutesComponent() {
   return (
@@ -19,6 +20,7 @@ export default function RoutesComponent() {
       <Route path="/buscarvagas" element={<BuscarVagas />} />
       <Route path="/areacandidata" element={<AreaCandidata />} />
       <Route path="/amir_areacandidata" element={<Amir_AreaCandidata />} />
+      <Route path="/amir_redirec_mentage" element={<Amir_Redirec_MentAge />} />
       <Route path="/mentora-agendamento" element={<MentoraAgendamento />} />
       <Route path="/candidaturas" element={<MinhasCandidaturas />} />
       <Route path="/listamentoras" element={<ListaMentoras />} />
