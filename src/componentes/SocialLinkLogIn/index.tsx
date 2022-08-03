@@ -12,30 +12,30 @@ interface SocialLinkLogInProps {
 export default function SocialLinkLogIn(props: SocialLinkLogInProps) {
   if (props.icon == 'google') {
     return (
-      <Link to={props.destiny}>
-        <button className="socialLinkLogIn">
+      <button className="socialLinkLogIn">
+        <Link to={props.destiny}>
           <img src={googleImg} alt="" />
           {props.text}
-        </button>
-      </Link>
+        </Link>
+      </button>
     )
   }
   if (props.icon == 'facebook') {
     return (
-      <Link to={props.destiny}>
-        <button className="socialLinkLogIn">
+      <button className="socialLinkLogIn">
+        <Link to={props.destiny}>
           <img src={facebookImg} alt="" />
           {props.text}
-        </button>
-      </Link>
+        </Link>
+      </button>
     )
   }
   return (
-    <Link to={props.destiny}>
-      <button className="socialLinkLogIn">
+    <button className="socialLinkLogIn">
+      <Link to={props.destiny}>
         <img src={linkedinImg} alt="" />
         {props.text}
-      </button>
-    </Link>
+      </Link>
+    </button>
   )
 }

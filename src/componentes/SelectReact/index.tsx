@@ -6,11 +6,11 @@ export default function SelectReact () {
     const [selectedOption, setSelectedOption] = useState(0);
   
     const optionsList = [
-      "Option 1",
-      "Option 2",
-      "Option 3",
-      "Option 4",
-      "Option 5"
+      "Sua área profissional",
+      "profissional 1",
+      "profissional 2",
+      "profissional 3",
+      "profissional 4"
     ];
   
     const toggleOptions = () => {
