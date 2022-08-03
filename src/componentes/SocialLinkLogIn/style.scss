@@ -1,16 +1,21 @@
 .socialLinkLogIn {
-    height: 3.3125rem;
-    min-width: 16rem;
-    border: none;
-    border-radius: 10px;
-    padding: 1rem 1rem;
-    box-shadow: 0px 5px 10px 0px #0000004D;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-    img {
-        margin-right: 8px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  min-width: 16rem;
+  max-width: 21.375rem;
+  border: 1px solid #79747e;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-align: center;
+  background: none;
+  img {
+    margin: 0 8px 0 0;
+  }
+  a {
+    color: black;
+  }
 }

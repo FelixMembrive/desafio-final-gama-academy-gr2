@@ -1,4 +1,4 @@
-import './style.scss'
+import './style.css'
 interface ILabelInput {
   title: string
   inputType?: string
@@ -7,7 +7,6 @@ interface ILabelInput {
 export function LabelInput(props: ILabelInput) {
   return (
     <div id="labelInput">
-      <label htmlFor={props.title}>{props.title}</label>
       <input
         placeholder={props.placeholder}
         id={props.title}

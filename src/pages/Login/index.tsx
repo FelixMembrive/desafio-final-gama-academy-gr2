@@ -10,17 +10,7 @@ export default function Login() {
     <>
       <Header />
       <section id="loginPage">
-        <h2>Entrar na conta</h2>
-        <LabelInput title="E-mail" inputType="email" placeholder="Seu E-mail" />
-        <LabelInput
-          title="Senha"
-          inputType="password"
-          placeholder="Sua Senha"
-        />
-        <LinkButton className="loginButton" text="Entrar" to="#" />
-        <Link className="forgotPassword" to="#">
-          Esqueceu a senha
-        </Link>
+        <h2>Olá! Boas-vindas</h2>
         <div id="socialLinkLogInButtons">
           <SocialLinkLogIn
             destiny="#"
@@ -38,14 +28,29 @@ export default function Login() {
             icon="facebook"
           />
         </div>
-        <p>
-          Novo por aqui?{' '}
-          <span>
-            <Link className="register" to="#">
-              Registre-se
-            </Link>
-          </span>
-        </p>
+        <div className="newbieSigIn">
+          <p>
+            Não tem uma conta?{' '}
+            <span>
+              <Link className="register" to="#">
+                Cadastre-se
+              </Link>
+            </span>
+          </p>
+        </div>
+        <div className="divider">
+          <p>ou</p>
+        </div>
+        <LabelInput title="E-mail" inputType="email" placeholder="Seu E-mail" />
+        <LabelInput
+          title="Senha"
+          inputType="password"
+          placeholder="Sua Senha"
+        />
+        <LinkButton className="loginButton" text="Entrar" to="#" />
+        <Link className="forgotPassword" to="#">
+          Esqueceu a senha
+        </Link>
       </section>
       <Footer />
     </>
