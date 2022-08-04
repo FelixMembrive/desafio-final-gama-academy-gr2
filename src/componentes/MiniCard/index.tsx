@@ -4,23 +4,21 @@ import './styles.scss'
 
 interface IMiniCard {
   to: string,
-  imgsrc: string,
+  imgsrc?: string,
   title: string,
   text: string
 }
 
 export default function MiniCard(props: IMiniCard) {
   return (
-    <Col>
       <div className="card-conteudo-exclusivo">
           <LinkContainer to={props.to}>
           <img src={props.imgsrc}/>
           </LinkContainer>
-        <div>
-          <h5>{props.title}</h5>
+        <div className="content">
+          <h6>{props.title}</h6>
           <p>{props.text}</p>
         </div>
       </div>
-  </Col>
   );
 }

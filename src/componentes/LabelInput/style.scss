@@ -1,17 +1,20 @@
-#labelInput{
+#labelInput {
   display: flex;
   flex-direction: column;
-  label{
+  margin-bottom: 1rem;
+  max-width: 40rem;
+  width: 100%;
+  label {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 0.625rem;
   }
-  input{
-    height: 3.3125rem;
-    border-radius: 10px;
-    border: 3px solid #3B3B3B;
-    padding: 1rem 0.75rem;
+  input {
+    height: 3.5rem;
+    border-radius: 4px;
+    border: 1px solid #79747e;
+    padding: 1rem 0rem 1rem 1rem;
   }
 }

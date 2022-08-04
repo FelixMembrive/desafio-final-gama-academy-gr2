@@ -1,7 +1,6 @@
-import ScrollContainer from 'react-indiana-drag-scroll'
-import { Row, Container } from "react-bootstrap";
-import MiniCard from '../MiniCard';
-import DefaultMiniCardImage from "../../assets/imagens/DefaultMiniCardImage.png";
+import { Row, Col, Container } from "react-bootstrap";
+import MiniCardB from '../MiniCardB';
+import dados from '../../assets/mockups/conteudos-exclusivos.json'
 import './styles.scss'
 
 interface IConteudosExclusivos {
@@ -10,31 +9,20 @@ interface IConteudosExclusivos {
 }
 
 export default function ConteudosExclusivos(props:IConteudosExclusivos) {
+  const conteudos = dados.conteudos;
   return (
       <Container fluid className="container-conteudos">
-        <div className="content">
-          <h2>{props.title}</h2>
+
+          <h3>{props.title}</h3>
           <p id="subtitle">{props.substitle}</p>
-          <ScrollContainer className="scroll-container">
-          <Row className="flex-nowrap">
-            <div className="carousel-section">
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-            </div>
-            <div className="carousel-section">
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-            </div>
-            <div className="carousel-section">
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-              <MiniCard to={"link"} imgsrc={DefaultMiniCardImage} title="Lorem ipsum dolor" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus a nibh"/>
-            </div>
-          </Row>
-        </ScrollContainer>
-        </div>
+          <div className="card-section">
+            {conteudos.slice(0, 4).map((conteudo, index) => {
+              return (
+                <MiniCardB to="/" imgsrc={conteudo.imagem} title={conteudo.nome} text={conteudo.descricao.length > conteudo.descricao.substring(0,70).length? `${conteudo.descricao.substring(0,70)}...` : `${conteudo.descricao}`} />
+              )
+            })}
+          </div>   
       </Container>
   );
+
 }
