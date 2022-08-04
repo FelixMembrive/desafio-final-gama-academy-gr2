@@ -32,8 +32,8 @@ export default function Hero() {
 
                        <div className="btn_reco  ">     
                         
-                            <LinkButton className=" btn btn001 rounded-pill"  to="" text="Cadastre-se"></LinkButton>
-                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill" to="" text="Entrar"></LinkButton>
+                            <LinkButton className=" btn btn001 rounded-pill"  to="/register" text="Cadastre-se"></LinkButton>
+                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill" to="/login" text="Entrar"></LinkButton>
                         
                        </div> 
                     </Col>

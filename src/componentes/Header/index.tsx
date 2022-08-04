@@ -20,10 +20,10 @@ export default function Header() {
         <Navbar.Toggle  id="botaoToggle"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <div className="botaoStyle">
-            <Button id="cadastre" className="botoesHeader" href="#" size="lg">
+            <Button id="cadastre" className="botoesHeader" href="/register" size="lg">
               Cadastre-se
             </Button>
-            <Button id="login" className="botoesHeader" href="#" variant="outline" size="lg">
+            <Button id="login" className="botoesHeader" href="/login" variant="outline" size="lg">
               Entrar
             </Button>
           </div>

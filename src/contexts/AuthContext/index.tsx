@@ -48,7 +48,8 @@ export function AuthProvider({ children }: IAuthProvider) {
             value={{
                 authenticated: !!user,
                 user,
-                register,
+                //comentado provisoriamente para evitar o erro de renderização
+                // register,
                 logout,
                 // login,
                 // loading,

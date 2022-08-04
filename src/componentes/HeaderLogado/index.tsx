@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <Navbar id="navStyle-logado" expand="lg">
       <Container id="containerStyle-logado">
-        <Navbar.Brand id="navImg-logado" href="#home">
+        <Navbar.Brand id="navImg-logado" href="/">
           <img src={Logo} 
           className="d-inline-block align-top" 
           alt="Logo" 
@@ -21,10 +21,10 @@ export default function Header() {
         <Navbar.Toggle  id="botaoToggleHeaderLogado"/>
         <Navbar.Collapse id="basic-navbar-nav-logado">
           <div className="bd-toc-item-logado">
-            <Nav.Link href="/buscarvagas" className="links">Área da candidata</Nav.Link>
+            <Nav.Link href="/areacandidata" className="links">Área da candidata</Nav.Link>
             <Nav.Link href="/buscarvagas" className="links">Vagas</Nav.Link>
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
-            <Nav.Link href="#link" className="links">Mentoras</Nav.Link>
+            <Nav.Link href="/listamentoras" className="links">Mentoras</Nav.Link>
             <Nav.Link href="#link" className="links">Blog</Nav.Link>
             <Nav.Link href="#link" className="links">Notificações <img src={Notificacoes} id="notificacoes" /></Nav.Link>
           </div>
