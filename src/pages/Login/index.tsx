@@ -9,33 +9,45 @@ import './style.scss';
 import { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { loginUsuario } from '../../services/api/login';
+import { useDispatch } from "react-redux";
+import { setUser } from '../../Store/modules/user';
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     console.log("email", email);
     console.log("password", password);
-  }, [email,password]);
+  }, [email, password]);
 
   const handleSubmit = async () => {
     const payload = {
       email,
       password
-    }
+    };
 
     const res = await loginUsuario(payload);
 
     if (res.request.status !== 200) {
-      alert("Login ou senha incorretos. Tente novamente")
+      alert("Login ou senha incorretos. Tente novamente");
     } else {
-      console.log(res.data.token)
-      //navigate("/areacandidata");
+      console.log(res.data.token);
+      //buscar dados do usuário
+
+      dispatch(
+        setUser({
+        token: res.data.token,
+        id: "",
+        name: "",
+        pic: "",
+    }));
+      navigate("/areacandidata");
     }
-  }
-  
+  };
+
   return (
     <>
       <Header />
