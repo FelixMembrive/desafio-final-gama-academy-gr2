@@ -11,15 +11,15 @@ interface ICardVideoProps {
   cardTitle: string;
   cardSubtitle: string;
   cardText: string;
-  imgSrc?: string;
+  imgSrc: string;
 }
 
 export default function CardVideo(props: ICardVideoProps) {
   return (
     <Col className="card-col">
       <Card className="img rounded d-flex flex-column justify-content-end">
-        <Card.Img src={image} className="m-0"/>
-        <VideoModal src={props.imgSrc? props.imgSrc : props.src} />
+        <Card.Img src={props.imgSrc} className="m-0 image-video-depoimentos"/>
+        <VideoModal src={props.src} />
         <Card.Body className="p-0">
           <div className="depo-info rounded">
             <h3 className="text-start tp-heading-4">{props.cardTitle}</h3>

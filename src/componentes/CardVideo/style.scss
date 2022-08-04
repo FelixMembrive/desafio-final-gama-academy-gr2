@@ -9,6 +9,13 @@
     }
 }
 
+.image-video-depoimentos {
+    max-height: 261px;
+    @media (min-width:1024px) {
+        max-height: 281px;
+    }
+}
+
 .subtitle {
     font-weight: 500 !important;
 }

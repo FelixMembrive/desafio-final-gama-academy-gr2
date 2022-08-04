@@ -8,6 +8,7 @@ export default function Depoimentos() {
     const dados = [
         {
             src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            thumbnail:"https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/imagens/imagem-video1.png",
             nome: "Lu Ferreira",
             profissao: "Product Designer",
             empresa: "Google",
@@ -15,6 +16,7 @@ export default function Depoimentos() {
         },
         {
             src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            thumbnail:"https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/imagens/imagem-video2.png",
             nome: "Júlia Sato",
             profissao: "Product Manager",
             empresa: "Facebook",
@@ -22,6 +24,7 @@ export default function Depoimentos() {
         },
         {
             src: "https://www.youtube.com/embed/ScMzIvxBSi4",
+            thumbnail:"https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/imagens/imagem-video3.png",
             nome: "Ana Soares",
             profissao: "Front End Developer",
             empresa: "Nubank",
@@ -35,7 +38,7 @@ export default function Depoimentos() {
         <Row className="flex-nowrap row gap-xs-3 gap-lg-16">
         {dados.map((cardInfo, index) => {
             return (
-                <CardVideo videoTitle="video placeholder" src={cardInfo.src} cardTitle={cardInfo.nome} cardSubtitle={`${cardInfo.profissao}, ${cardInfo.empresa}`} cardText={cardInfo.texto} key={index}/>
+                <CardVideo videoTitle="video placeholder" src={cardInfo.src} cardTitle={cardInfo.nome} cardSubtitle={`${cardInfo.profissao}, ${cardInfo.empresa}`} cardText={cardInfo.texto} key={index} imgSrc={cardInfo.thumbnail}/>
             )
         })}
         </Row>
