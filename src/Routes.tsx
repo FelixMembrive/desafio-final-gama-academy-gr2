@@ -11,7 +11,6 @@ import Mentora from './pages/Mentora'
 import Login from './pages/Login'
 import RegisterPage from './pages/Register'
 import RedirecionamentoCalendly from './pages/RedirecionamentoCalendly'
-import { AuthProvider } from './contexts/AuthContext'
 
 export default function RoutesComponent() {
   return (
