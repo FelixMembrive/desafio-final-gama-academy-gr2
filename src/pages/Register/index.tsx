@@ -16,7 +16,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [phone, setPhone] = useState("");
-  const [profilePicture, setProfilePicture] = useState({[]});
+  // const [profilePicture, setProfilePicture] = useState({[]});
   // const [phone, setPhone] = useState("");
   // const [profilePicture, setProfilePicture] = useState("");
   // const { login } = useContext(AuthContext);
@@ -28,7 +28,7 @@ export default function RegisterPage() {
         email: email,
         password: password,
         phone: phone,
-        profilePicture: profilePicture
+        // profilePicture: profilePicture
       });
       //   localStorage.setItem("user", JSON.stringify(response.data));
       //   setUser(response.data);
@@ -42,7 +42,7 @@ export default function RegisterPage() {
   function handleSubmit(e: any) {
     e.preventDefault();
     if (password == confirmPassword) {
-      login(name, email, password, phone, profilePicture);
+      // login(name, email, password, phone, profilePicture);
     }
   }
 
@@ -122,8 +122,8 @@ export default function RegisterPage() {
             title="profilePicture"
             inputType="file"
             placeholder="Carregar..."
-            value={profilePicture}
-            onChange={(e: any) => setProfilePicture(e.target.files[0])}
+            // value={profilePicture}
+            // onChange={(e: any) => setProfilePicture(e.target.files[0])}
           />
 
         </div>

@@ -1,3 +1,6 @@
 .link-button-no-shadow {
     box-shadow: none !important;
+    &:focus {
+        box-shadow: none !important;
+    }
 }
