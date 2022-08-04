@@ -21,7 +21,7 @@ export default function RegisterPage() {
   // const [profilePicture, setProfilePicture] = useState("");
   // const { login } = useContext(AuthContext);
 
-  async function register(name: string, email: string, password: string, phone?: string, profilePicture?: string) {
+  async function register(name: string, email: string, password: string) {
     try {
       const response = await requestApiMultiPart.post("/users", {
         name: name,

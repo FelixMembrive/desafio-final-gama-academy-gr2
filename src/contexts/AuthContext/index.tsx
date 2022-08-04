@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { requestApiMultiPart } from "../../services/api";
+// import { requestApiMultiPart } from "../../services/api";
 import { IAuthProvider, IContext, IUser } from "./types";
 
 export const AuthContext = createContext({} as IContext);
@@ -19,23 +19,23 @@ export function AuthProvider({ children }: IAuthProvider) {
     //     setLoading(false);
     // }, []);
 
-    async function login(name: string, email: string, password: string, phone: string, profilePicture: string) {
-        try {
-            const response = await requestApiMultiPart.post("/users", {
-                name: name,
-                email: email,
-                senha: password,
-                phone: phone,
-                profilePicture: profilePicture,
-            });
-            //   localStorage.setItem("user", JSON.stringify(response.data));
-            //   setUser(response.data);
-            //   navigate("/home");
-            //   return await response.data;
-        } catch (error) {
-            "error";
-        }
-    }
+    // async function login(name: string, email: string, password: string, phone: string, profilePicture: string) {
+    //     try {
+    //         const response = await requestApiMultiPart.post("/users", {
+    //             name: name,
+    //             email: email,
+    //             senha: password,
+    //             phone: phone,
+    //             profilePicture: profilePicture,
+    //         });
+    //         //   localStorage.setItem("user", JSON.stringify(response.data));
+    //         //   setUser(response.data);
+    //         //   navigate("/home");
+    //         //   return await response.data;
+    //     } catch (error) {
+    //         "error";
+    //     }
+    // }
 
     const logout = () => {
         localStorage.removeItem("user");
@@ -48,8 +48,9 @@ export function AuthProvider({ children }: IAuthProvider) {
             value={{
                 authenticated: !!user,
                 user,
-                login,
+                register,
                 logout,
+                // login,
                 // loading,
                 // writeError,
                 // errorResponse,
