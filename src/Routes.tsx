@@ -16,16 +16,16 @@ export default function RoutesComponent() {
   return (
       <Routes>
         <Route path="" element={<Home />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/homedev" element={<HomeDev />} />
-        <Route path="/areacandidata" element={<AreaCandidata />} />
-        <Route path="/buscarvagas" element={<BuscarVagas />} />
-        <Route path="/mentora-agendamento" element={<MentoraAgendamento />} />
-        <Route path="/candidaturas" element={<MinhasCandidaturas />} />
-        <Route path="/listamentoras" element={<ListaMentoras />} />
-        <Route path="/mentora" element={<Mentora />} />
-        <Route path="/redirecionamento-calendly" element={<RedirecionamentoCalendly />} />
+        <Route path="register" element={<RegisterPage />} />
+        <Route path="login" element={<Login />} />
+        <Route path="homedev" element={<HomeDev />} />
+        <Route path="areacandidata" element={<AreaCandidata />} />
+        <Route path="buscarvagas" element={<BuscarVagas />} />
+        <Route path="mentora-agendamento" element={<MentoraAgendamento />} />
+        <Route path="candidaturas" element={<MinhasCandidaturas />} />
+        <Route path="listamentoras" element={<ListaMentoras />} />
+        <Route path="mentora" element={<Mentora />} />
+        <Route path="redirecionamento-calendly" element={<RedirecionamentoCalendly />} />
       </Routes>
   )
 }
