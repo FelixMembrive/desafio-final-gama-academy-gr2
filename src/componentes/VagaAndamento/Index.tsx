@@ -32,19 +32,19 @@ export default function VagasAndamento(props: IVagasAndamentoProps) {
     return (
         <AcordionVaga nome_empresa={props.nome_empresa} nome_vaga={props.nome_vaga} img={props.logo_empresa}>
             <div>
-                <Card>
+                <Card className="mb-3">
                     <Card.Body className=" card-rosto d-flex align-items-center">
                         <img className='icon-vagas-andamento rosto' src="https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/face_3.png" alt="" />
                         <p>Atualmente tem {props.candidatos} candidatos concorrendo nesta vaga</p>
                     </Card.Body>
                 </Card>
-                <Card>
+                <Card className="mb-3">
                     <Card.Body className=" card-olho d-flex align-items-center">
                         <img className='icon-vagas-andamento olho' src="https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/visibility.png" alt="" />
                         <p>A empresa {props.visualizada ? "visualizou" : "ainda não visualizou"} sua candidatura</p>
                     </Card.Body>
                 </Card>
-                <Card>
+                <Card className="mb-3">
                     <Card.Body className="card-download d-flex align-items-center">
                         <img className='icon-vagas-andamento download' src="https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/download.png" alt="" />
                         <p>A empresa {props.baixada ? "baixou" : "ainda não baixou"} seu currículo</p>

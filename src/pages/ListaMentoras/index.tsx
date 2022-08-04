@@ -4,6 +4,7 @@ import Mentoras from "../../componentes/Mentoras";
 import CardMentora from "../../componentes/CardMentora";
 import { Row } from "react-bootstrap";
 import "./style.scss";
+import HeaderLogado from "../../componentes/HeaderLogado";
 
 export default function ListaMentoras() {
   
@@ -83,7 +84,7 @@ export default function ListaMentoras() {
   ];
   return (
     <>
-      <Header />
+      <HeaderLogado />
       <Mentoras />
       <Row className='cardsMentora'>
         {dados.map((item, index)=>{

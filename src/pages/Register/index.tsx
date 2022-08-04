@@ -1,57 +1,51 @@
 import Header from '../../componentes/Header'
 import Footer from '../../componentes/Footer'
-import { LabelInput } from '../../componentes/LabelInput'
-import LinkButton from '../../componentes/LinkButton'
 import SocialLinkLogIn from '../../componentes/SocialLinkLogIn'
 import { Link } from 'react-router-dom'
+import { LabelInput } from '../../componentes/LabelInput'
+import LinkButton from '../../componentes/LinkButton'
+import Divider from '../../componentes/Divider'
 import rightPattern from '../../assets/icons/rightPattern.svg'
 import './style.scss'
-export default function Login() {
+export default function RegisterPage() {
   return (
     <>
       <Header />
-      <section id="loginPage">
-        <h2>Olá! Boas-vindas</h2>
+      <section className="registerPage">
+        <h2>Olá! Como você prefere se cadastrar?</h2>
         <div className="socialLinkLogInButtons">
           <SocialLinkLogIn
             destiny="#"
-            text="Continuar com o google"
+            text="Cadastrar com o google"
             icon="google"
           />
           <SocialLinkLogIn
             destiny="#"
-            text="Continuar com o linkedin"
+            text="Cadastrar com o linkedin"
             icon="linkedin"
           />
           <SocialLinkLogIn
             destiny="#"
-            text="Continuar com o facebook"
+            text="Cadastrar com o facebook"
             icon="facebook"
           />
         </div>
-        <div className="newbieSignIn">
-          <p>
-            Não tem uma conta?{' '}
-            <span>
-              <Link className="registerLink" to="#">
-                Cadastre-se
-              </Link>
-            </span>
-          </p>
+        <Divider />
+        <div className="registerInputs">
+          <LabelInput title="nome" inputType="text" placeholder="Seu nome" />
+          <LabelInput title="email" inputType="email" placeholder="Seu email" />
+          <LabelInput
+            title="senha"
+            inputType="password"
+            placeholder="Digite sua nova senha"
+          />
+          <LabelInput
+            title="confirmarSenha"
+            inputType="password"
+            placeholder="Re-digite sua senha"
+          />
         </div>
-        <div className="divider">
-          <p>ou</p>
-        </div>
-        <LabelInput title="E-mail" inputType="email" placeholder="Seu E-mail" />
-        <LabelInput
-          title="Senha"
-          inputType="password"
-          placeholder="Sua Senha"
-        />
-        <LinkButton className="loginButton" text="Entrar" to="#" />
-        <Link className="forgotPassword" to="#">
-          Esqueceu sua senha? <span>Recupere</span>
-        </Link>
+        <LinkButton className="registerButton" text="Cadastrar" to="#" />
         <p className="conditionsAndTerms">
           Ao continuar, você reconhece que leu e concordou com os{' '}
           <span>Termos de Serviço</span> e as <span>Regras de Privacidade</span>{' '}

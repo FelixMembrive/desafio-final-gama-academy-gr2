@@ -9,6 +9,9 @@ import CardVaga from "../../componentes/CardVaga";
 import AcordionVaga from "../../componentes/AcordionVaga";
 import VagasAndamento from "../../componentes/VagaAndamento/Index";
 import VagasFinalizadas from "../../componentes/VagaFinalizada";
+import LinkBack from "../../componentes/LinkBack";
+import { Row } from "react-bootstrap";
+import HeaderLogado from "../../componentes/HeaderLogado";
 
 enum ApplicationFilter {
   Salvas = "salvas",
@@ -65,12 +68,15 @@ export default function MinhasCandidaturas() {
 
   return (
     <>
-      <Header />
+      <HeaderLogado />
+      <Row className="mt-5">
+                <LinkBack text="Voltar para buscar vagas"/>
+            </Row>
       <Wrapper>
-        <div>
+        {/* <div>
           <img src={ArrowBack} alt="arrow_back" />
           <Goback>Voltar para buscar vagas</Goback>
-        </div>
+        </div> */}
         {/* <LinkBack className="mt-4" text="Voltar para buscar vagas"></LinkBack> */}
         <Title>Minhas candidaturas</Title>
         <ButtonWrapper>

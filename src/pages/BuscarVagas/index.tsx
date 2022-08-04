@@ -11,15 +11,16 @@ import vagas from '../../assets/mockups/vagas-mockup.json';
 import { Bookmarks, Facebook, SelectArrow, Notification } from "../../assets/icons/SVGicons";
 import "../../typography.scss";
 import ScrollContainer from 'react-indiana-drag-scroll';
+import HeaderLogado from '../../componentes/HeaderLogado';
 
 const vagasRecomendadas = vagas.recomendadas;
 
 export default function BuscarVagas() {
   return (
     <>
-      <Header />
+      <HeaderLogado />
       <section className="buscar-secao-buscar mt-5">
-        <LinkBack text="Voltar para área da candidata"></LinkBack>
+        <LinkBack text="Voltar para área da candidata"/>
         <Row className="mt-5 mx-auto ms-4">
           <input className="search-label" placeholder="Buscar vagas" type="text" />
         </Row>
@@ -43,7 +44,7 @@ export default function BuscarVagas() {
       </Row>
       <Row className="buscar-secao-minhas-acoes mt-5 ms-4 mx-auto">
         <h3 className="title-sections">Minhas ações</h3>
-        <LinkButton iconRight={<Bookmarks className="icon-left-right-acoes float-start" />} className="me-2 button-icon-acoes " to="" text="Minhas Candidaturas"></LinkButton>
+        <LinkButton iconRight={<Bookmarks className="icon-left-right-acoes float-start" />} className="me-2 button-icon-acoes " to="../candidaturas" text="Minhas Candidaturas"></LinkButton>
         <LinkButton iconRight={<Notification className="icon-left-right-acoes float-start" />} className="me-2 button-icon-acoes " to="" text="Meus Alertas"></LinkButton>
       </Row>
       <Row className="mb-5 mt-5 mx-auto ms-4 col-10 sm-col-3">

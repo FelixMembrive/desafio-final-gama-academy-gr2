@@ -10,7 +10,7 @@ import logo_tera from "../../assets/imagens/logo_tera.png";
 import LinkButton from "../../componentes/LinkButton";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import "../../../src/colors.scss";
+import "../../colors.scss";
 import "./styles.scss";
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
                         <div >
 
                             <div className="tx1-div">
-                            <h2 className="tx1 lh-base fw-bold text-start  mb-4  me-md-0">Empoderando o mercado tech <span className="txfem">feminino</span></h2>
+                            <h2 className="tx1 lh-base fw-bold text-start  mb-4  me-md-0">Empoderando o mercado tech <span style={{color:'#601C4F'}}>feminino</span></h2>
                             </div>
 
                             <p className="tx2 fw-bolder text-start ">Uma plataforma exclusiva para mulheres que querem se destacar no mundo da tecnologia</p>
