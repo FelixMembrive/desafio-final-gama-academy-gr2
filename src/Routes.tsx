@@ -16,10 +16,10 @@ import { AuthProvider } from './contexts/AuthContext'
 export default function RoutesComponent() {
   return (
       <Routes>
-        <Route path="" element={<HomeDev />} />
+        <Route path="" element={<Home />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/homedev" element={<HomeDev />} />
         <Route path="/areacandidata" element={<AreaCandidata />} />
         <Route path="/buscarvagas" element={<BuscarVagas />} />
         <Route path="/mentora-agendamento" element={<MentoraAgendamento />} />

@@ -129,7 +129,7 @@ export default function RegisterPage() {
 
         </div>
         {/* <LinkButton className="registerButton" text="Cadastrar" to="#" /> */}
-        <button className="registerButton" type="submit">ENTRAR</button>
+        <button className="registerButton" type="submit">Cadastrar</button>
         <p className="conditionsAndTerms">
           Ao continuar, você reconhece que leu e concordou com os{' '}
           <span>Termos de Serviço</span> e as <span>Regras de Privacidade</span>{' '}

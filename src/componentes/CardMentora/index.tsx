@@ -34,7 +34,7 @@ export default function CardMentora(props: ICardMentoraProps) {
                         <p>{props.descricao_mentora}</p>
                     </div>
                     <div className="botoesCardMentora">
-                        <LinkButton className='verPerfil' to='#' id="verPerfil" text='Ver perfil' />
+                        <LinkButton className='verPerfil' to='/mentora' id="verPerfil" text='Ver perfil' />
                         <LinkButton className='agendarMentoria' to='#' id="agendarMentoria" text='Agendar mentoria' />
                     </div>
                     </Card.Body>

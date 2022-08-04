@@ -6,7 +6,8 @@ export interface IUser {
 export interface IContext extends IUser {
   authenticated: boolean;
   user: IUser | null | undefined;
-  register: (
+  // adicionado o ? provisoriamente para para o erro de renderização
+  register?: (
     name: string,
     email: string,
     password: string,
