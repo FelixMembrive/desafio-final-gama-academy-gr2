@@ -12,15 +12,49 @@ import { Bookmarks, Facebook, SelectArrow, Notification } from "../../assets/ico
 import "../../typography.scss";
 import ScrollContainer from 'react-indiana-drag-scroll';
 import HeaderLogado from '../../componentes/HeaderLogado';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const vagasRecomendadas = vagas.recomendadas;
 
+interface IVaga {
+  _id: string;
+  name: string;
+  description: string;
+  salary?: number,
+  companyName: string;
+  status: string;
+  date?: string;
+  createdAt?: string;
+  updatedAt?: string;
+  __v: number,
+  jobPicture?: string;
+  stage?: {
+    title: string;
+	  numberOfCandidates?: number;
+		status: string;
+		_id: string;
+  }[];
+};
+
 export default function BuscarVagas() {
+  const baseURL = 'https://tech-delas.herokuapp.com';
+  const [vagas, setVagas] = useState<IVaga[]>([]);
+  useEffect(() => {
+    const fetchVagas = async () => {
+      const Resvagas = await axios.get(`${baseURL}/jobs`);
+      console.log(Resvagas.data);
+      setVagas(Resvagas.data);
+      //pegar vagas salvas do usuário
+      //comparar ids para ver quais estão presentes nas duas listas e marcá-las como salvas
+    };
+    fetchVagas();
+  }, []);
   return (
     <>
       <HeaderLogado />
       <section className="buscar-secao-buscar mt-5">
-        <LinkBack text="Voltar para área da candidata"/>
+        <LinkBack text="Voltar para área da candidata" />
         <Row className="mt-5 mx-auto ms-4">
           <input className="search-label" placeholder="Buscar vagas" type="text" />
         </Row>
@@ -49,9 +83,9 @@ export default function BuscarVagas() {
       </Row>
       <Row className="mb-5 mt-5 mx-auto ms-4 col-10 sm-col-3">
         <h3 className="title-sections">Recomendamos para você</h3>
-        {vagasRecomendadas.map((vaga, index) => {
-          return <CardVaga key={index} nome_empresa={vaga.nome_empresa} nome_vaga={vaga.nome_vaga} salvo={vaga.salvo} img={vaga.logo_empresa} />
-        })}
+        {vagas.length > 0 ? vagas.map((vaga, index) => {
+          return <CardVaga key={index} nome_empresa={vaga.companyName} nome_vaga={vaga.name} salvo={false} img={vaga.jobPicture} />;
+        }) : null}
       </Row>
       <Footer />
     </>
