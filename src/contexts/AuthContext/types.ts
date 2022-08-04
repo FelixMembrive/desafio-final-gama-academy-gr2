@@ -10,8 +10,8 @@ export interface IUser {
       name: string,
       email: string,
       password: string,
-      phone: string,
-      profilePicture: string
+      phone?: string,
+      profilePicture?: string
       ) => void;
     logout: () => void;
     // loading: boolean;

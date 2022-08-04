@@ -15,19 +15,19 @@ export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [phone, setPhone] = useState("");
+  // const [phone, setPhone] = useState("");
   // const [profilePicture, setProfilePicture] = useState({[]});
   // const [phone, setPhone] = useState("");
   // const [profilePicture, setProfilePicture] = useState("");
   // const { login } = useContext(AuthContext);
 
-  async function login(name: string, email: string, password: string, phone: string, profilePicture: string) {
+  async function register(name: string, email: string, password: string, phone?: string, profilePicture?: string) {
     try {
       const response = await requestApiMultiPart.post("/users", {
         name: name,
         email: email,
         password: password,
-        phone: phone,
+        // phone: phone,
         // profilePicture: profilePicture
       });
       //   localStorage.setItem("user", JSON.stringify(response.data));
@@ -43,6 +43,7 @@ export default function RegisterPage() {
     e.preventDefault();
     if (password == confirmPassword) {
       // login(name, email, password, phone, profilePicture);
+      register(name, email, password)
     }
   }
 
@@ -90,14 +91,14 @@ export default function RegisterPage() {
             onChange={(e: any) => setEmail(e.target.value)}
           />
 
-          <LabelInput
+          {/* <LabelInput
             key={"phone"}
             title="phone"
             inputType="text"
             placeholder="Digite seu Telefone"
             value={phone}
             onChange={(e: any) => setPhone(e.target.value)}
-          />
+          /> */}
 
           <LabelInput
             key={"password"}
@@ -117,14 +118,14 @@ export default function RegisterPage() {
             onChange={(e: any) => setConfirmPassword(e.target.value)}
           />
 
-          <LabelInput
+          {/* <LabelInput
             key={"profilePicture"}
             title="profilePicture"
             inputType="file"
             placeholder="Carregar..."
             // value={profilePicture}
             // onChange={(e: any) => setProfilePicture(e.target.files[0])}
-          />
+          /> */}
 
         </div>
         {/* <LinkButton className="registerButton" text="Cadastrar" to="#" /> */}
