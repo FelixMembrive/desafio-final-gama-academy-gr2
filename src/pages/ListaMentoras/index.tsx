@@ -1,15 +1,9 @@
-import Button from "react-bootstrap/Button";
-import ModalBS from "../../componentes/ModalBS";
-import AlertBS from "../../componentes/AlertBS";
 import Header from "../../componentes/Header";
 import Footer from "../../componentes/Footer";
 import Mentoras from "../../componentes/Mentoras";
 import CardMentora from "../../componentes/CardMentora";
-import Spinner from 'react-bootstrap/Spinner';
 import { Row } from "react-bootstrap";
 import "./style.scss";
-import mentora2 from "../../assets/imagens/mentoras/mentora2.png";
-import icon from "../../assets/icons/icon.png"
 
 export default function ListaMentoras() {
   
