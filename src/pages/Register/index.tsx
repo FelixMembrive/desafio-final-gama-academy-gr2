@@ -1,25 +1,26 @@
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 import Header from '../../componentes/Header'
 import Footer from '../../componentes/Footer'
 import SocialLinkLogIn from '../../componentes/SocialLinkLogIn'
 import { LabelInput } from '../../componentes/LabelInput'
-import LinkButton from '../../componentes/LinkButton'
 import Divider from '../../componentes/Divider'
 import rightPattern from '../../assets/icons/rightPattern.svg'
-import { AuthContext, AuthProvider } from "../../contexts/AuthContext";
 import './style.scss'
 import { requestApiMultiPart } from "../../services/api";
+import { useNavigate } from "react-router-dom";
+import { AxiosError } from "axios";
+import { loginUsuario } from '../../services/api/login';
+import { useDispatch } from "react-redux";
+import { setUser } from '../../Store/modules/user';
+
 
 export default function RegisterPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  // const [phone, setPhone] = useState("");
-  // const [profilePicture, setProfilePicture] = useState({[]});
-  // const [phone, setPhone] = useState("");
-  // const [profilePicture, setProfilePicture] = useState("");
-  // const { login } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   async function register(name: string, email: string, password: string) {
     try {
@@ -27,28 +28,37 @@ export default function RegisterPage() {
         name: name,
         email: email,
         password: password,
-        // phone: phone,
-        // profilePicture: profilePicture
       });
-      //   localStorage.setItem("user", JSON.stringify(response.data));
-      //   setUser(response.data);
-      //   navigate("/home");
-      //   return await response.data;
-    } catch (error) {
-      "error";
+      const loginResponse = await loginUsuario({
+        email: email,
+        password: password,
+    })
+    dispatch(
+      setUser({
+      token: loginResponse.data.token,
+      id: "",
+      name: "",
+      pic: "",
+  }));
+    console.log(loginResponse.data.token)
+      navigate("/");
+    } catch (error: any) {
+      if (error.response) {
+        alert (error.response.data.message); 
+      }
     }
   }
 
   function handleSubmit(e: any) {
     e.preventDefault();
-    if (password == confirmPassword) {
-      // login(name, email, password, phone, profilePicture);
-      register(name, email, password)
+    if (password != confirmPassword) {
+      alert ("As senhas digitadas não são iguais, por favor revise sua senha.")
     }
+    register(name, email, password)
+    // navigate("/buscarvagas");
   }
 
   return (
-    <AuthProvider>
       <>
       <Header />
       <form onSubmit={handleSubmit} className="registerPage">
@@ -70,7 +80,9 @@ export default function RegisterPage() {
             icon="facebook"
           />
         </div>
+
         <Divider />
+
         <div className="registerInputs">
           <LabelInput
             key={"name"}
@@ -80,7 +92,6 @@ export default function RegisterPage() {
             value={name}
             onChange={(e: any) => setName(e.target.value)}
           />
-          {/* <p className={`absolute -mt-6 mx-2 text-[12px] ${errorResponse ? "text-alert" : ""}`}></p> */}
 
           <LabelInput
             key="email"
@@ -90,15 +101,6 @@ export default function RegisterPage() {
             value={email}
             onChange={(e: any) => setEmail(e.target.value)}
           />
-
-          {/* <LabelInput
-            key={"phone"}
-            title="phone"
-            inputType="text"
-            placeholder="Digite seu Telefone"
-            value={phone}
-            onChange={(e: any) => setPhone(e.target.value)}
-          /> */}
 
           <LabelInput
             key={"password"}
@@ -117,24 +119,16 @@ export default function RegisterPage() {
             value={confirmPassword}
             onChange={(e: any) => setConfirmPassword(e.target.value)}
           />
-
-          {/* <LabelInput
-            key={"profilePicture"}
-            title="profilePicture"
-            inputType="file"
-            placeholder="Carregar..."
-            // value={profilePicture}
-            // onChange={(e: any) => setProfilePicture(e.target.files[0])}
-          /> */}
-
         </div>
-        {/* <LinkButton className="registerButton" text="Cadastrar" to="#" /> */}
+
         <button className="registerButton" type="submit">Cadastrar</button>
+
         <p className="conditionsAndTerms">
           Ao continuar, você reconhece que leu e concordou com os{' '}
           <span>Termos de Serviço</span> e as <span>Regras de Privacidade</span>{' '}
           da Tech Delas
         </p>
+
         <img className="rightPattern" src={rightPattern} alt="" />
         <img className="leftPattern" src={rightPattern} alt="" />
 
@@ -142,6 +136,5 @@ export default function RegisterPage() {
 
       <Footer />
       </>
-    </AuthProvider>
   )
 }
