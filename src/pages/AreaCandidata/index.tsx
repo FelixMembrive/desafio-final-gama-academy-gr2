@@ -16,7 +16,7 @@ export default function AreaCandidata() {
   if (user && user.token.length > 0) {
     return (
       <>
-        <HeaderLogado />
+        <HeaderLogado pic={user.pic}/>
         <SecaoPrincipalAreaCandidata name={user.name} pic={user.pic} />
         <VagasRecomendadas />
         <SecaoCursos title="Cursos que irão te capacitar ainda mais" />
