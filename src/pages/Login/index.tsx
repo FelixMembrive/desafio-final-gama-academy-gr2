@@ -19,8 +19,6 @@ export default function Login() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log("email", email);
-    console.log("password", password);
   }, [email, password]);
 
   const handleSubmit = async () => {
