@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 import LinkButton from "../../componentes/LinkButton";
 
 export default function AreaCandidata() {
-  const user = useSelector((state: any) => state.userReduce);
+  const user = useSelector((state: any) => state.persistedReducer);
   console.log(user);
   if (user && user.token.length > 0) {
     return (
