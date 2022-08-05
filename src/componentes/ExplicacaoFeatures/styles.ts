@@ -3,7 +3,7 @@ import background from "../../assets/imagens/servicosTechDelas/background.png";
 
 export const Wrapper = styled.div`
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   flex-direction: column;
   background-image: url(${background});
   background-repeat: no-repeat;

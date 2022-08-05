@@ -31,7 +31,7 @@ const ExplicacaoFeatures = () => {
       <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
         <Row className="flex-nowrap row gap-xs-4 gap-lg-16">
           {dados.map((item) => {
-            return <FeatureCard width="316px" title={item.title} description={item.description} img={item.img} />;
+            return <FeatureCard title={item.title} description={item.description} img={item.img} />;
           })}
         </Row>
       </ScrollContainer>
