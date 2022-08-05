@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
+import LinkButton from "../LinkButton";
 
 export default function Header() {
   return (
@@ -20,9 +21,7 @@ export default function Header() {
         <Navbar.Toggle  id="botaoToggle"/>
         <Navbar.Collapse id="basic-navbar-nav">
           <div className="botaoStyle">
-            <Button id="cadastre" className="botoesHeader" href="/register" size="lg">
-              Cadastre-se
-            </Button>
+            <LinkButton id="cadastre" className="botoesHeader" to="/register" size="lg" text="Cadastre-se" />
             <Button id="login" className="botoesHeader" href="/login" variant="outline" size="lg">
               Entrar
             </Button>

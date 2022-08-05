@@ -10,12 +10,13 @@ interface ILinkButtonProps {
   iconLeft?: JSX.Element
   iconRight?: JSX.Element
   id?: string;
+  size?: "sm" | "lg" | undefined
 }
 
 export default function LinkButton(props: ILinkButtonProps) {
   return (
     <LinkContainer to={props.to} className="link-button-no-shadow">
-      <Button variant={props.variant} className={`link-button-no-shadow ${props.className}`} id={props.id}>
+      <Button size={props.size} variant={props.variant} className={`link-button-no-shadow ${props.className}`} id={props.id}>
         {props.iconRight}
         {props.text}
         {props.iconLeft}
