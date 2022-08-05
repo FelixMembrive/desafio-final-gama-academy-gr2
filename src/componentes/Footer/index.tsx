@@ -16,7 +16,7 @@ export default function Footer() {
 
                 <div className="links-footer-item-flex">
                     <LinkText to="cursos" text="Cursos " />
-                    <LinkText to="mentoria" text="Mentoria " />
+                    <LinkText to="../listamentoras" text="Mentoria " />
                     <LinkText to="processos" text="Processos seletivos " />
                 </div>
 

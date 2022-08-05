@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <Navbar id="navStyle" expand="lg">
       <Container id="containerStyle">
-        <Navbar.Brand id="navImg" href="#home">
+        <Navbar.Brand id="navImg" href="/">
           <img src={Logo}
             className="d-inline-block align-top"
             alt="Logo"
@@ -28,7 +28,7 @@ export default function Header() {
           <div className="bd-toc-item">
             <Nav.Link href="/buscarvagas" className="links">Vagas</Nav.Link>
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
-            <Nav.Link href="#link" className="links">Mentorias</Nav.Link>
+            <Nav.Link href="listamentoras" className="links">Mentorias</Nav.Link>
           </div>
         </Navbar.Collapse>
       </Container>
