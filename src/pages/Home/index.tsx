@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Depoimentos />
-      <ExplicacaoFeatures />
+      {/* <ExplicacaoFeatures /> */}
       <ImpactoMentoria />
       <ConteudosExclusivos
         title="Conteúdos exclusivos"
