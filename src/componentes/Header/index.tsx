@@ -20,21 +20,15 @@ export default function Header() {
         </Navbar.Brand>
         <Navbar.Toggle id="botaoToggle" />
         <Navbar.Collapse id="basic-navbar-nav">
+
           <div className="botaoStyle">
             <LinkButton id="cadastre" className="botoesHeader" to="/register" size="lg" text="Cadastre-se" />
-            <LinkButton id="login" className="botoesHeader" to="/login" variant="outline" size="lg" text="Entrar" />
+            <LinkButton id="login" className="botoesHeader" to="/login" variant="outline" size="lg" text="Entrar"/>
           </div>
           <div className="bd-toc-item">
-            <Nav.Link className="links">
-              <LinkButton to="/buscarvagas" size="lg" text="Vagas" className="bg-transparent border-0" />
-            </Nav.Link>
-            <Nav.Link className="links"></Nav.Link>
-            <Nav.Link className="links">
-              <LinkButton to="/buscarvagas" size="lg" text="Cursos" className="bg-transparent border-0" />
-            </Nav.Link>
-            <Nav.Link className="links">
-              <LinkButton to="/ListaMentoras" size="lg" text="Mentorias" className="bg-transparent border-0" />
-            </Nav.Link>
+            <Nav.Link href="/buscarvagas" className="links">Vagas</Nav.Link>
+            <Nav.Link href="#link" className="links">Cursos</Nav.Link>
+            <Nav.Link href="#link" className="links">Mentorias</Nav.Link>
           </div>
         </Navbar.Collapse>
       </Container>
