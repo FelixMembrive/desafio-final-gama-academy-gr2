@@ -7,6 +7,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 
+interface IHeaderLogadoProps {
+  pic?: string;
+}
+
 export default function Header() {
   return (
     <Navbar id="navStyle-logado" expand="lg">

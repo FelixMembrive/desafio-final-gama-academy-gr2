@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import grafico_dados from "../../assets/imagens/grafico_dados.png";
-import logo_lorena from "../../assets/imagens/img_lorena.png";
+import logo_usuaria from "../../assets/icons/user.png";
 import HeaderLogado from "../HeaderLogado";
 import LinkButton from "../LinkButton";
 import Row from 'react-bootstrap/Row';
@@ -9,8 +9,13 @@ import Col from 'react-bootstrap/Col';
 import "./styles.scss"
 import { PortaVoltar } from "../../assets/icons/SVGicons";
 
+interface IAreaCandidataProps {
+    name?: string;
+    pic?: string;
+}
 
-export default function SecaoPrincipalAreaCandidata() {
+
+export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) {
     return (
         <>
         <Container className=" " >
@@ -19,8 +24,8 @@ export default function SecaoPrincipalAreaCandidata() {
                 
                     <Col xl={3} className=" col1_ac align-items-center"> 
                         <div className="text-center" >
-                            <img className="logo_lorena mb-2 " src={logo_lorena} width={75}/>
-                            <h2 className="nome_usuario fs-5 ">Lorena Soares</h2>
+                            <img className="logo_lorena mb-2 " src={props.pic? props.pic: logo_usuaria} width={75}/>
+                            <h2 className="nome_usuario fs-5 ">{props.name? props.name: "Usuária"}</h2>
                             
                         </div>
 

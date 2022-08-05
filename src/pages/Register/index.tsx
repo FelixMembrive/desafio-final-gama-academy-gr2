@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Header from '../../componentes/Header'
-import Footer from '../../componentes/Footer'
-import SocialLinkLogIn from '../../componentes/SocialLinkLogIn'
-import { LabelInput } from '../../componentes/LabelInput'
-import Divider from '../../componentes/Divider'
-import rightPattern from '../../assets/icons/rightPattern.svg'
-import './style.scss'
+import Header from '../../componentes/Header';
+import Footer from '../../componentes/Footer';
+import SocialLinkLogIn from '../../componentes/SocialLinkLogIn';
+import { LabelInput } from '../../componentes/LabelInput';
+import Divider from '../../componentes/Divider';
+import rightPattern from '../../assets/icons/rightPattern.svg';
+import './style.scss';
 import { requestApiMultiPart } from "../../services/api";
 import { useNavigate } from "react-router-dom";
 import { AxiosError } from "axios";
@@ -32,19 +32,19 @@ export default function RegisterPage() {
       const loginResponse = await loginUsuario({
         email: email,
         password: password,
-    })
-    dispatch(
-      setUser({
-      token: loginResponse.data.token,
-      id: "",
-      name: "",
-      pic: "",
-  }));
-    console.log(loginResponse.data.token)
+      });
+      dispatch(
+        setUser({
+          token: loginResponse.data.token,
+          id: loginResponse.data.user._id,
+          name: loginResponse.data.user.name,
+          pic: loginResponse.data.user.profilePicture,
+        }));
+      console.log(loginResponse.data.token);
       navigate("/");
     } catch (error: any) {
       if (error.response) {
-        alert (error.response.data.message); 
+        alert(error.response.data.message);
       }
     }
   }
@@ -52,14 +52,14 @@ export default function RegisterPage() {
   function handleSubmit(e: any) {
     e.preventDefault();
     if (password != confirmPassword) {
-      alert ("As senhas digitadas não são iguais, por favor revise sua senha.")
+      alert("As senhas digitadas não são iguais, por favor revise sua senha.");
     }
-    register(name, email, password)
+    register(name, email, password);
     // navigate("/buscarvagas");
   }
 
   return (
-      <>
+    <>
       <Header />
       <form onSubmit={handleSubmit} className="registerPage">
         <h2>Olá! Como você prefere se cadastrar?</h2>
@@ -135,6 +135,6 @@ export default function RegisterPage() {
       </form>
 
       <Footer />
-      </>
-  )
+    </>
+  );
 }

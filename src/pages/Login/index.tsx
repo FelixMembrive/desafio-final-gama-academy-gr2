@@ -29,23 +29,27 @@ export default function Login() {
       password
     };
 
-    const res = await loginUsuario(payload);
+    try {
+      const res = await loginUsuario(payload);
 
-    if (res.request.status !== 200) {
-      alert("Login ou senha incorretos. Tente novamente");
-    } else {
       console.log(res.data.token);
-      //buscar dados do usuário
 
       dispatch(
         setUser({
-        token: res.data.token,
-        id: "",
-        name: "",
-        pic: "",
-    }));
+          token: res.data.token,
+          id: res.data.user._id,
+          name: res.data.user.name,
+          pic: res.data.user.profilePicture,
+        }));
       navigate("/areacandidata");
+    } catch (error: any) {
+      if (error.response) {
+        alert (error.response.data.message); 
+      } else {
+        alert ("Ops! Algo deu errado...")
+      }
     }
+
   };
 
   return (
