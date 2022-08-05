@@ -31,9 +31,6 @@ export default function Login() {
 
     try {
       const res = await loginUsuario(payload);
-
-      console.log(res.data.token);
-
       dispatch(
         setUser({
           token: res.data.token,
