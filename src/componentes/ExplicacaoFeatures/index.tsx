@@ -26,7 +26,7 @@ const ExplicacaoFeatures = () => {
   ];
 
   return (
-    // <Wrapper>
+    <Wrapper>
     <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
         <Title>Serviços da Tech Delas</Title>
         <Row className="flex-nowrap row gap-xs-4 gap-lg-16">
@@ -35,7 +35,7 @@ const ExplicacaoFeatures = () => {
           })}
         </Row>
       </ScrollContainer>
-    // </Wrapper>
+    </Wrapper>
   );
 };
 
