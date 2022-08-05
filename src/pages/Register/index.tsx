@@ -41,7 +41,7 @@ export default function RegisterPage() {
           pic: loginResponse.data.user.profilePicture,
         }));
       console.log(loginResponse.data.token);
-      navigate("/");
+      navigate("/areacandidata");
     } catch (error: any) {
       if (error.response) {
         alert(error.response.data.message);

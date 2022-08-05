@@ -1,6 +1,7 @@
 import Logo from "../../assets/icons/logo-techdelas.png";
 import Notificacoes from "../../assets/icons/circle_notifications.png";
 import "./style.scss";
+import { useRef, useLayoutEffect } from "react";
 
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,7 +12,15 @@ interface IHeaderLogadoProps {
   pic?: string;
 }
 
-export default function Header() {
+export default function Header(props: IHeaderLogadoProps) {
+  const ref = useRef<HTMLHeadingElement>(null);
+  useLayoutEffect(() => {
+      if(ref.current !== null){
+          ref.current.style.setProperty('background-image', `url(${props.pic? props.pic: "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/user.png"})`, 'important');
+          ref.current.style.setProperty('background-size', `cover`, 'important');
+          ref.current.style.setProperty('background-color', `#EDEDED`, 'important');
+      }
+    }, []);
   return (
     <Navbar id="navStyle-logado" expand="lg">
       <Container id="containerStyle-logado">
@@ -22,7 +31,8 @@ export default function Header() {
           id="logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle  id="botaoToggleHeaderLogado"/>
+        {/*@ts-ignore*/}
+        <Navbar.Toggle  id="botaoToggleHeaderLogado" ref={ref}/>
         <Navbar.Collapse id="basic-navbar-nav-logado">
           <div className="bd-toc-item-logado">
             <Nav.Link href="/areacandidata" className="links">Área da candidata</Nav.Link>
