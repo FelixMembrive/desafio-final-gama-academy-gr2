@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   display: flex;
   /* width: 100%; */
   flex-direction: column;
-  background-image: url(${background});
-  background-repeat: no-repeat;
+  /* background-image: url(${background});
+  background-repeat: no-repeat; */
 `;
 
 export const Title = styled.h2`
