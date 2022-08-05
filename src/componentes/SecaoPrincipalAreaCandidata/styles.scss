@@ -70,7 +70,7 @@
 }
 
 
-.btn_ac_mensagens{
+.btn_ac_buscarv{
     width: 342px;
     height: 40px;
     font-size: 14px !important;
@@ -85,7 +85,7 @@
    }
     
 }
-.btn_ac_editar{
+.btn_ac_minhasc{
     width: 342px;
     height: 40px;
     font-size: 14px !important;
@@ -100,13 +100,15 @@
         height: 53px;
    }
 }
-.btn_ac_curriculo{
+.btn_ac_editarc{
     width: 342px;
     height: 40px;
     font-size: 14px !important;
-    background-color:$primary-custom!important;
+    background-color:white!important;
     margin-top: 10px;
     font-family: 'Roboto', sans-serif !important;
+    color: #601C4F !important;
+    border: 1px solid  #601C4F !important ;
     
     @media(min-width:1200px){
        

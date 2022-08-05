@@ -15,7 +15,7 @@ export default function SecaoPrincipalAreaCandidata() {
         <>
         <Container className=" " >
 
-                 <Row className="d-flex flex-column flex-md-row justify-content-center pb-xl-4 align-items-xl-center ">
+                 <Row className="d-flex flex-column flex-md-row justify-content-center pb-5 mb-2 align-items-xl-center ">
                 
                     <Col xl={3} className=" col1_ac align-items-center"> 
                         <div className="text-center" >
@@ -25,9 +25,9 @@ export default function SecaoPrincipalAreaCandidata() {
                         </div>
 
                         <div className="btns_ac_div justify-content-center">
-                            <LinkButton className="btn_ac_mensagens btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="" text="Mensagens"></LinkButton>
-                            <LinkButton className="btn_ac_editar btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="" text="Editar perfil"></LinkButton>
-                            <LinkButton className="btn_ac_curriculo btn-secondary  border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center " to="" text="Currículo"></LinkButton>
+                            <LinkButton className="btn_ac_buscarv btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="../BuscarVagas" text="Buscar vagas"></LinkButton>
+                            <LinkButton className="btn_ac_minhasc btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="../MinhasCandidaturas" text="Minhas candidaturas"></LinkButton>
+                            <LinkButton className="btn_ac_editarc btn-secondary fw-semibold rounded-pill d-flex justify-content-center align-items-center " to="" text="Editar currículo"></LinkButton>
                             
                         
                         </div>
