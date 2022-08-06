@@ -17,7 +17,7 @@ interface ICardVagasProps {
     salvo: Boolean,
     img?: string,
     className?: string,
-    id: string,
+    id?: string,
 }
 
 export default function CardVaga(props: ICardVagasProps) {
