@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import { requestApiMultiPart, requestApiMultiPartAuth } from "../../services/api";
 
-interface iTeste{
-    selectedImage: string | null
-    setSelectedImage:  string | null
-}
-
 export default function UploadAndDisplayImage() {
-  const [selectedImage, setSelectedImage] = useState<iTeste | null>(null);
+  const [selectedImage, setSelectedImage] = useState<Blob | MediaSource | null>(null);
   const name = "teste de nome com foto"
 
 //   async function sendImage(selectedImage: string) {
-    async function sendImage(name: string, profilePicture: string) {
+    async function sendImage(profilePicture: Blob | MediaSource | null) {
     try {
       const response = await requestApiMultiPartAuth.put("/users/62ec5259f03ecacf7e82263e", {
-        name: "teste",
         profilePicture: selectedImage,
       });
     } catch (error: any) {
@@ -26,7 +20,7 @@ export default function UploadAndDisplayImage() {
 
   function handleSubmit(e: any) {
     e.preventDefault();
-    sendImage(name, selectedImage)
+    sendImage(selectedImage)
     }
 
   return (
