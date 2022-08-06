@@ -5,12 +5,15 @@ import HeaderLogado from "../HeaderLogado";
 import LinkButton from "../LinkButton";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setUser } from '../../Store/modules/user';
 import { useNavigate } from 'react-router-dom';
 
 import "./styles.scss";
 import { PortaVoltar } from "../../assets/icons/SVGicons";
+import UploadAndDisplayImage from "../uploadphoto";
+
+
 
 interface IAreaCandidataProps {
     name?: string;
@@ -18,7 +21,10 @@ interface IAreaCandidataProps {
 }
 
 
+
+
 export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) {
+
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -41,6 +47,7 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
                     <Col xl={3} className=" col1_ac align-items-center">
                         <div className="text-center" >
                             <img className="logo_lorena mb-2 " src={props.pic ? props.pic : logo_usuaria} width={75} />
+                            <UploadAndDisplayImage/>
                             <h2 className="nome_usuario fs-5 ">{props.name ? props.name : "Usuária"}</h2>
 
                         </div>

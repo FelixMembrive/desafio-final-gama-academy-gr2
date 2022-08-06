@@ -1,14 +1,19 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { requestApiMultiPart, requestApiMultiPartAuth } from "../../services/api";
 
 export default function UploadAndDisplayImage() {
+  const user = useSelector((state: any) => state.persistedReducer);
+  const userId = user.id
+  
+
   const [selectedImage, setSelectedImage] = useState<Blob | MediaSource | null>(null);
   const name = "teste de nome com foto"
 
 //   async function sendImage(selectedImage: string) {
     async function sendImage(profilePicture: Blob | MediaSource | null) {
     try {
-      const response = await requestApiMultiPartAuth.put("/users/62ec5259f03ecacf7e82263e", {
+      const response = await requestApiMultiPartAuth.put("/users/"+userId, {
         profilePicture: selectedImage,
       });
     } catch (error: any) {
@@ -26,7 +31,6 @@ export default function UploadAndDisplayImage() {
   return (
     <form onSubmit={handleSubmit} className="uploadPhoto">
     <div>
-      <h1>Upload and Display Image usign React Hook's</h1>
       {selectedImage && (
         <div>
         <img alt="not fount" width={"250px"} src={URL.createObjectURL(selectedImage)} />
@@ -46,7 +50,7 @@ export default function UploadAndDisplayImage() {
         }}
       />
     </div>
-    <button className="registerButton" type="submit">Enviar</button>
+    {selectedImage && <button className="registerButton" type="submit">Enviar</button>}
     </form>
   );
 };
