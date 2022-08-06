@@ -8,7 +8,7 @@ function getTokenFromLocalStorage() {
     return token;
 }
 
-const baseApiUrl = "https://tech-delas.herokuapp.com";
+const baseApiUrl = "https://tech-delas.herokuapp.com/"
 
 export const baseApi = axios.create({
     baseURL: baseApiUrl,
@@ -29,5 +29,14 @@ export const requestApiMultiPart = axios.create({
     headers: {
         //   Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         "Content-Type": "multipart/form-data",
+    },
+});
+
+export const requestApiMultiPartAuth = axios.create({
+    baseURL: baseApiUrl,
+    headers: {
+        //   Authorization: `Bearer ${getTokenFromLocalStorage()}`,
+        "Content-Type": "multipart/form-data",
+        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZWM1MjU5ZjAzZWNhY2Y3ZTgyMjYzZSIsImVtYWlsIjoiZmVsaXgubWVtYnJpdmVAZ21haWwuY29tIiwibmFtZSI6IkZFTElYIEFQQVJFQ0lETyBNRU1CUklWRSBKVU5JT1IiLCJpYXQiOjE2NTk3NTE2NTAsImV4cCI6MTY2MDAxMDg1MH0.DV9J9rJ5bkfrOYYp6Wy8eiKYRQP2b4m_wLczwh0BTBo"
     },
 });

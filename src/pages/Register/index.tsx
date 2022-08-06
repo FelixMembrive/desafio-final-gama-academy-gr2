@@ -33,6 +33,8 @@ export default function RegisterPage() {
         email: email,
         password: password,
       });
+      console.log("teste");
+      
       dispatch(
         setUser({
           token: loginResponse.data.token,

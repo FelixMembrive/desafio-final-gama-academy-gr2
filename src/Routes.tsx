@@ -11,6 +11,7 @@ import Mentora from './pages/Mentora'
 import Login from './pages/Login'
 import RegisterPage from './pages/Register'
 import RedirecionamentoCalendly from './pages/RedirecionamentoCalendly'
+import UploadAndDisplayImage from './pages/uploadphoto'
 
 export default function RoutesComponent() {
   return (
@@ -26,6 +27,7 @@ export default function RoutesComponent() {
         <Route path="listamentoras" element={<ListaMentoras />} />
         <Route path="mentora" element={<Mentora />} />
         <Route path="redirecionamento-calendly" element={<RedirecionamentoCalendly />} />
+        <Route path="uploadphoto" element={<UploadAndDisplayImage />} />
       </Routes>
   )
 }
