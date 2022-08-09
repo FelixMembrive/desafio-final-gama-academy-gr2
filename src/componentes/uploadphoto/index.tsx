@@ -8,7 +8,7 @@ import { Axios } from "axios";
 
 export default function UploadAndDisplayImage() {
   const user = useSelector((state: any) => state.persistedReducer);
-  const userPhoto = user.pic ? user.pic : logo_usuaria
+  let userPhoto = user.pic ? user.pic : logo_usuaria
   const [selectedImage, setSelectedImage] = useState<Blob | MediaSource>(userPhoto);
   const userId = user.id
   const userToken = user.token
@@ -20,10 +20,10 @@ export default function UploadAndDisplayImage() {
   const handleClick = () => {
     ref.current.click();
   }
-  
+
   async function handleSubmit(e: any) {
     e.preventDefault();
-    sendImage(selectedImage)    
+    sendImage(selectedImage)
   }
 
   async function sendImage(image: Blob | MediaSource | null) {
@@ -31,21 +31,22 @@ export default function UploadAndDisplayImage() {
       await requestApiMultiPartAuth.put("/users/" + userId, {
         profilePicture: image,
       })
-      // dispatch(
-      //   setUser({
-      //     token: userToken,
-      //     id: userId,
-      //     name: "Trocou",
-      //     pic: selectedImage,
-      //   }));
-
-        
-        refreshPage();
+        .then(function (response) {
+          const imageChanged = (response.data.user.profilePicture);
+          dispatch(
+            setUser({
+              token: userToken,
+              id: userId,
+              name: "Trocou",
+              pic: imageChanged,
+            }));
+        })
+      refreshPage();
     } catch (error: any) {
       if (error.response) {
         alert(error.response.data.message);
       }
-      
+
     }
   }
 
@@ -57,7 +58,7 @@ export default function UploadAndDisplayImage() {
     <form onSubmit={handleSubmit} className="uploadPhoto">
 
       <input
-        style={{display: "none"}}
+        style={{ display: "none" }}
         ref={ref}
         type="file"
         name="myImage"
@@ -67,8 +68,8 @@ export default function UploadAndDisplayImage() {
       />
 
       <div>
-        <img className="logo_lorena mb-2 " src={selectedImage == userPhoto ? userPhoto : URL.createObjectURL(selectedImage)} width={75} 
-        onClick={handleClick}
+        <img className="logo_lorena mb-2 " src={selectedImage == userPhoto ? userPhoto : URL.createObjectURL(selectedImage)} width={75}
+          onClick={handleClick}
         />
       </div>
 
