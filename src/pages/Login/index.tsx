@@ -41,7 +41,9 @@ export default function Login() {
           name: res.data.user.name,
           pic: res.data.user.profilePicture,
         }));
-      navigate("/areacandidata");
+        window.scrollTo(0, 0)
+        navigate("/areacandidata");
+      
     } catch (error: any) {
       if (error.response) {
         alert (error.response.data.message); 

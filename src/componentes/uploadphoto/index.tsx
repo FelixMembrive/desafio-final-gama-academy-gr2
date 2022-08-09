@@ -4,7 +4,6 @@ import { requestApiMultiPart, requestApiMultiPartAuth } from "../../services/api
 import logo_usuaria from "../../assets/icons/user.png";
 import { setUser } from "../../Store/modules/user";
 import { useDispatch } from "react-redux";
-import { Axios } from "axios";
 
 export default function UploadAndDisplayImage() {
   const user = useSelector((state: any) => state.persistedReducer);
@@ -13,12 +12,12 @@ export default function UploadAndDisplayImage() {
   const userId = user.id
   const userToken = user.token
   const userName = user.Name
+  const inputFile = useRef<any>(null);
   const dispatch = useDispatch();
 
-  const ref = useRef<any>(null);
 
   const handleClick = () => {
-    ref.current.click();
+    inputFile.current.click();
   }
 
   async function handleSubmit(e: any) {
@@ -37,7 +36,7 @@ export default function UploadAndDisplayImage() {
             setUser({
               token: userToken,
               id: userId,
-              name: "Trocou",
+              name: userName,
               pic: imageChanged,
             }));
         })
@@ -59,7 +58,7 @@ export default function UploadAndDisplayImage() {
 
       <input
         style={{ display: "none" }}
-        ref={ref}
+        ref={inputFile}
         type="file"
         name="myImage"
         onChange={(event: any) => {
