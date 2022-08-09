@@ -17,7 +17,8 @@ export default function AreaCandidata() {
     return (
       <>
         <HeaderLogado pic={user.pic}/>
-        <SecaoPrincipalAreaCandidata name={user.name} pic={user.pic} />
+        {/* <SecaoPrincipalAreaCandidata name={user.name} pic={user.pic} /> */}
+        <SecaoPrincipalAreaCandidata name={user.name} />
         <VagasRecomendadas />
         <SecaoCursos title="Cursos que irão te capacitar ainda mais" />
         <MentoriaCandidata />

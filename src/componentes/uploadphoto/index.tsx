@@ -1,56 +1,83 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { requestApiMultiPart, requestApiMultiPartAuth } from "../../services/api";
+import logo_usuaria from "../../assets/icons/user.png";
+import { setUser } from "../../Store/modules/user";
+import { useDispatch } from "react-redux";
+import { Axios } from "axios";
 
 export default function UploadAndDisplayImage() {
   const user = useSelector((state: any) => state.persistedReducer);
+  const userPhoto = user.pic ? user.pic : logo_usuaria
+  const [selectedImage, setSelectedImage] = useState<Blob | MediaSource>(userPhoto);
   const userId = user.id
+  const userToken = user.token
+  const userName = user.Name
+  const dispatch = useDispatch();
+
+  const ref = useRef<any>(null);
+
+  const handleClick = () => {
+    ref.current.click();
+  }
   
+  async function handleSubmit(e: any) {
+    e.preventDefault();
+    sendImage(selectedImage)    
+  }
 
-  const [selectedImage, setSelectedImage] = useState<Blob | MediaSource | null>(null);
-  const name = "teste de nome com foto"
-
-//   async function sendImage(selectedImage: string) {
-    async function sendImage(profilePicture: Blob | MediaSource | null) {
+  async function sendImage(image: Blob | MediaSource | null) {
     try {
-      const response = await requestApiMultiPartAuth.put("/users/"+userId, {
-        profilePicture: selectedImage,
-      });
+      await requestApiMultiPartAuth.put("/users/" + userId, {
+        profilePicture: image,
+      })
+      // dispatch(
+      //   setUser({
+      //     token: userToken,
+      //     id: userId,
+      //     name: "Trocou",
+      //     pic: selectedImage,
+      //   }));
+
+        
+        refreshPage();
     } catch (error: any) {
       if (error.response) {
         alert(error.response.data.message);
       }
+      
     }
   }
 
-  function handleSubmit(e: any) {
-    e.preventDefault();
-    sendImage(selectedImage)
-    }
+  function refreshPage() {
+    window.location.reload();
+  }
 
   return (
     <form onSubmit={handleSubmit} className="uploadPhoto">
-    <div>
-      {selectedImage && (
-        <div>
-        <img alt="not fount" width={"250px"} src={URL.createObjectURL(selectedImage)} />
-        <br />
-        <button onClick={()=>setSelectedImage(null)}>Remove</button>
-        </div>
-      )}
-      <br />
-     
-      <br /> 
+
       <input
+        style={{display: "none"}}
+        ref={ref}
         type="file"
         name="myImage"
-        onChange={(event : any) => {
-          console.log(event.target.files[0]);
+        onChange={(event: any) => {
           setSelectedImage(event.target.files[0]);
         }}
       />
-    </div>
-    {selectedImage && <button className="registerButton" type="submit">Enviar</button>}
+
+      <div>
+        <img className="logo_lorena mb-2 " src={selectedImage == userPhoto ? userPhoto : URL.createObjectURL(selectedImage)} width={75} 
+        onClick={handleClick}
+        />
+      </div>
+
+      {selectedImage != userPhoto &&
+        <div>
+          <button type="submit">Salvar</button>
+          <button onClick={() => setSelectedImage(userPhoto)}>Cancelar</button>
+        </div>
+      }
     </form>
   );
 };

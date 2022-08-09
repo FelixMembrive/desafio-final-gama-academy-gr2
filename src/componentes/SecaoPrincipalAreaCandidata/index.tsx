@@ -21,8 +21,6 @@ interface IAreaCandidataProps {
 }
 
 
-
-
 export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) {
 
     const navigate = useNavigate();
@@ -46,7 +44,7 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
 
                     <Col xl={3} className=" col1_ac align-items-center">
                         <div className="text-center" >
-                            <img className="logo_lorena mb-2 " src={props.pic ? props.pic : logo_usuaria} width={75} />
+                            {/* <img className="logo_lorena mb-2 " src={props.pic ? props.pic : logo_usuaria} width={75} /> */}
                             <UploadAndDisplayImage/>
                             <h2 className="nome_usuario fs-5 ">{props.name ? props.name : "Usuária"}</h2>
 
