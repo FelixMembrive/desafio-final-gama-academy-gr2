@@ -6,6 +6,7 @@ import { setUser } from "../../Store/modules/user";
 import { useDispatch } from "react-redux";
 import { Check, X } from "phosphor-react";
 import './style.scss';
+import './animation.scss';
 
 export default function UploadAndDisplayImage() {
   const user = useSelector((state: any) => state.persistedReducer);
@@ -31,7 +32,7 @@ export default function UploadAndDisplayImage() {
 
   async function sendImage(image: Blob | MediaSource | null) {
     try {
-      
+
       await requestApiMultiPartAuth.put("/users/" + userId, {
         profilePicture: image,
       })
@@ -45,7 +46,7 @@ export default function UploadAndDisplayImage() {
               pic: imageChanged,
             }));
         })
-        
+
       refreshPage();
     } catch (error: any) {
       if (error.response) {
@@ -77,20 +78,21 @@ export default function UploadAndDisplayImage() {
           onClick={handleClick}
         />
       </div>
-{loadImage }
-      {selectedImage != userPhoto && loadImage == false &&
-        <div>
-          <button className="changePhotoButton" type="submit">
-            <Check className="changePhotoIcon" size={18} weight="bold"></Check>
-          </button>
-          {/* <Check className="changePhotoButton" size={32} ></Check> */}
-          <button className="changePhotoButton" onClick={() => setSelectedImage(userPhoto)}>
-            <X className="changePhotoIcon" size={18} weight="bold"></X>
-          </button>
-        </div>
-      }
-      {loadImage &&
-    <p>Carregando...</p>}
+      <div className={loadImage ? "varDiv" : ""}>
+        {selectedImage != userPhoto && loadImage == false &&
+          <div>
+            <button className="changePhotoButton" type="submit">
+              <Check className="changePhotoIcon" size={18} weight="bold"></Check>
+            </button>
+            {/* <Check className="changePhotoButton" size={32} ></Check> */}
+            <button className="changePhotoButton" onClick={() => setSelectedImage(userPhoto)}>
+              <X className="changePhotoIcon" size={18} weight="bold"></X>
+            </button>
+          </div>
+}
+        {loadImage &&
+          <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>}
+      </div>
     </form>
   );
 };

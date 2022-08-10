@@ -13,13 +13,10 @@ import "./styles.scss";
 import { PortaVoltar } from "../../assets/icons/SVGicons";
 import UploadAndDisplayImage from "../uploadphoto";
 
-
-
 interface IAreaCandidataProps {
     name?: string;
     pic?: string;
 }
-
 
 export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) {
 
@@ -46,8 +43,8 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
                         <div className="text-center" >
                             {/* <img className="logo_lorena mb-2 " src={props.pic ? props.pic : logo_usuaria} width={75} /> */}
                             <UploadAndDisplayImage/>
-                            {/* <h2 className="nome_usuario fs-5 ">{props.name ? props.name : "Usuária"}</h2> */}
-                            <h2 className="nome_usuario fs-5 ">{props.name ? props.name : "Usuária"}</h2>
+                            <h2 className="nome_usuario mt-3 fs-5 ">{props.name ? props.name : "Usuária"}</h2>
+                            {/* <h2 className="nome_usuario mt-3 fs-5 ">{userName ? userName : "Usuária"}</h2> */}
 
                         </div>
 
