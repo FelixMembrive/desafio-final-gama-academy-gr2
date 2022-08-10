@@ -4,14 +4,17 @@ import { requestApiMultiPart, requestApiMultiPartAuth } from "../../services/api
 import logo_usuaria from "../../assets/icons/user.png";
 import { setUser } from "../../Store/modules/user";
 import { useDispatch } from "react-redux";
+import { Check, X } from "phosphor-react";
+import './style.scss';
 
 export default function UploadAndDisplayImage() {
   const user = useSelector((state: any) => state.persistedReducer);
-  let userPhoto = user.pic ? user.pic : logo_usuaria
+  const userPhoto = user.pic ? user.pic : logo_usuaria
   const [selectedImage, setSelectedImage] = useState<Blob | MediaSource>(userPhoto);
+  const [loadImage, setLoadImage] = useState<boolean>(false);
   const userId = user.id
   const userToken = user.token
-  const userName = user.Name
+  const userName = user.name
   const inputFile = useRef<any>(null);
   const dispatch = useDispatch();
 
@@ -22,11 +25,13 @@ export default function UploadAndDisplayImage() {
 
   async function handleSubmit(e: any) {
     e.preventDefault();
+    setLoadImage(true)
     sendImage(selectedImage)
   }
 
   async function sendImage(image: Blob | MediaSource | null) {
     try {
+      
       await requestApiMultiPartAuth.put("/users/" + userId, {
         profilePicture: image,
       })
@@ -40,6 +45,7 @@ export default function UploadAndDisplayImage() {
               pic: imageChanged,
             }));
         })
+        
       refreshPage();
     } catch (error: any) {
       if (error.response) {
@@ -54,7 +60,7 @@ export default function UploadAndDisplayImage() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="uploadPhoto">
+    <form onSubmit={handleSubmit} className="uploadPhoto" >
 
       <input
         style={{ display: "none" }}
@@ -71,13 +77,20 @@ export default function UploadAndDisplayImage() {
           onClick={handleClick}
         />
       </div>
-
-      {selectedImage != userPhoto &&
+{loadImage }
+      {selectedImage != userPhoto && loadImage == false &&
         <div>
-          <button type="submit">Salvar</button>
-          <button onClick={() => setSelectedImage(userPhoto)}>Cancelar</button>
+          <button className="changePhotoButton" type="submit">
+            <Check className="changePhotoIcon" size={18} weight="bold"></Check>
+          </button>
+          {/* <Check className="changePhotoButton" size={32} ></Check> */}
+          <button className="changePhotoButton" onClick={() => setSelectedImage(userPhoto)}>
+            <X className="changePhotoIcon" size={18} weight="bold"></X>
+          </button>
         </div>
       }
+      {loadImage &&
+    <p>Carregando...</p>}
     </form>
   );
 };

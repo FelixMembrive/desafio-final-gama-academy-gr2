@@ -46,6 +46,7 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
                         <div className="text-center" >
                             {/* <img className="logo_lorena mb-2 " src={props.pic ? props.pic : logo_usuaria} width={75} /> */}
                             <UploadAndDisplayImage/>
+                            {/* <h2 className="nome_usuario fs-5 ">{props.name ? props.name : "Usuária"}</h2> */}
                             <h2 className="nome_usuario fs-5 ">{props.name ? props.name : "Usuária"}</h2>
 
                         </div>

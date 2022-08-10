@@ -1,3 +1,38 @@
-#sendbutton {
-    color: black;
+@import "../../typography.scss";
+@import "../../colors.scss";
+@import "../../spacing.scss";
+.changePhotoButton {
+    background-color: $primary-subtle;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    border-width: 0;
+    text-decoration: none;
+    margin: $sp-tc1;
+    margin-bottom: $sp-tc2;
+}
+
+.changePhotoIcon {
+    color: $primary-custom;
+}
+
+.link-back {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $primary-custom;
+    @extend .tp-heading-6;
+    &:hover {
+        color: $primary-lighter;
+        path {
+            fill: $primary-lighter;
+        }
+    }
+    svg {
+        margin-left: $sp-tc3;
+        margin-right: $sp-tc1;
+    }
+    path {
+        fill: $primary-custom;
+    }
 }
