@@ -1,3 +1,4 @@
+@import "./colors.scss";
 .tp-display-1 {
     /* Display 1 */
     font-family: 'Poppins';
@@ -100,4 +101,24 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 170%;
+}
+
+.label-large {
+    /* Body Small */
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.hover-primary-darker {
+    &:hover {
+        background-color: $primary-darker !important;
+    }
+}
+
+.hover-primary-subtle {
+    &:hover {
+        background-color: $primary-subtle !important;
+    }
 }

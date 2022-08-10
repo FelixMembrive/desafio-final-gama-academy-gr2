@@ -98,6 +98,9 @@
     font-size: 16px !important;
     margin-bottom: 16px;
     padding-top: 8.5px !important;
+    &:hover {
+        background-color: $primary-darker !important;
+    }
     @media (min-width: 768px) {
         font-size: 18px;
         width: 200px;
@@ -121,8 +124,13 @@
     height: 40px;
     align-items: center!important;
     text-align: center!important;
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto' !important;
+    font-weight: 500 !important;
     font-size: 16px !important;
+    color: $primary-custom !important;
+    &:hover {
+        background-color: $primary-subtle !important;
+    }
     @media (min-width: 768px) {
         flex-direction: column;
         text-align: center;

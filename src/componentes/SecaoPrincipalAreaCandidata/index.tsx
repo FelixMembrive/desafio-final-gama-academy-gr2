@@ -49,9 +49,9 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
                         </div>
 
                         <div className="btns_ac_div justify-content-center">
-                            <LinkButton className="btn_ac_buscarv btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="../BuscarVagas" text="Buscar vagas"></LinkButton>
-                            <LinkButton className="btn_ac_minhasc btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="../MinhasCandidaturas" text="Minhas candidaturas"></LinkButton>
-                            <LinkButton className="btn_ac_editarc btn-secondary fw-semibold rounded-pill d-flex justify-content-center align-items-center " to="" text="Editar currículo"></LinkButton>
+                            <LinkButton className="hover-primary-darker btn_ac_buscarv btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="../buscarvagas" text="Buscar vagas"></LinkButton>
+                            <LinkButton className="hover-primary-darker btn_ac_minhasc btn-primary border-0 fw-semibold rounded-pill d-flex justify-content-center align-items-center" to="../candidaturas" text="Minhas candidaturas"></LinkButton>
+                            <LinkButton className="hover-primary-subtle btn_ac_editarc btn-secondary fw-semibold rounded-pill d-flex justify-content-center align-items-center " to="" text="Editar currículo"></LinkButton>
 
 
                         </div>

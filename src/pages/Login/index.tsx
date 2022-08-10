@@ -5,25 +5,23 @@ import LinkButton from '../../componentes/LinkButton';
 import SocialLinkLogIn from '../../componentes/SocialLinkLogIn';
 import { Link, useNavigate } from 'react-router-dom';
 import rightPattern from '../../assets/icons/rightPattern.svg';
-import './style.scss';
 import { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { loginUsuario } from '../../services/api/login';
 import { useDispatch } from "react-redux";
 import { setUser } from '../../Store/modules/user';
+import './style.scss';
+import Loading from '../../componentes/Loading';
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loadLogin, setLoadLogin] = useState<boolean>(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    console.log("email", email);
-    console.log("password", password);
-  }, [email, password]);
-
   const handleSubmit = async () => {
+    setLoadLogin(true)
     const payload = {
       email,
       password
@@ -32,8 +30,6 @@ export default function Login() {
     try {
       const res = await loginUsuario(payload);
 
-      console.log(res.data.token);
-
       dispatch(
         setUser({
           token: res.data.token,
@@ -41,14 +37,15 @@ export default function Login() {
           name: res.data.user.name,
           pic: res.data.user.profilePicture,
         }));
-        window.scrollTo(0, 0)
-        navigate("/areacandidata");
-      
+      window.scrollTo(0, 0)
+      navigate("/areacandidata");
+
     } catch (error: any) {
       if (error.response) {
-        alert (error.response.data.message); 
+        setLoadLogin(false)
+        alert(error.response.data.message);
       } else {
-        alert ("Ops! Algo deu errado...")
+        alert("Ops! Algo deu errado...")
       }
     }
 
@@ -98,7 +95,10 @@ export default function Login() {
           value={password}
           onChange={(e: any) => setPassword(e.target.value)}
         />
-        <Button className="loginButton" onClick={handleSubmit}>Entrar</Button>
+        {loadLogin == false &&
+          <Button className="loginButton" onClick={handleSubmit}>Entrar</Button>}
+        {loadLogin == true &&
+          <Loading/>}
         <Link className="forgotPassword" to="#">
           Esqueceu sua senha? <span>Recupere</span>
         </Link>

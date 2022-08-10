@@ -6,7 +6,8 @@ import { setUser } from "../../Store/modules/user";
 import { useDispatch } from "react-redux";
 import { Check, X } from "phosphor-react";
 import './style.scss';
-import './animation.scss';
+import Loading from "../Loading";
+
 
 export default function UploadAndDisplayImage() {
   const user = useSelector((state: any) => state.persistedReducer);
@@ -90,8 +91,7 @@ export default function UploadAndDisplayImage() {
             </button>
           </div>
 }
-        {loadImage &&
-          <div className="lds-ellipsis"><div></div><div></div><div></div><div></div></div>}
+        {loadImage && <Loading/>}
       </div>
     </form>
   );
