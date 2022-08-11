@@ -7,7 +7,11 @@ import './style.scss'
 import LinkButton from "../LinkButton";
 import CardMentora from "../CardMentora";
 
-export default function MentoriaCandidata() {
+interface iMentoriaCandidata {
+  cardMentoraClass?: string
+}
+
+export default function MentoriaCandidata(props: iMentoriaCandidata) {
     const dados = [
         {
           logo_empresa: "https://i.im.ge/2022/08/02/Fy93uc.logo1.png",
@@ -101,7 +105,7 @@ export default function MentoriaCandidata() {
         <Row className="flex-nowrap row">
         {dados.map((item, index)=>{
           return(
-            <CardMentora key={index} logo_empresa={item.logo_empresa} empresa={item.empresa} cargo={item.cargo} foto_mentora={item.foto_mentora} nome_mentora={item.nome_mentora} area_mentora={item.area_mentora} descricao_mentora={item.descricao_mentora}/>
+            <CardMentora className={props.cardMentoraClass} key={index} logo_empresa={item.logo_empresa} empresa={item.empresa} cargo={item.cargo} foto_mentora={item.foto_mentora} nome_mentora={item.nome_mentora} area_mentora={item.area_mentora} descricao_mentora={item.descricao_mentora}/>
             )
           })}
         </Row>

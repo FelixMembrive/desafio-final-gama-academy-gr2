@@ -29,7 +29,7 @@ export default function AreaCandidata() {
         <SecaoPrincipalAreaCandidata name={user.name} />
         <VagasRecomendadas />
         <SecaoCursos title="Cursos que irão te capacitar ainda mais" />
-        <MentoriaCandidata />
+        <MentoriaCandidata/>
         <SecaoPublicacoes title="Publicações no blog que podem ajudar" />
         <SecaoAssinarNewsletter />
         <Footer />

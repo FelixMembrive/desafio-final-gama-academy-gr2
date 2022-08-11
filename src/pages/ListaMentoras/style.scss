@@ -1,4 +1,4 @@
-.cardsMentora{
+.cardsMentora {
     grid-gap: 20px;
     justify-content: center;
     @media only screen and (min-width: 374px) {
@@ -8,12 +8,13 @@
         grid-gap: 10px;
     }
     @media only screen and (min-width: 1500px) {
-        padding:18px 50px 119px 220px;
+        padding: 18px 50px 119px 220px;
         grid-gap: 10px;
         margin: 0;
     }
 }
-.cardsMentora .row{
+
+.cardsMentora .row {
     display: block;
     padding: 16px;
 }
