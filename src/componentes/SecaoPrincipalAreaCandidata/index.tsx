@@ -76,10 +76,10 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
                         <img className="img_ac img-fluid " src={grafico_dados} width={960} />
                     </Col>
                 </Row>
-
+{/* 
                 <BackgroundWaves className="leftPattern"pattern={cornerPattern}/>
                 <BackgroundWaves className="rightPattern" pattern={cornerPattern} paddingImage={"700px"}/>
-                {/* <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"4000px"}/> */}
+                <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"4000px"}/> */}
 
             </Container>
         </>

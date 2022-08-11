@@ -8,7 +8,9 @@ interface ILinkBackProps {
 }
 
 function goBack() {
+    window.scrollTo(0, 0)
     window.history.back()
+    window.scrollTo(0, 0)
 }
 
 export default function LinkBack(props: ILinkBackProps) {

@@ -7,11 +7,14 @@ import LinkBack from "../../componentes/LinkBack";
 import './style.scss';
 import { propTypes } from "react-bootstrap/esm/Image";
 import HeaderLogado from "../../componentes/HeaderLogado";
+import { useSelector } from "react-redux";
 
 export default function Mentora() {
+  window.scrollTo(0, 0)
+  const user = useSelector((state: any) => state.persistedReducer);
   return (
     <>
-      <HeaderLogado />
+      <HeaderLogado pic={user.pic} />
       <LinkBack text="Voltar para Mentoras" className="pt-5 ps-md-3"/>
       <div className="ps-md-3 ps-lg-5">
       <DescricaoMentora/> 

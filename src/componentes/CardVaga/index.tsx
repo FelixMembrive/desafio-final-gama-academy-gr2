@@ -94,7 +94,7 @@ export default function CardVaga(props: ICardVagasProps) {
     }
 
     return (
-        <Card className={`card-vagas border-0 p-3 p-lg-4 ${props.className}`}>
+        <Card className={`card-vagas p-3 p-lg-4 ${props.className}`}>
             <Card.Body className="card-vagas-body d-flex justify-content-between align-items-center p-0">
                 <div className='d-flex justify-content-start '>
                     <img src={props.img ? props.img : logo} alt={`logo da empresa ${props.nome_empresa}`} className="img-card-vagas me-3 melg--5 img-fluid" />

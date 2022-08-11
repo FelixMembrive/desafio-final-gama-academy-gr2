@@ -19,6 +19,7 @@ import "./style.scss"
 
 
 export default function MentoraAgendamento() {
+    window.scrollTo(0, 0)
     return (
         <>
         <HeaderLogado/>

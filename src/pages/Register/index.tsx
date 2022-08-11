@@ -15,6 +15,7 @@ import { setUser } from '../../Store/modules/user';
 import cornerPattern from '../../assets/icons/cornerPattern.svg';
 import centerPattern from '../../assets/icons/rightPattern.svg';
 import BackgroundWaves from "../../componentes/BackgroundWaves";
+import Loading from "../../componentes/Loading";
 
 
 export default function RegisterPage() {
@@ -22,11 +23,13 @@ export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [loadLogin, setLoadLogin] = useState<boolean>(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   async function register(name: string, email: string, password: string) {
     try {
+      window.scrollTo(0, 0)
       const response = await requestApiMultiPart.post("/users", {
         name: name,
         email: email,
@@ -36,7 +39,7 @@ export default function RegisterPage() {
         email: email,
         password: password,
       });
-      
+
       dispatch(
         setUser({
           token: loginResponse.data.token,
@@ -44,22 +47,26 @@ export default function RegisterPage() {
           name: loginResponse.data.user.name,
           pic: loginResponse.data.user.profilePicture,
         }));
-      console.log(loginResponse.data.token);
+      window.scrollTo(0, 0)
       navigate("/areacandidata");
+      window.scrollTo(0, 0)
     } catch (error: any) {
       if (error.response) {
+        setLoadLogin(false)
         alert(error.response.data.message);
       }
     }
   }
 
-  function handleSubmit(e: any) {
+  const handleSubmit = async (e: any) => {
+    setLoadLogin(true)
     e.preventDefault();
     if (password != confirmPassword) {
       alert("As senhas digitadas não são iguais, por favor revise sua senha.");
+      setLoadLogin(false)
+    } else {
+      await register(name, email, password);
     }
-    register(name, email, password);
-    // navigate("/buscarvagas");
   }
 
   return (
@@ -124,8 +131,10 @@ export default function RegisterPage() {
             onChange={(e: any) => setConfirmPassword(e.target.value)}
           />
         </div>
-
-        <button className="registerButton" type="submit">Cadastrar</button>
+        {loadLogin == false &&
+          <button className="registerButton" type="submit">Cadastrar</button>}
+        {loadLogin == true &&
+          <Loading />}
 
         <p className="conditionsAndTerms">
           Ao continuar, você reconhece que leu e concordou com os{' '}
@@ -133,7 +142,7 @@ export default function RegisterPage() {
           da Tech Delas
         </p>
 
-        <BackgroundWaves className="rightPattern" pattern={cornerPattern}/>
+        <BackgroundWaves className="rightPattern" pattern={cornerPattern} />
         <BackgroundWaves className="leftPattern" pattern={cornerPattern} />
 
       </form>

@@ -8,10 +8,11 @@ export const Goback = styled.span`
 export const Title = styled.h5`
   font-weight: 600;
   margin-bottom: 20px;
+  margin-left: 50px;
 `;
 
 export const Toggle = styled.span<{ active: boolean }>`
-  background: ${(props) => (props.active ? "#601C4F1F" : "white")};
+  background: ${(props) => (props.active ? "#ECE3E9" : "transparent")};
   padding: 10px 12px;
   border-radius: 23px;
   font-weight: 600;
@@ -20,6 +21,7 @@ export const Toggle = styled.span<{ active: boolean }>`
   display: flex;
   color: #601c4f;
   margin: 10px;
+  cursor: pointer;
 `;
 
 export const ButtonWrapper = styled.div`

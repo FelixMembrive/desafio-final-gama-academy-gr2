@@ -40,6 +40,7 @@ export default function Login() {
         }));
       window.scrollTo(0, 0)
       navigate("/areacandidata");
+      window.scrollTo(0, 0)
 
     } catch (error: any) {
       if (error.response) {

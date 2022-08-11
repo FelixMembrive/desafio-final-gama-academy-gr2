@@ -5,13 +5,18 @@ import LinkButton from "../../componentes/LinkButton";
 
 
 import "./style.scss"
+import { useSelector } from "react-redux";
+import UnautorizedAccesPage from "../UnautorizedAccesPage";
 
 
 
 export default function RedirecionamentoCalendly() {
+    window.scrollTo(0, 0)
+    const user = useSelector((state: any) => state.persistedReducer);
+    if (user && user.token.length > 0) {
     return (
         <>
-        <HeaderLogado/>
+        <HeaderLogado pic={user.pic} />
        <div>
         <Container className="d-flex flex-column justify-content-center text-center">
                 
@@ -35,5 +40,10 @@ export default function RedirecionamentoCalendly() {
         <Footer/>
         </>
         
-    );
+        );
+    } else {
+      return (
+        <UnautorizedAccesPage />
+      );
+    }
   }

@@ -25,7 +25,7 @@ export default function Header(props: IHeaderLogadoProps) {
   return (
     <Navbar id="navStyle-logado" expand="lg">
       <Container id="containerStyle-logado">
-        <Navbar.Brand id="navImg-logado" href="/">
+        <Navbar.Brand id="navImg-logado" href="areacandidata">
           <HorizontalLogo />
         </Navbar.Brand>
         {/*@ts-ignore*/}

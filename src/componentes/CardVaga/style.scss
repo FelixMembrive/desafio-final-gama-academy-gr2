@@ -1,32 +1,25 @@
 @import '../../spacing.scss';
-
 .card-vagas {
     width: 320px !important;
     height: 80px;
-
     /* Primárias/Sutil 3 */
     background: #FFFBFE;
     /* M3/Elevation Light/2 */
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 12px !important;
     margin-bottom: $sp-tc2;
-
     @media (min-width: 360px) {
         width: 342px !important;
     }
-
     @media (min-width:700px) {
         min-width: 450px !important;
     }
-
     @media (min-width:1024px) {
         min-width: 600px !important;
     }
-
     @media (min-width:1400px) {
         min-width: 906px !important;
     }
-
     .card-body {
         background-color: transparent;
     }
@@ -35,7 +28,6 @@
 .img-card-vagas {
     width: 40px !important;
     height: 40px !important;
-
     @media (min-width: 1024px) {
         width: 54px !important;
         height: 54px !important;
@@ -46,7 +38,6 @@
     p {
         font-size: 14px;
         font-weight: 600;
-
         @media (min-width: 750px) {
             font-size: 20.35px !important;
         }
@@ -57,7 +48,6 @@
     width: max-content;
     height: max-content;
     justify-self: end;
-
     svg {
         width: 32px;
         height: 32px;

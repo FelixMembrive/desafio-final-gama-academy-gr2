@@ -5,8 +5,14 @@ import CardMentora from "../../componentes/CardMentora";
 import { Row } from "react-bootstrap";
 import "./style.scss";
 import HeaderLogado from "../../componentes/HeaderLogado";
+import BackgroundWaves from "../../componentes/BackgroundWaves";
+import cornerPattern from '../../assets/icons/cornerPattern.svg';
+import centerPattern from '../../assets/icons/centerPattern.svg';
+import { useSelector } from "react-redux";
+import UnautorizedAccesPage from "../UnautorizedAccesPage";
 
 export default function ListaMentoras() {
+  const user = useSelector((state: any) => state.persistedReducer);
   
   const dados = [
     {
@@ -82,9 +88,11 @@ export default function ListaMentoras() {
       descricao_mentora: "Jornalista por formação, Product Designer na..."
     },
   ];
-  return (
+  
+  if (user && user.token.length > 0) {
+    return (
     <>
-      <HeaderLogado />
+      <HeaderLogado pic={user.pic} />
       <Mentoras />
       <Row className='cardsMentora'>
         {dados.map((item, index)=>{
@@ -94,6 +102,13 @@ export default function ListaMentoras() {
           })}
       </Row>
       <Footer />
+      {/* <BackgroundWaves className="leftPattern" pattern={cornerPattern} />
+        <BackgroundWaves className="rightPattern" pattern={cornerPattern} paddingImage={"500px"} /> */}
     </>
   );
+} else {
+  return (
+    <UnautorizedAccesPage />
+  );
+}
 }

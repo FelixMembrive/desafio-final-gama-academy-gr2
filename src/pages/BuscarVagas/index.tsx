@@ -15,6 +15,10 @@ import HeaderLogado from '../../componentes/HeaderLogado';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import BackgroundWaves from "../../componentes/BackgroundWaves";
+import cornerPattern from '../../assets/icons/cornerPattern.svg';
+import centerPattern from '../../assets/icons/centerPattern.svg';
+import UnautorizedAccesPage from '../UnautorizedAccesPage';
 
 const vagasRecomendadas = vagas.recomendadas;
 
@@ -39,6 +43,7 @@ interface IVaga {
 };
 
 export default function BuscarVagas() {
+  window.scrollTo(0, 0)
   const user = useSelector((state: any) => state.persistedReducer);
   const baseURL = 'https://tech-delas.herokuapp.com';
   const [vagas, setVagas] = useState<IVaga[]>([]);
@@ -65,7 +70,7 @@ export default function BuscarVagas() {
   if (user && user.token.length > 0) {
     return (
       <>
-        <HeaderLogado />
+        <HeaderLogado pic={user.pic} />
         <section className="buscar-secao-buscar mt-5">
           <LinkBack text="Voltar para área da candidata" />
           <Row className="mt-5 mx-auto ms-4">
@@ -101,21 +106,15 @@ export default function BuscarVagas() {
           }) : null}
         </Row>
         <Footer />
+        <BackgroundWaves className="leftPattern" pattern={cornerPattern} />
+        <BackgroundWaves className="rightPattern" pattern={cornerPattern} paddingImage={"500px"} />
       </>
 
 
     );
   } else {
     return (
-      <>
-        <Header />
-        <div id="not-logged-div" className="d-flex flex-column align-items-center text-center py-5 px-1">
-          <h2 className="my-5">Ops! Esta página é de acesso exclusivo para usuárias</h2>
-          <LinkButton className=" btn btn001 rounded-pill my-2" to="/register" text="Cadastre-se"></LinkButton>
-          <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill my-2" to="/login" text="Entrar"></LinkButton>
-        </div>
-        <Footer />
-      </>
+      <UnautorizedAccesPage />
     );
   }
 }

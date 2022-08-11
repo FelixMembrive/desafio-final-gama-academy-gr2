@@ -1,14 +1,14 @@
 @import "../../typography.scss";
 @import "../../colors.scss";
 @import "../../spacing.scss";
-
-.containerMentorias{
+.containerMentorias {
     max-width: 100%;
     background-image: url("../../assets/imagens/Mask_group.png");
     background-repeat: no-repeat;
     background-position: 0 79px;
 }
-.Mentorias{
+
+.Mentorias {
     font-family: 'poppins';
     padding: 99px 32px 0 20px;
     color: #000000;
@@ -25,15 +25,16 @@
         padding: 275px 230px 38px 202px;
     }
 }
-.Mentorias p h2{
-    text-align:left;
+
+.Mentorias p h2 {
+    text-align: left;
     letter-spacing: 0em;
 }
-.Mentorias h2{
+
+.Mentorias h2 {
     width: 288px;
     height: 28px;
     margin: 0;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -53,17 +54,16 @@
         position: absolute;
         width: 1080px;
         height: 28px;
-
         font-size: 22px;
         line-height: 33px;
     }
 }
-.Mentorias p{
-    margin:0;
+
+.Mentorias p {
+    margin: 0;
     width: 342px;
     padding-top: 32px;
     padding-bottom: 24px;
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
@@ -73,7 +73,6 @@
         width: 700px;
         padding-top: 40px;
         padding-right: 30px;
-
         font-size: 15px;
         line-height: 20px;
     }
@@ -81,20 +80,18 @@
         width: 800px;
         padding-top: 40px;
         padding-right: 30px;
-
         font-size: 15px;
         line-height: 20px;
     }
     @media only screen and (min-width: 1500px) {
         width: 1080px;
         padding-top: 48px;
-
         font-size: 16.9989px;
         line-height: 25px;
     }
 }
 
-#dropdown{
+#dropdown {
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -104,7 +101,6 @@
     height: 32px;
     padding-left: 13px;
     border-style: none;
-
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
@@ -112,7 +108,6 @@
     line-height: 13px;
     color: $light-5;
     align-items: center;
-
     @media only screen and (min-width: 768px) {
         width: 650px;
         height: 50px;
@@ -136,7 +131,8 @@
         line-height: 30px;
     }
 }
-.botao{
+
+.botao {
     padding: 0px 30px 22px 20px;
     @media only screen and (min-width: 374px) {
         padding: 0px 30px 22px 38px;
@@ -151,10 +147,11 @@
         padding: 0 0 65px 202px;
     }
 }
-#dropdown::after{
+
+#dropdown::after {
     margin-left: auto;
 }
-.dropdown-menu.show{
-    padding-right: 180px;
 
+.dropdown-menu.show {
+    padding-right: 180px;
 }
