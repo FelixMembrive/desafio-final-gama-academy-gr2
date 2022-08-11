@@ -30,7 +30,7 @@
 #navImg {
     background-color: $primary-custom;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 14px;
 }
 
 .d-inline-block {
@@ -79,7 +79,7 @@
 }
 
 .botoesContainer {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-size: 14px;
     line-height: 21px;
     list-style: none;
@@ -106,7 +106,7 @@
 
 .links {
     background-color: $primary-custom;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     margin: 30px;
     @media only screen and (min-width: 768px) {
         margin: 10px;
@@ -132,7 +132,7 @@
     height: 40px;
     order: 0;
     flex-grow: 0;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -159,7 +159,7 @@
     height: 40px;
     order: 0;
     flex-grow: 0;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -217,7 +217,26 @@
     height: 40px;
 }
 
-#botaoToggle {
+#navStyle>div>.navbar-toggler {
+    border-radius: 0;
+    margin-right: 12px;
+    width: 10px;
+    height: 14px;
+    display: block;
+    background-repeat: no-repeat !important;
+    border: none;
+    background-image: url("../../assets/icons/close.svg");
+    &:focus {
+        box-shadow: none;
+        background-color: $primary-custom;
+    }
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
+    transition: width 2s;
+}
+
+#navStyle>div>.collapsed {
     border-radius: 0;
     margin-right: 14px;
     width: 10px;
@@ -225,17 +244,11 @@
     display: block;
     background-repeat: no-repeat !important;
     border: none;
+    background-image: url("../../assets/icons/menu.svg");
     &:focus {
         box-shadow: none;
         background-color: $primary-custom;
     }
-    &::before {
-        background-image: url("../../assets/icons/close.png");
-    }
-}
-
-#botaoToggle {
-    background-image: url("../../assets/imagens/menu.png");
     @media only screen and (min-width: 768px) {
         display: none;
     }

@@ -7,6 +7,8 @@ import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import LinkButton from "../LinkButton";
 import { HorizontalLogo } from "../../assets/icons/SVGicons";
+import { useState } from "react";
+
 
 export default function Header() {
   return (
@@ -20,6 +22,7 @@ export default function Header() {
           /> */}
           <HorizontalLogo/>
         </Navbar.Brand>
+
         <Navbar.Toggle id="botaoToggle" />
         <Navbar.Collapse id="basic-navbar-nav">
 
