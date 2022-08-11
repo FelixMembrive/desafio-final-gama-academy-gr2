@@ -1,17 +1,20 @@
 import { Button, Container } from "react-bootstrap";
 import grafico_dados from "../../assets/imagens/grafico_dados.png";
-import logo_usuaria from "../../assets/icons/user.png";
-import HeaderLogado from "../HeaderLogado";
 import LinkButton from "../LinkButton";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setUser } from '../../Store/modules/user';
 import { useNavigate } from 'react-router-dom';
 
-import "./styles.scss";
 import { PortaVoltar } from "../../assets/icons/SVGicons";
 import UploadAndDisplayImage from "../uploadphoto";
+
+import BackgroundWaves from "../BackgroundWaves";
+import cornerPattern from '../../assets/icons/cornerPattern.svg';
+import centerPattern from '../../assets/icons/centerPattern.svg';
+
+import "./styles.scss";
 
 interface IAreaCandidataProps {
     name?: string;
@@ -58,11 +61,11 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
 
 
                         <div className="btn_ac_sair_div">
-                            <div className="porta_sair mt-1 mt-xl-2">
+                            <div className="porta_sair">
                                 <PortaVoltar />
                             </div>
                             <div className="btn_ac_sair2">
-                                <Button className="btn-link btn_ac_sair fs-6 text-bg-light text-decoration-none fw-semibold text-danger text-center" onClick={handleLogout} >Sair da conta</Button>
+                                <Button className="btn_ac_sair" onClick={handleLogout} >Sair da conta</Button>
                             </div>
                         </div>
 
@@ -74,6 +77,9 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
                     </Col>
                 </Row>
 
+                <BackgroundWaves className="leftPattern"pattern={cornerPattern}/>
+                <BackgroundWaves className="rightPattern" pattern={cornerPattern} paddingImage={"700px"}/>
+                {/* <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"4000px"}/> */}
 
             </Container>
         </>

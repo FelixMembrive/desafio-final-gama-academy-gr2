@@ -1,5 +1,5 @@
 @import '../../colors.scss';
-
+@import '../../typography.scss';
 .process-section {
     background-image: url('../../assets/imagens/fundo-processos.png');
     background-size: 390px 658px;
@@ -18,11 +18,10 @@
     font-weight: 500 !important;
     font-size: 13.3px !important;
     line-height: 19px !important;
-
-    @media (min-width:350px) {
+    @extend .hover-primary-darker;
+    @media (min-width: 350px) {
         width: 342px;
     }
-
     @media (min-width:500px) {
         font-size: 24px !important;
         width: 372px;
@@ -32,15 +31,13 @@
 
 .texto-processos {
     max-width: 559px;
-
-    @media (min-width:500px) {
+    @media (min-width: 500px) {
         font-size: 20px !important;
     }
 }
 
 .h2-processos {
-
-    @media (min-width:400px) {
+    @media (min-width: 400px) {
         font-size: 32px !important;
     }
 }

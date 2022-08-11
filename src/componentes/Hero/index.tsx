@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
+import './styles.scss'
 
 // import Button from "react-bootstrap/Button";
 import img_hero from "../../assets/imagens/img_hero.png";
@@ -24,7 +25,7 @@ export default function Hero() {
                         <div >
 
                             <div className="tx1-div">
-                            <h2 className="tx1 lh-base fw-bold text-start  mb-4  me-md-0">Empoderando o mercado tech <span style={{color:'#601C4F'}}>feminino</span></h2>
+                            <h2 className="tx1 lh-base fw-bold mb-4  me-md-0">Empoderando o mercado tech <span style={{color:'#601C4F'}}>feminino</span></h2>
                             </div>
 
                             <p className="tx2 fw-bolder text-start ">Uma plataforma exclusiva para mulheres que querem se destacar no mundo da tecnologia</p>
@@ -33,7 +34,7 @@ export default function Hero() {
                        <div className="btn_reco  ">     
                         
                             <LinkButton className=" btn btn001 rounded-pill"  to="/register" text="Cadastre-se"></LinkButton>
-                            <LinkButton className="btn002 btn-light border border-dark border-2 rounded-pill" to="/login" text="Entrar"></LinkButton>
+                            <LinkButton className="btn002 btn-light rounded-pill" to="/login" text="Entrar"></LinkButton>
                         
                        </div> 
                     </Col>
@@ -48,7 +49,7 @@ export default function Hero() {
 
                 <Row>
                     <Col className="textoemppar">
-                        <p className="textoemppar2 fw-bolder  ms-2 pe-5 ps mb-4 text-center ">Empresas parceiras</p>
+                        <p className="textoemppar2 fw-bolder mx-auto ps mb-4 text-center ">Empresas parceiras</p>
                     </Col>
                 </Row>
 

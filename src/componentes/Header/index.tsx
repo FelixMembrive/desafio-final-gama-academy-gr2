@@ -6,17 +6,19 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import LinkButton from "../LinkButton";
+import { HorizontalLogo } from "../../assets/icons/SVGicons";
 
 export default function Header() {
   return (
     <Navbar id="navStyle" expand="lg">
       <Container id="containerStyle">
         <Navbar.Brand id="navImg" href="/">
-          <img src={Logo}
+          {/* <img src={Logo}
             className="d-inline-block align-top"
             alt="Logo"
             id="logo"
-          />
+          /> */}
+          <HorizontalLogo/>
         </Navbar.Brand>
         <Navbar.Toggle id="botaoToggle" />
         <Navbar.Collapse id="basic-navbar-nav">

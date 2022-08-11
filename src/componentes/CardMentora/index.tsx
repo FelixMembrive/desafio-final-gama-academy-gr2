@@ -30,7 +30,7 @@ export default function CardMentora(props: ICardMentoraProps) {
                     <img src={props.foto_mentora} alt={`foto da mentora ${props.nome_mentora}`} id="imgMentora" className={`m-auto ${props.className}`}/>
                     <div className="card-mentoria-text">
                         <p className="fw-semibold m-0 mb-1">{props.nome_mentora}</p>
-                        <p className="fw-semibold m-0 mb-2">{props.area_mentora}</p>
+                        <p className="m-0 mb-2">{props.area_mentora}</p>
                         <p>{props.descricao_mentora}</p>
                     </div>
                     <div className="botoesCardMentora">

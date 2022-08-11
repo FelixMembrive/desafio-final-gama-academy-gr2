@@ -1,10 +1,10 @@
 import Header from '../../componentes/Header';
 import Footer from '../../componentes/Footer';
 import { LabelInput } from '../../componentes/LabelInput';
-import LinkButton from '../../componentes/LinkButton';
 import SocialLinkLogIn from '../../componentes/SocialLinkLogIn';
 import { Link, useNavigate } from 'react-router-dom';
-import rightPattern from '../../assets/icons/rightPattern.svg';
+import cornerPattern from '../../assets/icons/cornerPattern.svg';
+import centerPattern from '../../assets/icons/rightPattern.svg';
 import { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { loginUsuario } from '../../services/api/login';
@@ -12,6 +12,7 @@ import { useDispatch } from "react-redux";
 import { setUser } from '../../Store/modules/user';
 import './style.scss';
 import Loading from '../../componentes/Loading';
+import BackgroundWaves from '../../componentes/BackgroundWaves';
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -107,8 +108,8 @@ export default function Login() {
           <span>Termos de Serviço</span> e as <span>Regras de Privacidade</span>{' '}
           da Tech Delas
         </p>
-        <img className="rightPattern" src={rightPattern} alt="" />
-        <img className="leftPattern" src={rightPattern} alt="" />
+        <BackgroundWaves className="rightPattern" pattern={cornerPattern}/>
+        <BackgroundWaves className="leftPattern" pattern={cornerPattern} />
       </section>
       <Footer />
     </>

@@ -37,7 +37,7 @@
 
 .tx1 {
     font-size: 36px;
-    font-weight: 600px important;
+    font-weight: 600 !important;
     font-family: 'Poppins', sans-serif;
     @media(min-width: 768px) {
         margin-top: 100px;
@@ -120,6 +120,7 @@
 }
 
 .btn002 {
+    @extend .hover-primary-subtle;
     width: 343px;
     height: 40px;
     align-items: center!important;

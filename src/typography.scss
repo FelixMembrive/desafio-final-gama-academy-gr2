@@ -111,6 +111,22 @@
     line-height: 20px;
 }
 
+.label-medium {
+    /* Body Small */
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.title-small {
+    /* Body Small */
+    font-family: 'Roboto'!important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+
 .hover-primary-darker {
     &:hover {
         background-color: $primary-darker !important;
@@ -118,6 +134,7 @@
 }
 
 .hover-primary-subtle {
+    border: 1px solid #79747E !important;
     &:hover {
         background-color: $primary-subtle !important;
     }

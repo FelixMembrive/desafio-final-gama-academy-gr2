@@ -83,10 +83,22 @@ export default function MentoriaCandidata() {
         },
       ];
   return (
-    <div className="mentorias-section-candidata py-11 pt-lg-26">
-        <h2 className="titulo-mentoria-candidata text-start ms-7 ms-lg-24 mb-xs-3 mb-lg-14">Mentoras que te auxiliarão na sua carreira</h2>
-        <ScrollContainer className="ms-7 ms-lg-24 scroll-container d-grid">
-        <Row className="flex-nowrap row gap-xs-3 gap-lg-8 ms-0">
+    // <div className="mentorias-section-candidata py-11 pt-lg-26">
+    //     <h2 className="titulo-mentoria-candidata text-start ms-7 ms-lg-24 mb-xs-3 mb-lg-14">Mentoras que te auxiliarão na sua carreira</h2>
+    //     <ScrollContainer className="ms-7 ms-lg-24 scroll-container d-grid">
+    //     <Row className="flex-nowrap row gap-xs-3 gap-lg-8 ms-0">
+    //     {dados.map((item, index)=>{
+    //       return(
+    //         <CardMentora key={index} logo_empresa={item.logo_empresa} empresa={item.empresa} cargo={item.cargo} foto_mentora={item.foto_mentora} nome_mentora={item.nome_mentora} area_mentora={item.area_mentora} descricao_mentora={item.descricao_mentora}/>
+    //         )
+    //       })}
+    //     </Row>
+    //   </ScrollContainer>
+    // </div>
+        <div className="mentorias-section-candidata">
+        <h2 className="titulo-mentoria-candidata">Mentoras que te auxiliarão na sua carreira</h2>
+        <ScrollContainer className="">
+        <Row className="flex-nowrap row">
         {dados.map((item, index)=>{
           return(
             <CardMentora key={index} logo_empresa={item.logo_empresa} empresa={item.empresa} cargo={item.cargo} foto_mentora={item.foto_mentora} nome_mentora={item.nome_mentora} area_mentora={item.area_mentora} descricao_mentora={item.descricao_mentora}/>
@@ -95,5 +107,6 @@ export default function MentoriaCandidata() {
         </Row>
       </ScrollContainer>
     </div>
+    
   );
 }

@@ -25,7 +25,7 @@ export default function CardValorMentoria(props: ICardValorMentoriaProps) {
                         </div>
                     </div>
                         <div className="btn_001_div d-flex justify-content-end">
-                    <LinkButton className='btn_0001 rounded-pill text-center d-flex justify-content-center align-items-center' to='#' text='Agendar mentoria'/>
+                    <LinkButton className='btn_0001 rounded-pill text-center d-flex justify-content-center align-items-center' to='../redirecionamentocalendly' text='Agendar mentoria'/>
                         </div>
                     </Card.Body>
                 </Card>

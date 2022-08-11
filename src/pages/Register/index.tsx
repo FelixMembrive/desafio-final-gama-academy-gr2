@@ -12,6 +12,9 @@ import { AxiosError } from "axios";
 import { loginUsuario } from '../../services/api/login';
 import { useDispatch } from "react-redux";
 import { setUser } from '../../Store/modules/user';
+import cornerPattern from '../../assets/icons/cornerPattern.svg';
+import centerPattern from '../../assets/icons/rightPattern.svg';
+import BackgroundWaves from "../../componentes/BackgroundWaves";
 
 
 export default function RegisterPage() {
@@ -130,8 +133,8 @@ export default function RegisterPage() {
           da Tech Delas
         </p>
 
-        <img className="rightPattern" src={rightPattern} alt="" />
-        <img className="leftPattern" src={rightPattern} alt="" />
+        <BackgroundWaves className="rightPattern" pattern={cornerPattern}/>
+        <BackgroundWaves className="leftPattern" pattern={cornerPattern} />
 
       </form>
 

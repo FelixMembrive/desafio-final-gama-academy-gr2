@@ -26,7 +26,7 @@ export default function RoutesComponent() {
         <Route path="candidaturas" element={<MinhasCandidaturas />} />
         <Route path="listamentoras" element={<ListaMentoras />} />
         <Route path="mentora" element={<Mentora />} />
-        <Route path="redirecionamento-calendly" element={<RedirecionamentoCalendly />} />
+        <Route path="redirecionamentocalendly" element={<RedirecionamentoCalendly />} />
         <Route path="uploadphoto" element={<UploadAndDisplayImage />} />
       </Routes>
   )
