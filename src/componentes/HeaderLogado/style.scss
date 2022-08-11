@@ -1,7 +1,6 @@
 @import "../../typography.scss";
 @import "../../colors.scss";
 @import "../../spacing.scss";
-
 #containerStyle-logado {
     color: $light-5;
     padding-top: 11px;
@@ -21,7 +20,7 @@
     }
 }
 
-#navStyle-logado{
+#navStyle-logado {
     background: $primary-custom;
     height: 72px;
     display: flex;
@@ -36,9 +35,11 @@
     align-items: center;
     margin-left: 24px;
 }
-.d-inline-block{
+
+.d-inline-block {
     background-color: $primary-custom;
 }
+
 #basic-navbar-nav-logado {
     text-align: center;
     z-index: 2;
@@ -52,7 +53,7 @@
         display: inline-flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
-    } 
+    }
     @media only screen and (min-width: 800px) {
         font-size: 13px;
         display: flex;
@@ -91,10 +92,11 @@
         margin-right: 200px;
     }
 }
-.bd-toc-item-logado{
+
+.bd-toc-item-logado {
     background-color: $primary-custom;
     flex-direction: row-reverse;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -106,9 +108,10 @@
         font-weight: 400;
     }
 }
-.links{
+
+.links {
     background-color: $primary-custom;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     margin: 30px;
     @media only screen and (min-width: 768px) {
         margin: 10px;
@@ -118,8 +121,37 @@
     }
 }
 
-#cadastre{
-    padding:10.5px;
+// .icon-notification-photo {
+//     align-items: center;
+//     position: relative;
+//     top: 12px;
+//     left: 160px;
+//     width: 18px !important;
+//     height: 18px !important;
+//     // position: absolute;
+//     // margin-top: 28px;
+//     border-radius: 50%;
+//     background: $danger-custom;
+// }
+.links-with-icon {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    div {
+        position: relative;
+        margin-left: 10px;
+        width: 18px !important;
+        height: 18px !important;
+        // position: absolute;
+        // margin-top: 28px;
+        border-radius: 50%;
+        background: $danger-custom;
+    }
+}
+
+#cadastre {
+    padding: 10.5px;
     width: 343px;
     border: none;
     background-color: $light-5;
@@ -141,7 +173,8 @@
         margin-left: 16px;
     }
 }
-#basic-navbar-nav-logado{
+
+#basic-navbar-nav-logado {
     background-color: $primary-custom;
     margin-top: 48px;
     @media only screen and (min-width: 280px) {
@@ -165,7 +198,8 @@
         margin-right: 0;
     }
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     display: contents;
     background-color: $primary-custom;
     opacity: 0;
@@ -173,25 +207,28 @@
     border: none;
     border-radius: 56;
 }
-#logo{
+
+#logo {
     width: 171px;
     height: 40px;
 }
-#botaoToggleHeaderLogado{
+
+#botaoToggleHeaderLogado {
     border-radius: 50%;
     margin-right: 14px;
     width: 51px;
     height: 51px;
     display: block;
-    &:focus{
+    &:focus {
         box-shadow: none;
         background-color: $primary-custom;
     }
     @media only screen and (min-width: 280px) {
         margin-right: 0;
     }
-  }
-#botaoToggleHeaderLogado{
+}
+
+#botaoToggleHeaderLogado {
     margin-right: 32px;
     background-image: url("../../assets/imagens/foto_perfil2.png");
     border: 3px solid $light-5;
@@ -203,12 +240,13 @@
         margin-right: 10px;
     }
     @media only screen and (min-width: 768px) {
-        display:none;
+        display: none;
     }
 }
-#notificacoes{
+
+#notificacoes {
     vertical-align: middle;
     @media only screen and (min-width: 768px) {
-        display:none;
+        display: none;
     }
 }

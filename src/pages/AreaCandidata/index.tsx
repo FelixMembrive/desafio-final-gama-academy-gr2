@@ -16,7 +16,7 @@ import UnautorizedAccesPage from "../UnautorizedAccesPage";
 
 
 export default function AreaCandidata() {
-  window.scrollTo(0, 0)
+  // window.scrollTo(0, 0)
   
   const user = useSelector((state: any) => state.persistedReducer);
 
@@ -36,6 +36,7 @@ export default function AreaCandidata() {
 
         <BackgroundWaves className="leftPattern" pattern={cornerPattern} />
         <BackgroundWaves className="rightPattern" pattern={cornerPattern} paddingImage={"700px"} />
+        <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"1890px"} />
         {/* <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"4000px"}/> */}
       </>
     );

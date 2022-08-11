@@ -55,19 +55,6 @@
             font-weight: bold;
         }
     }
-    .rightPattern {
-        position: absolute;
-        right: -32px;
-        top: 302px;
-        z-index: -1;
-    }
-    .leftPattern {
-        position: absolute;
-        left: -32px;
-        top: 150px;
-        transform: scaleX(-1);
-        z-index: -1;
-    }
     .registerInputs {
         width: 100%;
         display: flex;

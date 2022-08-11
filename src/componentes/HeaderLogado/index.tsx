@@ -13,7 +13,7 @@ interface IHeaderLogadoProps {
   pic?: string;
 }
 
-export default function Header(props: IHeaderLogadoProps) {
+export default function HeaderLogado(props: IHeaderLogadoProps) {
   const ref = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => {
     if (ref.current !== null) {
@@ -24,12 +24,14 @@ export default function Header(props: IHeaderLogadoProps) {
   }, []);
   return (
     <Navbar id="navStyle-logado" expand="lg">
+
       <Container id="containerStyle-logado">
         <Navbar.Brand id="navImg-logado" href="areacandidata">
           <HorizontalLogo />
         </Navbar.Brand>
         {/*@ts-ignore*/}
         <Navbar.Toggle id="botaoToggleHeaderLogado" ref={ref} />
+          {/* <div className="icon-notification-photo"></div> */}
         <Navbar.Collapse id="basic-navbar-nav-logado">
           <div className="bd-toc-item-logado">
             <Nav.Link href="/areacandidata" className="links">Área da candidata</Nav.Link>
@@ -37,7 +39,8 @@ export default function Header(props: IHeaderLogadoProps) {
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
             <Nav.Link href="/listamentoras" className="links">Mentoras</Nav.Link>
             <Nav.Link href="#link" className="links">Blog</Nav.Link>
-            <Nav.Link href="#link" className="links">Notificações <img src={Notificacoes} id="notificacoes" /></Nav.Link>
+            {/* <Nav.Link href="#link" className="links links-with-icon">Notificações <img src={Notificacoes} id="notificacoes" /><div></div></Nav.Link> */}
+            <Nav.Link href="#link" className="links links-with-icon">Notificações <div></div></Nav.Link>
           </div>
         </Navbar.Collapse>
       </Container>
