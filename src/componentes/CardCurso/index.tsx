@@ -1,13 +1,18 @@
 import { Card } from 'react-bootstrap';
 import './style.scss';
 import dados from "../../assets/mockups/cursos-mockup.json"
+import { propTypes } from 'react-bootstrap/esm/Image';
 
-export default function CardCurso() {
+interface iCardsPropsContainer {
+  containerClass?: string
+}
+
+export default function CardCurso(props: iCardsPropsContainer ) {
 
     const cursos = dados.cursos
     return (
-      <div className="cards">
-        {cursos.slice(0, 3).map((curso, index) => {
+      <div className={props.containerClass}>
+        {cursos.slice(5, 8).map((curso, index) => {
           return (
 
             <Card style={{ width: '18rem', border:'none' }}>

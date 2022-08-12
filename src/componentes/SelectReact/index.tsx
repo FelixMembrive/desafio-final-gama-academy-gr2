@@ -7,10 +7,15 @@ export default function SelectReact () {
   
     const optionsList = [
       "Sua área profissional",
-      "profissional 1",
-      "profissional 2",
-      "profissional 3",
-      "profissional 4"
+      "UX/UI Design",
+      "Front-End",
+      "Back-End",
+      "Data Scientist",
+      "Data Analytics",
+      "Tech Recruiter",
+      "Product Manager",
+      "QA Tester"
+
     ];
   
     const toggleOptions = () => {

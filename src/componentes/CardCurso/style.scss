@@ -1,18 +1,35 @@
 @import '../../spacing.scss';
-
-
-.cards {
+.cards-area-candidata {
     font-family: 'Roboto';
     display: flex;
     flex-direction: column;
     border: none;
-    gap: $sp-tc2;
+    gap: 0;
     justify-content: center;
     align-items: center;
     margin: 0 auto $sp-tc5;
-    
-    @media (min-width:992px) {
+    .card {
+        width: 90% !important;
+    }
+    @media (min-width: 992px) {
         flex-direction: row;
+    }
+}
+
+.cards-mentora {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: $sp-tc3;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto $sp-tc5;
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+    .card {
+        width: 90% !important;
     }
 }
 
@@ -26,7 +43,6 @@
 
 #body {
     border-width: 0;
-    
 }
 
 .card-title {

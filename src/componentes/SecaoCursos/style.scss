@@ -1,12 +1,7 @@
 @import '../../typography.scss';
 @import '../../spacing.scss';
-
-
-.header-cursos{
-    margin: $sp-tc3 $sp-tc3; 
+.header-cursos {
+    margin: $sp-tc3 $sp-tc3;
     @extend .tp-heading-5;
-        
-
+    margin-bottom: 0 !important;
 }
-
-

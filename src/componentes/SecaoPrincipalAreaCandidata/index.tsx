@@ -40,7 +40,7 @@ export default function SecaoPrincipalAreaCandidata(props: IAreaCandidataProps) 
         <>
             <Container className=" " >
 
-                <Row className="d-flex flex-column flex-md-row justify-content-center pb-5 mb-2 align-items-xl-center ">
+                <Row className="d-flex flex-column flex-md-row justify-content-center pb-3 mb-2 align-items-xl-center ">
 
                     <Col xl={3} className=" col1_ac align-items-center">
                         <div className="text-center" >

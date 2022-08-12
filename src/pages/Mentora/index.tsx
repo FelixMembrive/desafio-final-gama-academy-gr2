@@ -24,7 +24,7 @@ export default function Mentora() {
       <div className="conteudos-recomendados">
         <h5>Conteúdos recomendados</h5>
         <p>Veja materiais que a mentora indica</p>
-        <CardCurso />
+        <CardCurso containerClass="cards-mentora"/>
       </div>
       </div>
       <Footer />

@@ -1,6 +1,5 @@
 {
-   "cursos": [
-        {
+    "cursos": [{
             "curso": "Curso Product Design",
             "nome": "Gama Academy",
             "descricao": "Aprenda de forma prática com mentores experts do mercado a realizar atividades de User Experience (UX) e User Interface (UI), sendo responsável pela descoberta de um novo produto",
@@ -26,6 +25,24 @@
         {
             "nome": "Curso B",
             "descricao": "Lorem ipsum dolor sit cortex. Lorem ipsum dolor sit cortex. Lorem ipsum dolor sit cortex. Lorem ipsum dolor sit cortex."
+        },
+        {
+            "curso": "Curso Product Design",
+            "nome": "Curso Product Design",
+            "descricao": "Gama Academy",
+            "imagem": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_cards/gama.png"
+        },
+        {
+            "curso": "Curso Product Design",
+            "nome": "Curso UX Design",
+            "descricao": "Awari",
+            "imagem": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_cards/gama.png"
+        },
+        {
+            "curso": "Curso Product Design",
+            "nome": "Publicação no blog",
+            "descricao": "3 tipos de métricas para testes de usabilidade",
+            "imagem": "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/logos_cards/gama.png"
         }
     ]
 }

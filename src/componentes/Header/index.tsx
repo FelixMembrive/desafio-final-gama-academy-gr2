@@ -30,7 +30,7 @@ export default function Header() {
           <div className="bd-toc-item">
             <Nav.Link href="/buscarvagas" className="links">Vagas</Nav.Link>
             <Nav.Link href="#link" className="links">Cursos</Nav.Link>
-            <Nav.Link href="listamentoras" className="links">Mentorias</Nav.Link>
+            <Nav.Link href="listamentoras" className="links">Mentoras</Nav.Link>
           </div>
         </Navbar.Collapse>
       </Container>
