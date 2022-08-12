@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="container-fluid">
                 <Row className="d-flex flex-column-reverse flex-md-row mb-5 mb-lg-0">
 
-                    <Col md={7} className="grupotexto ms-2 ms-md-0"> 
+                    <Col md={7} className="grupotexto ms-auto ms-md-0"> 
                         <div >
 
                             <div className="tx1-div">
