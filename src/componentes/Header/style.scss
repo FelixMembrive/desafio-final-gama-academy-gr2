@@ -141,6 +141,12 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.1px;
+    &:hover {
+        background-color: $primary-custom;
+        color: white;
+        border: 1px solid $light-5;
+        border-radius: 100px;
+    }
     @media only screen and (min-width: 768px) {
         width: 400px;
         width: 550px;
@@ -168,6 +174,12 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.1px;
+    &:hover {
+        background-color: white;
+        color: $primary-custom;
+        border: 1px solid $primary-custom;
+        border-radius: 100px;
+    }
     @media only screen and (min-width: 992px) {
         margin-left: 16px;
     }

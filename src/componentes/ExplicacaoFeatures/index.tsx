@@ -5,6 +5,7 @@ import { Wrapper, Title } from "./styles";
 import Image_1 from "../../assets/imagens/servicosTechDelas/img1.png";
 import Image_2 from "../../assets/imagens/servicosTechDelas/img2.png";
 import Image_3 from "../../assets/imagens/servicosTechDelas/img3.png";
+import './styles.scss'
 
 const ExplicacaoFeatures = () => {
   let dados = [
@@ -29,7 +30,7 @@ const ExplicacaoFeatures = () => {
     <Wrapper>
         <Title>Serviços da Tech Delas</Title>
     <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
-        <Row className="flex-nowrap row gap-xs-4 gap-lg-16">
+        <Row className="flex-nowrap row gap-xs-4 gap-lg-16 card-explicacao-features">
           {dados.map((item) => {
             return <FeatureCard title={item.title} description={item.description} img={item.img} />;
           })}
