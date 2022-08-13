@@ -17,7 +17,7 @@ export default function HeaderLogado(props: IHeaderLogadoProps) {
   const ref = useRef<HTMLHeadingElement>(null);
   useLayoutEffect(() => {
     if (ref.current !== null) {
-      ref.current.style.setProperty('background-image', `url(${props.pic ? props.pic : "https://raw.githubusercontent.com/FelixMembrive/desafio-final-gama-academy-gr2/main/src/assets/icons/user.png"})`, 'important');
+      ref.current.style.setProperty('background-image', `url(${props.pic ? props.pic : "https://res.cloudinary.com/dumfhd7mr/image/upload/v1660396046/6e4dea7f-3e08-40b4-955e-33a25cfa8b57.svg"})`, 'important');
       ref.current.style.setProperty('background-size', `cover`, 'important');
       ref.current.style.setProperty('background-color', `#EDEDED`, 'important');
     }

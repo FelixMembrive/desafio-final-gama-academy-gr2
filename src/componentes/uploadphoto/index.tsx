@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import { requestApiMultiPart, requestApiMultiPartAuth } from "../../services/api";
-import logo_usuaria from "../../assets/icons/user.png";
+import logo_usuaria from "../../assets/icons/user.svg";
 import { setUser } from "../../Store/modules/user";
 import { useDispatch } from "react-redux";
 import { Check, X } from "phosphor-react";

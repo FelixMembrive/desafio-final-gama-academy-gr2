@@ -22,7 +22,6 @@ interface IVagasAndamentoProps {
 
 export default function VagasAndamento(props: IVagasAndamentoProps) {
     const lineLength = (props.etapas.length -1) *76;
-    console.log(lineLength)
     const ref = useRef<HTMLHeadingElement>(null);
     useLayoutEffect(() => {
         if(ref.current !== null){
