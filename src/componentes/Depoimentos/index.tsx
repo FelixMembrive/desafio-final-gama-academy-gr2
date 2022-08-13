@@ -33,7 +33,7 @@ export default function Depoimentos() {
     ]
   return (
     <div className="depo-section pb-4 pt-4 pt-lg-5">
-        <h2 className="text-start ms-4 ms-lg-5 mb-4 mb-lg-11">O que as pessoas dizem</h2>
+        <h2 className="text-start ms-4 ms-lg-5 mb-4 mb-lg-11">Depoimentos</h2>
         <ScrollContainer className="ms-4 ms-lg-5 scroll-container d-grid">
         <Row className="flex-nowrap row gap-xs-3 gap-lg-16">
         {dados.map((cardInfo, index) => {

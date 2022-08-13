@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 export const Title = styled.h2`
   margin: 30px auto 30px 2.5em;
   @media only screen and (max-width: 768px) {
-    margin: 30px auto 30px 1em;
+    margin: 30px auto 20px 20px;
     text-align: start;
   }
 `;

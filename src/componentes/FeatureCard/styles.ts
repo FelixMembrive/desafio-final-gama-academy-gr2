@@ -15,7 +15,9 @@ export const Wrapper = styled.div`
 
 export const Iframe = styled.iframe``;
 export const Title = styled.h5`
-  margin-top: 30px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+
 `;
 export const Description = styled.p`
   text-align: start;
