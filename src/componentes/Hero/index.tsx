@@ -3,7 +3,7 @@ import styled from "styled-components";
 import './styles.scss'
 
 // import Button from "react-bootstrap/Button";
-import img_hero from "../../assets/imagens/img_hero.png";
+import img_hero from "../../assets/imagens/img_hero.svg";
 import logo_gama_academy from "../../assets/imagens/logo_gama_academy.png";
 import logo_loggi from "../../assets/imagens/logo_loggi.png";
 import logo_nubank from "../../assets/imagens/logo_nubank.png";
