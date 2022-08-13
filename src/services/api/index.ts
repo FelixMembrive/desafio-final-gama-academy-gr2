@@ -37,7 +37,7 @@ export const requestApiMultiPartAuth = axios.create({
     headers: {
         //   Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         "Content-Type": "multipart/form-data",
-        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZWM1MjU5ZjAzZWNhY2Y3ZTgyMjYzZSIsImVtYWlsIjoiZmVsaXgubWVtYnJpdmVAZ21haWwuY29tIiwibmFtZSI6InRlc3RlIiwiaWF0IjoxNjYwMDExMTkxLCJleHAiOjE2NjAyNzAzOTF9.j-LhmhLd1G4aiWnE8bMGXi6IO3IkM73XLgFRnPsbil0"
+        Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyZWM1MjU5ZjAzZWNhY2Y3ZTgyMjYzZSIsImVtYWlsIjoiZmVsaXgubWVtYnJpdmVAZ21haWwuY29tIiwibmFtZSI6InRlc3RlIiwiaWF0IjoxNjYwMzUzMzc1LCJleHAiOjE2NjA2MTI1NzV9.24jtVtal1b8_oxpx-Cv1voNZw01mttllLzmR8qIm5B4"
     },
 });
 

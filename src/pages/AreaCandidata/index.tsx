@@ -36,7 +36,7 @@ export default function AreaCandidata() {
 
         <BackgroundWaves className="leftPattern" pattern={cornerPattern} />
         <BackgroundWaves className="rightPattern" pattern={cornerPattern} paddingImage={"700px"} />
-        <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"1890px"} />
+        <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"1750px"} />
         {/* <BackgroundWaves className="centerPattern" pattern={centerPattern} paddingImage={"4000px"}/> */}
       </>
     );

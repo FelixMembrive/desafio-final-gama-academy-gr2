@@ -27,8 +27,8 @@ const ExplicacaoFeatures = () => {
 
   return (
     <Wrapper>
-    <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
         <Title>Serviços da Tech Delas</Title>
+    <ScrollContainer className="ms-8 ms-lg-20 scroll-container d-grid">
         <Row className="flex-nowrap row gap-xs-4 gap-lg-16">
           {dados.map((item) => {
             return <FeatureCard title={item.title} description={item.description} img={item.img} />;

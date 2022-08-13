@@ -108,6 +108,9 @@
     background-color: $primary-custom;
     font-family: "Poppins";
     margin: 30px;
+    &:hover {
+        scale: 105%;
+    }
     @media only screen and (min-width: 768px) {
         margin: 10px;
     }

@@ -3,5 +3,5 @@
 .header-cursos {
     margin: $sp-tc3 $sp-tc3;
     @extend .tp-heading-5;
-    margin-bottom: 0 !important;
+    margin-bottom: -$sp-tc1 !important;
 }

@@ -3,6 +3,8 @@
 @import "../../spacing.scss";
 .titulo-mentoria-candidata {
     @extend .tp-heading-5;
+    margin-top: $sp-tc3;
+    margin-bottom: $sp-tc1;
     margin-left: $sp-tc3;
     @media (min-width: 1024px) {
         font-size: 20.35px !important;
