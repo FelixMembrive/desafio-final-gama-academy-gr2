@@ -25,7 +25,7 @@ export default function Hero() {
                         <div >
 
                             <div className="tx1-div">
-                            <h2 className="tx1 lh-base fw-bold mb-4  me-md-0">Empoderando o mercado tech <span style={{color:'#601C4F'}}>feminino</span></h2>
+                            <h2 className="tx1 lh-base fw-bold mb-2  me-md-0">Empoderando o mercado tech <span style={{color:'#601C4F'}}>feminino</span></h2>
                             </div>
 
                             <p className="tx2 fw-bolder text-start ">Uma plataforma exclusiva para mulheres que querem se destacar no mundo da tecnologia</p>
